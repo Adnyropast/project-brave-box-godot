@@ -1,8 +1,29 @@
-[gd_scene load_steps=4 format=3 uid="uid://cyhvqgcao0yt3"]
+[gd_scene load_steps=25 format=3 uid="uid://cyhvqgcao0yt3"]
 
+[ext_resource type="PackedScene" uid="uid://cmr2t1ddd2pub" path="res://scenes/map/map_poi.tscn" id="1_6b5j5"]
 [ext_resource type="Texture2D" uid="uid://b3y0xd6ipxn2f" path="res://images/map/map_compositia.png" id="1_jmuk3"]
 [ext_resource type="PackedScene" uid="uid://coq8e7iul3kdh" path="res://scenes/map/map_cursor.tscn" id="2_e0osj"]
 [ext_resource type="PackedScene" uid="uid://be2uw7cb1rpps" path="res://scenes/map/wall_box_2d.tscn" id="3_4unsj"]
+[ext_resource type="Texture2D" uid="uid://dvgschh7fbmti" path="res://images/map/icon_poi_strolhom.png" id="3_b1u2w"]
+[ext_resource type="Resource" uid="uid://ch5vntcueudiq" path="res://resources/points_of_interest/poi_strolhom.tres" id="4_11d0m"]
+[ext_resource type="Texture2D" uid="uid://jodk5oc48ms1" path="res://images/map/icon_poi_plains.png" id="4_di50j"]
+[ext_resource type="Texture2D" uid="uid://c7cldum4ehkq2" path="res://images/map/icon_poi_coasts.png" id="5_11d0m"]
+[ext_resource type="Texture2D" uid="uid://bpia1u1rgcloa" path="res://images/map/icon_poi_desert.png" id="6_pa440"]
+[ext_resource type="Resource" uid="uid://e55iewph1sm5" path="res://resources/points_of_interest/poi_plains.tres" id="6_un5ki"]
+[ext_resource type="Texture2D" uid="uid://domm4168rbjny" path="res://images/map/icon_poi_jungle.png" id="7_yimtk"]
+[ext_resource type="Texture2D" uid="uid://boh6fmtjl6qax" path="res://images/map/icon_poi_cliffs.png" id="8_ndft3"]
+[ext_resource type="Resource" uid="uid://bm31mkxtncw7k" path="res://resources/points_of_interest/poi_coasts.tres" id="8_uet2t"]
+[ext_resource type="Texture2D" uid="uid://cencm83dbbnpx" path="res://images/map/icon_poi_croesus_mansion.png" id="9_3aw51"]
+[ext_resource type="Resource" uid="uid://ik6hgtfuryyo" path="res://resources/points_of_interest/poi_desert.tres" id="10_2t8o8"]
+[ext_resource type="Texture2D" uid="uid://clg47qq5objhn" path="res://images/map/icon_poi_lilyrock.png" id="10_ptk0p"]
+[ext_resource type="Texture2D" uid="uid://b6oymbl5q11p6" path="res://images/map/icon_poi_wayward_woods.png" id="11_ben22"]
+[ext_resource type="Resource" uid="uid://bwpoyqvcv4cg4" path="res://resources/points_of_interest/poi_jungle.tres" id="12_bor7o"]
+[ext_resource type="Texture2D" uid="uid://yv8g3niajjq3" path="res://images/map/icon_poi_marcial_tower.png" id="12_w7mdu"]
+[ext_resource type="Resource" uid="uid://bintupvc6gsut" path="res://resources/points_of_interest/poi_cliffs.tres" id="14_i6kk6"]
+[ext_resource type="Resource" uid="uid://bghii8p3l1x1r" path="res://resources/points_of_interest/poi_croesus_mansion.tres" id="16_itn68"]
+[ext_resource type="Resource" uid="uid://drliidrlqk8jt" path="res://resources/points_of_interest/poi_lilyrock.tres" id="18_urvcl"]
+[ext_resource type="Resource" uid="uid://doic3gt4hi2he" path="res://resources/points_of_interest/poi_wayward_woods.tres" id="20_fx475"]
+[ext_resource type="Resource" uid="uid://cc4bi6lcuystw" path="res://resources/points_of_interest/poi_marcial_tower.tres" id="22_knx5o"]
 
 [node name="MapCompositia" type="Node2D"]
 
@@ -10,6 +31,58 @@
 position = Vector2(576, 324)
 scale = Vector2(0.6, 0.6)
 texture = ExtResource("1_jmuk3")
+
+[node name="GroupPOI" type="Node2D" parent="."]
+
+[node name="MapPOI" parent="GroupPOI" instance=ExtResource("1_6b5j5")]
+position = Vector2(556, 270)
+sprite = ExtResource("3_b1u2w")
+point_of_interest = ExtResource("4_11d0m")
+
+[node name="MapPOI2" parent="GroupPOI" instance=ExtResource("1_6b5j5")]
+position = Vector2(685, 385)
+sprite = ExtResource("4_di50j")
+point_of_interest = ExtResource("6_un5ki")
+
+[node name="MapPOI3" parent="GroupPOI" instance=ExtResource("1_6b5j5")]
+position = Vector2(944, 248)
+sprite = ExtResource("5_11d0m")
+point_of_interest = ExtResource("8_uet2t")
+
+[node name="MapPOI4" parent="GroupPOI" instance=ExtResource("1_6b5j5")]
+position = Vector2(310, 477)
+sprite = ExtResource("6_pa440")
+point_of_interest = ExtResource("10_2t8o8")
+
+[node name="MapPOI5" parent="GroupPOI" instance=ExtResource("1_6b5j5")]
+position = Vector2(137, 311)
+sprite = ExtResource("7_yimtk")
+point_of_interest = ExtResource("12_bor7o")
+
+[node name="MapPOI6" parent="GroupPOI" instance=ExtResource("1_6b5j5")]
+position = Vector2(619, 93)
+sprite = ExtResource("8_ndft3")
+point_of_interest = ExtResource("14_i6kk6")
+
+[node name="MapPOI7" parent="GroupPOI" instance=ExtResource("1_6b5j5")]
+position = Vector2(761, 526)
+sprite = ExtResource("9_3aw51")
+point_of_interest = ExtResource("16_itn68")
+
+[node name="MapPOI8" parent="GroupPOI" instance=ExtResource("1_6b5j5")]
+position = Vector2(1001, 500)
+sprite = ExtResource("10_ptk0p")
+point_of_interest = ExtResource("18_urvcl")
+
+[node name="MapPOI9" parent="GroupPOI" instance=ExtResource("1_6b5j5")]
+position = Vector2(104, 51)
+sprite = ExtResource("11_ben22")
+point_of_interest = ExtResource("20_fx475")
+
+[node name="MapPOI10" parent="GroupPOI" instance=ExtResource("1_6b5j5")]
+position = Vector2(788, 166)
+sprite = ExtResource("12_w7mdu")
+point_of_interest = ExtResource("22_knx5o")
 
 [node name="MapCursor" parent="." instance=ExtResource("2_e0osj")]
 position = Vector2(551, 378)

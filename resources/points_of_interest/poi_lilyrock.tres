@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="PointOfInterest" load_steps=5 format=3 uid="uid://drliidrlqk8jt"]
+
+[ext_resource type="Script" uid="uid://l3di8hrrnoea" path="res://resources/Mission.gd" id="1_0w6w7"]
+[ext_resource type="Script" uid="uid://b6dtah64w6g2w" path="res://resources/PointOfInterest.gd" id="1_lhdla"]
+[ext_resource type="Resource" uid="uid://damijvippy1lr" path="res://resources/missions/battle_lilyrock.tres" id="2_odh3l"]
+[ext_resource type="Resource" uid="uid://b1mfntowbtq5g" path="res://resources/missions/battle_underlands.tres" id="3_8pvy6"]
+
+[resource]
+script = ExtResource("1_lhdla")
+name = "Lilyrock"
+missions = Array[ExtResource("1_0w6w7")]([ExtResource("2_odh3l"), ExtResource("3_8pvy6")])
+metadata/_custom_type_script = "uid://b6dtah64w6g2w"

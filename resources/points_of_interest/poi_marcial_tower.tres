@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="PointOfInterest" load_steps=5 format=3 uid="uid://cc4bi6lcuystw"]
+
+[ext_resource type="Script" uid="uid://l3di8hrrnoea" path="res://resources/Mission.gd" id="1_p6x3t"]
+[ext_resource type="Script" uid="uid://b6dtah64w6g2w" path="res://resources/PointOfInterest.gd" id="1_sbuvf"]
+[ext_resource type="Resource" uid="uid://dpd7vh7nawdnl" path="res://resources/missions/battle_marcial_tower.tres" id="2_dneq3"]
+[ext_resource type="Resource" uid="uid://dr2xj3jojtw25" path="res://resources/missions/battle_reflective_abyss.tres" id="3_dm247"]
+
+[resource]
+script = ExtResource("1_sbuvf")
+name = "Marcial Tower"
+missions = Array[ExtResource("1_p6x3t")]([ExtResource("2_dneq3"), ExtResource("3_dm247")])
+metadata/_custom_type_script = "uid://b6dtah64w6g2w"

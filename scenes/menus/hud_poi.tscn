@@ -1,0 +1,42 @@
+[gd_scene load_steps=2 format=3 uid="uid://dnh0oy2mmyenh"]
+
+[ext_resource type="Script" uid="uid://jnj538ygivjf" path="res://scenes/menus/hud_poi.gd" id="1_d88gc"]
+
+[node name="HUDPOI" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_d88gc")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -20.0
+offset_top = -40.0
+offset_right = 20.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/margin_bottom = 16
+
+[node name="PanelContainer" type="PanelContainer" parent="MarginContainer"]
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/PanelContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 16
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 16
+theme_override_constants/margin_bottom = 8
+
+[node name="Button" type="Button" parent="MarginContainer/PanelContainer/MarginContainer"]
+layout_mode = 2
+text = "Inspect"
+
+[connection signal="pressed" from="MarginContainer/PanelContainer/MarginContainer/Button" to="." method="_on_button_pressed"]

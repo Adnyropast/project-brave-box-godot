@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="Mission" load_steps=2 format=3 uid="uid://ek2m3xtxvyyt"]
+
+[ext_resource type="Script" uid="uid://l3di8hrrnoea" path="res://resources/Mission.gd" id="1_qgv18"]
+
+[resource]
+script = ExtResource("1_qgv18")
+title = "Battle in the jungle"
+metadata/_custom_type_script = "uid://l3di8hrrnoea"
