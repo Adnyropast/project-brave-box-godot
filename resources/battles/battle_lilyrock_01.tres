@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Battle" load_steps=3 format=3 uid="uid://diuc2t1b0lc6u"]
+
+[ext_resource type="PackedScene" uid="uid://omb4byqfv75x" path="res://scenes/arenas/arena_lilyrock.tscn" id="1_fv8xc"]
+[ext_resource type="Script" uid="uid://dae1o78payp5a" path="res://resources/Battle.gd" id="1_gtk6x"]
+
+[resource]
+script = ExtResource("1_gtk6x")
+arena = ExtResource("1_fv8xc")
+metadata/_custom_type_script = "uid://dae1o78payp5a"

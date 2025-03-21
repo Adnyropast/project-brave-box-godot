@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Battle" load_steps=3 format=3 uid="uid://gl0dqk0jfpa4"]
+
+[ext_resource type="Script" uid="uid://dae1o78payp5a" path="res://resources/Battle.gd" id="1_e6irl"]
+[ext_resource type="PackedScene" uid="uid://mal7o7vcryaj" path="res://scenes/arenas/arena_wayward_woods.tscn" id="1_k0b6i"]
+
+[resource]
+script = ExtResource("1_e6irl")
+arena = ExtResource("1_k0b6i")
+metadata/_custom_type_script = "uid://dae1o78payp5a"

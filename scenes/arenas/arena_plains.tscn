@@ -1,0 +1,55 @@
+[gd_scene load_steps=6 format=3 uid="uid://btbrcho1fajwh"]
+
+[ext_resource type="Texture2D" uid="uid://75qvsqjncrfh" path="res://images/environment/floors/floor_plains.png" id="1_uy0ja"]
+[ext_resource type="Texture2D" uid="uid://lmpeia4alppx" path="res://images/environment/white.png" id="2_c7s4s"]
+[ext_resource type="Texture2D" uid="uid://dukeuejxm5rsk" path="res://images/environment/props/plains_trees.png" id="3_4nt88"]
+[ext_resource type="Texture2D" uid="uid://ck48lletvpl5t" path="res://images/environment/props/plains_mountains.png" id="4_fagwo"]
+[ext_resource type="Texture2D" uid="uid://8nh2xusynvd5" path="res://images/environment/skies/sky_day.png" id="5_5rbyx"]
+
+[node name="ArenaPlains" type="Node3D"]
+
+[node name="Floor" type="Sprite3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0)
+texture = ExtResource("1_uy0ja")
+
+[node name="FloorWhite" type="Sprite3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, -0.1, 0)
+texture = ExtResource("2_c7s4s")
+
+[node name="Tree" type="Sprite3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.62044, 1, -12)
+texture = ExtResource("3_4nt88")
+
+[node name="Tree2" type="Sprite3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.23687, 1, -12)
+texture = ExtResource("3_4nt88")
+
+[node name="Tree3" type="Sprite3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.94089, 1, -12)
+texture = ExtResource("3_4nt88")
+
+[node name="Mountains" type="Sprite3D" parent="."]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, 0, 4, -16)
+texture = ExtResource("4_fagwo")
+
+[node name="SkyFloorWhite" type="Sprite3D" parent="."]
+transform = Transform3D(12, 0, 0, 0, -5.24537e-07, 12, 0, -12, -5.24537e-07, 0, -2, 18)
+sorting_offset = -1000.0
+texture = ExtResource("2_c7s4s")
+
+[node name="Sky" type="Sprite3D" parent="."]
+transform = Transform3D(12, 0, 0, 0, 12, 0, 0, 0, 12, 0, 0, -48)
+sorting_offset = -2000.0
+texture = ExtResource("5_5rbyx")
+
+[node name="SkyWhite" type="Sprite3D" parent="."]
+transform = Transform3D(12, 0, 0, 0, 12, 0, 0, 0, 12, 0, 0, -49)
+sorting_offset = -3000.0
+texture = ExtResource("2_c7s4s")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, 12)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.642788, 0.766044, 0, -0.766044, 0.642788, 0, 24, 4)
+shadow_enabled = true

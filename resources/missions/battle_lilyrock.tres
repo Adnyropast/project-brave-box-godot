@@ -1,8 +1,10 @@
-[gd_resource type="Resource" script_class="Mission" load_steps=2 format=3 uid="uid://damijvippy1lr"]
+[gd_resource type="Resource" script_class="Mission" load_steps=3 format=3 uid="uid://damijvippy1lr"]
 
 [ext_resource type="Script" uid="uid://l3di8hrrnoea" path="res://resources/Mission.gd" id="1_an143"]
+[ext_resource type="Resource" uid="uid://diuc2t1b0lc6u" path="res://resources/battles/battle_lilyrock_01.tres" id="1_k83ii"]
 
 [resource]
 script = ExtResource("1_an143")
 title = "Battle in Lilyrock"
+battle = ExtResource("1_k83ii")
 metadata/_custom_type_script = "uid://l3di8hrrnoea"

@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Battle" load_steps=3 format=3 uid="uid://5b5bgljbosle"]
+
+[ext_resource type="PackedScene" uid="uid://cmmnd8i3wi7rx" path="res://scenes/arenas/arena_croesus_mansion.tscn" id="1_dauc7"]
+[ext_resource type="Script" uid="uid://dae1o78payp5a" path="res://resources/Battle.gd" id="1_ujy3x"]
+
+[resource]
+script = ExtResource("1_ujy3x")
+arena = ExtResource("1_dauc7")
+metadata/_custom_type_script = "uid://dae1o78payp5a"

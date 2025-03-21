@@ -1,8 +1,10 @@
-[gd_resource type="Resource" script_class="Mission" load_steps=2 format=3 uid="uid://d3gssu0umd1nq"]
+[gd_resource type="Resource" script_class="Mission" load_steps=3 format=3 uid="uid://d3gssu0umd1nq"]
 
 [ext_resource type="Script" uid="uid://l3di8hrrnoea" path="res://resources/Mission.gd" id="1_h4aqn"]
+[ext_resource type="Resource" uid="uid://cx1ie7i7oa6nh" path="res://resources/battles/battle_coasts_01.tres" id="1_potgk"]
 
 [resource]
 script = ExtResource("1_h4aqn")
 title = "Battle in the coasts"
+battle = ExtResource("1_potgk")
 metadata/_custom_type_script = "uid://l3di8hrrnoea"

@@ -1,8 +1,10 @@
-[gd_resource type="Resource" script_class="Mission" load_steps=2 format=3 uid="uid://clremvao1nsen"]
+[gd_resource type="Resource" script_class="Mission" load_steps=3 format=3 uid="uid://clremvao1nsen"]
 
 [ext_resource type="Script" uid="uid://l3di8hrrnoea" path="res://resources/Mission.gd" id="1_mx21x"]
+[ext_resource type="Resource" uid="uid://llosbqvcdonq" path="res://resources/battles/battle_cliffs_01.tres" id="1_oyb44"]
 
 [resource]
 script = ExtResource("1_mx21x")
 title = "Battle in the cliffs"
+battle = ExtResource("1_oyb44")
 metadata/_custom_type_script = "uid://l3di8hrrnoea"

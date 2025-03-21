@@ -1,8 +1,10 @@
-[gd_resource type="Resource" script_class="Mission" load_steps=2 format=3 uid="uid://cpyrp3216ktqx"]
+[gd_resource type="Resource" script_class="Mission" load_steps=3 format=3 uid="uid://cpyrp3216ktqx"]
 
 [ext_resource type="Script" uid="uid://l3di8hrrnoea" path="res://resources/Mission.gd" id="1_hxsr2"]
+[ext_resource type="Resource" uid="uid://lw8d62xlm8va" path="res://resources/battles/battle_strolhom_01.tres" id="1_tkk25"]
 
 [resource]
 script = ExtResource("1_hxsr2")
 title = "Battle in Strolhom"
+battle = ExtResource("1_tkk25")
 metadata/_custom_type_script = "uid://l3di8hrrnoea"

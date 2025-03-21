@@ -1,8 +1,10 @@
-[gd_resource type="Resource" script_class="Mission" load_steps=2 format=3 uid="uid://dpd7vh7nawdnl"]
+[gd_resource type="Resource" script_class="Mission" load_steps=3 format=3 uid="uid://dpd7vh7nawdnl"]
 
 [ext_resource type="Script" uid="uid://l3di8hrrnoea" path="res://resources/Mission.gd" id="1_al38j"]
+[ext_resource type="Resource" uid="uid://dh5tupc3jxu7e" path="res://resources/battles/battle_marcial_tower_01.tres" id="1_g55ym"]
 
 [resource]
 script = ExtResource("1_al38j")
 title = "Battle in the Marcial Tower"
+battle = ExtResource("1_g55ym")
 metadata/_custom_type_script = "uid://l3di8hrrnoea"

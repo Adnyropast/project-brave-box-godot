@@ -1,0 +1,28 @@
+[gd_scene load_steps=2 format=3 uid="uid://cle06kkmug3nl"]
+
+[ext_resource type="Script" uid="uid://upucb8jqxkt3" path="res://scenes/menus_battle/menu_battle.gd" id="1_t8yjc"]
+
+[node name="MenuBattle" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_t8yjc")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 16
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+
+[node name="ButtonFlee" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Flee"
+
+[connection signal="pressed" from="MarginContainer/VBoxContainer/ButtonFlee" to="." method="_on_button_flee_pressed"]

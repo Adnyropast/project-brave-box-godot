@@ -9,7 +9,7 @@ func add_buttons():
 			var button = preload("res://scenes/menus/button_mission.tscn").instantiate()
 			
 			button.text = mission.title
-			button.mission_key = mission.title
+			button.mission = mission
 			
 			$"MarginContainer/VBoxContainer/VBoxContainer".add_child(button)
 

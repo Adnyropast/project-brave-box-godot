@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Battle" load_steps=3 format=3 uid="uid://cfned65ns3oj5"]
+
+[ext_resource type="Script" uid="uid://dae1o78payp5a" path="res://resources/Battle.gd" id="1_rl2pj"]
+[ext_resource type="PackedScene" uid="uid://jn1522tcou4f" path="res://scenes/arenas/arena_reflective_abyss.tscn" id="1_vp4yw"]
+
+[resource]
+script = ExtResource("1_rl2pj")
+arena = ExtResource("1_vp4yw")
+metadata/_custom_type_script = "uid://dae1o78payp5a"

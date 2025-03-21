@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Battle" load_steps=3 format=3 uid="uid://6td8oemv7xdw"]
+
+[ext_resource type="Script" uid="uid://dae1o78payp5a" path="res://resources/Battle.gd" id="1_vcmgo"]
+[ext_resource type="PackedScene" uid="uid://bsdlkng8qhs83" path="res://scenes/arenas/arena_underlands.tscn" id="1_vtc08"]
+
+[resource]
+script = ExtResource("1_vcmgo")
+arena = ExtResource("1_vtc08")
+metadata/_custom_type_script = "uid://dae1o78payp5a"
