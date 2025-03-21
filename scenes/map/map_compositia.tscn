@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=3 uid="uid://cyhvqgcao0yt3"]
+[gd_scene load_steps=26 format=3 uid="uid://cyhvqgcao0yt3"]
 
 [ext_resource type="PackedScene" uid="uid://cmr2t1ddd2pub" path="res://scenes/map/map_poi.tscn" id="1_6b5j5"]
 [ext_resource type="Texture2D" uid="uid://b3y0xd6ipxn2f" path="res://images/map/map_compositia.png" id="1_jmuk3"]
@@ -24,6 +24,7 @@
 [ext_resource type="Resource" uid="uid://drliidrlqk8jt" path="res://resources/points_of_interest/poi_lilyrock.tres" id="18_urvcl"]
 [ext_resource type="Resource" uid="uid://doic3gt4hi2he" path="res://resources/points_of_interest/poi_wayward_woods.tres" id="20_fx475"]
 [ext_resource type="Resource" uid="uid://cc4bi6lcuystw" path="res://resources/points_of_interest/poi_marcial_tower.tres" id="22_knx5o"]
+[ext_resource type="Script" uid="uid://c8kgjinn50yw0" path="res://scenes/menus_pause/control_pause.gd" id="25_uet2t"]
 
 [node name="MapCompositia" type="Node2D"]
 
@@ -90,3 +91,8 @@ position = Vector2(551, 378)
 [node name="WallBox2D" parent="." instance=ExtResource("3_4unsj")]
 position = Vector2(576, 324)
 scale = Vector2(57.6, 32.4)
+
+[node name="ControlPause" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("25_uet2t")
