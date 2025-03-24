@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="PartyMember" load_steps=2 format=3 uid="uid://c0megvh7fgt00"]
+
+[ext_resource type="Script" uid="uid://bl0gq5s1bthhi" path="res://resources/PartyMember.gd" id="1_nvcc0"]
+
+[resource]
+script = ExtResource("1_nvcc0")
+name = "Moskla"
+metadata/_custom_type_script = "uid://bl0gq5s1bthhi"

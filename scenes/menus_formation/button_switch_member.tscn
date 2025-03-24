@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://batfvsemiyobo"]
+
+[ext_resource type="Script" uid="uid://ct3xyikk7m52u" path="res://scenes/menus_formation/button_switch_member.gd" id="1_b0ii0"]
+
+[node name="ButtonSwitchMember" type="Button"]
+offset_right = 8.0
+offset_bottom = 8.0
+script = ExtResource("1_b0ii0")
+
+[connection signal="pressed" from="." to="." method="_on_pressed"]

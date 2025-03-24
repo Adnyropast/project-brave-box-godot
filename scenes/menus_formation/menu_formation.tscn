@@ -1,0 +1,60 @@
+[gd_scene load_steps=2 format=3 uid="uid://cjlsok5trr8xq"]
+
+[ext_resource type="Script" uid="uid://dgshl37ofrqwd" path="res://scenes/menus_formation/menu_formation.gd" id="1_fc5qf"]
+
+[node name="MenuFormation" type="Control"]
+process_mode = 2
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_fc5qf")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 16
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/HBoxContainer"]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="ButtonClose" type="Button" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "Close"
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="MarginContainer/HBoxContainer"]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/HBoxContainer/VBoxContainer2"]
+process_mode = 2
+layout_mode = 2
+
+[node name="ButtonRemove" type="Button" parent="MarginContainer/HBoxContainer/VBoxContainer2"]
+layout_mode = 2
+text = "Remove"
+
+[node name="ButtonCancel" type="Button" parent="MarginContainer/HBoxContainer/VBoxContainer2"]
+layout_mode = 2
+text = "Cancel"
+
+[connection signal="pressed" from="MarginContainer/HBoxContainer/VBoxContainer/ButtonClose" to="." method="_on_button_close_pressed"]
+[connection signal="pressed" from="MarginContainer/HBoxContainer/VBoxContainer2/ButtonRemove" to="." method="_on_button_remove_pressed"]
+[connection signal="pressed" from="MarginContainer/HBoxContainer/VBoxContainer2/ButtonCancel" to="." method="_on_button_cancel_pressed"]

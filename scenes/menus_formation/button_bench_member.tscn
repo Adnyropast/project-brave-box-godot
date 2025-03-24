@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://35dgca4rt3l3"]
+
+[ext_resource type="Script" uid="uid://cex1svjk1jje1" path="res://scenes/menus_formation/button_bench_member.gd" id="1_hsmi2"]
+
+[node name="ButtonBenchMember" type="Button"]
+offset_right = 8.0
+offset_bottom = 8.0
+script = ExtResource("1_hsmi2")
+
+[connection signal="pressed" from="." to="." method="_on_pressed"]

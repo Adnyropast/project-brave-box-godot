@@ -14,6 +14,10 @@ config/name="Brave Box"
 config/features=PackedStringArray("4.4", "GL Compatibility")
 config/icon="res://icon.svg"
 
+[autoload]
+
+PlayerParty="*res://globals/PlayerParty.gd"
+
 [input]
 
 left={
