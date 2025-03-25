@@ -1,8 +1,24 @@
-[gd_resource type="Resource" script_class="PartyMember" load_steps=2 format=3 uid="uid://d3h1r5h3dbrmu"]
+[gd_resource type="Resource" script_class="PartyMember" load_steps=10 format=3 uid="uid://d3h1r5h3dbrmu"]
 
 [ext_resource type="Script" uid="uid://bl0gq5s1bthhi" path="res://resources/PartyMember.gd" id="1_5jrp3"]
+[ext_resource type="Texture2D" uid="uid://dlik00kubxnp8" path="res://images/battle_player_pawns/quatrain/pawn_quatrain_atk.png" id="1_ukyh0"]
+[ext_resource type="Texture2D" uid="uid://dxshmu0dajb80" path="res://images/battle_player_pawns/quatrain/pawn_quatrain_cast.png" id="2_f02fe"]
+[ext_resource type="Texture2D" uid="uid://crtkilyfveq1a" path="res://images/battle_player_pawns/quatrain/pawn_quatrain_def.png" id="3_wxee1"]
+[ext_resource type="Texture2D" uid="uid://b3it54pho1hm8" path="res://images/battle_player_pawns/quatrain/pawn_quatrain_hurt.png" id="4_fiim5"]
+[ext_resource type="Texture2D" uid="uid://cjr3t328b5717" path="res://images/battle_player_pawns/quatrain/pawn_quatrain_ko.png" id="5_j5jg6"]
+[ext_resource type="Texture2D" uid="uid://bymuymnjhgxb1" path="res://images/battle_player_pawns/quatrain/pawn_quatrain_low.png" id="6_m11b3"]
+[ext_resource type="Texture2D" uid="uid://mj5a2n642xhc" path="res://images/battle_player_pawns/quatrain/pawn_quatrain_std.png" id="7_soesu"]
+[ext_resource type="Texture2D" uid="uid://cc8kfqv16u22b" path="res://images/battle_player_pawns/quatrain/pawn_quatrain_victory.png" id="8_vq770"]
 
 [resource]
 script = ExtResource("1_5jrp3")
 name = "Quatrain"
+image_std = ExtResource("7_soesu")
+image_atk = ExtResource("1_ukyh0")
+image_def = ExtResource("3_wxee1")
+image_cast = ExtResource("2_f02fe")
+image_hurt = ExtResource("4_fiim5")
+image_low = ExtResource("6_m11b3")
+image_ko = ExtResource("5_j5jg6")
+image_victory = ExtResource("8_vq770")
 metadata/_custom_type_script = "uid://bl0gq5s1bthhi"

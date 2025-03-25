@@ -1,8 +1,24 @@
-[gd_resource type="Resource" script_class="PartyMember" load_steps=2 format=3 uid="uid://bu6cyjh3lxowe"]
+[gd_resource type="Resource" script_class="PartyMember" load_steps=10 format=3 uid="uid://bu6cyjh3lxowe"]
 
+[ext_resource type="Texture2D" uid="uid://jca6xkooyrjw" path="res://images/battle_player_pawns/florence/pawn_florence_atk.png" id="1_ag66f"]
 [ext_resource type="Script" uid="uid://bl0gq5s1bthhi" path="res://resources/PartyMember.gd" id="1_dns4s"]
+[ext_resource type="Texture2D" uid="uid://cr87o4btkjl4i" path="res://images/battle_player_pawns/florence/pawn_florence_cast.png" id="2_idggf"]
+[ext_resource type="Texture2D" uid="uid://t87vltxqc2ar" path="res://images/battle_player_pawns/florence/pawn_florence_def.png" id="3_k7wiw"]
+[ext_resource type="Texture2D" uid="uid://jyqlfxx02yst" path="res://images/battle_player_pawns/florence/pawn_florence_hurt.png" id="4_6tw1j"]
+[ext_resource type="Texture2D" uid="uid://cn4ovekmdmet7" path="res://images/battle_player_pawns/florence/pawn_florence_ko.png" id="5_5g45m"]
+[ext_resource type="Texture2D" uid="uid://c177xh5buhwfc" path="res://images/battle_player_pawns/florence/pawn_florence_low.png" id="6_il0u1"]
+[ext_resource type="Texture2D" uid="uid://cgcuivq7riwk" path="res://images/battle_player_pawns/florence/pawn_florence_std.png" id="7_bssm4"]
+[ext_resource type="Texture2D" uid="uid://cqxfccngbsw2i" path="res://images/battle_player_pawns/florence/pawn_florence_victory.png" id="8_lcypr"]
 
 [resource]
 script = ExtResource("1_dns4s")
 name = "Florence"
+image_std = ExtResource("7_bssm4")
+image_atk = ExtResource("1_ag66f")
+image_def = ExtResource("3_k7wiw")
+image_cast = ExtResource("2_idggf")
+image_hurt = ExtResource("4_6tw1j")
+image_low = ExtResource("6_il0u1")
+image_ko = ExtResource("5_5g45m")
+image_victory = ExtResource("8_lcypr")
 metadata/_custom_type_script = "uid://bl0gq5s1bthhi"

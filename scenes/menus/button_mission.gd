@@ -16,3 +16,6 @@ func _on_pressed() -> void:
 	
 	var menu_node = preload("res://scenes/menus_battle/menu_battle.tscn").instantiate()
 	tree.root.add_child(menu_node)
+	
+	var battle_board = preload("res://scenes/battle/battle_board.tscn").instantiate()
+	tree.root.add_child(battle_board)

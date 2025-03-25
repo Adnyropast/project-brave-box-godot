@@ -1,8 +1,24 @@
-[gd_resource type="Resource" script_class="PartyMember" load_steps=2 format=3 uid="uid://c2twaqglaa4p8"]
+[gd_resource type="Resource" script_class="PartyMember" load_steps=10 format=3 uid="uid://c2twaqglaa4p8"]
 
 [ext_resource type="Script" uid="uid://bl0gq5s1bthhi" path="res://resources/PartyMember.gd" id="1_7ev0c"]
+[ext_resource type="Texture2D" uid="uid://cw2p8mpd3evnk" path="res://images/battle_player_pawns/astrid/pawn_astrid_atk.png" id="1_jtu5t"]
+[ext_resource type="Texture2D" uid="uid://dtk8tgsm71dq2" path="res://images/battle_player_pawns/astrid/pawn_astrid_cast.png" id="2_p724x"]
+[ext_resource type="Texture2D" uid="uid://caswtps38tq33" path="res://images/battle_player_pawns/astrid/pawn_astrid_def.png" id="3_xtjdi"]
+[ext_resource type="Texture2D" uid="uid://dg5omkk1g0erd" path="res://images/battle_player_pawns/astrid/pawn_astrid_hurt.png" id="4_vyxsj"]
+[ext_resource type="Texture2D" uid="uid://d1ibbifvypigs" path="res://images/battle_player_pawns/astrid/pawn_astrid_ko.png" id="5_5cgxi"]
+[ext_resource type="Texture2D" uid="uid://bmet3jw1c63pp" path="res://images/battle_player_pawns/astrid/pawn_astrid_low.png" id="6_pkcyl"]
+[ext_resource type="Texture2D" uid="uid://14wo6u4rri17" path="res://images/battle_player_pawns/astrid/pawn_astrid_std.png" id="7_kb6nn"]
+[ext_resource type="Texture2D" uid="uid://h35tmicdw5ej" path="res://images/battle_player_pawns/astrid/pawn_astrid_victory.png" id="8_35hvb"]
 
 [resource]
 script = ExtResource("1_7ev0c")
 name = "Astrid"
+image_std = ExtResource("7_kb6nn")
+image_atk = ExtResource("1_jtu5t")
+image_def = ExtResource("3_xtjdi")
+image_cast = ExtResource("2_p724x")
+image_hurt = ExtResource("4_vyxsj")
+image_low = ExtResource("6_pkcyl")
+image_ko = ExtResource("5_5cgxi")
+image_victory = ExtResource("8_35hvb")
 metadata/_custom_type_script = "uid://bl0gq5s1bthhi"

@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://dpipiwk0vqf28"]
+
+[ext_resource type="Texture2D" uid="uid://14wo6u4rri17" path="res://images/battle_player_pawns/astrid/pawn_astrid_std.png" id="1_volcy"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_21e7u"]
+
+[node name="BattlePawn" type="CharacterBody3D"]
+
+[node name="Sprite3D" type="Sprite3D" parent="."]
+sorting_offset = 50.0
+sorting_use_aabb_center = false
+texture = ExtResource("1_volcy")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(4.8, 0, 0, 0, 4.8, 0, 0, 0, 4.8, 0, 0, 0)
+shape = SubResource("BoxShape3D_21e7u")

@@ -1,8 +1,24 @@
-[gd_resource type="Resource" script_class="PartyMember" load_steps=2 format=3 uid="uid://b85x5sfky64wu"]
+[gd_resource type="Resource" script_class="PartyMember" load_steps=10 format=3 uid="uid://b85x5sfky64wu"]
 
+[ext_resource type="Texture2D" uid="uid://dy42fjgh0u0xf" path="res://images/battle_player_pawns/panino/pawn_panino_atk.png" id="1_3tuio"]
 [ext_resource type="Script" uid="uid://bl0gq5s1bthhi" path="res://resources/PartyMember.gd" id="1_u2e0m"]
+[ext_resource type="Texture2D" uid="uid://cqvx32limeria" path="res://images/battle_player_pawns/panino/pawn_panino_cast.png" id="2_xp8qn"]
+[ext_resource type="Texture2D" uid="uid://e54aj1p3ank6" path="res://images/battle_player_pawns/panino/pawn_panino_def.png" id="3_dempk"]
+[ext_resource type="Texture2D" uid="uid://dkwgjubyu5enk" path="res://images/battle_player_pawns/panino/pawn_panino_hurt.png" id="4_fqw8o"]
+[ext_resource type="Texture2D" uid="uid://bluh7u6kj8dne" path="res://images/battle_player_pawns/panino/pawn_panino_ko.png" id="5_xad1i"]
+[ext_resource type="Texture2D" uid="uid://dqj4ltwet07p6" path="res://images/battle_player_pawns/panino/pawn_panino_low.png" id="6_8itph"]
+[ext_resource type="Texture2D" uid="uid://jxvx2uqs4nb5" path="res://images/battle_player_pawns/panino/pawn_panino_std.png" id="7_xdiph"]
+[ext_resource type="Texture2D" uid="uid://bbaw80lqja4p" path="res://images/battle_player_pawns/panino/pawn_panino_victory.png" id="8_qj5g8"]
 
 [resource]
 script = ExtResource("1_u2e0m")
 name = "Panino"
+image_std = ExtResource("7_xdiph")
+image_atk = ExtResource("1_3tuio")
+image_def = ExtResource("3_dempk")
+image_cast = ExtResource("2_xp8qn")
+image_hurt = ExtResource("4_fqw8o")
+image_low = ExtResource("6_8itph")
+image_ko = ExtResource("5_xad1i")
+image_victory = ExtResource("8_qj5g8")
 metadata/_custom_type_script = "uid://bl0gq5s1bthhi"
