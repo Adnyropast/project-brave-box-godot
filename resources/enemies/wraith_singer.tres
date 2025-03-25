@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="Enemy" load_steps=7 format=3 uid="uid://b4v8yseeyf4st"]
+
+[ext_resource type="Script" uid="uid://bj656ro4kx132" path="res://resources/Enemy.gd" id="1_mnaln"]
+[ext_resource type="Texture2D" uid="uid://btems15vb2q5y" path="res://images/battle_enemy_pawns/wraith_singer/pawn_wraith_singer_atk.png" id="1_tiks8"]
+[ext_resource type="Texture2D" uid="uid://bbh7h3t32lf5q" path="res://images/battle_enemy_pawns/wraith_singer/pawn_wraith_singer_cast.png" id="2_h3jcb"]
+[ext_resource type="Texture2D" uid="uid://ccevp23tfsvx5" path="res://images/battle_enemy_pawns/wraith_singer/pawn_wraith_singer_def.png" id="3_v4e1w"]
+[ext_resource type="Texture2D" uid="uid://cuh3stnef25e2" path="res://images/battle_enemy_pawns/wraith_singer/pawn_wraith_singer_hurt.png" id="4_1jr23"]
+[ext_resource type="Texture2D" uid="uid://0li3gjnkjfmq" path="res://images/battle_enemy_pawns/wraith_singer/pawn_wraith_singer_std.png" id="5_kih4c"]
+
+[resource]
+script = ExtResource("1_mnaln")
+name = "Wraith Singer"
+image_std = ExtResource("5_kih4c")
+image_atk = ExtResource("1_tiks8")
+image_def = ExtResource("3_v4e1w")
+image_cast = ExtResource("2_h3jcb")
+image_hurt = ExtResource("4_1jr23")
+metadata/_custom_type_script = "uid://bj656ro4kx132"

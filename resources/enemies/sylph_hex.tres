@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="Enemy" load_steps=7 format=3 uid="uid://c4ipgwxer5nhu"]
+
+[ext_resource type="Script" uid="uid://bj656ro4kx132" path="res://resources/Enemy.gd" id="1_e0xab"]
+[ext_resource type="Texture2D" uid="uid://ckogrjdtxp45m" path="res://images/battle_enemy_pawns/sylph_hex/pawn_sylph_hex_atk.png" id="1_prn35"]
+[ext_resource type="Texture2D" uid="uid://c046gk2euu7c2" path="res://images/battle_enemy_pawns/sylph_hex/pawn_sylph_hex_cast.png" id="2_433s5"]
+[ext_resource type="Texture2D" uid="uid://bd0ypjtc7sjp4" path="res://images/battle_enemy_pawns/sylph_hex/pawn_sylph_hex_def.png" id="3_43v8x"]
+[ext_resource type="Texture2D" uid="uid://bsgdyjkisoh68" path="res://images/battle_enemy_pawns/sylph_hex/pawn_sylph_hex_hurt.png" id="4_5ucvc"]
+[ext_resource type="Texture2D" uid="uid://dpcpljogbqtxy" path="res://images/battle_enemy_pawns/sylph_hex/pawn_sylph_hex_std.png" id="5_ii60t"]
+
+[resource]
+script = ExtResource("1_e0xab")
+name = "Sylph Hex"
+image_std = ExtResource("5_ii60t")
+image_atk = ExtResource("1_prn35")
+image_def = ExtResource("3_43v8x")
+image_cast = ExtResource("2_433s5")
+image_hurt = ExtResource("4_5ucvc")
+metadata/_custom_type_script = "uid://bj656ro4kx132"

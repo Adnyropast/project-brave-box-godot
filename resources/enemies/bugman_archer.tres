@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="Enemy" load_steps=7 format=3 uid="uid://y2qivdndylfd"]
+
+[ext_resource type="Script" uid="uid://bj656ro4kx132" path="res://resources/Enemy.gd" id="1_3uqls"]
+[ext_resource type="Texture2D" uid="uid://b8powon3p0wmr" path="res://images/battle_enemy_pawns/bugman_archer/pawn_bugman_archer_atk.png" id="1_n34bk"]
+[ext_resource type="Texture2D" uid="uid://dwf331ymq3iep" path="res://images/battle_enemy_pawns/bugman_archer/pawn_bugman_archer_cast.png" id="2_0bula"]
+[ext_resource type="Texture2D" uid="uid://bkx2ajs5ednf0" path="res://images/battle_enemy_pawns/bugman_archer/pawn_bugman_archer_def.png" id="3_kuifa"]
+[ext_resource type="Texture2D" uid="uid://dg5k6sna8rfa7" path="res://images/battle_enemy_pawns/bugman_archer/pawn_bugman_archer_hurt.png" id="4_h40rd"]
+[ext_resource type="Texture2D" uid="uid://c54d8nwr7gi46" path="res://images/battle_enemy_pawns/bugman_archer/pawn_bugman_archer_std.png" id="5_fsnwj"]
+
+[resource]
+script = ExtResource("1_3uqls")
+name = "Bugman Archer"
+image_std = ExtResource("5_fsnwj")
+image_atk = ExtResource("1_n34bk")
+image_def = ExtResource("3_kuifa")
+image_cast = ExtResource("2_0bula")
+image_hurt = ExtResource("4_h40rd")
+metadata/_custom_type_script = "uid://bj656ro4kx132"

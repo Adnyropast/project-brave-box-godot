@@ -1,9 +1,12 @@
-[gd_resource type="Resource" script_class="Battle" load_steps=3 format=3 uid="uid://cx1ie7i7oa6nh"]
+[gd_resource type="Resource" script_class="Battle" load_steps=5 format=3 uid="uid://cx1ie7i7oa6nh"]
 
 [ext_resource type="Script" uid="uid://dae1o78payp5a" path="res://resources/Battle.gd" id="1_2brvy"]
 [ext_resource type="PackedScene" uid="uid://c213ykr4m575f" path="res://scenes/arenas/arena_coasts.tscn" id="1_7x4nm"]
+[ext_resource type="Script" uid="uid://bj656ro4kx132" path="res://resources/Enemy.gd" id="2_0qvpo"]
+[ext_resource type="Resource" uid="uid://dum8vvtr5uh8o" path="res://resources/enemies/lizardman_lancer.tres" id="3_b7ehm"]
 
 [resource]
 script = ExtResource("1_2brvy")
 arena = ExtResource("1_7x4nm")
+enemy_party = Array[ExtResource("2_0qvpo")]([ExtResource("3_b7ehm"), ExtResource("3_b7ehm"), ExtResource("3_b7ehm")])
 metadata/_custom_type_script = "uid://dae1o78payp5a"

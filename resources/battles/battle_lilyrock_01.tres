@@ -1,9 +1,12 @@
-[gd_resource type="Resource" script_class="Battle" load_steps=3 format=3 uid="uid://diuc2t1b0lc6u"]
+[gd_resource type="Resource" script_class="Battle" load_steps=5 format=3 uid="uid://diuc2t1b0lc6u"]
 
 [ext_resource type="PackedScene" uid="uid://omb4byqfv75x" path="res://scenes/arenas/arena_lilyrock.tscn" id="1_fv8xc"]
 [ext_resource type="Script" uid="uid://dae1o78payp5a" path="res://resources/Battle.gd" id="1_gtk6x"]
+[ext_resource type="Script" uid="uid://bj656ro4kx132" path="res://resources/Enemy.gd" id="2_rosqw"]
+[ext_resource type="Resource" uid="uid://bwgjn68ersqvf" path="res://resources/enemies/lilyrockan_scientist.tres" id="3_q3p22"]
 
 [resource]
 script = ExtResource("1_gtk6x")
 arena = ExtResource("1_fv8xc")
+enemy_party = Array[ExtResource("2_rosqw")]([ExtResource("3_q3p22"), ExtResource("3_q3p22"), ExtResource("3_q3p22"), ExtResource("3_q3p22")])
 metadata/_custom_type_script = "uid://dae1o78payp5a"

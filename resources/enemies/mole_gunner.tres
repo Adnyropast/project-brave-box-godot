@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="Enemy" load_steps=7 format=3 uid="uid://ctpgf41k1llro"]
+
+[ext_resource type="Texture2D" uid="uid://cjqa2p2dxtm4w" path="res://images/battle_enemy_pawns/mole_gunner/pawn_mole_gunner_atk.png" id="1_de72h"]
+[ext_resource type="Script" uid="uid://bj656ro4kx132" path="res://resources/Enemy.gd" id="1_nsslj"]
+[ext_resource type="Texture2D" uid="uid://bgqi1bmhn5kkd" path="res://images/battle_enemy_pawns/mole_gunner/pawn_mole_gunner_cast.png" id="2_hcpul"]
+[ext_resource type="Texture2D" uid="uid://b8eqet4cx0tvk" path="res://images/battle_enemy_pawns/mole_gunner/pawn_mole_gunner_def.png" id="3_u11vc"]
+[ext_resource type="Texture2D" uid="uid://b2sf5dnb4gtih" path="res://images/battle_enemy_pawns/mole_gunner/pawn_mole_gunner_hurt.png" id="4_jjqqq"]
+[ext_resource type="Texture2D" uid="uid://3ygo5csufkcp" path="res://images/battle_enemy_pawns/mole_gunner/pawn_mole_gunner_std.png" id="5_a4agp"]
+
+[resource]
+script = ExtResource("1_nsslj")
+name = "Mole Gunner"
+image_std = ExtResource("5_a4agp")
+image_atk = ExtResource("1_de72h")
+image_def = ExtResource("3_u11vc")
+image_cast = ExtResource("2_hcpul")
+image_hurt = ExtResource("4_jjqqq")
+metadata/_custom_type_script = "uid://bj656ro4kx132"

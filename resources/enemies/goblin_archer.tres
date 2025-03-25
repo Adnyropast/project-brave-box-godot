@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="Enemy" load_steps=7 format=3 uid="uid://dk4wp8ttf7hf7"]
+
+[ext_resource type="Script" uid="uid://bj656ro4kx132" path="res://resources/Enemy.gd" id="1_p88td"]
+[ext_resource type="Texture2D" uid="uid://cud0guhohck70" path="res://images/battle_enemy_pawns/goblin_archer/pawn_goblin_archer_atk.png" id="1_v16vd"]
+[ext_resource type="Texture2D" uid="uid://dkbd1ysitm4va" path="res://images/battle_enemy_pawns/goblin_archer/pawn_goblin_archer_cast.png" id="2_8k5n1"]
+[ext_resource type="Texture2D" uid="uid://ch54plsq50wa8" path="res://images/battle_enemy_pawns/goblin_archer/pawn_goblin_archer_def.png" id="3_37ncl"]
+[ext_resource type="Texture2D" uid="uid://fncy2xe3aqno" path="res://images/battle_enemy_pawns/goblin_archer/pawn_goblin_archer_hurt.png" id="4_qlwjc"]
+[ext_resource type="Texture2D" uid="uid://dkqdm4vps10mk" path="res://images/battle_enemy_pawns/goblin_archer/pawn_goblin_archer_std.png" id="5_n8pxd"]
+
+[resource]
+script = ExtResource("1_p88td")
+name = "Goblin Archer"
+image_std = ExtResource("5_n8pxd")
+image_atk = ExtResource("1_v16vd")
+image_def = ExtResource("3_37ncl")
+image_cast = ExtResource("2_8k5n1")
+image_hurt = ExtResource("4_qlwjc")
+metadata/_custom_type_script = "uid://bj656ro4kx132"

@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="Enemy" load_steps=7 format=3 uid="uid://npddecxvr88k"]
+
+[ext_resource type="Texture2D" uid="uid://bl7sp0wlumrhe" path="res://images/battle_enemy_pawns/remnant_swordsman/pawn_remnant_swordsman_atk.png" id="1_qdurm"]
+[ext_resource type="Script" uid="uid://bj656ro4kx132" path="res://resources/Enemy.gd" id="1_x41vl"]
+[ext_resource type="Texture2D" uid="uid://b1b8yrsdwrxg7" path="res://images/battle_enemy_pawns/remnant_swordsman/pawn_remnant_swordsman_cast.png" id="2_5aekp"]
+[ext_resource type="Texture2D" uid="uid://cdetlbgalrkpf" path="res://images/battle_enemy_pawns/remnant_swordsman/pawn_remnant_swordsman_def.png" id="3_ic1wp"]
+[ext_resource type="Texture2D" uid="uid://cys8nqau04jxl" path="res://images/battle_enemy_pawns/remnant_swordsman/pawn_remnant_swordsman_hurt.png" id="4_4uvjx"]
+[ext_resource type="Texture2D" uid="uid://dvqp0gaqf8rj6" path="res://images/battle_enemy_pawns/remnant_swordsman/pawn_remnant_swordsman_std.png" id="5_plseh"]
+
+[resource]
+script = ExtResource("1_x41vl")
+name = "Remnant Swordsman"
+image_std = ExtResource("5_plseh")
+image_atk = ExtResource("1_qdurm")
+image_def = ExtResource("3_ic1wp")
+image_cast = ExtResource("2_5aekp")
+image_hurt = ExtResource("4_4uvjx")
+metadata/_custom_type_script = "uid://bj656ro4kx132"
