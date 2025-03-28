@@ -34,6 +34,10 @@ func _ready() -> void:
 	battle_board.init_pawns(pawns_player, pawns_enemy)
 	tree.root.add_child(battle_board)
 	
+	var hud_player = preload("res://scenes/menus_battle/hud_player.tscn").instantiate()
+	hud_player.init_players(pawns_player)
+	tree.root.add_child(hud_player)
+	
 	var turn_system = preload("res://scenes/battle/turn_system.tscn").instantiate()
 	turn_system.init_pawns(pawns_player, pawns_enemy)
 	tree.root.add_child(turn_system)

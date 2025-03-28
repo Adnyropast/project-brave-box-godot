@@ -5,7 +5,7 @@ class_name PawnComponents
 var character_data
 var variables: PawnVariables
 var node: CharacterBody3D
-var player_panel: Node
+var player_panel: PanelContainer
 var controlled_by_menu: bool
 var menu_node: Control
 var tree: SceneTree
@@ -20,12 +20,21 @@ static func init_from_party_member(party_member: PartyMember) -> PawnComponents:
 	pawn_components.controlled_by_menu = true
 	
 	pawn_components.variables.name_alias = party_member.name
+	pawn_components.variables.hp = pawn_components.variables.get_max_hp() / 2
+	pawn_components.variables.mp = pawn_components.variables.get_max_mp() / 2
 	
 	pawn_components.node = preload("res://scenes/battle/battle_pawn.tscn").instantiate()
 	pawn_components.node.get_node("Sprite3D").texture = party_member.image_std
 	
 	pawn_components.menu_node = preload("res://scenes/menus_battle/menu_battle.tscn").instantiate()
 	pawn_components.menu_node.pawn = pawn_components
+	
+	pawn_components.player_panel = preload("res://scenes/menus_battle/player_character_panel.tscn").instantiate()
+	pawn_components.player_panel.set_character_name(party_member.name)
+	pawn_components.player_panel.set_current_hp(pawn_components.variables.hp)
+	pawn_components.player_panel.set_current_mp(pawn_components.variables.mp)
+	pawn_components.player_panel.set_max_hp(pawn_components.variables.get_max_hp())
+	pawn_components.player_panel.set_max_mp(pawn_components.variables.get_max_mp())
 	
 	return pawn_components
 
@@ -35,6 +44,8 @@ static func init_from_enemy(enemy: Enemy) -> PawnComponents:
 	pawn_components.controlled_by_menu = false
 	
 	pawn_components.variables.name_alias = enemy.name
+	pawn_components.variables.hp = pawn_components.variables.get_max_hp() / 2
+	pawn_components.variables.mp = pawn_components.variables.get_max_mp() / 2
 	
 	pawn_components.node = preload("res://scenes/battle/battle_pawn.tscn").instantiate()
 	pawn_components.node.get_node("Sprite3D").texture = enemy.image_std
