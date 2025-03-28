@@ -11,6 +11,8 @@ var menu_node: Control
 var tree: SceneTree
 var turn_system: Node
 var action_circle: Node3D
+var allies: Array[PawnComponents]
+var enemies: Array[PawnComponents]
 
 static func init_from_party_member(party_member: PartyMember) -> PawnComponents:
 	var pawn_components = PawnComponents.new()
@@ -56,9 +58,24 @@ func take_action():
 	if controlled_by_menu:
 		tree.root.add_child(menu_node)
 	else:
-		pass_turn()
+		if randi_range(0, 1) == 0:
+			pass_turn()
+		else:
+			confirm_targets(enemies)
 
 func pass_turn():
+	await tree.create_timer(1.0).timeout
+	
+	remove_action_circle()
+	
+	turn_system.take_actions()
+
+func confirm_targets(targets: Array[PawnComponents]):
+	for target in targets:
+		var target_screen = preload("res://scenes/battle/target_screen.tscn").instantiate()
+		
+		target.node.add_child(target_screen)
+	
 	await tree.create_timer(1.0).timeout
 	
 	remove_action_circle()

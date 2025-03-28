@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://co58xpltjjjqt"]
+
+[ext_resource type="Script" uid="uid://bbge2cqfkjjsi" path="res://scenes/battle/target_screen.gd" id="1_qc5vd"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dxith"]
+transparency = 1
+albedo_color = Color(1, 1, 0.278431, 0.458824)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_qc5vd"]
+
+[node name="TargetScreen" type="Node3D"]
+script = ExtResource("1_qc5vd")
+
+[node name="Node3D" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.1)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(3, 0, 0, 0, -4.37114e-08, -3, 0, 1, -1.31134e-07, 0, 0, 0)
+sorting_offset = 50.0
+material_override = SubResource("StandardMaterial3D_dxith")
+mesh = SubResource("PlaneMesh_qc5vd")
+skeleton = NodePath("../..")

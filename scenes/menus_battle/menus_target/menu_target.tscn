@@ -1,0 +1,58 @@
+[gd_scene load_steps=2 format=3 uid="uid://x5l510krtupr"]
+
+[ext_resource type="Script" uid="uid://dms0dkqd447am" path="res://scenes/menus_battle/menus_target/menu_target.gd" id="1_0btqj"]
+
+[node name="MenuTarget" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_0btqj")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 16
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+
+[node name="ButtonAll" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "All Allies & Enemies"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Allies" type="VBoxContainer" parent="MarginContainer/VBoxContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="ButtonAllAllies" type="Button" parent="MarginContainer/VBoxContainer/VBoxContainer/Allies"]
+layout_mode = 2
+text = "All Allies"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/VBoxContainer/VBoxContainer/Allies"]
+layout_mode = 2
+
+[node name="Enemies" type="VBoxContainer" parent="MarginContainer/VBoxContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="ButtonAllEnemies" type="Button" parent="MarginContainer/VBoxContainer/VBoxContainer/Enemies"]
+layout_mode = 2
+text = "All Enemies"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/VBoxContainer/VBoxContainer/Enemies"]
+layout_mode = 2
+
+[node name="ButtonCancel" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Cancel"
+
+[connection signal="pressed" from="MarginContainer/VBoxContainer/ButtonAll" to="." method="_on_button_all_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/VBoxContainer/Allies/ButtonAllAllies" to="." method="_on_button_all_allies_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/VBoxContainer/Enemies/ButtonAllEnemies" to="." method="_on_button_all_enemies_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/ButtonCancel" to="." method="_on_button_cancel_pressed"]

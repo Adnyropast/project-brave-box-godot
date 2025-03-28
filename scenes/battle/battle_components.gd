@@ -16,6 +16,8 @@ func _ready() -> void:
 		var pawn = PawnComponents.init_from_party_member(party_member)
 		
 		pawn.tree = get_tree()
+		pawn.allies = pawns_player
+		pawn.enemies = pawns_enemy
 		
 		pawns_player.append(pawn)
 	
@@ -23,6 +25,8 @@ func _ready() -> void:
 		var pawn = PawnComponents.init_from_enemy(enemy)
 		
 		pawn.tree = get_tree()
+		pawn.allies = pawns_enemy
+		pawn.enemies = pawns_player
 		
 		pawns_enemy.append(pawn)
 	

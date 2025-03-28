@@ -10,6 +10,20 @@ func clean_tree_root():
 func close_menu():
 	get_parent().remove_child(self)
 
+func open_menu_target():
+	var menu_target = preload("res://scenes/menus_battle/menus_target/menu_target.tscn").instantiate()
+	
+	menu_target.menu_battle = self
+	menu_target.pawn = pawn
+	
+	tree.root.add_child(menu_target)
+
+func _on_button_target_pressed() -> void:
+	tree = get_tree()
+	
+	close_menu()
+	open_menu_target()
+
 func _on_button_pass_pressed() -> void:
 	close_menu()
 	

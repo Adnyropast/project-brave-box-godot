@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://bro52eguyu0xe"]
+
+[ext_resource type="Script" uid="uid://bn28gfnksxr45" path="res://scenes/menus_battle/menus_target/button_target_single.gd" id="1_fr0jb"]
+
+[node name="ButtonTargetSingle" type="Button"]
+offset_right = 8.0
+offset_bottom = 8.0
+script = ExtResource("1_fr0jb")
+
+[connection signal="pressed" from="." to="." method="_on_pressed"]
