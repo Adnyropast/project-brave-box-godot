@@ -21,8 +21,13 @@ theme_override_constants/margin_top = 16
 [node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
 layout_mode = 2
 
+[node name="ButtonPass" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Pass"
+
 [node name="ButtonFlee" type="Button" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
 text = "Flee"
 
+[connection signal="pressed" from="MarginContainer/VBoxContainer/ButtonPass" to="." method="_on_button_pass_pressed"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/ButtonFlee" to="." method="_on_button_flee_pressed"]

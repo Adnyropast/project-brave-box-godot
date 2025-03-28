@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://b7hvhfaknv4rt"]
+
+[ext_resource type="Script" uid="uid://duns8pjocqn62" path="res://scenes/battle/turn_system.gd" id="1_6xedk"]
+
+[node name="TurnSystem" type="Node"]
+script = ExtResource("1_6xedk")

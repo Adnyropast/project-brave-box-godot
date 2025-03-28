@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://c7nyajpdupwik"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_se51f"]
+transparency = 1
+albedo_color = Color(1, 1, 0.258824, 0.537255)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_ummf0"]
+
+[node name="ActionCircle" type="Node3D"]
+
+[node name="Node3D" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2.5, 0)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Node3D"]
+transform = Transform3D(4, 0, 0, 0, 0.1, 0, 0, 0, 4, 0, 0, 0)
+sorting_offset = 30.0
+material_override = SubResource("StandardMaterial3D_se51f")
+mesh = SubResource("CylinderMesh_ummf0")
+skeleton = NodePath("../..")

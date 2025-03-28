@@ -14,9 +14,6 @@ func _on_pressed() -> void:
 	
 	clean_tree_root()
 	
-	var menu_node = preload("res://scenes/menus_battle/menu_battle.tscn").instantiate()
-	tree.root.add_child(menu_node)
-	
-	var battle_board = preload("res://scenes/battle/battle_board.tscn").instantiate()
-	battle_board.battle = mission.battle
-	tree.root.add_child(battle_board)
+	var battle_components = preload("res://scenes/battle/battle_components.tscn").instantiate()
+	battle_components.init(mission)
+	tree.root.add_child(battle_components)
