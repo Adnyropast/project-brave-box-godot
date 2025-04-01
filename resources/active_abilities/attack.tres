@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="ActiveAbility" load_steps=3 format=3 uid="uid://b72whnj337uj8"]
+
+[ext_resource type="Script" uid="uid://baa31c5fgo4vf" path="res://resources/active_scripts/attack.gd" id="1_77ko4"]
+[ext_resource type="Script" uid="uid://clugbtxltbj7y" path="res://resources/ActiveAbility.gd" id="1_ure8k"]
+
+[resource]
+script = ExtResource("1_ure8k")
+name = "Attack"
+active_script = ExtResource("1_77ko4")
+gdscript = ExtResource("1_77ko4")
+metadata/_custom_type_script = "uid://clugbtxltbj7y"

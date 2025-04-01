@@ -2,6 +2,7 @@ extends Control
 
 var menu_battle: Control
 var pawn: PawnComponents
+var active_ability: ActiveAbility
 
 func fill_buttons():
 	for target in pawn.allies:
@@ -11,6 +12,7 @@ func fill_buttons():
 		button.pawn = pawn
 		button.target = target
 		button.menu_target = self
+		button.active_ability = active_ability
 		
 		$MarginContainer/VBoxContainer/VBoxContainer/Allies/VBoxContainer.add_child(button)
 	
@@ -21,6 +23,7 @@ func fill_buttons():
 		button.pawn = pawn
 		button.target = target
 		button.menu_target = self
+		button.active_ability = active_ability
 		
 		$MarginContainer/VBoxContainer/VBoxContainer/Enemies/VBoxContainer.add_child(button)
 
@@ -43,21 +46,21 @@ func _on_button_all_pressed() -> void:
 	
 	var targets = pawn.turn_system.pawns
 	
-	pawn.confirm_targets(targets)
+	pawn.confirm_targets(active_ability, targets)
 
 func _on_button_all_allies_pressed() -> void:
 	close_menu()
 	
 	var targets = pawn.allies
 	
-	pawn.confirm_targets(targets)
+	pawn.confirm_targets(active_ability, targets)
 
 func _on_button_all_enemies_pressed() -> void:
 	close_menu()
 	
 	var targets = pawn.enemies
 	
-	pawn.confirm_targets(targets)
+	pawn.confirm_targets(active_ability, targets)
 
 func _on_button_cancel_pressed() -> void:
 	var tree = get_tree()

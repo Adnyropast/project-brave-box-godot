@@ -1,0 +1,30 @@
+[gd_scene load_steps=6 format=3 uid="uid://bopdb1cubx872"]
+
+[ext_resource type="Script" uid="uid://d3m4yblo711oo" path="res://scenes/battle_effects/attack_swing.gd" id="1_017gb"]
+[ext_resource type="Texture2D" uid="uid://5jfxbm4hso1o" path="res://images/battle_effects/attack_swing_1.png" id="1_swfqn"]
+[ext_resource type="Texture2D" uid="uid://brla15l625vhw" path="res://images/battle_effects/attack_swing_2.png" id="2_017gb"]
+[ext_resource type="Texture2D" uid="uid://c5uvhtpbk0n5u" path="res://images/battle_effects/attack_swing_3.png" id="3_2xyyg"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_7x0m4"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_swfqn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_017gb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_2xyyg")
+}],
+"loop": false,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="AttackSwing" type="Node3D"]
+script = ExtResource("1_017gb")
+
+[node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="."]
+sprite_frames = SubResource("SpriteFrames_7x0m4")
+autoplay = "default"
