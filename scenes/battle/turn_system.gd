@@ -2,6 +2,16 @@ extends Node
 
 const AP_FLAGPOLE: float = 10000
 var pawns: Array[PawnComponents]
+var battle_components: Node
+
+func get_tick_eligible_pawns() -> Array[PawnComponents]:
+	var res: Array[PawnComponents] = []
+	
+	for pawn in pawns:
+		if not pawn.variables.is_ko():
+			res.append(pawn)
+	
+	return res
 
 func init_pawns(pawns_player: Array[PawnComponents], pawns_enemy: Array[PawnComponents]):
 	for pawn in pawns_player:
@@ -14,6 +24,7 @@ func init_pawns(pawns_player: Array[PawnComponents], pawns_enemy: Array[PawnComp
 		pawn.turn_system = self
 
 func get_min_ticks_up_flagpole() -> float:
+	var pawns = get_tick_eligible_pawns()
 	var min_ticks = AP_FLAGPOLE + 1
 	
 	for pawn in pawns:
@@ -26,6 +37,7 @@ func get_min_ticks_up_flagpole() -> float:
 	return min_ticks
 
 func pass_ticks() -> void:
+	var pawns = get_tick_eligible_pawns()
 	var min_ticks = get_min_ticks_up_flagpole()
 	
 	for pawn in pawns:
@@ -34,6 +46,7 @@ func pass_ticks() -> void:
 		pawn.variables.ap = pawn.variables.ap + add_ap
 
 func get_max_ap() -> float:
+	var pawns = get_tick_eligible_pawns()
 	var max_ap = 0
 	
 	for pawn in pawns:
@@ -43,6 +56,7 @@ func get_max_ap() -> float:
 	return max_ap
 
 func get_top_pawns() -> Array[PawnComponents]:
+	var pawns = get_tick_eligible_pawns()
 	var max_ap = get_max_ap()
 	var top_pawns: Array[PawnComponents] = []
 	
@@ -59,12 +73,15 @@ func get_action_taker() -> PawnComponents:
 	return top_pawns[random_index]
 
 func take_actions() -> void:
-	pass_ticks()
-	
-	var action_taker = get_action_taker()
-	
-	action_taker.variables.ap = action_taker.variables.ap - AP_FLAGPOLE
-	action_taker.take_action()
+	if battle_components.all_players_defeated():
+		battle_components.lose_battle()
+	else:
+		pass_ticks()
+		
+		var action_taker = get_action_taker()
+		
+		action_taker.variables.ap = action_taker.variables.ap - AP_FLAGPOLE
+		action_taker.take_action()
 
 func _ready() -> void:
 	take_actions()

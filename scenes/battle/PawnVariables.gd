@@ -15,3 +15,6 @@ func get_max_mp():
 
 func get_speed():
 	return 100
+
+func is_ko() -> bool:
+	return hp <= 0

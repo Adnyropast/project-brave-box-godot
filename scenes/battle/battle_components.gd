@@ -40,4 +40,24 @@ func _ready() -> void:
 	
 	var turn_system = preload("res://scenes/battle/turn_system.tscn").instantiate()
 	turn_system.init_pawns(pawns_player, pawns_enemy)
+	turn_system.battle_components = self
 	tree.root.add_child(turn_system)
+
+func all_players_defeated() -> bool:
+	for pawn in pawns_player:
+		if not pawn.variables.is_ko():
+			return false
+	
+	return true
+
+func lose_battle():
+	var tree = get_tree()
+	
+	tree.change_scene_to_file("res://scenes/map/map_compositia.tscn")
+	clean_tree_root()
+
+func clean_tree_root():
+	var tree = get_tree()
+	
+	for child in tree.root.get_children():
+		tree.root.remove_child(child)
