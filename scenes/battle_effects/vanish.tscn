@@ -1,0 +1,30 @@
+[gd_scene load_steps=6 format=3 uid="uid://ycya8kfh5td"]
+
+[ext_resource type="Script" uid="uid://dv8gjts1mwfc1" path="res://scenes/battle_effects/vanish.gd" id="1_n7b0h"]
+[ext_resource type="Texture2D" uid="uid://dotl5nfdi83v1" path="res://images/battle_effects/death_vanish_1.png" id="2_wy883"]
+[ext_resource type="Texture2D" uid="uid://b70vkptxos3b4" path="res://images/battle_effects/death_vanish_2.png" id="3_5dunk"]
+[ext_resource type="Texture2D" uid="uid://dd5sj3dtusxd5" path="res://images/battle_effects/death_vanish_3.png" id="4_enikr"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_r20oy"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_wy883")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_5dunk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_enikr")
+}],
+"loop": false,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="ImpactPhysical" type="Node3D"]
+script = ExtResource("1_n7b0h")
+
+[node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="."]
+sprite_frames = SubResource("SpriteFrames_r20oy")
+autoplay = "default"

@@ -18,6 +18,10 @@ func deal_damage(pawn: PawnComponents, damage: int):
 	if pawn.variables.hp < 0:
 		pawn.variables.hp = 0
 	
+	if pawn.variables.hp == 0 && pawn.vanishes_on_defeat:
+		create_vanish_effect(pawn)
+		start_vanish(pawn)
+	
 	create_damage_popup(pawn, damage)
 	create_target_effect(pawn)
 	pawn.node.start_hurt()
@@ -35,3 +39,23 @@ func create_target_effect(pawn: PawnComponents):
 	var effect_node = preload("res://scenes/battle_effects/impact_physical.tscn").instantiate()
 	
 	pawn.node.add_child(effect_node)
+
+func create_vanish_effect(pawn: PawnComponents):
+	var effect_node = preload("res://scenes/battle_effects/vanish.tscn").instantiate()
+	
+	pawn.node.add_child(effect_node)
+
+func start_vanish(pawn: PawnComponents):
+	pawn.node.get_node("Sprite3D").hide()
+	
+	remove_pawn_system(pawn)
+	
+	var tween: Tween = pawn.node.create_tween()
+	tween.tween_callback(remove_pawn_board.bind(pawn)).set_delay(3)
+
+func remove_pawn_system(pawn: PawnComponents):
+	pawn.turn_system.pawns.erase(pawn)
+	pawn.tree.root.get_node("BattleComponents").pawns_enemy.erase(pawn)
+
+func remove_pawn_board(pawn: PawnComponents):
+	pawn.node.get_parent().remove_child(pawn.node)

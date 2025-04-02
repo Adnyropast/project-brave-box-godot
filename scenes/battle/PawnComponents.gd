@@ -13,11 +13,13 @@ var turn_system: Node
 var action_circle: Node3D
 var allies: Array[PawnComponents]
 var enemies: Array[PawnComponents]
+var vanishes_on_defeat: bool
 
 static func init_from_party_member(party_member: PartyMember) -> PawnComponents:
 	var pawn_components = PawnComponents.new()
 	
 	pawn_components.controlled_by_menu = true
+	pawn_components.vanishes_on_defeat = false
 	
 	pawn_components.variables.name_alias = party_member.name
 	pawn_components.variables.hp = pawn_components.variables.get_max_hp() / 2
@@ -42,6 +44,7 @@ static func init_from_enemy(enemy: Enemy) -> PawnComponents:
 	var pawn_components = PawnComponents.new()
 	
 	pawn_components.controlled_by_menu = false
+	pawn_components.vanishes_on_defeat = true
 	
 	pawn_components.variables.name_alias = enemy.name
 	pawn_components.variables.hp = pawn_components.variables.get_max_hp() / 2
