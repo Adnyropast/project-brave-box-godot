@@ -41,3 +41,11 @@ func _on_button_flee_pressed() -> void:
 	
 	close_menu()
 	pawn.confirm_targets(active_ability, pawn.allies.duplicate())
+
+func _on_button_heal_pressed() -> void:
+	tree = get_tree()
+	
+	var active_ability = preload("res://resources/active_abilities/magic_healing.tres")
+	
+	close_menu()
+	open_menu_target(active_ability)

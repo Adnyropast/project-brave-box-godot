@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="ActiveAbility" load_steps=3 format=3 uid="uid://dgsn3xdrjquc3"]
+
+[ext_resource type="Script" uid="uid://dy36valgg8pxn" path="res://resources/active_scripts/magic_healing.gd" id="1_7y5bx"]
+[ext_resource type="Script" uid="uid://clugbtxltbj7y" path="res://resources/ActiveAbility.gd" id="1_aqkmb"]
+
+[resource]
+script = ExtResource("1_aqkmb")
+name = "Healing Magic"
+gdscript = ExtResource("1_7y5bx")
+metadata/_custom_type_script = "uid://clugbtxltbj7y"

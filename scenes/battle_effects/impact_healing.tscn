@@ -1,0 +1,30 @@
+[gd_scene load_steps=6 format=3 uid="uid://1h63y76ls0bq"]
+
+[ext_resource type="Script" uid="uid://cipx0lnjt31pu" path="res://scenes/battle_effects/impact_healing.gd" id="1_xax7g"]
+[ext_resource type="Texture2D" uid="uid://wrrvwsghfh3l" path="res://images/battle_effects/impact_healing_1.png" id="2_xax7g"]
+[ext_resource type="Texture2D" uid="uid://bxgkyqb282r80" path="res://images/battle_effects/impact_healing_2.png" id="3_f582p"]
+[ext_resource type="Texture2D" uid="uid://dptkqxvsiuv7f" path="res://images/battle_effects/impact_healing_3.png" id="4_ltxy8"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_r20oy"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_xax7g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_f582p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_ltxy8")
+}],
+"loop": false,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="ImpactHealing" type="Node3D"]
+script = ExtResource("1_xax7g")
+
+[node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="."]
+sprite_frames = SubResource("SpriteFrames_r20oy")
+autoplay = "default"

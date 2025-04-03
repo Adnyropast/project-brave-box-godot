@@ -1,0 +1,30 @@
+[gd_scene load_steps=6 format=3 uid="uid://bbmceptosv7ky"]
+
+[ext_resource type="Script" uid="uid://ddy8p15xwej5" path="res://scenes/battle_effects/magic_cast.gd" id="1_hnix8"]
+[ext_resource type="Texture2D" uid="uid://ym8i2u1hygpl" path="res://images/battle_effects/magic_cast_1.png" id="2_hnix8"]
+[ext_resource type="Texture2D" uid="uid://xixp0uca0umq" path="res://images/battle_effects/magic_cast_2.png" id="3_yddfc"]
+[ext_resource type="Texture2D" uid="uid://c1eq5d1uk2fd1" path="res://images/battle_effects/magic_cast_3.png" id="4_n05go"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_7x0m4"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_hnix8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_yddfc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_n05go")
+}],
+"loop": false,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="MagicCast" type="Node3D"]
+script = ExtResource("1_hnix8")
+
+[node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="."]
+sprite_frames = SubResource("SpriteFrames_7x0m4")
+autoplay = "default"

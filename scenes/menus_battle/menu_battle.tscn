@@ -25,6 +25,10 @@ layout_mode = 2
 layout_mode = 2
 text = "Attack"
 
+[node name="ButtonHeal" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Healing Magic"
+
 [node name="ButtonTarget" type="Button" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
 text = "Target"
@@ -38,6 +42,7 @@ layout_mode = 2
 text = "Flee"
 
 [connection signal="pressed" from="MarginContainer/VBoxContainer/ButtonAttack" to="." method="_on_button_attack_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/ButtonHeal" to="." method="_on_button_heal_pressed"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/ButtonTarget" to="." method="_on_button_target_pressed"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/ButtonPass" to="." method="_on_button_pass_pressed"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/ButtonFlee" to="." method="_on_button_flee_pressed"]

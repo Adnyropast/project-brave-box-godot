@@ -2,6 +2,7 @@ extends CharacterBody3D
 
 var texture_std: Texture2D
 var texture_atk: Texture2D
+var texture_cast: Texture2D
 var texture_hurt: Texture2D
 var texture_ko: Texture2D
 var tween: Tween
@@ -10,6 +11,7 @@ var pawn: PawnComponents
 func init_from_party_member(_pawn: PawnComponents, party_member: PartyMember):
 	texture_std = party_member.image_std
 	texture_atk = party_member.image_atk
+	texture_cast = party_member.image_cast
 	texture_hurt = party_member.image_hurt
 	texture_ko = party_member.image_ko
 	pawn = _pawn
@@ -18,6 +20,7 @@ func init_from_party_member(_pawn: PawnComponents, party_member: PartyMember):
 func init_from_enemy(_pawn: PawnComponents, enemy: Enemy):
 	texture_std = enemy.image_std
 	texture_atk = enemy.image_atk
+	texture_cast = enemy.image_cast
 	texture_hurt = enemy.image_hurt
 	pawn = _pawn
 	return_to_default()
@@ -51,3 +54,12 @@ func start_hurt():
 
 func stop_hurt():
 	return_to_default()
+
+func start_cast():
+	$Sprite3D.texture = texture_cast
+	
+	if tween:
+		tween.stop()
+	
+	tween = create_tween()
+	tween.tween_callback(return_to_default).set_delay(1)
