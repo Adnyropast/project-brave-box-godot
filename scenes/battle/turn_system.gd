@@ -73,7 +73,9 @@ func get_action_taker() -> PawnComponents:
 	return top_pawns[random_index]
 
 func take_actions() -> void:
-	if battle_components.all_players_defeated():
+	if battle_components.no_player_present():
+		battle_components.end_battle()
+	elif battle_components.all_players_defeated():
 		battle_components.lose_battle()
 	elif battle_components.all_enemies_defeated():
 		battle_components.win_battle()

@@ -79,3 +79,12 @@ func win_battle():
 	
 	var victory_screen = preload("res://scenes/victory/victory.tscn").instantiate()
 	tree.root.add_child(victory_screen)
+
+func no_player_present() -> bool:
+	return pawns_player.size() == 0
+
+func end_battle():
+	var tree = get_tree()
+	
+	tree.change_scene_to_file("res://scenes/map/map_compositia.tscn")
+	clean_tree_root()
