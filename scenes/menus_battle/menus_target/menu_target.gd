@@ -44,21 +44,21 @@ func _ready() -> void:
 func _on_button_all_pressed() -> void:
 	close_menu()
 	
-	var targets = pawn.turn_system.pawns
+	var targets = pawn.turn_system.pawns.duplicate()
 	
 	pawn.confirm_targets(active_ability, targets)
 
 func _on_button_all_allies_pressed() -> void:
 	close_menu()
 	
-	var targets = pawn.allies
+	var targets = pawn.allies.duplicate()
 	
 	pawn.confirm_targets(active_ability, targets)
 
 func _on_button_all_enemies_pressed() -> void:
 	close_menu()
 	
-	var targets = pawn.enemies
+	var targets = pawn.enemies.duplicate()
 	
 	pawn.confirm_targets(active_ability, targets)
 
