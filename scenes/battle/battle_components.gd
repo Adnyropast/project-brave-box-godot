@@ -5,6 +5,7 @@ var turn_system: Node
 var battle_board: Node3D
 var pawns_player: Array[PawnComponents]
 var pawns_enemy: Array[PawnComponents]
+var hud_player: Control
 
 func init(_mission: Mission) -> void:
 	mission = _mission
@@ -34,7 +35,7 @@ func _ready() -> void:
 	battle_board.init_pawns(pawns_player, pawns_enemy)
 	tree.root.add_child(battle_board)
 	
-	var hud_player = preload("res://scenes/menus_battle/hud_player.tscn").instantiate()
+	hud_player = preload("res://scenes/menus_battle/hud_player.tscn").instantiate()
 	hud_player.init_players(pawns_player)
 	tree.root.add_child(hud_player)
 	
@@ -53,6 +54,8 @@ func all_players_defeated() -> bool:
 func lose_battle():
 	var tree = get_tree()
 	
+	await tree.create_timer(1).timeout
+	
 	tree.change_scene_to_file("res://scenes/map/map_compositia.tscn")
 	clean_tree_root()
 
@@ -61,3 +64,18 @@ func clean_tree_root():
 	
 	for child in tree.root.get_children():
 		tree.root.remove_child(child)
+
+func all_enemies_defeated() -> bool:
+	for pawn in pawns_enemy:
+		if not pawn.variables.is_ko():
+			return false
+	
+	return true
+
+func win_battle():
+	var tree = get_tree()
+	
+	hud_player.hide()
+	
+	var victory_screen = preload("res://scenes/victory/victory.tscn").instantiate()
+	tree.root.add_child(victory_screen)

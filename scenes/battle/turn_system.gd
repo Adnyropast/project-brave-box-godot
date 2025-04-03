@@ -75,6 +75,8 @@ func get_action_taker() -> PawnComponents:
 func take_actions() -> void:
 	if battle_components.all_players_defeated():
 		battle_components.lose_battle()
+	elif battle_components.all_enemies_defeated():
+		battle_components.win_battle()
 	else:
 		pass_ticks()
 		
