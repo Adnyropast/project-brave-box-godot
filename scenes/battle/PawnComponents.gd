@@ -85,18 +85,17 @@ func take_action():
 			confirm_targets(active_ability, enemies)
 
 func end_action():
-	await tree.create_timer(1.0).timeout
 	remove_action_circle()
 	turn_system.take_actions()
 
 func pass_turn():
+	await tree.create_timer(1.0).timeout
 	end_action()
 
 func confirm_targets(active_ability: ActiveAbility, targets: Array[PawnComponents]):
 	var active_script: ActiveScript = active_ability.gdscript.new()
 	
+	active_script.ability = active_ability
 	active_script.user = self
 	active_script.targets = targets
-	active_script.start()
-	
-	end_action()
+	active_script.template_start()
