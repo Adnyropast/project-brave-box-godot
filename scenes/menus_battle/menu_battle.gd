@@ -49,3 +49,11 @@ func _on_button_heal_pressed() -> void:
 	
 	close_menu()
 	open_menu_target(active_ability)
+
+func _on_button_revive_pressed() -> void:
+	tree = get_tree()
+	
+	var active_ability = preload("res://resources/active_abilities/magic_reviving.tres")
+	
+	close_menu()
+	open_menu_target(active_ability)

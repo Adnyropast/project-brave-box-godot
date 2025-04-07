@@ -5,5 +5,4 @@ func start():
 	BattleEffects.create_magic_cast(user)
 	
 	for target in targets:
-		if not target.variables.is_ko():
-			EffectHealing.heal_amount(target, 1000)
+		EffectRevive.revive_amount(target, 1000)

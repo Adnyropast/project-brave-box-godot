@@ -26,6 +26,8 @@ func init_from_enemy(_pawn: PawnComponents, enemy: Enemy):
 	return_to_default()
 
 func return_to_default():
+	tween = null
+	
 	if pawn.variables.is_ko() && texture_ko:
 		$Sprite3D.texture = texture_ko
 	else:
@@ -63,3 +65,7 @@ func start_cast():
 	
 	tween = create_tween()
 	tween.tween_callback(return_to_default).set_delay(1)
+
+func return_to_default_not_busy():
+	if not tween:
+		return_to_default()
