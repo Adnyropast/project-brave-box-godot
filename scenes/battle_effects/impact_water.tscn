@@ -1,0 +1,30 @@
+[gd_scene load_steps=6 format=3 uid="uid://c8kow6tdcpkmx"]
+
+[ext_resource type="Script" uid="uid://bmwwu13ohset4" path="res://scenes/battle_effects/remove_auto.gd" id="1_eqsw5"]
+[ext_resource type="Texture2D" uid="uid://ci0yd7xyc2c50" path="res://images/battle_effects/impacts_elements/impact_water_1.png" id="2_eqsw5"]
+[ext_resource type="Texture2D" uid="uid://y51tb8cuyevl" path="res://images/battle_effects/impacts_elements/impact_water_2.png" id="3_6rs37"]
+[ext_resource type="Texture2D" uid="uid://cmicpj3dv0vbt" path="res://images/battle_effects/impacts_elements/impact_water_3.png" id="4_mhn14"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_r20oy"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_eqsw5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_6rs37")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_mhn14")
+}],
+"loop": false,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="ImpactWater" type="Node3D"]
+script = ExtResource("1_eqsw5")
+
+[node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="."]
+sprite_frames = SubResource("SpriteFrames_r20oy")
+autoplay = "default"

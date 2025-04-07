@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="ActiveAbility" load_steps=3 format=3 uid="uid://dfqpwy0u3elog"]
+
+[ext_resource type="Script" uid="uid://bxj3ipe531ylf" path="res://resources/active_scripts/magic_dark.gd" id="1_3ly3y"]
+[ext_resource type="Script" uid="uid://clugbtxltbj7y" path="res://resources/ActiveAbility.gd" id="1_tx8js"]
+
+[resource]
+script = ExtResource("1_tx8js")
+name = "Dark Magic"
+gdscript = ExtResource("1_3ly3y")
+metadata/_custom_type_script = "uid://clugbtxltbj7y"

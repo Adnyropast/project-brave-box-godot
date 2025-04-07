@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="ActiveAbility" load_steps=3 format=3 uid="uid://dfwt3gqpr03qy"]
+
+[ext_resource type="Script" uid="uid://clugbtxltbj7y" path="res://resources/ActiveAbility.gd" id="1_adh4l"]
+[ext_resource type="Script" uid="uid://cw0w2e56jej7j" path="res://resources/active_scripts/magic_water.gd" id="1_qeg2b"]
+
+[resource]
+script = ExtResource("1_adh4l")
+name = "Water Magic"
+gdscript = ExtResource("1_qeg2b")
+metadata/_custom_type_script = "uid://clugbtxltbj7y"

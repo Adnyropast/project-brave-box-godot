@@ -1,0 +1,30 @@
+[gd_scene load_steps=6 format=3 uid="uid://chayr7q8ng6wj"]
+
+[ext_resource type="Script" uid="uid://bmwwu13ohset4" path="res://scenes/battle_effects/remove_auto.gd" id="1_8h4ir"]
+[ext_resource type="Texture2D" uid="uid://cktlqidj8vugv" path="res://images/battle_effects/impacts_elements/impact_lightning_1.png" id="2_8h4ir"]
+[ext_resource type="Texture2D" uid="uid://cnn8egbeubavs" path="res://images/battle_effects/impacts_elements/impact_lightning_2.png" id="3_odbg3"]
+[ext_resource type="Texture2D" uid="uid://cxmdlhkecpc44" path="res://images/battle_effects/impacts_elements/impact_lightning_3.png" id="4_v23ek"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_r20oy"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_8h4ir")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_odbg3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_v23ek")
+}],
+"loop": false,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="ImpactLightning" type="Node3D"]
+script = ExtResource("1_8h4ir")
+
+[node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="."]
+sprite_frames = SubResource("SpriteFrames_r20oy")
+autoplay = "default"

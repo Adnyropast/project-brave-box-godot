@@ -1,0 +1,30 @@
+[gd_scene load_steps=6 format=3 uid="uid://5adtp6rrpi5l"]
+
+[ext_resource type="Script" uid="uid://bmwwu13ohset4" path="res://scenes/battle_effects/remove_auto.gd" id="1_ymih2"]
+[ext_resource type="Texture2D" uid="uid://c3ubwfo6ara1l" path="res://images/battle_effects/impacts_elements/impact_light_1.png" id="2_ymih2"]
+[ext_resource type="Texture2D" uid="uid://b3dq7inq5avax" path="res://images/battle_effects/impacts_elements/impact_light_2.png" id="3_fx54x"]
+[ext_resource type="Texture2D" uid="uid://7focsqs8o2r8" path="res://images/battle_effects/impacts_elements/impact_light_3.png" id="4_8y7pn"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_r20oy"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_ymih2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_fx54x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_8y7pn")
+}],
+"loop": false,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="ImpactLight" type="Node3D"]
+script = ExtResource("1_ymih2")
+
+[node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="."]
+sprite_frames = SubResource("SpriteFrames_r20oy")
+autoplay = "default"

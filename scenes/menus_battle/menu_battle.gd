@@ -57,3 +57,16 @@ func _on_button_revive_pressed() -> void:
 	
 	close_menu()
 	open_menu_target(active_ability)
+
+func _on_button_abilities_pressed() -> void:
+	tree = get_tree()
+	
+	close_menu()
+	
+	var menu_abilities = preload("res://scenes/menus_battle/menus_abilities/menu_abilities.tscn").instantiate()
+	
+	menu_abilities.menu_cancel = self
+	menu_abilities.pawn = pawn
+	menu_abilities.update_abilities()
+	
+	tree.root.add_child(menu_abilities)

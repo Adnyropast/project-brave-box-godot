@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="ActiveAbility" load_steps=3 format=3 uid="uid://bjhlvmjakwhs1"]
+
+[ext_resource type="Script" uid="uid://dyymif4lelhpi" path="res://resources/active_scripts/magic_earth.gd" id="1_1gc51"]
+[ext_resource type="Script" uid="uid://clugbtxltbj7y" path="res://resources/ActiveAbility.gd" id="1_tlefl"]
+
+[resource]
+script = ExtResource("1_tlefl")
+name = "Earth Magic"
+gdscript = ExtResource("1_1gc51")
+metadata/_custom_type_script = "uid://clugbtxltbj7y"
