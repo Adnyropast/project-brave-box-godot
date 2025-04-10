@@ -6,5 +6,6 @@
 [resource]
 script = ExtResource("2_sfe3m")
 name = "Reviving Magic"
+mp_cost = 40
 gdscript = ExtResource("1_jqrdj")
 metadata/_custom_type_script = "uid://clugbtxltbj7y"

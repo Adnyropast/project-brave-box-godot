@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="ActiveAbility" load_steps=3 format=3 uid="uid://yvy1bbylyeon"]
+
+[ext_resource type="Script" uid="uid://clugbtxltbj7y" path="res://resources/ActiveAbility.gd" id="1_aes1t"]
+[ext_resource type="Script" uid="uid://cbgfabgw6tjx6" path="res://resources/active_scripts/target.gd" id="1_vq0cu"]
+
+[resource]
+script = ExtResource("1_aes1t")
+name = "Expend 999 MP"
+mp_cost = 999
+gdscript = ExtResource("1_vq0cu")
+metadata/_custom_type_script = "uid://clugbtxltbj7y"

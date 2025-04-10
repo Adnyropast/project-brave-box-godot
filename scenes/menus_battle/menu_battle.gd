@@ -67,6 +67,33 @@ func _on_button_abilities_pressed() -> void:
 	
 	menu_abilities.menu_cancel = self
 	menu_abilities.pawn = pawn
-	menu_abilities.update_abilities()
+	
+	var abilities: Array[ActiveAbility] = [
+		preload("res://resources/active_abilities/magic_fire.tres"),
+		preload("res://resources/active_abilities/magic_water.tres"),
+		preload("res://resources/active_abilities/magic_lightning.tres"),
+		preload("res://resources/active_abilities/magic_earth.tres"),
+		preload("res://resources/active_abilities/magic_wind.tres"),
+		preload("res://resources/active_abilities/magic_light.tres"),
+		preload("res://resources/active_abilities/magic_dark.tres"),
+	]
+	
+	menu_abilities.update_abilities(abilities)
 	
 	tree.root.add_child(menu_abilities)
+
+func _on_button_tests_pressed() -> void:
+	Menus.close_menu(self)
+	
+	var menu_abilities = preload("res://scenes/menus_battle/menus_abilities/menu_abilities.tscn").instantiate()
+	
+	menu_abilities.menu_cancel = self
+	menu_abilities.pawn = pawn
+	
+	var abilities: Array[ActiveAbility] = [
+		preload("res://resources/active_abilities/expend_mp_999.tres"),
+	]
+	
+	menu_abilities.update_abilities(abilities)
+	
+	Menus.open_menu(menu_abilities)

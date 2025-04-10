@@ -6,5 +6,6 @@
 [resource]
 script = ExtResource("1_fxeso")
 name = "Wind Magic"
+mp_cost = 15
 gdscript = ExtResource("1_t87ve")
 metadata/_custom_type_script = "uid://clugbtxltbj7y"

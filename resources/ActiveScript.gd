@@ -6,13 +6,20 @@ var ability: ActiveAbility
 var user: PawnComponents
 var targets: Array[PawnComponents]
 var hud: Control
+var hud_inability: Control
 
 func start():
 	pass
 
 func template_start():
 	show_hud()
-	start()
+	
+	if user.variables.mp >= ability.mp_cost:
+		BattleCosts.expend_mp(user, ability.mp_cost)
+		start()
+	else:
+		show_inability()
+	
 	template_end()
 
 func template_end():
@@ -34,3 +41,16 @@ func show_hud():
 func hide_hud():
 	if hud.get_parent():
 		hud.get_parent().remove_child(hud)
+
+func show_inability():
+	hud_inability = preload("res://scenes/menus_battle/hud_inability.tscn").instantiate()
+	
+	user.node.get_tree().root.add_child(hud_inability)
+	
+	var tween: Tween = user.node.create_tween()
+	
+	tween.tween_callback(hide_inability).set_delay(1)
+
+func hide_inability():
+	if hud_inability.get_parent():
+		hud_inability.get_parent().remove_child(hud_inability)

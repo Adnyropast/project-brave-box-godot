@@ -1,4 +1,4 @@
-extends Button
+extends Container
 
 var pawn: PawnComponents
 var menu_node: Control
@@ -19,3 +19,9 @@ func open_menu_target():
 func _on_pressed() -> void:
 	open_menu_target()
 	close_menu()
+
+func set_label(text: String):
+	$MarginContainer/HBoxContainer/Label.text = text
+
+func set_aside(text: String):
+	$MarginContainer/HBoxContainer/LabelAside.text = text
