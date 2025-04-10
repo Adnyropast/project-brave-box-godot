@@ -21,9 +21,7 @@ static func init_from_party_member(party_member: PartyMember) -> PawnComponents:
 	pawn_components.controlled_by_menu = true
 	pawn_components.vanishes_on_defeat = false
 	
-	pawn_components.variables.name_alias = party_member.name
-	pawn_components.variables.hp = pawn_components.variables.get_max_hp() / 2
-	pawn_components.variables.mp = pawn_components.variables.get_max_mp() / 2
+	pawn_components.variables.init_from_party_member(party_member)
 	
 	pawn_components.node = preload("res://scenes/battle/battle_pawn.tscn").instantiate()
 	pawn_components.node.init_from_party_member(pawn_components, party_member)
@@ -46,9 +44,7 @@ static func init_from_enemy(enemy: Enemy) -> PawnComponents:
 	pawn_components.controlled_by_menu = false
 	pawn_components.vanishes_on_defeat = true
 	
-	pawn_components.variables.name_alias = enemy.name
-	pawn_components.variables.hp = pawn_components.variables.get_max_hp() / 2
-	pawn_components.variables.mp = pawn_components.variables.get_max_mp() / 2
+	pawn_components.variables.init_from_enemy(enemy)
 	
 	pawn_components.node = preload("res://scenes/battle/battle_pawn.tscn").instantiate()
 	pawn_components.node.init_from_enemy(pawn_components, enemy)

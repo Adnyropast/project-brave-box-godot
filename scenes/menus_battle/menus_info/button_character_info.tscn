@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://cp571wrrl0p87"]
+
+[ext_resource type="Script" uid="uid://dljyeyeardp4e" path="res://scenes/menus_battle/menus_info/button_character_info.gd" id="1_v8ki8"]
+
+[node name="ButtonCharacterInfo" type="Button"]
+offset_right = 8.0
+offset_bottom = 8.0
+script = ExtResource("1_v8ki8")
+
+[connection signal="pressed" from="." to="." method="_on_pressed"]

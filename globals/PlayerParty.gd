@@ -37,3 +37,6 @@ func switch_bench_members(team_n: int, bench_n: int):
 func bench_team_member(n: int):
 	bench.append(team[n])
 	team.remove_at(n)
+
+func get_all_members() -> Array[PartyMember]:
+	return team + bench

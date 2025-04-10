@@ -39,6 +39,11 @@ func _ready() -> void:
 	hud_player.init_players(pawns_player)
 	tree.root.add_child(hud_player)
 	
+	var control_info = preload("res://scenes/menus_battle/menus_info/control_info.tscn").instantiate()
+	control_info.battle = self
+	control_info.pawns = pawns_enemy + pawns_player
+	tree.root.add_child(control_info)
+	
 	var turn_system = preload("res://scenes/battle/turn_system.tscn").instantiate()
 	turn_system.init_pawns(pawns_player, pawns_enemy)
 	turn_system.battle_components = self
@@ -88,3 +93,15 @@ func end_battle():
 	
 	tree.change_scene_to_file("res://scenes/map/map_compositia.tscn")
 	clean_tree_root()
+
+func hide_ui():
+	hud_player.hide()
+	
+	for pawn in pawns_player:
+		pawn.menu_node.hide()
+
+func show_ui():
+	hud_player.show()
+	
+	for pawn in pawns_player:
+		pawn.menu_node.show()
