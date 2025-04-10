@@ -6,6 +6,7 @@
 [resource]
 script = ExtResource("1_ure8k")
 name = "Attack"
-active_script = ExtResource("1_77ko4")
+mp_cost = 0
+target_type = 0
 gdscript = ExtResource("1_77ko4")
 metadata/_custom_type_script = "uid://clugbtxltbj7y"

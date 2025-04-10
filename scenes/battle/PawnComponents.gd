@@ -68,17 +68,7 @@ func take_action():
 	if controlled_by_menu:
 		tree.root.add_child(menu_node)
 	else:
-		if randi_range(0, 1) == 0:
-			pass_turn()
-		else:
-			var active_abilities = [
-				preload("res://resources/active_abilities/target.tres"),
-				preload("res://resources/active_abilities/attack.tres"),
-			]
-			
-			var active_ability = active_abilities[randi_range(0, active_abilities.size() - 1)]
-			
-			confirm_targets(active_ability, enemies)
+		EnemyActions.take_action(self)
 
 func end_action():
 	remove_action_circle()

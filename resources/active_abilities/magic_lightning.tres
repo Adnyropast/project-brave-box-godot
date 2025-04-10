@@ -7,5 +7,6 @@
 script = ExtResource("1_r7ol1")
 name = "Lightning Magic"
 mp_cost = 15
+target_type = 2
 gdscript = ExtResource("1_xvwuf")
 metadata/_custom_type_script = "uid://clugbtxltbj7y"

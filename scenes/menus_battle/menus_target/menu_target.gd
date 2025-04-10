@@ -27,6 +27,17 @@ func fill_buttons():
 		
 		$MarginContainer/VBoxContainer/VBoxContainer/Enemies/VBoxContainer.add_child(button)
 
+func fill_button_self():
+	var button = preload("res://scenes/menus_battle/menus_target/button_target_single.tscn").instantiate()
+	
+	button.text = pawn.variables.name_alias
+	button.pawn = pawn
+	button.target = pawn
+	button.menu_target = self
+	button.active_ability = active_ability
+	
+	$MarginContainer/VBoxContainer/VBoxContainer/Allies/VBoxContainer.add_child(button)
+
 func place_ally_targets_first():
 	$MarginContainer/VBoxContainer/VBoxContainer.move_child($MarginContainer/VBoxContainer/VBoxContainer/Allies, 0)
 
@@ -39,7 +50,18 @@ func close_menu():
 func _ready() -> void:
 	place_ally_targets_first()
 	place_enemy_targets_first()
-	fill_buttons()
+	
+	if active_ability.targets_self():
+		fill_button_self()
+	
+	if active_ability.can_target_single():
+		fill_buttons()
+	
+	if not active_ability.can_target_multiple():
+		hide_buttons_all()
+	
+	if not active_ability.can_target_allies_and_enemies():
+		hide_buttons_all_allies_and_enemies()
 
 func _on_button_all_pressed() -> void:
 	close_menu()
@@ -68,3 +90,10 @@ func _on_button_cancel_pressed() -> void:
 	close_menu()
 	
 	tree.root.add_child(menu_battle)
+
+func hide_buttons_all():
+	$MarginContainer/VBoxContainer/VBoxContainer/Allies/ButtonAllAllies.hide()
+	$MarginContainer/VBoxContainer/VBoxContainer/Enemies/ButtonAllEnemies.hide()
+
+func hide_buttons_all_allies_and_enemies():
+	$MarginContainer/VBoxContainer/ButtonAll.hide()

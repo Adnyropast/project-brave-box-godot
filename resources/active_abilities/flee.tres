@@ -7,5 +7,8 @@
 script = ExtResource("2_41448")
 name = "Flee"
 mp_cost = 0
+target_type = 3
+allies_by_default = true
+koed_targets = true
 gdscript = ExtResource("1_1dgd3")
 metadata/_custom_type_script = "uid://clugbtxltbj7y"

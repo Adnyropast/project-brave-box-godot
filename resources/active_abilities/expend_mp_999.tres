@@ -7,5 +7,8 @@
 script = ExtResource("1_aes1t")
 name = "Expend 999 MP"
 mp_cost = 999
+target_type = 3
+allies_by_default = true
+koed_targets = false
 gdscript = ExtResource("1_vq0cu")
 metadata/_custom_type_script = "uid://clugbtxltbj7y"

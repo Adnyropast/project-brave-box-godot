@@ -12,6 +12,7 @@ func start():
 	pass
 
 func template_start():
+	redirect_targets()
 	show_hud()
 	
 	if user.variables.mp >= ability.mp_cost:
@@ -21,6 +22,26 @@ func template_start():
 		show_inability()
 	
 	template_end()
+
+static func filter_pawns_not_ko(pawns: Array[PawnComponents]):
+	var res: Array[PawnComponents] = []
+	
+	for pawn in pawns:
+		if not pawn.variables.is_ko():
+			res.append(pawn)
+	
+	return res
+
+func redirect_targets():
+	if not ability.koed_targets:
+		if targets.size() == 1:
+			if targets[0].variables.is_ko():
+				targets = filter_pawns_not_ko(targets[0].allies)
+				
+				if targets.size() > 0:
+					targets = [targets[0]]
+		else:
+			targets = filter_pawns_not_ko(targets)
 
 func template_end():
 	var tween: Tween = user.node.create_tween()

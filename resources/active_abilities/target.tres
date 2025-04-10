@@ -6,6 +6,9 @@
 [resource]
 script = ExtResource("1_3j5on")
 name = "Target"
-active_script = ExtResource("1_vmkww")
+mp_cost = 0
+target_type = 2
+allies_by_default = false
+koed_targets = true
 gdscript = ExtResource("1_vmkww")
 metadata/_custom_type_script = "uid://clugbtxltbj7y"
