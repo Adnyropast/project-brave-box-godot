@@ -78,9 +78,9 @@ func get_eva() -> int:
 
 func get_crit() -> int:
 	if party_member:
-		return party_member.multiply_crit(100)
+		return party_member.multiply_crit(25)
 	
-	return 100
+	return 25
 
 func get_res_pwr() -> int:
 	if party_member:

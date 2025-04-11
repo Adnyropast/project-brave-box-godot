@@ -18,3 +18,8 @@ static func create_miss_popup(pawn: PawnComponents):
 	var popup = preload("res://scenes/battle_popups/miss.tscn").instantiate()
 	pawn.node.add_child(popup)
 	popup.place_popup(pawn)
+
+static func create_critical_popup(pawn: PawnComponents):
+	var popup = preload("res://scenes/battle_popups/critical.tscn").instantiate()
+	pawn.node.add_child(popup)
+	popup.place_popup(pawn)

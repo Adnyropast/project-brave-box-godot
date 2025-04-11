@@ -6,6 +6,10 @@ static func deal_damage(user: PawnComponents, target: PawnComponents, damage: in
 	if check_miss(user, target):
 		BattlePopups.create_miss_popup(target)
 	else:
+		if check_critical(user):
+			damage = roundi(damage * 1.5)
+			BattlePopups.create_critical_popup(target)
+		
 		EffectDamage.deal_damage(target, damage, type)
 
 static func check_miss(user: PawnComponents, target: PawnComponents) -> bool:
@@ -13,3 +17,9 @@ static func check_miss(user: PawnComponents, target: PawnComponents) -> bool:
 	var random = randi_range(0, 99)
 	
 	return random >= success_rate
+
+static func check_critical(user: PawnComponents) -> bool:
+	var success_rate = user.variables.get_crit()
+	var random = randi_range(0, 99)
+	
+	return random < success_rate
