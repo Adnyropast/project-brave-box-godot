@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ActiveAbility" load_steps=3 format=3 uid="uid://k6cv1tlxdke2"]
+
+[ext_resource type="Script" uid="uid://d3miqmwd82wlv" path="res://resources/active_scripts/defend.gd" id="1_iitj3"]
+[ext_resource type="Script" uid="uid://clugbtxltbj7y" path="res://resources/ActiveAbility.gd" id="1_lwo40"]
+
+[resource]
+script = ExtResource("1_lwo40")
+name = "Defend"
+mp_cost = 0
+target_type = 3
+allies_by_default = true
+koed_targets = false
+gdscript = ExtResource("1_iitj3")
+metadata/_custom_type_script = "uid://clugbtxltbj7y"

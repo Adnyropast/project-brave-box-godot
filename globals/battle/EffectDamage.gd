@@ -3,18 +3,28 @@ extends Node
 class_name EffectDamage
 
 static func deal_damage(pawn: PawnComponents, damage: int, type: BattleEffects.Type):
+	damage = pawn.variables.multiply_damage(damage)
 	pawn.variables.hp = pawn.variables.hp - damage
 	
 	if pawn.variables.hp < 0:
 		pawn.variables.hp = 0
+	
+	if pawn.variables.is_ko():
+		pawn.variables.on_ko()
 	
 	if pawn.variables.hp == 0 && pawn.vanishes_on_defeat:
 		BattleEffects.create_vanish_effect(pawn)
 		start_vanish(pawn)
 	
 	BattlePopups.create_damage_popup(pawn, damage)
+	
+	if pawn.variables.state_defend:
+		BattleEffects.create_impact_defend(pawn)
+	
 	BattleEffects.create_impact_typed(pawn, type)
-	pawn.node.start_hurt()
+	
+	if not pawn.variables.state_defend:
+		pawn.node.start_hurt()
 	
 	if pawn.player_panel:
 		pawn.player_panel.set_current_hp(pawn.variables.hp)

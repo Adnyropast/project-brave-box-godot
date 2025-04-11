@@ -81,3 +81,13 @@ static func create_vanish_effect(pawn: PawnComponents):
 	var effect_node = preload("res://scenes/battle_effects/vanish.tscn").instantiate()
 	
 	pawn.node.add_child(effect_node)
+
+static func create_defending_effect(pawn: PawnComponents):
+	var effect_node = preload("res://scenes/battle_effects/defending.tscn").instantiate()
+	
+	pawn.node.add_child(effect_node)
+
+static func create_impact_defend(pawn: PawnComponents):
+	var effect_node = preload("res://scenes/battle_effects/impact_hit_defend.tscn").instantiate()
+	
+	pawn.node.add_child(effect_node)

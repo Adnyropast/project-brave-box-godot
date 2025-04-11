@@ -2,6 +2,7 @@ extends CharacterBody3D
 
 var texture_std: Texture2D
 var texture_atk: Texture2D
+var texture_def: Texture2D
 var texture_cast: Texture2D
 var texture_hurt: Texture2D
 var texture_ko: Texture2D
@@ -11,6 +12,7 @@ var pawn: PawnComponents
 func init_from_party_member(_pawn: PawnComponents, party_member: PartyMember):
 	texture_std = party_member.image_std
 	texture_atk = party_member.image_atk
+	texture_def = party_member.image_def
 	texture_cast = party_member.image_cast
 	texture_hurt = party_member.image_hurt
 	texture_ko = party_member.image_ko
@@ -20,6 +22,7 @@ func init_from_party_member(_pawn: PawnComponents, party_member: PartyMember):
 func init_from_enemy(_pawn: PawnComponents, enemy: Enemy):
 	texture_std = enemy.image_std
 	texture_atk = enemy.image_atk
+	texture_def = enemy.image_def
 	texture_cast = enemy.image_cast
 	texture_hurt = enemy.image_hurt
 	pawn = _pawn
@@ -30,6 +33,8 @@ func return_to_default():
 	
 	if pawn.variables.is_ko() && texture_ko:
 		$Sprite3D.texture = texture_ko
+	elif pawn.variables.state_defend:
+		$Sprite3D.texture = texture_def
 	else:
 		$Sprite3D.texture = texture_std
 

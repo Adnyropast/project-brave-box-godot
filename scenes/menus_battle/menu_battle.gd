@@ -97,3 +97,9 @@ func _on_button_tests_pressed() -> void:
 	menu_abilities.update_abilities(abilities)
 	
 	Menus.open_menu(menu_abilities)
+
+func _on_button_defend_pressed() -> void:
+	Menus.close_menu(self)
+	
+	var active_ability = preload("res://resources/active_abilities/defend.tres")
+	pawn.confirm_targets(active_ability, [pawn])

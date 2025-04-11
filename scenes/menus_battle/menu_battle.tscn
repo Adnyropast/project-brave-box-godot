@@ -45,6 +45,10 @@ text = "Reviving Magic"
 layout_mode = 2
 text = "Target"
 
+[node name="ButtonDefend" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Defend"
+
 [node name="ButtonPass" type="Button" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
 text = "Pass"
@@ -59,5 +63,6 @@ text = "Flee"
 [connection signal="pressed" from="MarginContainer/VBoxContainer/ButtonHeal" to="." method="_on_button_heal_pressed"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/ButtonRevive" to="." method="_on_button_revive_pressed"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/ButtonTarget" to="." method="_on_button_target_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/ButtonDefend" to="." method="_on_button_defend_pressed"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/ButtonPass" to="." method="_on_button_pass_pressed"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/ButtonFlee" to="." method="_on_button_flee_pressed"]

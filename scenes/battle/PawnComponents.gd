@@ -64,6 +64,8 @@ func remove_action_circle():
 
 func take_action():
 	place_action_circle()
+	variables.on_turn_start()
+	node.return_to_default_not_busy()
 	
 	if controlled_by_menu:
 		tree.root.add_child(menu_node)

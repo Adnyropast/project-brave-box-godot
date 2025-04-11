@@ -13,6 +13,7 @@ static func pick_ability():
 		preload("res://resources/active_abilities/attack.tres"),
 		preload("res://resources/active_abilities/magic_fire.tres"),
 		preload("res://resources/active_abilities/magic_healing.tres"),
+		preload("res://resources/active_abilities/defend.tres"),
 	]
 	
 	var active_ability = active_abilities[randi_range(0, active_abilities.size() - 1)]
@@ -21,6 +22,9 @@ static func pick_ability():
 
 static func get_target_options(pawn: PawnComponents, active_ability: ActiveAbility):
 	var options = []
+	
+	if active_ability.targets_self():
+		options.append([pawn])
 	
 	if active_ability.can_target_single():
 		if active_ability.allies_by_default:

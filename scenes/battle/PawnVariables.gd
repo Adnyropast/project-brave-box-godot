@@ -8,6 +8,7 @@ var name_alias: String
 var ap: float
 var hp: int
 var mp: int
+var state_defend: bool
 
 func init_from_party_member(_party_member: PartyMember):
 	party_member = _party_member
@@ -89,3 +90,15 @@ func get_res_pwr() -> int:
 
 func is_ko() -> bool:
 	return hp <= 0
+
+func on_turn_start():
+	state_defend = false
+
+func on_ko():
+	state_defend = false
+
+func multiply_damage(damage: int) -> int:
+	if state_defend:
+		return damage / 2
+	
+	return damage

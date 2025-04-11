@@ -1,0 +1,30 @@
+[gd_scene load_steps=6 format=3 uid="uid://cys8jm8xh6grq"]
+
+[ext_resource type="Script" uid="uid://bmwwu13ohset4" path="res://scenes/battle_effects/remove_auto.gd" id="1_gxyry"]
+[ext_resource type="Texture2D" uid="uid://xkj1q07eo2ec" path="res://images/battle_effects/defending_1.png" id="2_gxyry"]
+[ext_resource type="Texture2D" uid="uid://blkklu0ryc6df" path="res://images/battle_effects/defending_2.png" id="3_pcpip"]
+[ext_resource type="Texture2D" uid="uid://dn4wctesuafjo" path="res://images/battle_effects/defending_3.png" id="4_w0mby"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_7x0m4"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_gxyry")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_pcpip")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_w0mby")
+}],
+"loop": false,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Defending" type="Node3D"]
+script = ExtResource("1_gxyry")
+
+[node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="."]
+sprite_frames = SubResource("SpriteFrames_7x0m4")
+autoplay = "default"
