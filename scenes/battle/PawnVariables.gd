@@ -66,9 +66,9 @@ func get_speed() -> int:
 
 func get_aim() -> int:
 	if party_member:
-		return party_member.multiply_aim(100)
+		return party_member.multiply_aim(170)
 	
-	return 100
+	return 170
 
 func get_eva() -> int:
 	if party_member:
