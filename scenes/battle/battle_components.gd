@@ -22,14 +22,19 @@ func _ready() -> void:
 		
 		pawns_player.append(pawn)
 	
+	var aliases = EnemyAliases.create_aliases(mission.battle.enemy_party)
+	var i = 0
+	
 	for enemy in mission.battle.enemy_party:
-		var pawn = PawnComponents.init_from_enemy(enemy)
+		var pawn = PawnComponents.init_from_enemy(enemy, aliases[i])
 		
 		pawn.tree = get_tree()
 		pawn.allies = pawns_enemy
 		pawn.enemies = pawns_player
 		
 		pawns_enemy.append(pawn)
+		
+		i = i + 1
 	
 	var battle_board = preload("res://scenes/battle/battle_board.tscn").instantiate()
 	battle_board.init_pawns(pawns_player, pawns_enemy)
