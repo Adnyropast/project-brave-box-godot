@@ -1,13 +1,17 @@
 extends Control
 
 var pot_exp: int
+var pot_money: int
 var character_panels: Array[Container]
 
 func _ready() -> void:
 	update_exp()
+	update_money()
 	fill_panels()
+	clear_player_money()
+	
 	var tween = create_tween()
-	tween.tween_callback(update_panels).set_delay(1)
+	tween.tween_callback(update_all).set_delay(1)
 
 func _process(delta: float) -> void:
 	if(Input.is_action_just_pressed("confirm")):
@@ -32,6 +36,9 @@ func clean_tree_root():
 func update_exp():
 	$MarginContainer3/PanelContainer/MarginContainer/VBoxContainer/HBoxContainer/LabelEXP.text = str(pot_exp)
 
+func update_money():
+	$MarginContainer3/PanelContainer/MarginContainer/VBoxContainer/HBoxContainer2/LabelMoney.text = str(pot_money)
+
 func fill_panels():
 	for child in $MarginContainer4/PanelContainer/MarginContainer/HBoxContainer.get_children():
 		$MarginContainer4/PanelContainer/MarginContainer/HBoxContainer.remove_child(child)
@@ -45,6 +52,19 @@ func fill_panels():
 		
 		character_panels.append(panel)
 
+func update_all():
+	update_player_money()
+	update_panels()
+
 func update_panels():
 	for panel in character_panels:
 		panel.update_data()
+
+func clear_player_money():
+	$MarginContainer5/PanelContainer/MarginContainer/HBoxContainer/LabelChrs.text = str(PlayerParty.money)
+	$MarginContainer5/PanelContainer/MarginContainer/HBoxContainer/LabelChrs/Control/LabelChrsGain.hide()
+
+func update_player_money():
+	$MarginContainer5/PanelContainer/MarginContainer/HBoxContainer/LabelChrs.text = str(PlayerParty.money)
+	$MarginContainer5/PanelContainer/MarginContainer/HBoxContainer/LabelChrs/Control/LabelChrsGain.text = "+" + str(pot_money)
+	$MarginContainer5/PanelContainer/MarginContainer/HBoxContainer/LabelChrs/Control/LabelChrsGain.show()

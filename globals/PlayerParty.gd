@@ -1,6 +1,7 @@
 extends Node
 
 const TEAM_COUNT: int = 4
+const MAX_MONEY: int = 9999999
 
 var team: Array[PartyMemberVariables] = [
 	PartyMemberVariables.new(preload("res://resources/party_members/pm_astrid.tres")),
@@ -18,6 +19,7 @@ var bench: Array[PartyMemberVariables] = [
 	PartyMemberVariables.new(preload("res://resources/party_members/pm_eyner.tres")),
 	PartyMemberVariables.new(preload("res://resources/party_members/pm_nebula.tres")),
 ]
+var money: int
 
 func switch_team_members(n1: int, n2: int):
 	if(n1 < team.size() && n2 < team.size()):
@@ -40,3 +42,9 @@ func bench_team_member(n: int):
 
 func get_all_members() -> Array[PartyMemberVariables]:
 	return team + bench
+
+func add_money(_plus_money: int) -> void:
+	money = money + _plus_money
+	
+	if money >= MAX_MONEY:
+		money = MAX_MONEY

@@ -7,6 +7,7 @@ var pawns_player: Array[PawnComponents]
 var pawns_enemy: Array[PawnComponents]
 var hud_player: Control
 var pot_exp: int
+var pot_money: int
 
 func init(_mission: Mission) -> void:
 	mission = _mission
@@ -78,6 +79,7 @@ func clean_tree_root():
 
 func on_enemy_defeated(_pawn: PawnComponents) -> void:
 	pot_exp = pot_exp + 1000
+	pot_money = pot_money + 1000
 
 func all_enemies_defeated() -> bool:
 	for pawn in pawns_enemy:
@@ -93,7 +95,10 @@ func win_battle():
 	
 	var victory_screen = preload("res://scenes/victory/victory.tscn").instantiate()
 	victory_screen.pot_exp = pot_exp
+	victory_screen.pot_money = pot_money
 	tree.root.add_child(victory_screen)
+	
+	PlayerParty.add_money(pot_money)
 	
 	for party_member in PlayerParty.team:
 		party_member.add_exp(pot_exp)

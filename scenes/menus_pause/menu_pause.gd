@@ -2,6 +2,9 @@ extends Control
 
 var tree: SceneTree
 
+func _ready() -> void:
+	update_money()
+
 func _process(_delta: float) -> void:
 	if(Input.is_action_just_pressed("cancel")):
 		close_pause()
@@ -39,3 +42,6 @@ func _on_button_formation_pressed() -> void:
 
 func _on_button_stats_pressed() -> void:
 	open_menu_stats()
+
+func update_money() -> void:
+	$MarginContainer2/PanelContainer/MarginContainer/HBoxContainer/LabelMoney.text = str(PlayerParty.money)

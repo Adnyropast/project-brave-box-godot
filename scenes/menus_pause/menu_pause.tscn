@@ -42,6 +42,36 @@ text = "Stats"
 layout_mode = 2
 text = "Close"
 
+[node name="MarginContainer2" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -40.0
+offset_bottom = 40.0
+grow_horizontal = 0
+
+[node name="PanelContainer" type="PanelContainer" parent="MarginContainer2"]
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer2/PanelContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 16
+theme_override_constants/margin_top = 16
+theme_override_constants/margin_right = 16
+theme_override_constants/margin_bottom = 16
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer2/PanelContainer/MarginContainer"]
+layout_mode = 2
+
+[node name="LabelMoney" type="Label" parent="MarginContainer2/PanelContainer/MarginContainer/HBoxContainer"]
+layout_mode = 2
+text = "9999999"
+
+[node name="Label2" type="Label" parent="MarginContainer2/PanelContainer/MarginContainer/HBoxContainer"]
+layout_mode = 2
+text = "chrysties"
+
 [connection signal="tree_entered" from="." to="." method="_on_tree_entered"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/ButtonFormation" to="." method="_on_button_formation_pressed"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/ButtonStats" to="." method="_on_button_stats_pressed"]
