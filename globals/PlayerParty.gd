@@ -2,21 +2,21 @@ extends Node
 
 const TEAM_COUNT: int = 4
 
-var team: Array[PartyMember] = [
-	preload("res://resources/party_members/pm_astrid.tres"),
-	preload("res://resources/party_members/pm_panino.tres"),
-	preload("res://resources/party_members/pm_quatrain.tres"),
-	preload("res://resources/party_members/pm_hubert.tres"),
+var team: Array[PartyMemberVariables] = [
+	PartyMemberVariables.new(preload("res://resources/party_members/pm_astrid.tres")),
+	PartyMemberVariables.new(preload("res://resources/party_members/pm_panino.tres")),
+	PartyMemberVariables.new(preload("res://resources/party_members/pm_quatrain.tres")),
+	PartyMemberVariables.new(preload("res://resources/party_members/pm_hubert.tres")),
 ]
-var bench: Array[PartyMember] = [
-	preload("res://resources/party_members/pm_gaudi.tres"),
-	preload("res://resources/party_members/pm_carmen.tres"),
-	preload("res://resources/party_members/pm_moskla.tres"),
-	preload("res://resources/party_members/pm_brandine.tres"),
-	preload("res://resources/party_members/pm_paylla.tres"),
-	preload("res://resources/party_members/pm_florence.tres"),
-	preload("res://resources/party_members/pm_eyner.tres"),
-	preload("res://resources/party_members/pm_nebula.tres"),
+var bench: Array[PartyMemberVariables] = [
+	PartyMemberVariables.new(preload("res://resources/party_members/pm_gaudi.tres")),
+	PartyMemberVariables.new(preload("res://resources/party_members/pm_carmen.tres")),
+	PartyMemberVariables.new(preload("res://resources/party_members/pm_moskla.tres")),
+	PartyMemberVariables.new(preload("res://resources/party_members/pm_brandine.tres")),
+	PartyMemberVariables.new(preload("res://resources/party_members/pm_paylla.tres")),
+	PartyMemberVariables.new(preload("res://resources/party_members/pm_florence.tres")),
+	PartyMemberVariables.new(preload("res://resources/party_members/pm_eyner.tres")),
+	PartyMemberVariables.new(preload("res://resources/party_members/pm_nebula.tres")),
 ]
 
 func switch_team_members(n1: int, n2: int):
@@ -38,5 +38,5 @@ func bench_team_member(n: int):
 	bench.append(team[n])
 	team.remove_at(n)
 
-func get_all_members() -> Array[PartyMember]:
+func get_all_members() -> Array[PartyMemberVariables]:
 	return team + bench

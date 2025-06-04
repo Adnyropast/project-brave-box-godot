@@ -1,7 +1,7 @@
 extends Button
 
 var slot: int
-var party_member: PartyMember
+var party_member: PartyMemberVariables
 var bench_member_buttons_container: VBoxContainer
 var action_menu: VBoxContainer
 
@@ -19,7 +19,7 @@ func fill_buttons_switch():
 		if(party_member != pm):
 			var switch_member_button = preload("res://scenes/menus_formation/button_switch_member.tscn").instantiate()
 			
-			switch_member_button.text = pm.name
+			switch_member_button.text = pm.party_member.name
 			switch_member_button.team_slot = slot
 			switch_member_button.slot = i
 			switch_member_button.action_menu = action_menu
@@ -34,7 +34,7 @@ func fill_buttons_bench():
 	for pm in PlayerParty.bench:
 		var bench_member_button = preload("res://scenes/menus_formation/button_bench_member.tscn").instantiate()
 		
-		bench_member_button.text = pm.name
+		bench_member_button.text = pm.party_member.name
 		bench_member_button.team_slot = slot
 		bench_member_button.slot = i
 		bench_member_button.action_menu = action_menu

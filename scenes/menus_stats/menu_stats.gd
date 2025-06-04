@@ -14,24 +14,41 @@ func fill_buttons():
 	for party_member in PlayerParty.get_all_members():
 		var button = preload("res://scenes/menus_stats/button_member_stats.tscn").instantiate()
 		
-		button.text = party_member.name
+		button.text = party_member.party_member.name
 		button.menu_stats = self
 		button.party_member = party_member
 		
 		$MarginContainer/VBoxContainer/VBoxContainer.add_child(button)
 
-func update_stats(party_member: PartyMember):
-	update_maximum_hp(party_member.multiply_max_hp(3000))
-	update_maximum_mp(party_member.multiply_max_mp(300))
-	update_physical_attack(party_member.multiply_p_atk(100))
-	update_physical_defense(party_member.multiply_p_def(100))
-	update_magical_attack(party_member.multiply_m_atk(100))
-	update_magical_defense(party_member.multiply_m_def(100))
-	update_speed(party_member.multiply_spd(100))
-	update_aim(party_member.multiply_aim(100))
-	update_evasion(party_member.multiply_eva(100))
-	update_critical_chance(party_member.multiply_crit(100))
-	update_restorative_power(party_member.multiply_res_pwr(100))
+func update_stats(party_member: PartyMemberVariables):
+	update_level(party_member.get_level())
+	update_current_exp(party_member.get_current_exp())
+	update_next_exp(party_member.get_exp_for_next_level())
+	update_exp_bar(party_member.get_current_exp(), party_member.get_exp_for_next_level())
+	update_maximum_hp(party_member.get_max_hp())
+	update_maximum_mp(party_member.get_max_mp())
+	update_physical_attack(party_member.get_p_atk())
+	update_physical_defense(party_member.get_p_def())
+	update_magical_attack(party_member.get_m_atk())
+	update_magical_defense(party_member.get_m_def())
+	update_speed(party_member.get_spd())
+	update_aim(party_member.get_aim())
+	update_evasion(party_member.get_eva())
+	update_critical_chance(party_member.get_crit())
+	update_restorative_power(party_member.get_res_pwr())
+
+func update_level(value: int):
+	$MarginContainer3/PanelContainer/MarginContainer/VBoxContainer/HBoxContainer/Label2.text = str(value)
+
+func update_current_exp(value: int):
+	$MarginContainer3/PanelContainer/MarginContainer/VBoxContainer/HBoxContainer2/Label2.text = str(value)
+
+func update_next_exp(value: int):
+	$MarginContainer3/PanelContainer/MarginContainer/VBoxContainer/HBoxContainer2/Label4.text = str(value)
+
+func update_exp_bar(current_exp: int, next_exp: int):
+	$MarginContainer3/PanelContainer/MarginContainer/VBoxContainer/ProgressBar.max_value = next_exp
+	$MarginContainer3/PanelContainer/MarginContainer/VBoxContainer/ProgressBar.value = current_exp
 
 func update_maximum_hp(value: int):
 	$MarginContainer2/PanelContainer/MarginContainer/VBoxContainer/HBoxContainer/PanelContainer2/Label.text = str(value)

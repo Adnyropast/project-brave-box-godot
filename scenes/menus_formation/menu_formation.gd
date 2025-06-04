@@ -17,7 +17,7 @@ func fill_buttons():
 	for party_member in PlayerParty.team:
 		var team_member_button = preload("res://scenes/menus_formation/button_team_member.tscn").instantiate()
 		
-		team_member_button.text = party_member.name
+		team_member_button.text = party_member.party_member.name
 		team_member_button.slot = i
 		team_member_button.party_member = party_member
 		team_member_button.bench_member_buttons_container = bench_member_buttons_container

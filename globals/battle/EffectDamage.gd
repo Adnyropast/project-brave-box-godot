@@ -40,6 +40,7 @@ static func start_vanish(pawn: PawnComponents):
 static func remove_pawn_system(pawn: PawnComponents):
 	pawn.turn_system.pawns.erase(pawn)
 	pawn.tree.root.get_node("BattleComponents").pawns_enemy.erase(pawn)
+	pawn.tree.root.get_node("BattleComponents").on_enemy_defeated(pawn)
 
 static func remove_pawn_board(pawn: PawnComponents):
 	pawn.node.get_parent().remove_child(pawn.node)

@@ -6,6 +6,7 @@ var battle_board: Node3D
 var pawns_player: Array[PawnComponents]
 var pawns_enemy: Array[PawnComponents]
 var hud_player: Control
+var pot_exp: int
 
 func init(_mission: Mission) -> void:
 	mission = _mission
@@ -75,6 +76,9 @@ func clean_tree_root():
 	for child in tree.root.get_children():
 		tree.root.remove_child(child)
 
+func on_enemy_defeated(_pawn: PawnComponents) -> void:
+	pot_exp = pot_exp + 1000
+
 func all_enemies_defeated() -> bool:
 	for pawn in pawns_enemy:
 		if not pawn.variables.is_ko():
@@ -88,7 +92,11 @@ func win_battle():
 	hud_player.hide()
 	
 	var victory_screen = preload("res://scenes/victory/victory.tscn").instantiate()
+	victory_screen.pot_exp = pot_exp
 	tree.root.add_child(victory_screen)
+	
+	for party_member in PlayerParty.team:
+		party_member.add_exp(pot_exp)
 
 func no_player_present() -> bool:
 	return pawns_player.size() == 0

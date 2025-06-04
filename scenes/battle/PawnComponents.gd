@@ -15,7 +15,7 @@ var allies: Array[PawnComponents]
 var enemies: Array[PawnComponents]
 var vanishes_on_defeat: bool
 
-static func init_from_party_member(party_member: PartyMember) -> PawnComponents:
+static func init_from_party_member(party_member: PartyMemberVariables) -> PawnComponents:
 	var pawn_components = PawnComponents.new()
 	
 	pawn_components.controlled_by_menu = true
@@ -24,13 +24,13 @@ static func init_from_party_member(party_member: PartyMember) -> PawnComponents:
 	pawn_components.variables.init_from_party_member(party_member)
 	
 	pawn_components.node = preload("res://scenes/battle/battle_pawn.tscn").instantiate()
-	pawn_components.node.init_from_party_member(pawn_components, party_member)
+	pawn_components.node.init_from_party_member(pawn_components, party_member.party_member)
 	
 	pawn_components.menu_node = preload("res://scenes/menus_battle/menu_battle.tscn").instantiate()
 	pawn_components.menu_node.pawn = pawn_components
 	
 	pawn_components.player_panel = preload("res://scenes/menus_battle/player_character_panel.tscn").instantiate()
-	pawn_components.player_panel.set_character_name(party_member.name)
+	pawn_components.player_panel.set_character_name(party_member.party_member.name)
 	pawn_components.player_panel.set_current_hp(pawn_components.variables.hp)
 	pawn_components.player_panel.set_current_mp(pawn_components.variables.mp)
 	pawn_components.player_panel.set_max_hp(pawn_components.variables.get_max_hp())
