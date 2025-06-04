@@ -23,17 +23,13 @@ func get_exp_for_next_level() -> int:
 	return exp_required_next
 
 func add_exp(_plus_exp: int) -> void:
-	while _plus_exp > 0:
-		var next_level = level + 1
-		exp_required_next = PartyMemberExp.get_exp_required_for_level(next_level)
-		
-		if _plus_exp >= exp_required_next:
-			_plus_exp = _plus_exp - (exp_required_next - current_exp)
-			current_exp = 0
-			level = next_level
-		else:
-			current_exp = current_exp + _plus_exp
-			_plus_exp = 0
+	current_exp = current_exp + _plus_exp
+	exp_required_next = PartyMemberExp.get_exp_required_for_level(level + 1)
+	
+	while current_exp >= exp_required_next:
+		current_exp = current_exp - exp_required_next
+		level = level + 1
+		exp_required_next = PartyMemberExp.get_exp_required_for_level(level + 1)
 
 func update_exp_required_next() -> void:
 	exp_required_next = PartyMemberExp.get_exp_required_for_level(get_level() + 1)
