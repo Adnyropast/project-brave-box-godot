@@ -38,13 +38,13 @@ static func init_from_party_member(party_member: PartyMemberVariables) -> PawnCo
 	
 	return pawn_components
 
-static func init_from_enemy(enemy: Enemy, alias: String) -> PawnComponents:
+static func init_from_enemy(enemy: Enemy, alias: String, level: int) -> PawnComponents:
 	var pawn_components = PawnComponents.new()
 	
 	pawn_components.controlled_by_menu = false
 	pawn_components.vanishes_on_defeat = true
 	
-	pawn_components.variables.init_from_enemy(enemy, alias)
+	pawn_components.variables.init_from_enemy(enemy, alias, level)
 	
 	pawn_components.node = preload("res://scenes/battle/battle_pawn.tscn").instantiate()
 	pawn_components.node.init_from_enemy(pawn_components, enemy)

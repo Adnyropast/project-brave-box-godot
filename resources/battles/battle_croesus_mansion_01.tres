@@ -9,4 +9,5 @@
 script = ExtResource("1_ujy3x")
 arena = ExtResource("1_dauc7")
 enemy_party = Array[ExtResource("2_hcw6y")]([ExtResource("3_5825e"), ExtResource("3_5825e"), ExtResource("3_5825e"), ExtResource("3_5825e"), ExtResource("3_5825e")])
+danger_level = 18
 metadata/_custom_type_script = "uid://dae1o78payp5a"

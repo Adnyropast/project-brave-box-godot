@@ -27,7 +27,7 @@ func _ready() -> void:
 	var i = 0
 	
 	for enemy in mission.battle.enemy_party:
-		var pawn = PawnComponents.init_from_enemy(enemy, aliases[i])
+		var pawn = PawnComponents.init_from_enemy(enemy, aliases[i], mission.battle.danger_level)
 		
 		pawn.tree = get_tree()
 		pawn.allies = pawns_enemy
