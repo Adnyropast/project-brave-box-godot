@@ -17,6 +17,7 @@ config/icon="res://icon.svg"
 [autoload]
 
 PlayerParty="*res://globals/PlayerParty.gd"
+PlayerInventory="*res://globals/PlayerInventory.gd"
 
 [input]
 

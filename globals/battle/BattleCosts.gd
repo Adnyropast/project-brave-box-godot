@@ -10,3 +10,7 @@ static func expend_mp(pawn: PawnComponents, amount: int):
 	
 	if pawn.player_panel:
 		pawn.player_panel.set_current_mp(pawn.variables.mp)
+
+static func expend_item(pawn: PawnComponents, item: Item):
+	if pawn.uses_player_inventory:
+		PlayerInventory.expend_item(item)

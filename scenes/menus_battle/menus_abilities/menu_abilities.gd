@@ -13,7 +13,9 @@ func fill_abilities(abilities: Array[ActiveAbility]):
 		
 		button.set_label(ability.name)
 		
-		if ability.mp_cost > 0:
+		if ability.item_cost:
+			button.set_aside("× " + str(PlayerInventory.get_count(ability.item_cost)) + "")
+		elif ability.mp_cost > 0:
 			button.set_aside("" + str(ability.mp_cost) + " MP")
 		
 		button.pawn = pawn

@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ActiveAbility" load_steps=3 format=3 uid="uid://b3713mjd7oafx"]
+
+[ext_resource type="Script" uid="uid://clugbtxltbj7y" path="res://resources/ActiveAbility.gd" id="1_fxxxg"]
+[ext_resource type="Script" uid="uid://co1fexhbuetuc" path="res://resources/active_scripts/use_full_ether.gd" id="1_ibp6a"]
+
+[resource]
+script = ExtResource("1_fxxxg")
+name = "Full Ether"
+mp_cost = 0
+target_type = 0
+allies_by_default = true
+koed_targets = false
+gdscript = ExtResource("1_ibp6a")
+metadata/_custom_type_script = "uid://clugbtxltbj7y"

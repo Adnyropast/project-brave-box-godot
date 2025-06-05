@@ -16,6 +16,9 @@ func template_start():
 	show_hud()
 	
 	if user.variables.mp >= ability.mp_cost:
+		if ability.item_cost:
+			BattleCosts.expend_item(user, ability.item_cost)
+		
 		BattleCosts.expend_mp(user, ability.mp_cost)
 		start()
 	else:

@@ -11,6 +11,7 @@ enum TargetType {
 
 @export var name: String
 @export var mp_cost: int
+var item_cost: Item
 @export var target_type: TargetType
 @export var allies_by_default: bool
 @export var koed_targets: bool

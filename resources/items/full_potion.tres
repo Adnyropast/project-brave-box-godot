@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3 uid="uid://bhry7k0e4yhum"]
+
+[ext_resource type="Resource" uid="uid://damkn8fta7pg1" path="res://resources/active_abilities/use_full_potion.tres" id="1_1ltj4"]
+[ext_resource type="Script" uid="uid://chifm5t6aul4i" path="res://resources/Item.gd" id="1_8ado4"]
+
+[resource]
+script = ExtResource("1_8ado4")
+name = "Full Potion"
+ability = ExtResource("1_1ltj4")
+metadata/_custom_type_script = "uid://chifm5t6aul4i"

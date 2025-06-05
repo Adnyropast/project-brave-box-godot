@@ -49,6 +49,10 @@ text = "Target"
 layout_mode = 2
 text = "Defend"
 
+[node name="ButtonItems" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Items"
+
 [node name="ButtonPass" type="Button" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
 text = "Pass"
@@ -64,5 +68,6 @@ text = "Flee"
 [connection signal="pressed" from="MarginContainer/VBoxContainer/ButtonRevive" to="." method="_on_button_revive_pressed"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/ButtonTarget" to="." method="_on_button_target_pressed"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/ButtonDefend" to="." method="_on_button_defend_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/ButtonItems" to="." method="_on_button_items_pressed"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/ButtonPass" to="." method="_on_button_pass_pressed"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/ButtonFlee" to="." method="_on_button_flee_pressed"]

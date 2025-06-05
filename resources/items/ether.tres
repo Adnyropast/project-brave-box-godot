@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3 uid="uid://bxhenh2htdtav"]
+
+[ext_resource type="Script" uid="uid://chifm5t6aul4i" path="res://resources/Item.gd" id="1_2ysg6"]
+[ext_resource type="Resource" uid="uid://xt2di5ocn3de" path="res://resources/active_abilities/use_ether.tres" id="1_mbonc"]
+
+[resource]
+script = ExtResource("1_2ysg6")
+name = "Ether"
+ability = ExtResource("1_mbonc")
+metadata/_custom_type_script = "uid://chifm5t6aul4i"

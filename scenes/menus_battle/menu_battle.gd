@@ -103,3 +103,22 @@ func _on_button_defend_pressed() -> void:
 	
 	var active_ability = preload("res://resources/active_abilities/defend.tres")
 	pawn.confirm_targets(active_ability, [pawn])
+
+func _on_button_items_pressed() -> void:
+	Menus.close_menu(self)
+	
+	var menu_abilities = preload("res://scenes/menus_battle/menus_abilities/menu_abilities.tscn").instantiate()
+	
+	menu_abilities.menu_cancel = self
+	menu_abilities.pawn = pawn
+	
+	var abilities: Array[ActiveAbility] = []
+	
+	for iv in PlayerInventory.items:
+		if iv.item.ability:
+			iv.item.ability.item_cost = iv.item
+			abilities.append(iv.item.ability)
+	
+	menu_abilities.update_abilities(abilities)
+	
+	Menus.open_menu(menu_abilities)

@@ -34,6 +34,10 @@ layout_mode = 2
 layout_mode = 2
 text = "Formation"
 
+[node name="ButtonItems" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Items"
+
 [node name="ButtonStats" type="Button" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
 text = "Stats"
@@ -74,5 +78,6 @@ text = "chrysties"
 
 [connection signal="tree_entered" from="." to="." method="_on_tree_entered"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/ButtonFormation" to="." method="_on_button_formation_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/ButtonItems" to="." method="_on_button_items_pressed"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/ButtonStats" to="." method="_on_button_stats_pressed"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/ButtonClose" to="." method="_on_button_close_pressed"]

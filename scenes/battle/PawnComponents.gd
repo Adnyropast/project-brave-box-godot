@@ -14,12 +14,14 @@ var action_circle: Node3D
 var allies: Array[PawnComponents]
 var enemies: Array[PawnComponents]
 var vanishes_on_defeat: bool
+var uses_player_inventory: bool
 
 static func init_from_party_member(party_member: PartyMemberVariables) -> PawnComponents:
 	var pawn_components = PawnComponents.new()
 	
 	pawn_components.controlled_by_menu = true
 	pawn_components.vanishes_on_defeat = false
+	pawn_components.uses_player_inventory = true
 	
 	pawn_components.variables.init_from_party_member(party_member)
 	
@@ -43,6 +45,7 @@ static func init_from_enemy(enemy: Enemy, alias: String, level: int) -> PawnComp
 	
 	pawn_components.controlled_by_menu = false
 	pawn_components.vanishes_on_defeat = true
+	pawn_components.uses_player_inventory = false
 	
 	pawn_components.variables.init_from_enemy(enemy, alias, level)
 	
