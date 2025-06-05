@@ -6,5 +6,6 @@
 [resource]
 script = ExtResource("1_0dfld")
 name = "Full Ether"
+price = 1500
 ability = ExtResource("1_iu0ue")
 metadata/_custom_type_script = "uid://chifm5t6aul4i"

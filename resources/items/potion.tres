@@ -6,5 +6,6 @@
 [resource]
 script = ExtResource("1_h3xj8")
 name = "Potion"
+price = 20
 ability = ExtResource("1_36hb1")
 metadata/_custom_type_script = "uid://chifm5t6aul4i"

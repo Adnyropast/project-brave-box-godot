@@ -30,5 +30,4 @@ layout_mode = 2
 text = "Close"
 
 [connection signal="tree_entered" from="." to="." method="_on_tree_entered"]
-[connection signal="tree_exited" from="." to="." method="_on_tree_exited"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/ButtonClose" to="." method="_on_button_close_pressed"]

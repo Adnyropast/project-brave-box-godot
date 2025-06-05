@@ -17,3 +17,5 @@ func _on_pressed() -> void:
 	var battle_components = preload("res://scenes/battle/battle_components.tscn").instantiate()
 	battle_components.init(mission)
 	tree.root.add_child(battle_components)
+	
+	tree.paused = false
