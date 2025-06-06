@@ -6,12 +6,16 @@ var party_member: PartyMember
 var level: int
 var current_exp: int
 var exp_required_next: int
+var current_hp: int
+var current_mp: int
 
 func _init(_party_member: PartyMember) -> void:
 	party_member = _party_member
 	level = 1
 	current_exp = 0
 	update_exp_required_next()
+	current_hp = get_max_hp()
+	current_mp = get_max_mp()
 
 func get_level() -> int:
 	return level

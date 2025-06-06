@@ -15,8 +15,8 @@ func init_from_party_member(_party_member: PartyMemberVariables):
 	party_member = _party_member
 	name_alias = party_member.party_member.name
 	level = party_member.get_level()
-	hp = get_max_hp()
-	mp = get_max_mp()
+	hp = party_member.current_hp
+	mp = party_member.current_mp
 
 func init_from_enemy(_enemy: Enemy, alias: String, _level: int):
 	enemy = _enemy

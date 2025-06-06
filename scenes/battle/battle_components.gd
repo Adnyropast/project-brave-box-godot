@@ -68,8 +68,7 @@ func lose_battle():
 	
 	await tree.create_timer(1).timeout
 	
-	tree.change_scene_to_file("res://scenes/map/map_compositia.tscn")
-	clean_tree_root()
+	end_battle()
 
 func clean_tree_root():
 	var tree = get_tree()
@@ -89,6 +88,8 @@ func all_enemies_defeated() -> bool:
 	return true
 
 func win_battle():
+	on_battle_end()
+	
 	var tree = get_tree()
 	
 	hud_player.hide()
@@ -107,10 +108,21 @@ func no_player_present() -> bool:
 	return pawns_player.size() == 0
 
 func end_battle():
+	on_battle_end()
+	
 	var tree = get_tree()
 	
 	tree.change_scene_to_file("res://scenes/map/map_compositia.tscn")
 	clean_tree_root()
+
+func on_battle_end():
+	for pawn in pawns_player:
+		pawn.variables.party_member.current_hp = pawn.variables.hp
+		pawn.variables.party_member.current_mp = pawn.variables.mp
+	
+	if all_players_defeated():
+		for party_member in PlayerParty.team:
+			party_member.current_hp = 1
 
 func hide_ui():
 	hud_player.hide()

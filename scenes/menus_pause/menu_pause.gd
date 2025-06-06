@@ -4,6 +4,7 @@ var tree: SceneTree
 
 func _ready() -> void:
 	update_money()
+	update_character_panels()
 
 func _process(_delta: float) -> void:
 	if(Input.is_action_just_pressed("cancel")):
@@ -55,3 +56,16 @@ func _on_button_stats_pressed() -> void:
 
 func update_money() -> void:
 	$MarginContainer2/PanelContainer/MarginContainer/HBoxContainer/LabelMoney.text = str(PlayerParty.money)
+
+func update_character_panels() -> void:
+	var container = $MarginContainer3/VBoxContainer
+	
+	for child in container.get_children():
+		container.remove_child(child)
+	
+	for party_member in PlayerParty.team:
+		var panel = preload("res://scenes/menus_pause/pause_player_character_panel.tscn").instantiate()
+		
+		panel.set_party_member(party_member)
+		
+		container.add_child(panel)
