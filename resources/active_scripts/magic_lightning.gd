@@ -6,4 +6,5 @@ func start():
 	
 	for target in targets:
 		if not target.variables.is_ko():
-			EffectDamage.deal_damage(target, 1000, BattleEffects.Type.TYPE_LIGHTNING)
+			var damage = BattleCalcs.get_base_damage_magical(user, target)
+			EffectDamage.deal_damage(target, damage, BattleEffects.Type.TYPE_LIGHTNING)

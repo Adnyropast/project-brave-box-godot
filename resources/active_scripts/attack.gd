@@ -5,4 +5,5 @@ func start():
 	BattleEffects.create_attack_swing(user)
 	
 	for target in targets:
-		EffectPhysicalAttack.deal_damage(user, target, 1000, BattleEffects.Type.TYPE_PHYSICAL)
+		var damage = BattleCalcs.get_base_damage_physical(user, target)
+		EffectPhysicalAttack.deal_damage(user, target, damage, BattleEffects.Type.TYPE_PHYSICAL)

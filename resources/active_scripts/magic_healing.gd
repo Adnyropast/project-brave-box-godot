@@ -6,4 +6,5 @@ func start():
 	
 	for target in targets:
 		if not target.variables.is_ko():
-			EffectHealing.heal_amount(target, 1000)
+			var healing = BattleCalcs.get_base_healing(user)
+			EffectHealing.heal_amount(target, healing)
