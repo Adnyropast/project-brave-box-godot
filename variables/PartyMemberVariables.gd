@@ -70,3 +70,9 @@ func get_crit() -> int:
 
 func get_res_pwr() -> int:
 	return party_member.multiply_res_pwr(PartyMemberStats.get_res_pwr(get_level()))
+
+func restore_hp() -> void:
+	current_hp = get_max_hp()
+
+func restore_mp() -> void:
+	current_mp = get_max_mp()

@@ -9,6 +9,7 @@
 [resource]
 script = ExtResource("1_ruesk")
 name = "Strolhom"
+inn = true
 shops = Array[ExtResource("4_3gwed")]([ExtResource("5_1rn7v")])
 missions = Array[ExtResource("1_j6iev")]([ExtResource("2_7e2dn")])
 metadata/_custom_type_script = "uid://b6dtah64w6g2w"

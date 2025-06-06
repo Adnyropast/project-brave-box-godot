@@ -5,6 +5,14 @@ var point_of_interest: PointOfInterest
 
 func add_buttons():
 	if(point_of_interest):
+		if point_of_interest.inn:
+			var button = preload("res://scenes/menus/button_inn.tscn").instantiate()
+			
+			button.text = "Inn"
+			button.menu_poi = self
+			
+			$MarginContainer/VBoxContainer/VBoxContainer.add_child(button)
+		
 		for shop in point_of_interest.shops:
 			var button = preload("res://scenes/menus/button_shop.tscn").instantiate()
 			

@@ -8,6 +8,7 @@
 [resource]
 script = ExtResource("1_xvf3y")
 name = "Croesus Mansion"
+inn = false
 shops = Array[ExtResource("4_epj2r")]([])
 missions = Array[ExtResource("1_c3hr8")]([ExtResource("2_epj2r")])
 metadata/_custom_type_script = "uid://b6dtah64w6g2w"

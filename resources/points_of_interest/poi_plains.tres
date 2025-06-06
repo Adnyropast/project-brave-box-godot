@@ -8,6 +8,7 @@
 [resource]
 script = ExtResource("1_ga3yb")
 name = "Compositia Plains"
+inn = false
 shops = Array[ExtResource("4_pq0aw")]([])
 missions = Array[ExtResource("1_165fx")]([ExtResource("2_pq0aw")])
 metadata/_custom_type_script = "uid://b6dtah64w6g2w"
