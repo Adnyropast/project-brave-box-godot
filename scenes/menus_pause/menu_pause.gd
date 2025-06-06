@@ -2,10 +2,6 @@ extends Control
 
 var tree: SceneTree
 
-func _ready() -> void:
-	update_money()
-	update_character_panels()
-
 func _process(_delta: float) -> void:
 	if(Input.is_action_just_pressed("cancel")):
 		close_pause()
@@ -41,6 +37,9 @@ func open_menu_stats():
 func _on_tree_entered() -> void:
 	tree = get_tree()
 	tree.paused = true
+	
+	update_money()
+	update_character_panels()
 
 func _on_button_close_pressed() -> void:
 	close_pause()
