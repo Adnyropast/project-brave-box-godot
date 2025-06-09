@@ -2,7 +2,9 @@ extends Node
 
 class_name EffectDamage
 
-static func deal_damage(pawn: PawnComponents, damage: int, type: BattleEffects.Type):
+static func deal_damage(pawn: PawnComponents, damage: int, type: Types.Damage):
+	var resist_multiplier = pawn.variables.get_damage_type_multiplier(type)
+	damage = (int)(resist_multiplier * damage)
 	damage = pawn.variables.multiply_damage(damage)
 	pawn.variables.hp = pawn.variables.hp - damage
 	
@@ -16,14 +18,26 @@ static func deal_damage(pawn: PawnComponents, damage: int, type: BattleEffects.T
 		BattleEffects.create_vanish_effect(pawn)
 		start_vanish(pawn)
 	
-	BattlePopups.create_damage_popup(pawn, damage)
+	if damage >= 0:
+		BattlePopups.create_damage_popup(pawn, damage)
+	else:
+		BattlePopups.create_healing_popup(pawn, -damage)
+	
+	if resist_multiplier < 0:
+		BattlePopups.create_absorb_popup(pawn)
+	elif resist_multiplier == 0:
+		BattlePopups.create_immune_popup(pawn)
+	elif resist_multiplier < 1:
+		BattlePopups.create_resist_popup(pawn)
+	elif resist_multiplier > 1:
+		BattlePopups.create_weak_popup(pawn)
 	
 	if pawn.variables.state_defend:
 		BattleEffects.create_impact_defend(pawn)
 	
 	BattleEffects.create_impact_typed(pawn, type)
 	
-	if not pawn.variables.state_defend:
+	if not pawn.variables.state_defend and damage > 0:
 		pawn.node.start_hurt()
 	
 	if pawn.player_panel:

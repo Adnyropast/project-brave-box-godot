@@ -1,0 +1,20 @@
+extends Node
+
+class_name Types
+
+enum Damage {
+	PHYSICAL,
+	SEVERING,
+	CUTTING,
+	PIERCING,
+	BLASTING,
+	BLUDGEONING,
+	MAGICAL,
+	FIRE,
+	WATER,
+	LIGHTNING,
+	EARTH,
+	WIND,
+	LIGHT,
+	DARK,
+}

@@ -2,8 +2,6 @@ extends Node
 
 class_name BattleEffects
 
-enum Type {TYPE_PHYSICAL, TYPE_FIRE, TYPE_WATER, TYPE_LIGHTNING, TYPE_EARTH, TYPE_WIND, TYPE_LIGHT, TYPE_DARK}
-
 static func create_attack_swing(pawn: PawnComponents):
 	var effect_node = preload("res://scenes/battle_effects/attack_swing.tscn").instantiate()
 	
@@ -59,22 +57,22 @@ static func create_impact_healing(pawn: PawnComponents):
 	
 	pawn.node.add_child(effect_node)
 
-static func create_impact_typed(pawn: PawnComponents, type: Type):
-	if type == Type.TYPE_PHYSICAL:
+static func create_impact_typed(pawn: PawnComponents, type: Types.Damage):
+	if type == Types.Damage.PHYSICAL:
 		create_impact_physical(pawn)
-	elif type == Type.TYPE_FIRE:
+	elif type == Types.Damage.FIRE:
 		create_impact_fire(pawn)
-	elif type == Type.TYPE_WATER:
+	elif type == Types.Damage.WATER:
 		create_impact_water(pawn)
-	elif type == Type.TYPE_LIGHTNING:
+	elif type == Types.Damage.LIGHTNING:
 		create_impact_lightning(pawn)
-	elif type == Type.TYPE_EARTH:
+	elif type == Types.Damage.EARTH:
 		create_impact_earth(pawn)
-	elif type == Type.TYPE_WIND:
+	elif type == Types.Damage.WIND:
 		create_impact_wind(pawn)
-	elif type == Type.TYPE_LIGHT:
+	elif type == Types.Damage.LIGHT:
 		create_impact_light(pawn)
-	elif type == Type.TYPE_DARK:
+	elif type == Types.Damage.DARK:
 		create_impact_dark(pawn)
 
 static func create_vanish_effect(pawn: PawnComponents):

@@ -2,7 +2,7 @@ extends Node
 
 class_name EffectPhysicalAttack
 
-static func deal_damage(user: PawnComponents, target: PawnComponents, damage: int, type: BattleEffects.Type):
+static func deal_damage(user: PawnComponents, target: PawnComponents, damage: int, type: Types.Damage):
 	if check_miss(user, target):
 		BattlePopups.create_miss_popup(target)
 	else:

@@ -133,3 +133,9 @@ func multiply_damage(damage: int) -> int:
 		return damage / 2
 	
 	return damage
+
+func get_damage_type_multiplier(type: Types.Damage) -> float:
+	if enemy:
+		return enemy.get_type_multiplier(type)
+	
+	return 1

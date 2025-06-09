@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Mission" load_steps=3 format=3 uid="uid://p8kgtab7kutt"]
+
+[ext_resource type="Resource" uid="uid://d24jsqtd8swhx" path="res://resources/battles/battle_wayward_woods_02.tres" id="1_n6kuj"]
+[ext_resource type="Script" uid="uid://l3di8hrrnoea" path="res://resources/Mission.gd" id="2_s5bj0"]
+
+[resource]
+script = ExtResource("2_s5bj0")
+title = "Battle in the Wayward Woods Lv. 1"
+battle = ExtResource("1_n6kuj")
+metadata/_custom_type_script = "uid://l3di8hrrnoea"

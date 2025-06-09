@@ -1,7 +1,8 @@
-[gd_resource type="Resource" script_class="PointOfInterest" load_steps=6 format=3 uid="uid://doic3gt4hi2he"]
+[gd_resource type="Resource" script_class="PointOfInterest" load_steps=7 format=3 uid="uid://doic3gt4hi2he"]
 
 [ext_resource type="Script" uid="uid://l3di8hrrnoea" path="res://resources/Mission.gd" id="1_6owyr"]
 [ext_resource type="Script" uid="uid://b6dtah64w6g2w" path="res://resources/PointOfInterest.gd" id="1_61w5b"]
+[ext_resource type="Resource" uid="uid://p8kgtab7kutt" path="res://resources/missions/battle_wayward_woods_lv1.tres" id="2_37t6e"]
 [ext_resource type="Resource" uid="uid://cota660r2rotr" path="res://resources/missions/battle_wayward_woods.tres" id="2_vh7x7"]
 [ext_resource type="Resource" uid="uid://cueook0381lcs" path="res://resources/missions/battle_animant.tres" id="3_37t6e"]
 [ext_resource type="Script" uid="uid://b0f04n68xdlcp" path="res://resources/Shop.gd" id="5_vh7x7"]
@@ -11,5 +12,5 @@ script = ExtResource("1_61w5b")
 name = "Wayward Woods"
 inn = false
 shops = Array[ExtResource("5_vh7x7")]([])
-missions = Array[ExtResource("1_6owyr")]([ExtResource("2_vh7x7"), ExtResource("3_37t6e")])
+missions = Array[ExtResource("1_6owyr")]([ExtResource("2_37t6e"), ExtResource("2_vh7x7"), ExtResource("3_37t6e")])
 metadata/_custom_type_script = "uid://b6dtah64w6g2w"

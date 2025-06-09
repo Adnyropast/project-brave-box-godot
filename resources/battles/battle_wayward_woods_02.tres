@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Battle" load_steps=5 format=3 uid="uid://d24jsqtd8swhx"]
+
+[ext_resource type="PackedScene" uid="uid://mal7o7vcryaj" path="res://scenes/arenas/arena_wayward_woods.tscn" id="1_f13id"]
+[ext_resource type="Script" uid="uid://bj656ro4kx132" path="res://resources/Enemy.gd" id="2_18rv3"]
+[ext_resource type="Resource" uid="uid://c4ipgwxer5nhu" path="res://resources/enemies/sylph_hex.tres" id="3_vuk73"]
+[ext_resource type="Script" uid="uid://dae1o78payp5a" path="res://resources/Battle.gd" id="4_m35t1"]
+
+[resource]
+script = ExtResource("4_m35t1")
+arena = ExtResource("1_f13id")
+enemy_party = Array[ExtResource("2_18rv3")]([ExtResource("3_vuk73"), ExtResource("3_vuk73")])
+danger_level = 1
+metadata/_custom_type_script = "uid://dae1o78payp5a"
