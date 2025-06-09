@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3 uid="uid://beqa5rvati6aa"]
+
+[ext_resource type="Script" uid="uid://chifm5t6aul4i" path="res://resources/Item.gd" id="1_ag47o"]
+[ext_resource type="Resource" uid="uid://c48ts6u0arn6f" path="res://resources/active_abilities/use_magic_bombs/use_dark_bomb.tres" id="1_omwu7"]
+
+[resource]
+script = ExtResource("1_ag47o")
+name = "Dark Bomb"
+price = 10
+ability = ExtResource("1_omwu7")
+metadata/_custom_type_script = "uid://chifm5t6aul4i"

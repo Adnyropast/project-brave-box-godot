@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3 uid="uid://b4ejr1jnhpe46"]
+
+[ext_resource type="Script" uid="uid://chifm5t6aul4i" path="res://resources/Item.gd" id="1_jfhl6"]
+[ext_resource type="Resource" uid="uid://dnfy2c3wxr4nh" path="res://resources/active_abilities/use_throwing_weapons/use_throwing_bell.tres" id="1_qaq1q"]
+
+[resource]
+script = ExtResource("1_jfhl6")
+name = "Throwing Bell"
+price = 10
+ability = ExtResource("1_qaq1q")
+metadata/_custom_type_script = "uid://chifm5t6aul4i"

@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://difsvmci4e8p7"
-path.s3tc="res://.godot/imported/impact_physical_1.png-af3f75d16169f7e21e4ae355be5b32b0.s3tc.ctex"
+uid="uid://b5xycrdtf4ywi"
+path.s3tc="res://.godot/imported/impact_physical_2.png-b966bd8263407b328eebbb255cd7ebe5.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://images/battle_effects/impact_physical_1.png"
-dest_files=["res://.godot/imported/impact_physical_1.png-af3f75d16169f7e21e4ae355be5b32b0.s3tc.ctex"]
+source_file="res://images/battle_effects/impacts_physical/impact_physical_2.png"
+dest_files=["res://.godot/imported/impact_physical_2.png-b966bd8263407b328eebbb255cd7ebe5.s3tc.ctex"]
 
 [params]
 

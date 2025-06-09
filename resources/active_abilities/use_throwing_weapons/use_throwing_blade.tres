@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ActiveAbility" load_steps=3 format=3 uid="uid://dt5jmeiyr8x1p"]
+
+[ext_resource type="Script" uid="uid://0tgxduxdsrak" path="res://resources/active_scripts/use_throwing_weapons/use_throwing_blade.gd" id="1_1d7jx"]
+[ext_resource type="Script" uid="uid://clugbtxltbj7y" path="res://resources/ActiveAbility.gd" id="1_p3ela"]
+
+[resource]
+script = ExtResource("1_p3ela")
+name = "Throwing Blade"
+mp_cost = 0
+target_type = 1
+allies_by_default = false
+koed_targets = false
+gdscript = ExtResource("1_1d7jx")
+metadata/_custom_type_script = "uid://clugbtxltbj7y"

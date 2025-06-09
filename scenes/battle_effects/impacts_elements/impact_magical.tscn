@@ -1,0 +1,30 @@
+[gd_scene load_steps=6 format=3 uid="uid://bmvejjehv4svs"]
+
+[ext_resource type="Script" uid="uid://bmwwu13ohset4" path="res://scenes/battle_effects/remove_auto.gd" id="1_pact6"]
+[ext_resource type="Texture2D" uid="uid://chb4kdwyhavv" path="res://images/battle_effects/impacts_elements/impact_magical_1.png" id="2_pact6"]
+[ext_resource type="Texture2D" uid="uid://dgybbxcs05fes" path="res://images/battle_effects/impacts_elements/impact_magical_2.png" id="3_ra8v1"]
+[ext_resource type="Texture2D" uid="uid://wqbvjki5g1ua" path="res://images/battle_effects/impacts_elements/impact_magical_3.png" id="4_k2y2s"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_r20oy"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_pact6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_ra8v1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_k2y2s")
+}],
+"loop": false,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="ImpactMagical" type="Node3D"]
+script = ExtResource("1_pact6")
+
+[node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="."]
+sprite_frames = SubResource("SpriteFrames_r20oy")
+autoplay = "default"

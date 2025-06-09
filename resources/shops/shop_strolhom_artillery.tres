@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="Shop" load_steps=17 format=3 uid="uid://7yx46spt1ls0"]
+
+[ext_resource type="Script" uid="uid://chifm5t6aul4i" path="res://resources/Item.gd" id="1_bj6sd"]
+[ext_resource type="Resource" uid="uid://cr0fc4qshqewe" path="res://resources/items/throwing_weapons/throwing_stone.tres" id="2_bj6sd"]
+[ext_resource type="Resource" uid="uid://ck62pefs6tei3" path="res://resources/items/throwing_weapons/throwing_blade.tres" id="3_xpgoi"]
+[ext_resource type="Resource" uid="uid://jwjcuybnsn67" path="res://resources/items/throwing_weapons/throwing_knife.tres" id="4_i05j1"]
+[ext_resource type="Resource" uid="uid://bue0guhxp1l7c" path="res://resources/items/throwing_weapons/throwing_needle.tres" id="5_w2t03"]
+[ext_resource type="Resource" uid="uid://co3lxyumfxvnc" path="res://resources/items/throwing_weapons/throwing_bullet.tres" id="6_m0cbi"]
+[ext_resource type="Resource" uid="uid://b4ejr1jnhpe46" path="res://resources/items/throwing_weapons/throwing_bell.tres" id="7_hebpl"]
+[ext_resource type="Resource" uid="uid://dnqr3agdyhwdg" path="res://resources/items/magic_bombs/void_bomb.tres" id="8_2ytrk"]
+[ext_resource type="Resource" uid="uid://co8uiy1nnbunj" path="res://resources/items/magic_bombs/fire_bomb.tres" id="9_4eh4u"]
+[ext_resource type="Resource" uid="uid://btvouicnvevgs" path="res://resources/items/magic_bombs/water_bomb.tres" id="10_63vkx"]
+[ext_resource type="Resource" uid="uid://bckrya41rl7iu" path="res://resources/items/magic_bombs/lightning_bomb.tres" id="11_oi33t"]
+[ext_resource type="Resource" uid="uid://bfd4byr374o0y" path="res://resources/items/magic_bombs/earth_bomb.tres" id="12_v5vrf"]
+[ext_resource type="Resource" uid="uid://copc72u0t20xt" path="res://resources/items/magic_bombs/wind_bomb.tres" id="13_nl4i1"]
+[ext_resource type="Resource" uid="uid://blgbjm8ybb18d" path="res://resources/items/magic_bombs/light_bomb.tres" id="14_riytk"]
+[ext_resource type="Resource" uid="uid://beqa5rvati6aa" path="res://resources/items/magic_bombs/dark_bomb.tres" id="15_s01j1"]
+[ext_resource type="Script" uid="uid://b0f04n68xdlcp" path="res://resources/Shop.gd" id="16_okv48"]
+
+[resource]
+script = ExtResource("16_okv48")
+name = "Artillery Shop"
+items = Array[ExtResource("1_bj6sd")]([ExtResource("2_bj6sd"), ExtResource("3_xpgoi"), ExtResource("4_i05j1"), ExtResource("5_w2t03"), ExtResource("6_m0cbi"), ExtResource("7_hebpl"), ExtResource("8_2ytrk"), ExtResource("9_4eh4u"), ExtResource("10_63vkx"), ExtResource("11_oi33t"), ExtResource("12_v5vrf"), ExtResource("13_nl4i1"), ExtResource("14_riytk"), ExtResource("15_s01j1")])
+metadata/_custom_type_script = "uid://b0f04n68xdlcp"

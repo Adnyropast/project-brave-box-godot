@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ActiveAbility" load_steps=3 format=3 uid="uid://csinwt834p51f"]
+
+[ext_resource type="Script" uid="uid://clugbtxltbj7y" path="res://resources/ActiveAbility.gd" id="1_5tmmp"]
+[ext_resource type="Script" uid="uid://pfde5sxgdpgd" path="res://resources/active_scripts/use_magic_bombs/use_earth_bomb.gd" id="1_w5p4h"]
+
+[resource]
+script = ExtResource("1_5tmmp")
+name = "Earth Bomb"
+mp_cost = 0
+target_type = 1
+allies_by_default = false
+koed_targets = false
+gdscript = ExtResource("1_w5p4h")
+metadata/_custom_type_script = "uid://clugbtxltbj7y"

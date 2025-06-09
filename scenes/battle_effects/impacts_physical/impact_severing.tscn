@@ -1,0 +1,30 @@
+[gd_scene load_steps=6 format=3 uid="uid://cvsdynffu4lvd"]
+
+[ext_resource type="Script" uid="uid://bmwwu13ohset4" path="res://scenes/battle_effects/remove_auto.gd" id="1_fx7wk"]
+[ext_resource type="Texture2D" uid="uid://cljctedcfpp8y" path="res://images/battle_effects/impacts_physical/impact_severing_1.png" id="2_fx7wk"]
+[ext_resource type="Texture2D" uid="uid://bb7asdu6kcf3o" path="res://images/battle_effects/impacts_physical/impact_severing_2.png" id="3_nu3j0"]
+[ext_resource type="Texture2D" uid="uid://c5ganevnp32ho" path="res://images/battle_effects/impacts_physical/impact_severing_3.png" id="4_0t0fo"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_r20oy"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_fx7wk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_nu3j0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_0t0fo")
+}],
+"loop": false,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="ImpactSevering" type="Node3D"]
+script = ExtResource("1_fx7wk")
+
+[node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="."]
+sprite_frames = SubResource("SpriteFrames_r20oy")
+autoplay = "default"

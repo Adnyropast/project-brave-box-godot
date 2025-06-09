@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3 uid="uid://blgbjm8ybb18d"]
+
+[ext_resource type="Resource" uid="uid://dmm4rcr6bkvl1" path="res://resources/active_abilities/use_magic_bombs/use_light_bomb.tres" id="1_b3a66"]
+[ext_resource type="Script" uid="uid://chifm5t6aul4i" path="res://resources/Item.gd" id="1_dxvin"]
+
+[resource]
+script = ExtResource("1_dxvin")
+name = "Light Bomb"
+price = 10
+ability = ExtResource("1_b3a66")
+metadata/_custom_type_script = "uid://chifm5t6aul4i"

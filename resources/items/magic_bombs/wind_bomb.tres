@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3 uid="uid://copc72u0t20xt"]
+
+[ext_resource type="Script" uid="uid://chifm5t6aul4i" path="res://resources/Item.gd" id="1_ffotg"]
+[ext_resource type="Resource" uid="uid://cnkkue3c8x2xo" path="res://resources/active_abilities/use_magic_bombs/use_wind_bomb.tres" id="1_gi8gg"]
+
+[resource]
+script = ExtResource("1_ffotg")
+name = "Wind Bomb"
+price = 10
+ability = ExtResource("1_gi8gg")
+metadata/_custom_type_script = "uid://chifm5t6aul4i"

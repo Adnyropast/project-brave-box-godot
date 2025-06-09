@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b5xycrdtf4ywi"
-path.s3tc="res://.godot/imported/impact_physical_2.png-c3dd65649775f2706383ee89de16b632.s3tc.ctex"
+uid="uid://chb4kdwyhavv"
+path.s3tc="res://.godot/imported/impact_magical_1.png-4e419e9e0b1287e70bbc77e96840a285.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://images/battle_effects/impact_physical_2.png"
-dest_files=["res://.godot/imported/impact_physical_2.png-c3dd65649775f2706383ee89de16b632.s3tc.ctex"]
+source_file="res://images/battle_effects/impacts_elements/impact_magical_1.png"
+dest_files=["res://.godot/imported/impact_magical_1.png-4e419e9e0b1287e70bbc77e96840a285.s3tc.ctex"]
 
 [params]
 

@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ActiveAbility" load_steps=3 format=3 uid="uid://iq5qlm274h5e"]
+
+[ext_resource type="Script" uid="uid://clugbtxltbj7y" path="res://resources/ActiveAbility.gd" id="1_bnrls"]
+[ext_resource type="Script" uid="uid://cjadl16b6l3ri" path="res://resources/active_scripts/use_magic_bombs/use_lightning_bomb.gd" id="1_xa5w5"]
+
+[resource]
+script = ExtResource("1_bnrls")
+name = "Lightning Bomb"
+mp_cost = 0
+target_type = 1
+allies_by_default = false
+koed_targets = false
+gdscript = ExtResource("1_xa5w5")
+metadata/_custom_type_script = "uid://clugbtxltbj7y"

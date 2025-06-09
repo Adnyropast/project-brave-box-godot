@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ActiveAbility" load_steps=3 format=3 uid="uid://m47sby8jbdq4"]
+
+[ext_resource type="Script" uid="uid://clugbtxltbj7y" path="res://resources/ActiveAbility.gd" id="1_2bjcw"]
+[ext_resource type="Script" uid="uid://dp8ud40e167ad" path="res://resources/active_scripts/use_throwing_weapons/use_throwing_knife.gd" id="1_xhtly"]
+
+[resource]
+script = ExtResource("1_2bjcw")
+name = "Throwing Knife"
+mp_cost = 0
+target_type = 1
+allies_by_default = false
+koed_targets = false
+gdscript = ExtResource("1_xhtly")
+metadata/_custom_type_script = "uid://clugbtxltbj7y"

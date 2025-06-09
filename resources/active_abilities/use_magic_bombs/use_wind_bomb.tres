@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ActiveAbility" load_steps=3 format=3 uid="uid://cnkkue3c8x2xo"]
+
+[ext_resource type="Script" uid="uid://clugbtxltbj7y" path="res://resources/ActiveAbility.gd" id="1_4wv50"]
+[ext_resource type="Script" uid="uid://b72ksdnw1g8bq" path="res://resources/active_scripts/use_magic_bombs/use_wind_bomb.gd" id="1_6fec5"]
+
+[resource]
+script = ExtResource("1_4wv50")
+name = "Wind Bomb"
+mp_cost = 0
+target_type = 1
+allies_by_default = false
+koed_targets = false
+gdscript = ExtResource("1_6fec5")
+metadata/_custom_type_script = "uid://clugbtxltbj7y"

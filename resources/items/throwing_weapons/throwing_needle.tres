@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3 uid="uid://bue0guhxp1l7c"]
+
+[ext_resource type="Script" uid="uid://chifm5t6aul4i" path="res://resources/Item.gd" id="1_fmy10"]
+[ext_resource type="Resource" uid="uid://8g2rgnwj8jjp" path="res://resources/active_abilities/use_throwing_weapons/use_throwing_needle.tres" id="1_n1e3m"]
+
+[resource]
+script = ExtResource("1_fmy10")
+name = "Throwing Needle"
+price = 10
+ability = ExtResource("1_n1e3m")
+metadata/_custom_type_script = "uid://chifm5t6aul4i"

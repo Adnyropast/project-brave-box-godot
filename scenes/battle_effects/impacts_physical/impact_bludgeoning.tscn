@@ -1,0 +1,30 @@
+[gd_scene load_steps=6 format=3 uid="uid://do1mv83unlap6"]
+
+[ext_resource type="Script" uid="uid://bmwwu13ohset4" path="res://scenes/battle_effects/remove_auto.gd" id="1_aitjm"]
+[ext_resource type="Texture2D" uid="uid://ds1hunydt6m8p" path="res://images/battle_effects/impacts_physical/impact_bludgeoning_1.png" id="2_aitjm"]
+[ext_resource type="Texture2D" uid="uid://c84nk0y0jklr1" path="res://images/battle_effects/impacts_physical/impact_bludgeoning_2.png" id="3_2yqrh"]
+[ext_resource type="Texture2D" uid="uid://ek7wel6imaqs" path="res://images/battle_effects/impacts_physical/impact_bludgeoning_3.png" id="4_0caf1"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_r20oy"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_aitjm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_2yqrh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_0caf1")
+}],
+"loop": false,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="ImpactBludgeoning" type="Node3D"]
+script = ExtResource("1_aitjm")
+
+[node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="."]
+sprite_frames = SubResource("SpriteFrames_r20oy")
+autoplay = "default"

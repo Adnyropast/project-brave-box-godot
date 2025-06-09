@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3 uid="uid://jwjcuybnsn67"]
+
+[ext_resource type="Script" uid="uid://chifm5t6aul4i" path="res://resources/Item.gd" id="1_dnw15"]
+[ext_resource type="Resource" uid="uid://m47sby8jbdq4" path="res://resources/active_abilities/use_throwing_weapons/use_throwing_knife.tres" id="1_nvh28"]
+
+[resource]
+script = ExtResource("1_dnw15")
+name = "Throwing Knife"
+price = 10
+ability = ExtResource("1_nvh28")
+metadata/_custom_type_script = "uid://chifm5t6aul4i"

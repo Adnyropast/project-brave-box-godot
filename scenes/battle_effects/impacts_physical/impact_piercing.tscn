@@ -1,0 +1,30 @@
+[gd_scene load_steps=6 format=3 uid="uid://cej0jkuymsg3o"]
+
+[ext_resource type="Script" uid="uid://bmwwu13ohset4" path="res://scenes/battle_effects/remove_auto.gd" id="1_tceyj"]
+[ext_resource type="Texture2D" uid="uid://pp0x2mq1db33" path="res://images/battle_effects/impacts_physical/impact_piercing_1.png" id="2_tceyj"]
+[ext_resource type="Texture2D" uid="uid://vojl2tqundvl" path="res://images/battle_effects/impacts_physical/impact_piercing_2.png" id="3_35eyc"]
+[ext_resource type="Texture2D" uid="uid://cia8e8axc73br" path="res://images/battle_effects/impacts_physical/impact_piercing_3.png" id="4_vmx7y"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_r20oy"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_tceyj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_35eyc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_vmx7y")
+}],
+"loop": false,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="ImpactPiercing" type="Node3D"]
+script = ExtResource("1_tceyj")
+
+[node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="."]
+sprite_frames = SubResource("SpriteFrames_r20oy")
+autoplay = "default"

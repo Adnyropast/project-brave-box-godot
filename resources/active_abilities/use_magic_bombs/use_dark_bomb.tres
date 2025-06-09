@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ActiveAbility" load_steps=3 format=3 uid="uid://c48ts6u0arn6f"]
+
+[ext_resource type="Script" uid="uid://clugbtxltbj7y" path="res://resources/ActiveAbility.gd" id="1_evk64"]
+[ext_resource type="Script" uid="uid://b1wx4fv4yq1l1" path="res://resources/active_scripts/use_magic_bombs/use_dark_bomb.gd" id="1_pa14g"]
+
+[resource]
+script = ExtResource("1_evk64")
+name = "Dark Bomb"
+mp_cost = 0
+target_type = 1
+allies_by_default = false
+koed_targets = false
+gdscript = ExtResource("1_pa14g")
+metadata/_custom_type_script = "uid://clugbtxltbj7y"

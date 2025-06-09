@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ActiveAbility" load_steps=3 format=3 uid="uid://dnfy2c3wxr4nh"]
+
+[ext_resource type="Script" uid="uid://tj7y0te2cxxv" path="res://resources/active_scripts/use_throwing_weapons/use_throwing_bell.gd" id="1_0lkxx"]
+[ext_resource type="Script" uid="uid://clugbtxltbj7y" path="res://resources/ActiveAbility.gd" id="1_qmvf1"]
+
+[resource]
+script = ExtResource("1_qmvf1")
+name = "Throwing Bell"
+mp_cost = 0
+target_type = 1
+allies_by_default = false
+koed_targets = false
+gdscript = ExtResource("1_0lkxx")
+metadata/_custom_type_script = "uid://clugbtxltbj7y"

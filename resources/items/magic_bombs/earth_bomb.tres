@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3 uid="uid://bfd4byr374o0y"]
+
+[ext_resource type="Script" uid="uid://chifm5t6aul4i" path="res://resources/Item.gd" id="1_2uxft"]
+[ext_resource type="Resource" uid="uid://csinwt834p51f" path="res://resources/active_abilities/use_magic_bombs/use_earth_bomb.tres" id="1_4ayye"]
+
+[resource]
+script = ExtResource("1_2uxft")
+name = "Earth Bomb"
+price = 10
+ability = ExtResource("1_4ayye")
+metadata/_custom_type_script = "uid://chifm5t6aul4i"

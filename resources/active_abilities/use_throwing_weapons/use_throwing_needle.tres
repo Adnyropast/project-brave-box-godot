@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ActiveAbility" load_steps=3 format=3 uid="uid://8g2rgnwj8jjp"]
+
+[ext_resource type="Script" uid="uid://crppjnvgyt7p5" path="res://resources/active_scripts/use_throwing_weapons/use_throwing_needle.gd" id="1_thgwf"]
+[ext_resource type="Script" uid="uid://clugbtxltbj7y" path="res://resources/ActiveAbility.gd" id="1_wbj1p"]
+
+[resource]
+script = ExtResource("1_wbj1p")
+name = "Throwing Needle"
+mp_cost = 0
+target_type = 1
+allies_by_default = false
+koed_targets = false
+gdscript = ExtResource("1_thgwf")
+metadata/_custom_type_script = "uid://clugbtxltbj7y"

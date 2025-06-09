@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ActiveAbility" load_steps=3 format=3 uid="uid://75ynd6pkhrhd"]
+
+[ext_resource type="Script" uid="uid://clugbtxltbj7y" path="res://resources/ActiveAbility.gd" id="1_ale1k"]
+[ext_resource type="Script" uid="uid://l2jd67e03sux" path="res://resources/active_scripts/use_magic_bombs/use_water_bomb.gd" id="1_plrqf"]
+
+[resource]
+script = ExtResource("1_ale1k")
+name = "Water Bomb"
+mp_cost = 0
+target_type = 1
+allies_by_default = false
+koed_targets = false
+gdscript = ExtResource("1_plrqf")
+metadata/_custom_type_script = "uid://clugbtxltbj7y"

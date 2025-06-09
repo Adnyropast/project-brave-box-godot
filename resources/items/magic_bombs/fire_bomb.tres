@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3 uid="uid://co8uiy1nnbunj"]
+
+[ext_resource type="Script" uid="uid://chifm5t6aul4i" path="res://resources/Item.gd" id="1_5po1u"]
+[ext_resource type="Resource" uid="uid://dygcsph5bd5nm" path="res://resources/active_abilities/use_magic_bombs/use_fire_bomb.tres" id="1_k3qr2"]
+
+[resource]
+script = ExtResource("1_5po1u")
+name = "Fire Bomb"
+price = 10
+ability = ExtResource("1_k3qr2")
+metadata/_custom_type_script = "uid://chifm5t6aul4i"

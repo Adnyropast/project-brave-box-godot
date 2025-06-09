@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ActiveAbility" load_steps=3 format=3 uid="uid://dmm4rcr6bkvl1"]
+
+[ext_resource type="Script" uid="uid://bc7suweiry2b6" path="res://resources/active_scripts/use_magic_bombs/use_light_bomb.gd" id="1_2elr8"]
+[ext_resource type="Script" uid="uid://clugbtxltbj7y" path="res://resources/ActiveAbility.gd" id="1_jiur8"]
+
+[resource]
+script = ExtResource("1_jiur8")
+name = "Light Bomb"
+mp_cost = 0
+target_type = 1
+allies_by_default = false
+koed_targets = false
+gdscript = ExtResource("1_2elr8")
+metadata/_custom_type_script = "uid://clugbtxltbj7y"

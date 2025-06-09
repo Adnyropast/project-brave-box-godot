@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ActiveAbility" load_steps=3 format=3 uid="uid://dygcsph5bd5nm"]
+
+[ext_resource type="Script" uid="uid://vsa5xprrsdh3" path="res://resources/active_scripts/use_magic_bombs/use_fire_bomb.gd" id="1_u2kn8"]
+[ext_resource type="Script" uid="uid://clugbtxltbj7y" path="res://resources/ActiveAbility.gd" id="1_woop5"]
+
+[resource]
+script = ExtResource("1_woop5")
+name = "Fire Bomb"
+mp_cost = 0
+target_type = 1
+allies_by_default = false
+koed_targets = false
+gdscript = ExtResource("1_u2kn8")
+metadata/_custom_type_script = "uid://clugbtxltbj7y"

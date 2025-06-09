@@ -7,6 +7,20 @@ var items: Array[ItemVariables] = [
 	ItemVariables.new(preload("res://resources/items/full_potion.tres"), 4),
 	ItemVariables.new(preload("res://resources/items/ether.tres"), 6),
 	ItemVariables.new(preload("res://resources/items/full_ether.tres"), 2),
+	ItemVariables.new(preload("res://resources/items/throwing_weapons/throwing_stone.tres"), 2),
+	ItemVariables.new(preload("res://resources/items/throwing_weapons/throwing_blade.tres"), 2),
+	ItemVariables.new(preload("res://resources/items/throwing_weapons/throwing_knife.tres"), 2),
+	ItemVariables.new(preload("res://resources/items/throwing_weapons/throwing_needle.tres"), 2),
+	ItemVariables.new(preload("res://resources/items/throwing_weapons/throwing_bullet.tres"), 2),
+	ItemVariables.new(preload("res://resources/items/throwing_weapons/throwing_bell.tres"), 2),
+	ItemVariables.new(preload("res://resources/items/magic_bombs/void_bomb.tres"), 2),
+	ItemVariables.new(preload("res://resources/items/magic_bombs/fire_bomb.tres"), 2),
+	ItemVariables.new(preload("res://resources/items/magic_bombs/water_bomb.tres"), 2),
+	ItemVariables.new(preload("res://resources/items/magic_bombs/lightning_bomb.tres"), 2),
+	ItemVariables.new(preload("res://resources/items/magic_bombs/earth_bomb.tres"), 2),
+	ItemVariables.new(preload("res://resources/items/magic_bombs/wind_bomb.tres"), 2),
+	ItemVariables.new(preload("res://resources/items/magic_bombs/light_bomb.tres"), 2),
+	ItemVariables.new(preload("res://resources/items/magic_bombs/dark_bomb.tres"), 2),
 ]
 
 func find_item(item: Item) -> ItemVariables:

@@ -1,9 +1,9 @@
 [gd_scene load_steps=6 format=3 uid="uid://bp1uqybysnfgw"]
 
-[ext_resource type="Texture2D" uid="uid://difsvmci4e8p7" path="res://images/battle_effects/impact_physical_1.png" id="1_n0qfb"]
-[ext_resource type="Script" uid="uid://cmxxuom57cpaf" path="res://scenes/battle_effects/impact_physical.gd" id="1_nl36t"]
-[ext_resource type="Texture2D" uid="uid://b5xycrdtf4ywi" path="res://images/battle_effects/impact_physical_2.png" id="2_nl36t"]
-[ext_resource type="Texture2D" uid="uid://bb8u64bylb423" path="res://images/battle_effects/impact_physical_3.png" id="3_rtc0p"]
+[ext_resource type="Texture2D" uid="uid://difsvmci4e8p7" path="res://images/battle_effects/impacts_physical/impact_physical_1.png" id="1_n0qfb"]
+[ext_resource type="Script" uid="uid://cmxxuom57cpaf" path="res://scenes/battle_effects/impacts_physical/impact_physical.gd" id="1_nl36t"]
+[ext_resource type="Texture2D" uid="uid://b5xycrdtf4ywi" path="res://images/battle_effects/impacts_physical/impact_physical_2.png" id="2_nl36t"]
+[ext_resource type="Texture2D" uid="uid://bb8u64bylb423" path="res://images/battle_effects/impacts_physical/impact_physical_3.png" id="3_rtc0p"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_r20oy"]
 animations = [{

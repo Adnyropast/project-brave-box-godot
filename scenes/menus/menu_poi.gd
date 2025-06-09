@@ -16,7 +16,7 @@ func add_buttons():
 		for shop in point_of_interest.shops:
 			var button = preload("res://scenes/menus/button_shop.tscn").instantiate()
 			
-			button.text = "Shop"
+			button.text = shop.name
 			button.shop = shop
 			button.menu_poi = self
 			
