@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="BodyArmor" load_steps=2 format=3 uid="uid://c7feqfbpn8wef"]
+
+[ext_resource type="Script" uid="uid://5mknlrm35xgp" path="res://resources/BodyArmor.gd" id="1_q3va6"]
+
+[resource]
+script = ExtResource("1_q3va6")
+name = "Basic Coat"
+price = 20
+metadata/_custom_type_script = "uid://5mknlrm35xgp"

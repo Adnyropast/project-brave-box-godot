@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Weapon" load_steps=2 format=3 uid="uid://dfqil3o3cmuqt"]
+
+[ext_resource type="Script" uid="uid://cd2ax16f7piq3" path="res://resources/Weapon.gd" id="1_k3jrd"]
+
+[resource]
+script = ExtResource("1_k3jrd")
+name = "Basic Harp"
+price = 10
+metadata/_custom_type_script = "uid://cd2ax16f7piq3"

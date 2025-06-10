@@ -1,0 +1,33 @@
+[gd_scene load_steps=2 format=3 uid="uid://6tt3pd3q2jts"]
+
+[ext_resource type="Script" uid="uid://bei7pt782mw73" path="res://scenes/menus_equipment/button_equipment_item.gd" id="1_n6t88"]
+
+[node name="ButtonEquipmentItem" type="MarginContainer"]
+offset_right = 8.0
+offset_bottom = 8.0
+script = ExtResource("1_n6t88")
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 2
+mouse_filter = 2
+theme_override_constants/margin_left = 16
+theme_override_constants/margin_top = 4
+theme_override_constants/margin_right = 16
+theme_override_constants/margin_bottom = 4
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+mouse_filter = 2
+
+[node name="LabelName" type="Label" parent="MarginContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="LabelCount" type="Label" parent="MarginContainer/HBoxContainer"]
+layout_mode = 2
+text = "× 99"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="PartyMember" load_steps=10 format=3 uid="uid://dar00ws4ij200"]
+[gd_resource type="Resource" script_class="PartyMember" load_steps=11 format=3 uid="uid://dar00ws4ij200"]
 
 [ext_resource type="Script" uid="uid://bl0gq5s1bthhi" path="res://resources/PartyMember.gd" id="1_2ha5x"]
 [ext_resource type="Texture2D" uid="uid://dv8vg0f5vg7cy" path="res://images/battle_player_pawns/brandine/pawn_brandine_atk.png" id="1_2n4hm"]
@@ -9,6 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://bptb0t1x57dkr" path="res://images/battle_player_pawns/brandine/pawn_brandine_low.png" id="6_cnfc5"]
 [ext_resource type="Texture2D" uid="uid://c1educfhe3q3q" path="res://images/battle_player_pawns/brandine/pawn_brandine_std.png" id="7_tnmc4"]
 [ext_resource type="Texture2D" uid="uid://dv46frfrm47k3" path="res://images/battle_player_pawns/brandine/pawn_brandine_victory.png" id="8_o3agg"]
+[ext_resource type="Resource" uid="uid://cnhvun6twii4m" path="res://resources/items/equipment/weapons/basic_extender.tres" id="9_uqda1"]
 
 [resource]
 script = ExtResource("1_2ha5x")
@@ -32,4 +33,5 @@ aim = 3
 eva = 3
 crit = 3
 res_pwr = 1
+initial_weapon = ExtResource("9_uqda1")
 metadata/_custom_type_script = "uid://bl0gq5s1bthhi"

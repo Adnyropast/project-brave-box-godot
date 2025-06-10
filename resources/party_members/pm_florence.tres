@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="PartyMember" load_steps=10 format=3 uid="uid://bu6cyjh3lxowe"]
+[gd_resource type="Resource" script_class="PartyMember" load_steps=11 format=3 uid="uid://bu6cyjh3lxowe"]
 
 [ext_resource type="Texture2D" uid="uid://jca6xkooyrjw" path="res://images/battle_player_pawns/florence/pawn_florence_atk.png" id="1_ag66f"]
 [ext_resource type="Script" uid="uid://bl0gq5s1bthhi" path="res://resources/PartyMember.gd" id="1_dns4s"]
@@ -9,6 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://c177xh5buhwfc" path="res://images/battle_player_pawns/florence/pawn_florence_low.png" id="6_il0u1"]
 [ext_resource type="Texture2D" uid="uid://cgcuivq7riwk" path="res://images/battle_player_pawns/florence/pawn_florence_std.png" id="7_bssm4"]
 [ext_resource type="Texture2D" uid="uid://cqxfccngbsw2i" path="res://images/battle_player_pawns/florence/pawn_florence_victory.png" id="8_lcypr"]
+[ext_resource type="Resource" uid="uid://bnfxeurmouubg" path="res://resources/items/equipment/weapons/basic_tube.tres" id="9_idggf"]
 
 [resource]
 script = ExtResource("1_dns4s")
@@ -32,4 +33,5 @@ aim = 2
 eva = 2
 crit = 1
 res_pwr = 0
+initial_weapon = ExtResource("9_idggf")
 metadata/_custom_type_script = "uid://bl0gq5s1bthhi"

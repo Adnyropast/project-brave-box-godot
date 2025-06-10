@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="PointOfInterest" load_steps=7 format=3 uid="uid://ch5vntcueudiq"]
+[gd_resource type="Resource" script_class="PointOfInterest" load_steps=11 format=3 uid="uid://ch5vntcueudiq"]
 
 [ext_resource type="Script" uid="uid://l3di8hrrnoea" path="res://resources/Mission.gd" id="1_j6iev"]
 [ext_resource type="Script" uid="uid://b6dtah64w6g2w" path="res://resources/PointOfInterest.gd" id="1_ruesk"]
@@ -6,11 +6,15 @@
 [ext_resource type="Script" uid="uid://b0f04n68xdlcp" path="res://resources/Shop.gd" id="4_3gwed"]
 [ext_resource type="Resource" uid="uid://b86daafn33epm" path="res://resources/shops/shop_strolhom_potion.tres" id="5_1rn7v"]
 [ext_resource type="Resource" uid="uid://7yx46spt1ls0" path="res://resources/shops/shop_strolhom_artillery.tres" id="6_1rn7v"]
+[ext_resource type="Resource" uid="uid://bt2ts427i2xrd" path="res://resources/shops/shop_strolhom_weaponry.tres" id="7_4lg11"]
+[ext_resource type="Resource" uid="uid://c7civoy2lujvk" path="res://resources/shops/shop_strolhom_coif.tres" id="8_010dj"]
+[ext_resource type="Resource" uid="uid://chvlky083e4ql" path="res://resources/shops/shop_strolhom_armory.tres" id="9_ohuvl"]
+[ext_resource type="Resource" uid="uid://c0a72y68kwmfo" path="res://resources/shops/shop_strolhom_jewellery.tres" id="10_ded6q"]
 
 [resource]
 script = ExtResource("1_ruesk")
 name = "Strolhom"
 inn = true
-shops = Array[ExtResource("4_3gwed")]([ExtResource("5_1rn7v"), ExtResource("6_1rn7v")])
+shops = Array[ExtResource("4_3gwed")]([ExtResource("5_1rn7v"), ExtResource("6_1rn7v"), ExtResource("7_4lg11"), ExtResource("8_010dj"), ExtResource("9_ohuvl"), ExtResource("10_ded6q")])
 missions = Array[ExtResource("1_j6iev")]([ExtResource("2_7e2dn")])
 metadata/_custom_type_script = "uid://b6dtah64w6g2w"

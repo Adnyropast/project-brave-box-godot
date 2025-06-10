@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="PartyMember" load_steps=10 format=3 uid="uid://d3h1r5h3dbrmu"]
+[gd_resource type="Resource" script_class="PartyMember" load_steps=14 format=3 uid="uid://d3h1r5h3dbrmu"]
 
 [ext_resource type="Script" uid="uid://bl0gq5s1bthhi" path="res://resources/PartyMember.gd" id="1_5jrp3"]
 [ext_resource type="Texture2D" uid="uid://dlik00kubxnp8" path="res://images/battle_player_pawns/quatrain/pawn_quatrain_atk.png" id="1_ukyh0"]
@@ -9,6 +9,10 @@
 [ext_resource type="Texture2D" uid="uid://bymuymnjhgxb1" path="res://images/battle_player_pawns/quatrain/pawn_quatrain_low.png" id="6_m11b3"]
 [ext_resource type="Texture2D" uid="uid://mj5a2n642xhc" path="res://images/battle_player_pawns/quatrain/pawn_quatrain_std.png" id="7_soesu"]
 [ext_resource type="Texture2D" uid="uid://cc8kfqv16u22b" path="res://images/battle_player_pawns/quatrain/pawn_quatrain_victory.png" id="8_vq770"]
+[ext_resource type="Resource" uid="uid://ceyadnhmt1xuf" path="res://resources/items/equipment/accessories/basic_amulet.tres" id="9_j5jg6"]
+[ext_resource type="Resource" uid="uid://c7feqfbpn8wef" path="res://resources/items/equipment/body_armor/basic_coat.tres" id="10_m11b3"]
+[ext_resource type="Resource" uid="uid://bmpea7dlxyf7u" path="res://resources/items/equipment/headgear/basic_hat.tres" id="11_soesu"]
+[ext_resource type="Resource" uid="uid://mjl472gnkat6" path="res://resources/items/equipment/weapons/basic_scroll.tres" id="12_vq770"]
 
 [resource]
 script = ExtResource("1_5jrp3")
@@ -32,4 +36,8 @@ aim = 2
 eva = 3
 crit = 2
 res_pwr = 1
+initial_weapon = ExtResource("12_vq770")
+initial_headgear = ExtResource("11_soesu")
+initial_body_armor = ExtResource("10_m11b3")
+initial_accessory = ExtResource("9_j5jg6")
 metadata/_custom_type_script = "uid://bl0gq5s1bthhi"

@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="PartyMember" load_steps=10 format=3 uid="uid://dak0tdprt37n0"]
+[gd_resource type="Resource" script_class="PartyMember" load_steps=11 format=3 uid="uid://dak0tdprt37n0"]
 
 [ext_resource type="Script" uid="uid://bl0gq5s1bthhi" path="res://resources/PartyMember.gd" id="1_8n6ob"]
 [ext_resource type="Texture2D" uid="uid://dfk4gciomboge" path="res://images/battle_player_pawns/eyner/pawn_eyner_atk.png" id="1_mlyjx"]
@@ -9,6 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://cuke86yvjrfnm" path="res://images/battle_player_pawns/eyner/pawn_eyner_low.png" id="6_dq4l8"]
 [ext_resource type="Texture2D" uid="uid://cr6omm2ug0mkb" path="res://images/battle_player_pawns/eyner/pawn_eyner_std.png" id="7_g6pde"]
 [ext_resource type="Texture2D" uid="uid://cc4utc488w8as" path="res://images/battle_player_pawns/eyner/pawn_eyner_victory.png" id="8_5krib"]
+[ext_resource type="Resource" uid="uid://cw1xx1etvj5ea" path="res://resources/items/equipment/weapons/basic_axe.tres" id="9_xoni8"]
 
 [resource]
 script = ExtResource("1_8n6ob")
@@ -32,4 +33,5 @@ aim = 3
 eva = 3
 crit = 0
 res_pwr = 1
+initial_weapon = ExtResource("9_xoni8")
 metadata/_custom_type_script = "uid://bl0gq5s1bthhi"

@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="PartyMember" load_steps=10 format=3 uid="uid://mkjacey4kwdx"]
+[gd_resource type="Resource" script_class="PartyMember" load_steps=11 format=3 uid="uid://mkjacey4kwdx"]
 
 [ext_resource type="Script" uid="uid://bl0gq5s1bthhi" path="res://resources/PartyMember.gd" id="1_i5g04"]
 [ext_resource type="Texture2D" uid="uid://bu16lgudiaab0" path="res://images/battle_player_pawns/nebula/pawn_nebula_atk.png" id="1_iqrc1"]
@@ -9,6 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://dgdlvoqs4hp6s" path="res://images/battle_player_pawns/nebula/pawn_nebula_low.png" id="6_otgsi"]
 [ext_resource type="Texture2D" uid="uid://ddlc2iv63ljhq" path="res://images/battle_player_pawns/nebula/pawn_nebula_std.png" id="7_ag4hd"]
 [ext_resource type="Texture2D" uid="uid://ddiqiyxxvcorr" path="res://images/battle_player_pawns/nebula/pawn_nebula_victory.png" id="8_odbvo"]
+[ext_resource type="Resource" uid="uid://comyddg1lvlv8" path="res://resources/items/equipment/weapons/basic_sword.tres" id="9_4shw2"]
 
 [resource]
 script = ExtResource("1_i5g04")
@@ -32,4 +33,5 @@ aim = 0
 eva = 0
 crit = 0
 res_pwr = 0
+initial_weapon = ExtResource("9_4shw2")
 metadata/_custom_type_script = "uid://bl0gq5s1bthhi"

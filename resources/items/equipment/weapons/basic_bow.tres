@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Weapon" load_steps=2 format=3 uid="uid://mhngachklb64"]
+
+[ext_resource type="Script" uid="uid://cd2ax16f7piq3" path="res://resources/Weapon.gd" id="1_fwcv1"]
+
+[resource]
+script = ExtResource("1_fwcv1")
+name = "Basic Bow"
+price = 10
+metadata/_custom_type_script = "uid://cd2ax16f7piq3"

@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="BodyArmor" load_steps=2 format=3 uid="uid://dyetgu7uj8n1"]
+
+[ext_resource type="Script" uid="uid://5mknlrm35xgp" path="res://resources/BodyArmor.gd" id="1_nl63t"]
+
+[resource]
+script = ExtResource("1_nl63t")
+name = "Basic Robe"
+price = 20
+metadata/_custom_type_script = "uid://5mknlrm35xgp"

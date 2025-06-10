@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Accessory" load_steps=2 format=3 uid="uid://ceyadnhmt1xuf"]
+
+[ext_resource type="Script" uid="uid://d32kx4dh0lknu" path="res://resources/Accessory.gd" id="1_j8m62"]
+
+[resource]
+script = ExtResource("1_j8m62")
+name = "Basic Amulet"
+price = 5
+metadata/_custom_type_script = "uid://d32kx4dh0lknu"

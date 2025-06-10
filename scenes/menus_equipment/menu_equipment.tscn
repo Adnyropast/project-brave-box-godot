@@ -1,0 +1,141 @@
+[gd_scene load_steps=6 format=3 uid="uid://bxfjkyg87ytls"]
+
+[ext_resource type="Script" uid="uid://blt1xmwa2wq4y" path="res://scenes/menus_equipment/menu_equipment.gd" id="1_1r6tj"]
+[ext_resource type="Texture2D" uid="uid://322g1b0ebfax" path="res://images/icons_equipment/icon_weapon.png" id="2_r4672"]
+[ext_resource type="Texture2D" uid="uid://5b1cywoeuh2b" path="res://images/icons_equipment/icon_headgear.png" id="3_q1xbv"]
+[ext_resource type="Texture2D" uid="uid://bm83fnbkfu743" path="res://images/icons_equipment/icon_body_armor.png" id="4_dxmhu"]
+[ext_resource type="Texture2D" uid="uid://dqroofxic7mca" path="res://images/icons_equipment/icon_accessory.png" id="5_515ra"]
+
+[node name="MenuEquipment" type="Control"]
+process_mode = 2
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_1r6tj")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 16
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="ButtonClose" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Close"
+
+[node name="MarginContainer2" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -20.0
+offset_right = 20.0
+offset_bottom = 40.0
+grow_horizontal = 2
+theme_override_constants/margin_top = 16
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer2"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="MarginContainer2/VBoxContainer"]
+layout_mode = 2
+text = "Alice"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer2/VBoxContainer"]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="MarginContainer2/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+texture = ExtResource("2_r4672")
+expand_mode = 2
+
+[node name="ButtonWeapon" type="Button" parent="MarginContainer2/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+text = "Weapon"
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="MarginContainer2/VBoxContainer"]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="MarginContainer2/VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+texture = ExtResource("3_q1xbv")
+expand_mode = 2
+
+[node name="ButtonHeadgear" type="Button" parent="MarginContainer2/VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+text = "Headgear"
+
+[node name="HBoxContainer3" type="HBoxContainer" parent="MarginContainer2/VBoxContainer"]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="MarginContainer2/VBoxContainer/HBoxContainer3"]
+layout_mode = 2
+texture = ExtResource("4_dxmhu")
+expand_mode = 2
+
+[node name="ButtonBodyArmor" type="Button" parent="MarginContainer2/VBoxContainer/HBoxContainer3"]
+layout_mode = 2
+text = "Body Armor"
+
+[node name="HBoxContainer4" type="HBoxContainer" parent="MarginContainer2/VBoxContainer"]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="MarginContainer2/VBoxContainer/HBoxContainer4"]
+layout_mode = 2
+texture = ExtResource("5_515ra")
+expand_mode = 2
+
+[node name="ButtonAccessory" type="Button" parent="MarginContainer2/VBoxContainer/HBoxContainer4"]
+layout_mode = 2
+text = "Accessory"
+
+[node name="MarginContainer3" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -40.0
+offset_bottom = 40.0
+grow_horizontal = 0
+theme_override_constants/margin_top = 16
+theme_override_constants/margin_right = 8
+
+[node name="ScrollContainer" type="ScrollContainer" parent="MarginContainer3"]
+clip_contents = false
+layout_mode = 2
+horizontal_scroll_mode = 0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer3/ScrollContainer"]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer3/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="ButtonRemove" type="Button" parent="MarginContainer3/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+text = "Remove"
+
+[connection signal="pressed" from="MarginContainer/VBoxContainer/ButtonClose" to="." method="_on_button_close_pressed"]
+[connection signal="pressed" from="MarginContainer2/VBoxContainer/HBoxContainer/ButtonWeapon" to="." method="_on_button_weapon_pressed"]
+[connection signal="pressed" from="MarginContainer2/VBoxContainer/HBoxContainer2/ButtonHeadgear" to="." method="_on_button_headgear_pressed"]
+[connection signal="pressed" from="MarginContainer2/VBoxContainer/HBoxContainer3/ButtonBodyArmor" to="." method="_on_button_body_armor_pressed"]
+[connection signal="pressed" from="MarginContainer2/VBoxContainer/HBoxContainer4/ButtonAccessory" to="." method="_on_button_accessory_pressed"]
+[connection signal="pressed" from="MarginContainer3/ScrollContainer/VBoxContainer/ButtonRemove" to="." method="_on_button_remove_pressed"]

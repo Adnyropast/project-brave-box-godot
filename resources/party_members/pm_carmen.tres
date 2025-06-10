@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="PartyMember" load_steps=10 format=3 uid="uid://drydt67bugmvx"]
+[gd_resource type="Resource" script_class="PartyMember" load_steps=11 format=3 uid="uid://drydt67bugmvx"]
 
 [ext_resource type="Script" uid="uid://bl0gq5s1bthhi" path="res://resources/PartyMember.gd" id="1_6mslr"]
 [ext_resource type="Texture2D" uid="uid://bteoclhv2g6p6" path="res://images/battle_player_pawns/carmen/pawn_carmen_atk.png" id="1_rpe4j"]
@@ -9,6 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://qv3jaqygjbr4" path="res://images/battle_player_pawns/carmen/pawn_carmen_low.png" id="6_6okl0"]
 [ext_resource type="Texture2D" uid="uid://b6prnkxm2y4nd" path="res://images/battle_player_pawns/carmen/pawn_carmen_std.png" id="7_vgjmk"]
 [ext_resource type="Texture2D" uid="uid://ufqbvst3yubq" path="res://images/battle_player_pawns/carmen/pawn_carmen_victory.png" id="8_ikjq0"]
+[ext_resource type="Resource" uid="uid://yiro6solv5qw" path="res://resources/items/equipment/weapons/basic_dagger.tres" id="9_s3ce8"]
 
 [resource]
 script = ExtResource("1_6mslr")
@@ -32,4 +33,5 @@ aim = 1
 eva = 0
 crit = 1
 res_pwr = 3
+initial_weapon = ExtResource("9_s3ce8")
 metadata/_custom_type_script = "uid://bl0gq5s1bthhi"

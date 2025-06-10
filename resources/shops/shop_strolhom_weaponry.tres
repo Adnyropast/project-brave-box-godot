@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="Shop" load_steps=15 format=3 uid="uid://bt2ts427i2xrd"]
+
+[ext_resource type="Script" uid="uid://chifm5t6aul4i" path="res://resources/Item.gd" id="1_m3a47"]
+[ext_resource type="Script" uid="uid://b0f04n68xdlcp" path="res://resources/Shop.gd" id="2_8hiyf"]
+[ext_resource type="Resource" uid="uid://comyddg1lvlv8" path="res://resources/items/equipment/weapons/basic_sword.tres" id="2_21deg"]
+[ext_resource type="Resource" uid="uid://cw1xx1etvj5ea" path="res://resources/items/equipment/weapons/basic_axe.tres" id="3_8y3s3"]
+[ext_resource type="Resource" uid="uid://yiro6solv5qw" path="res://resources/items/equipment/weapons/basic_dagger.tres" id="4_o42tm"]
+[ext_resource type="Resource" uid="uid://mjl472gnkat6" path="res://resources/items/equipment/weapons/basic_scroll.tres" id="5_gw1ic"]
+[ext_resource type="Resource" uid="uid://v08gqa8w4lri" path="res://resources/items/equipment/weapons/basic_spear.tres" id="6_w2u07"]
+[ext_resource type="Resource" uid="uid://mhngachklb64" path="res://resources/items/equipment/weapons/basic_bow.tres" id="7_md2f6"]
+[ext_resource type="Resource" uid="uid://bpmeb7mlyiths" path="res://resources/items/equipment/weapons/basic_gun.tres" id="8_k3jqt"]
+[ext_resource type="Resource" uid="uid://cnhvun6twii4m" path="res://resources/items/equipment/weapons/basic_extender.tres" id="9_tj5hq"]
+[ext_resource type="Resource" uid="uid://bixkmdnxlrtgw" path="res://resources/items/equipment/weapons/basic_staff.tres" id="10_ub0v3"]
+[ext_resource type="Resource" uid="uid://c5stci2mojlb1" path="res://resources/items/equipment/weapons/basic_shield.tres" id="11_mfchu"]
+[ext_resource type="Resource" uid="uid://dfqil3o3cmuqt" path="res://resources/items/equipment/weapons/basic_harp.tres" id="12_c2v78"]
+[ext_resource type="Resource" uid="uid://bnfxeurmouubg" path="res://resources/items/equipment/weapons/basic_tube.tres" id="13_a8pvt"]
+
+[resource]
+script = ExtResource("2_8hiyf")
+name = "Weaponry Shop"
+items = Array[ExtResource("1_m3a47")]([ExtResource("2_21deg"), ExtResource("3_8y3s3"), ExtResource("4_o42tm"), ExtResource("5_gw1ic"), ExtResource("6_w2u07"), ExtResource("7_md2f6"), ExtResource("8_k3jqt"), ExtResource("9_tj5hq"), ExtResource("10_ub0v3"), ExtResource("11_mfchu"), ExtResource("12_c2v78"), ExtResource("13_a8pvt")])
+metadata/_custom_type_script = "uid://b0f04n68xdlcp"

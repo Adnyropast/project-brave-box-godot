@@ -8,11 +8,19 @@ var current_exp: int
 var exp_required_next: int
 var current_hp: int
 var current_mp: int
+var weapon: Weapon
+var headgear: Headgear
+var body_armor: BodyArmor
+var accessory: Accessory
 
 func _init(_party_member: PartyMember) -> void:
 	party_member = _party_member
 	level = 1
 	current_exp = 0
+	weapon = party_member.initial_weapon
+	headgear = party_member.initial_headgear
+	body_armor = party_member.initial_body_armor
+	accessory = party_member.initial_accessory
 	update_exp_required_next()
 	current_hp = get_max_hp()
 	current_mp = get_max_mp()

@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Shop" load_steps=7 format=3 uid="uid://c7civoy2lujvk"]
+
+[ext_resource type="Script" uid="uid://chifm5t6aul4i" path="res://resources/Item.gd" id="1_yjh85"]
+[ext_resource type="Resource" uid="uid://brakjvoud0ii5" path="res://resources/items/equipment/headgear/basic_headband.tres" id="2_28lsd"]
+[ext_resource type="Script" uid="uid://b0f04n68xdlcp" path="res://resources/Shop.gd" id="2_mumj5"]
+[ext_resource type="Resource" uid="uid://7cb7ea53iutl" path="res://resources/items/equipment/headgear/basic_helmet.tres" id="3_gmjrk"]
+[ext_resource type="Resource" uid="uid://bmpea7dlxyf7u" path="res://resources/items/equipment/headgear/basic_hat.tres" id="4_qlhjb"]
+[ext_resource type="Resource" uid="uid://c7yaitiucd3qw" path="res://resources/items/equipment/headgear/basic_crown.tres" id="5_sp0x0"]
+
+[resource]
+script = ExtResource("2_mumj5")
+name = "Coif Shop"
+items = Array[ExtResource("1_yjh85")]([ExtResource("2_28lsd"), ExtResource("3_gmjrk"), ExtResource("4_qlhjb"), ExtResource("5_sp0x0")])
+metadata/_custom_type_script = "uid://b0f04n68xdlcp"

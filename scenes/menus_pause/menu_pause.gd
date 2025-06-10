@@ -27,6 +27,13 @@ func open_menu_items():
 	menu.menu_pause = self
 	Menus.open_menu(menu)
 
+func open_menu_equipment():
+	Menus.close_menu(self)
+	
+	var menu = preload("res://scenes/menus_equipment/menu_equipment.tscn").instantiate()
+	menu.menu_pause = self
+	Menus.open_menu(menu)
+
 func open_menu_stats():
 	Menus.close_menu(self)
 	
@@ -49,6 +56,9 @@ func _on_button_formation_pressed() -> void:
 
 func _on_button_items_pressed() -> void:
 	open_menu_items()
+
+func _on_button_equipment_pressed() -> void:
+	open_menu_equipment()
 
 func _on_button_stats_pressed() -> void:
 	open_menu_stats()

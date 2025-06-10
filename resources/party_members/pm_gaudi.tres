@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="PartyMember" load_steps=10 format=3 uid="uid://cgdao45krvmks"]
+[gd_resource type="Resource" script_class="PartyMember" load_steps=11 format=3 uid="uid://cgdao45krvmks"]
 
 [ext_resource type="Texture2D" uid="uid://b5kerworbdksc" path="res://images/battle_player_pawns/gaudi/pawn_gaudi_atk.png" id="1_0u4oa"]
 [ext_resource type="Script" uid="uid://bl0gq5s1bthhi" path="res://resources/PartyMember.gd" id="1_52px4"]
@@ -9,6 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://ca3vu84ewk1ub" path="res://images/battle_player_pawns/gaudi/pawn_gaudi_low.png" id="6_ulmrf"]
 [ext_resource type="Texture2D" uid="uid://b40lxmvvyon7i" path="res://images/battle_player_pawns/gaudi/pawn_gaudi_std.png" id="7_css5j"]
 [ext_resource type="Texture2D" uid="uid://c0lxd7tyko1pm" path="res://images/battle_player_pawns/gaudi/pawn_gaudi_victory.png" id="8_s7cm7"]
+[ext_resource type="Resource" uid="uid://bpmeb7mlyiths" path="res://resources/items/equipment/weapons/basic_gun.tres" id="9_ityg2"]
 
 [resource]
 script = ExtResource("1_52px4")
@@ -32,4 +33,5 @@ aim = 2
 eva = 3
 crit = 1
 res_pwr = 1
+initial_weapon = ExtResource("9_ityg2")
 metadata/_custom_type_script = "uid://bl0gq5s1bthhi"

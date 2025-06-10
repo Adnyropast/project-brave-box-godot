@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Headgear" load_steps=2 format=3 uid="uid://bmpea7dlxyf7u"]
+
+[ext_resource type="Script" uid="uid://bubfao3dng0nr" path="res://resources/Headgear.gd" id="1_qf52a"]
+
+[resource]
+script = ExtResource("1_qf52a")
+name = "Basic Hat"
+price = 10
+metadata/_custom_type_script = "uid://bubfao3dng0nr"

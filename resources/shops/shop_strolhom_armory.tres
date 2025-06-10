@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Shop" load_steps=7 format=3 uid="uid://chvlky083e4ql"]
+
+[ext_resource type="Script" uid="uid://chifm5t6aul4i" path="res://resources/Item.gd" id="1_u7t6s"]
+[ext_resource type="Script" uid="uid://b0f04n68xdlcp" path="res://resources/Shop.gd" id="2_c7ba3"]
+[ext_resource type="Resource" uid="uid://cvx0ehbmf5uov" path="res://resources/items/equipment/body_armor/basic_tunic.tres" id="2_mrlgp"]
+[ext_resource type="Resource" uid="uid://c2cmfuvrbqgqc" path="res://resources/items/equipment/body_armor/basic_plate.tres" id="3_ot33n"]
+[ext_resource type="Resource" uid="uid://c7feqfbpn8wef" path="res://resources/items/equipment/body_armor/basic_coat.tres" id="4_dhhwe"]
+[ext_resource type="Resource" uid="uid://dyetgu7uj8n1" path="res://resources/items/equipment/body_armor/basic_robe.tres" id="5_1s1m1"]
+
+[resource]
+script = ExtResource("2_c7ba3")
+name = "Armory Shop"
+items = Array[ExtResource("1_u7t6s")]([ExtResource("2_mrlgp"), ExtResource("3_ot33n"), ExtResource("4_dhhwe"), ExtResource("5_1s1m1")])
+metadata/_custom_type_script = "uid://b0f04n68xdlcp"

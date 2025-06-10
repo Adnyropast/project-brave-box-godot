@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Shop" load_steps=4 format=3 uid="uid://c0a72y68kwmfo"]
+
+[ext_resource type="Script" uid="uid://chifm5t6aul4i" path="res://resources/Item.gd" id="1_ca1o2"]
+[ext_resource type="Script" uid="uid://b0f04n68xdlcp" path="res://resources/Shop.gd" id="2_cx1l1"]
+[ext_resource type="Resource" uid="uid://ceyadnhmt1xuf" path="res://resources/items/equipment/accessories/basic_amulet.tres" id="2_oritu"]
+
+[resource]
+script = ExtResource("2_cx1l1")
+name = "Jewellery Shop"
+items = Array[ExtResource("1_ca1o2")]([ExtResource("2_oritu")])
+metadata/_custom_type_script = "uid://b0f04n68xdlcp"
