@@ -6,4 +6,4 @@ func start():
 	
 	for target in targets:
 		var damage = BattleCalcs.get_base_damage_physical(user, target)
-		EffectPhysicalAttack.deal_damage(user, target, damage, Types.Damage.PHYSICAL)
+		EffectPhysicalAttack.deal_damage(user, target, damage, user.variables.get_weapon_type())

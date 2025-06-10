@@ -4,6 +4,7 @@
 
 [resource]
 script = ExtResource("1_fwcv1")
+damage_type = 3
 name = "Basic Bow"
 price = 10
 metadata/_custom_type_script = "uid://cd2ax16f7piq3"

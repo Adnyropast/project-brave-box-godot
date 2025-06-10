@@ -84,3 +84,9 @@ func restore_hp() -> void:
 
 func restore_mp() -> void:
 	current_mp = get_max_mp()
+
+func get_weapon_type() -> Types.Damage:
+	if weapon:
+		return weapon.damage_type
+	
+	return Types.Damage.PHYSICAL

@@ -1,0 +1,31 @@
+[gd_scene load_steps=2 format=3 uid="uid://txgr1fpr6yvv"]
+
+[ext_resource type="Script" uid="uid://ds82a76gldcrq" path="res://scenes/menus_battle/menus_change_weapon/button_change_weapon_option.gd" id="1_335ga"]
+
+[node name="MarginContainer" type="MarginContainer"]
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_335ga")
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 2
+mouse_filter = 2
+theme_override_constants/margin_left = 16
+theme_override_constants/margin_top = 4
+theme_override_constants/margin_right = 16
+theme_override_constants/margin_bottom = 4
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+mouse_filter = 2
+
+[node name="LabelName" type="Label" parent="MarginContainer/HBoxContainer"]
+layout_mode = 2
+
+[node name="LabelCount" type="Label" parent="MarginContainer/HBoxContainer"]
+layout_mode = 2
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

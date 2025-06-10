@@ -139,3 +139,9 @@ func get_damage_type_multiplier(type: Types.Damage) -> float:
 		return enemy.get_type_multiplier(type)
 	
 	return 1
+
+func get_weapon_type() -> Types.Damage:
+	if party_member:
+		return party_member.get_weapon_type()
+	
+	return Types.Damage.PHYSICAL

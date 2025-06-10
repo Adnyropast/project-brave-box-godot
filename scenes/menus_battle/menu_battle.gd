@@ -122,3 +122,13 @@ func _on_button_items_pressed() -> void:
 	menu_abilities.update_abilities(abilities)
 	
 	Menus.open_menu(menu_abilities)
+
+func _on_button_change_weapon_pressed() -> void:
+	Menus.close_menu(self)
+	
+	var menu = preload("res://scenes/menus_battle/menus_change_weapon/menu_change_weapon.tscn").instantiate()
+	
+	menu.menu_cancel = self
+	menu.pawn = pawn
+	
+	Menus.open_menu(menu)

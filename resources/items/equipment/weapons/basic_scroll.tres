@@ -4,6 +4,7 @@
 
 [resource]
 script = ExtResource("1_2a8m6")
+damage_type = 2
 name = "Basic Scroll"
 price = 10
 metadata/_custom_type_script = "uid://cd2ax16f7piq3"

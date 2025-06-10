@@ -4,6 +4,7 @@
 
 [resource]
 script = ExtResource("1_qf0n4")
+damage_type = 5
 name = "Basic Shield"
 price = 10
 metadata/_custom_type_script = "uid://cd2ax16f7piq3"
