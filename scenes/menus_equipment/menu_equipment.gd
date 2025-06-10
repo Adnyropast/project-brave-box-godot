@@ -37,6 +37,7 @@ func _on_button_remove_pressed() -> void:
 		PartyMemberEquipment.equip_accessory(selected_party_member, null)
 	
 	fill_equipment_slots()
+	update_character_stats()
 	fill_equipment_options()
 
 static func get_item_name(item: Item) -> String:
@@ -66,6 +67,7 @@ func set_selected_party_member(party_member: PartyMemberVariables) -> void:
 	selected_party_member = party_member
 	
 	fill_equipment_slots()
+	update_character_stats()
 
 func fill_equipment_slots() -> void:
 	$MarginContainer2/VBoxContainer/Label.text = selected_party_member.party_member.name
@@ -115,4 +117,8 @@ func equip_item(item_variables: ItemVariables) -> void:
 		PartyMemberEquipment.equip_accessory(selected_party_member, item_variables.item)
 	
 	fill_equipment_slots()
+	update_character_stats()
 	fill_equipment_options()
+
+func update_character_stats() -> void:
+	$MarginContainer4/StatsPanel.update_stats_from_party_member(selected_party_member)

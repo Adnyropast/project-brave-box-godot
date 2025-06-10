@@ -51,47 +51,4 @@ func update_mp(mp: int, max_mp: int):
 	$MarginContainer4/PanelContainer/MarginContainer/VBoxContainer/VBoxContainer2/ProgressBarMP.value = mp
 
 func update_stats(pawn: PawnComponents):
-	update_maximum_hp(pawn.variables.get_max_hp())
-	update_maximum_mp(pawn.variables.get_max_mp())
-	update_physical_attack(pawn.variables.get_p_atk())
-	update_physical_defense(pawn.variables.get_p_def())
-	update_magical_attack(pawn.variables.get_m_atk())
-	update_magical_defense(pawn.variables.get_m_def())
-	update_speed(pawn.variables.get_speed())
-	update_aim(pawn.variables.get_aim())
-	update_evasion(pawn.variables.get_eva())
-	update_critical_chance(pawn.variables.get_crit())
-	update_restorative_power(pawn.variables.get_res_pwr())
-
-func update_maximum_hp(value: int):
-	$MarginContainer2/PanelContainer/MarginContainer/VBoxContainer/HBoxContainer/PanelContainer2/Label.text = str(value)
-
-func update_maximum_mp(value: int):
-	$MarginContainer2/PanelContainer/MarginContainer/VBoxContainer/HBoxContainer2/PanelContainer2/Label.text = str(value)
-
-func update_physical_attack(value: int):
-	$MarginContainer2/PanelContainer/MarginContainer/VBoxContainer/HBoxContainer3/PanelContainer2/Label.text = str(value)
-
-func update_physical_defense(value: int):
-	$MarginContainer2/PanelContainer/MarginContainer/VBoxContainer/HBoxContainer4/PanelContainer2/Label.text = str(value)
-
-func update_magical_attack(value: int):
-	$MarginContainer2/PanelContainer/MarginContainer/VBoxContainer/HBoxContainer5/PanelContainer2/Label.text = str(value)
-
-func update_magical_defense(value: int):
-	$MarginContainer2/PanelContainer/MarginContainer/VBoxContainer/HBoxContainer6/PanelContainer2/Label.text = str(value)
-
-func update_speed(value: int):
-	$MarginContainer2/PanelContainer/MarginContainer/VBoxContainer/HBoxContainer7/PanelContainer2/Label.text = str(value)
-
-func update_aim(value: int):
-	$MarginContainer2/PanelContainer/MarginContainer/VBoxContainer/HBoxContainer8/PanelContainer2/Label.text = str(value)
-
-func update_evasion(value: int):
-	$MarginContainer2/PanelContainer/MarginContainer/VBoxContainer/HBoxContainer9/PanelContainer2/Label.text = str(value)
-
-func update_critical_chance(value: int):
-	$MarginContainer2/PanelContainer/MarginContainer/VBoxContainer/HBoxContainer10/PanelContainer2/Label.text = str(value)
-
-func update_restorative_power(value: int):
-	$MarginContainer2/PanelContainer/MarginContainer/VBoxContainer/HBoxContainer11/PanelContainer2/Label.text = str(value)
+	$MarginContainer2/StatsPanel.update_stats_from_pawn(pawn)

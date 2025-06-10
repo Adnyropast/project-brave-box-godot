@@ -30,5 +30,7 @@ func fill_weapon_options() -> void:
 
 func set_weapon(weapon: Weapon) -> void:
 	PartyMemberEquipment.equip_weapon(pawn.variables.party_member, weapon)
+	pawn.player_panel.set_max_hp(pawn.variables.get_max_hp())
+	pawn.player_panel.set_max_mp(pawn.variables.get_max_mp())
 	update_current_weapon()
 	fill_weapon_options()

@@ -4,6 +4,18 @@
 
 [resource]
 script = ExtResource("1_2ohjl")
+damage_type = 0
+max_hp = 0
+max_mp = 50
+p_atk = 50
+p_def = 0
+m_atk = 100
+m_def = 50
+spd = 0
+aim = 0
+eva = 0
+crit = 0
+res_pwr = 50
 name = "Basic Tube"
 price = 10
 metadata/_custom_type_script = "uid://cd2ax16f7piq3"

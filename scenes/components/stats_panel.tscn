@@ -1,0 +1,227 @@
+[gd_scene load_steps=2 format=3 uid="uid://dp6o6kfcungs3"]
+
+[ext_resource type="Script" uid="uid://bdgo655wjub7j" path="res://scenes/components/stats_panel.gd" id="1_6u8aq"]
+
+[node name="StatsPanel" type="PanelContainer"]
+offset_right = 212.0
+offset_bottom = 325.0
+script = ExtResource("1_6u8aq")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 2
+theme_override_constants/margin_left = 16
+theme_override_constants/margin_top = 16
+theme_override_constants/margin_right = 16
+theme_override_constants/margin_bottom = 16
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="PanelContainer" type="PanelContainer" parent="MarginContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer/PanelContainer"]
+layout_mode = 2
+text = "Maximum HP"
+
+[node name="PanelContainer2" type="PanelContainer" parent="MarginContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+
+[node name="LabelMaxHp" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer/PanelContainer2"]
+layout_mode = 2
+text = "99999"
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="PanelContainer" type="PanelContainer" parent="MarginContainer/VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer2/PanelContainer"]
+layout_mode = 2
+text = "Maximum MP"
+
+[node name="PanelContainer2" type="PanelContainer" parent="MarginContainer/VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+
+[node name="LabelMaxMp" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer2/PanelContainer2"]
+layout_mode = 2
+text = "9999"
+
+[node name="HBoxContainer3" type="HBoxContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="PanelContainer" type="PanelContainer" parent="MarginContainer/VBoxContainer/HBoxContainer3"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer3/PanelContainer"]
+layout_mode = 2
+text = "Physical Attack"
+
+[node name="PanelContainer2" type="PanelContainer" parent="MarginContainer/VBoxContainer/HBoxContainer3"]
+layout_mode = 2
+
+[node name="LabelPAtk" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer3/PanelContainer2"]
+layout_mode = 2
+text = "99999"
+
+[node name="HBoxContainer4" type="HBoxContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="PanelContainer" type="PanelContainer" parent="MarginContainer/VBoxContainer/HBoxContainer4"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer4/PanelContainer"]
+layout_mode = 2
+text = "Physical Defense"
+
+[node name="PanelContainer2" type="PanelContainer" parent="MarginContainer/VBoxContainer/HBoxContainer4"]
+layout_mode = 2
+
+[node name="LabelPDef" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer4/PanelContainer2"]
+layout_mode = 2
+text = "99999"
+
+[node name="HBoxContainer5" type="HBoxContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="PanelContainer" type="PanelContainer" parent="MarginContainer/VBoxContainer/HBoxContainer5"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer5/PanelContainer"]
+layout_mode = 2
+text = "Magical Attack"
+
+[node name="PanelContainer2" type="PanelContainer" parent="MarginContainer/VBoxContainer/HBoxContainer5"]
+layout_mode = 2
+
+[node name="LabelMAtk" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer5/PanelContainer2"]
+layout_mode = 2
+text = "99999"
+
+[node name="HBoxContainer6" type="HBoxContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="PanelContainer" type="PanelContainer" parent="MarginContainer/VBoxContainer/HBoxContainer6"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer6/PanelContainer"]
+layout_mode = 2
+text = "Magical Defense"
+
+[node name="PanelContainer2" type="PanelContainer" parent="MarginContainer/VBoxContainer/HBoxContainer6"]
+layout_mode = 2
+
+[node name="LabelMDef" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer6/PanelContainer2"]
+layout_mode = 2
+text = "99999"
+
+[node name="HBoxContainer7" type="HBoxContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="PanelContainer" type="PanelContainer" parent="MarginContainer/VBoxContainer/HBoxContainer7"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer7/PanelContainer"]
+layout_mode = 2
+text = "Speed"
+
+[node name="PanelContainer2" type="PanelContainer" parent="MarginContainer/VBoxContainer/HBoxContainer7"]
+layout_mode = 2
+
+[node name="LabelSpd" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer7/PanelContainer2"]
+layout_mode = 2
+text = "99999"
+
+[node name="HBoxContainer8" type="HBoxContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="PanelContainer" type="PanelContainer" parent="MarginContainer/VBoxContainer/HBoxContainer8"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer8/PanelContainer"]
+layout_mode = 2
+text = "Aim"
+
+[node name="PanelContainer2" type="PanelContainer" parent="MarginContainer/VBoxContainer/HBoxContainer8"]
+layout_mode = 2
+
+[node name="LabelAim" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer8/PanelContainer2"]
+layout_mode = 2
+text = "999"
+
+[node name="HBoxContainer9" type="HBoxContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="PanelContainer" type="PanelContainer" parent="MarginContainer/VBoxContainer/HBoxContainer9"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer9/PanelContainer"]
+layout_mode = 2
+text = "Evasion"
+
+[node name="PanelContainer2" type="PanelContainer" parent="MarginContainer/VBoxContainer/HBoxContainer9"]
+layout_mode = 2
+
+[node name="LabelEva" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer9/PanelContainer2"]
+layout_mode = 2
+text = "999"
+
+[node name="HBoxContainer10" type="HBoxContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="PanelContainer" type="PanelContainer" parent="MarginContainer/VBoxContainer/HBoxContainer10"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer10/PanelContainer"]
+layout_mode = 2
+text = "Critical Chance"
+
+[node name="PanelContainer2" type="PanelContainer" parent="MarginContainer/VBoxContainer/HBoxContainer10"]
+layout_mode = 2
+
+[node name="LabelCrit" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer10/PanelContainer2"]
+layout_mode = 2
+text = "999"
+
+[node name="HBoxContainer11" type="HBoxContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="PanelContainer" type="PanelContainer" parent="MarginContainer/VBoxContainer/HBoxContainer11"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer11/PanelContainer"]
+layout_mode = 2
+text = "Restorative Power"
+
+[node name="PanelContainer2" type="PanelContainer" parent="MarginContainer/VBoxContainer/HBoxContainer11"]
+layout_mode = 2
+
+[node name="LabelResPwr" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer11/PanelContainer2"]
+layout_mode = 2
+text = "999"

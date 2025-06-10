@@ -25,17 +25,7 @@ func update_stats(party_member: PartyMemberVariables):
 	update_current_exp(party_member.get_current_exp())
 	update_next_exp(party_member.get_exp_for_next_level())
 	update_exp_bar(party_member.get_current_exp(), party_member.get_exp_for_next_level())
-	update_maximum_hp(party_member.get_max_hp())
-	update_maximum_mp(party_member.get_max_mp())
-	update_physical_attack(party_member.get_p_atk())
-	update_physical_defense(party_member.get_p_def())
-	update_magical_attack(party_member.get_m_atk())
-	update_magical_defense(party_member.get_m_def())
-	update_speed(party_member.get_spd())
-	update_aim(party_member.get_aim())
-	update_evasion(party_member.get_eva())
-	update_critical_chance(party_member.get_crit())
-	update_restorative_power(party_member.get_res_pwr())
+	$MarginContainer2/StatsPanel.update_stats_from_party_member(party_member)
 
 func update_level(value: int):
 	$MarginContainer3/PanelContainer/MarginContainer/VBoxContainer/HBoxContainer/Label2.text = str(value)
@@ -49,36 +39,3 @@ func update_next_exp(value: int):
 func update_exp_bar(current_exp: int, next_exp: int):
 	$MarginContainer3/PanelContainer/MarginContainer/VBoxContainer/ProgressBar.max_value = next_exp
 	$MarginContainer3/PanelContainer/MarginContainer/VBoxContainer/ProgressBar.value = current_exp
-
-func update_maximum_hp(value: int):
-	$MarginContainer2/PanelContainer/MarginContainer/VBoxContainer/HBoxContainer/PanelContainer2/Label.text = str(value)
-
-func update_maximum_mp(value: int):
-	$MarginContainer2/PanelContainer/MarginContainer/VBoxContainer/HBoxContainer2/PanelContainer2/Label.text = str(value)
-
-func update_physical_attack(value: int):
-	$MarginContainer2/PanelContainer/MarginContainer/VBoxContainer/HBoxContainer3/PanelContainer2/Label.text = str(value)
-
-func update_physical_defense(value: int):
-	$MarginContainer2/PanelContainer/MarginContainer/VBoxContainer/HBoxContainer4/PanelContainer2/Label.text = str(value)
-
-func update_magical_attack(value: int):
-	$MarginContainer2/PanelContainer/MarginContainer/VBoxContainer/HBoxContainer5/PanelContainer2/Label.text = str(value)
-
-func update_magical_defense(value: int):
-	$MarginContainer2/PanelContainer/MarginContainer/VBoxContainer/HBoxContainer6/PanelContainer2/Label.text = str(value)
-
-func update_speed(value: int):
-	$MarginContainer2/PanelContainer/MarginContainer/VBoxContainer/HBoxContainer7/PanelContainer2/Label.text = str(value)
-
-func update_aim(value: int):
-	$MarginContainer2/PanelContainer/MarginContainer/VBoxContainer/HBoxContainer8/PanelContainer2/Label.text = str(value)
-
-func update_evasion(value: int):
-	$MarginContainer2/PanelContainer/MarginContainer/VBoxContainer/HBoxContainer9/PanelContainer2/Label.text = str(value)
-
-func update_critical_chance(value: int):
-	$MarginContainer2/PanelContainer/MarginContainer/VBoxContainer/HBoxContainer10/PanelContainer2/Label.text = str(value)
-
-func update_restorative_power(value: int):
-	$MarginContainer2/PanelContainer/MarginContainer/VBoxContainer/HBoxContainer11/PanelContainer2/Label.text = str(value)

@@ -4,6 +4,17 @@
 
 [resource]
 script = ExtResource("1_nl63t")
+max_hp = 0
+max_mp = 0
+p_atk = 0
+p_def = 25
+m_atk = 0
+m_def = 50
+spd = 0
+aim = 0
+eva = 0
+crit = 0
+res_pwr = 0
 name = "Basic Robe"
 price = 20
 metadata/_custom_type_script = "uid://5mknlrm35xgp"

@@ -4,6 +4,17 @@
 
 [resource]
 script = ExtResource("1_xr458")
+max_hp = 0
+max_mp = 0
+p_atk = 0
+p_def = 50
+m_atk = 0
+m_def = 25
+spd = 0
+aim = 0
+eva = 0
+crit = 0
+res_pwr = 0
 name = "Basic Helmet"
 price = 10
 metadata/_custom_type_script = "uid://bubfao3dng0nr"
