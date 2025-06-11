@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ActiveAbility" load_steps=3 format=3 uid="uid://o2cdqwh54rnh"]
+
+[ext_resource type="Script" uid="uid://yjj0b365x62a" path="res://resources/active_scripts/weaken_stats/weaken_restorative_power.gd" id="1_6mk2j"]
+[ext_resource type="Script" uid="uid://clugbtxltbj7y" path="res://resources/ActiveAbility.gd" id="2_vvk7c"]
+
+[resource]
+script = ExtResource("2_vvk7c")
+name = "Weaken Restorative Power"
+mp_cost = 15
+target_type = 1
+allies_by_default = false
+koed_targets = false
+gdscript = ExtResource("1_6mk2j")
+metadata/_custom_type_script = "uid://clugbtxltbj7y"

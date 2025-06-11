@@ -34,6 +34,7 @@ func update_info(pawn: PawnComponents):
 	update_hp(pawn.variables.hp, pawn.variables.get_max_hp())
 	update_mp(pawn.variables.mp, pawn.variables.get_max_mp())
 	update_stats(pawn)
+	update_states(pawn)
 
 func update_name(_name: String):
 	$MarginContainer3/PanelContainer/MarginContainer/LabelName.text = _name
@@ -52,3 +53,16 @@ func update_mp(mp: int, max_mp: int):
 
 func update_stats(pawn: PawnComponents):
 	$MarginContainer2/StatsPanel.update_stats_from_pawn(pawn)
+
+func update_states(pawn: PawnComponents):
+	var container = $MarginContainer5/ScrollContainer/VBoxContainerStates
+	
+	for child in container.get_children():
+		container.remove_child(child)
+	
+	for state in pawn.variables.states.states:
+		var item = preload("res://scenes/menus_battle/menus_info/state_item.tscn").instantiate()
+		
+		item.update_name(state.ability.name)
+		
+		container.add_child(item)

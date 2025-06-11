@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ActiveAbility" load_steps=3 format=3 uid="uid://bjhisjq2fg8nn"]
+
+[ext_resource type="Script" uid="uid://bckdiq21hqw5g" path="res://resources/active_scripts/boost_stats/boost_physical_defense.gd" id="1_87krv"]
+[ext_resource type="Script" uid="uid://clugbtxltbj7y" path="res://resources/ActiveAbility.gd" id="1_txoaj"]
+
+[resource]
+script = ExtResource("1_txoaj")
+name = "Boost Physical Defense"
+mp_cost = 15
+target_type = 1
+allies_by_default = true
+koed_targets = false
+gdscript = ExtResource("1_87krv")
+metadata/_custom_type_script = "uid://clugbtxltbj7y"

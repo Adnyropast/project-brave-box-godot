@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ActiveAbility" load_steps=3 format=3 uid="uid://cuusncqliqc4y"]
+
+[ext_resource type="Script" uid="uid://cqk3hnje7oem6" path="res://resources/active_scripts/weaken_stats/weaken_speed.gd" id="1_src80"]
+[ext_resource type="Script" uid="uid://clugbtxltbj7y" path="res://resources/ActiveAbility.gd" id="2_qfan5"]
+
+[resource]
+script = ExtResource("2_qfan5")
+name = "Weaken Speed"
+mp_cost = 15
+target_type = 1
+allies_by_default = false
+koed_targets = false
+gdscript = ExtResource("1_src80")
+metadata/_custom_type_script = "uid://clugbtxltbj7y"

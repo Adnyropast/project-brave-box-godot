@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ActiveAbility" load_steps=3 format=3 uid="uid://co44ltk7e6e3a"]
+
+[ext_resource type="Script" uid="uid://c3ckreflmw4x0" path="res://resources/active_scripts/weaken_stats/weaken_magical_defense.gd" id="1_58kw4"]
+[ext_resource type="Script" uid="uid://clugbtxltbj7y" path="res://resources/ActiveAbility.gd" id="2_kcsgn"]
+
+[resource]
+script = ExtResource("2_kcsgn")
+name = "Weaken Magical Defense"
+mp_cost = 15
+target_type = 1
+allies_by_default = false
+koed_targets = false
+gdscript = ExtResource("1_58kw4")
+metadata/_custom_type_script = "uid://clugbtxltbj7y"

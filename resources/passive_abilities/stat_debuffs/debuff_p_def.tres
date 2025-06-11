@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="PassiveAbility" load_steps=3 format=3 uid="uid://crjp8jbgnjuhd"]
+
+[ext_resource type="Script" uid="uid://bagd44bi22sp4" path="res://resources/PassiveAbility.gd" id="1_ahrce"]
+[ext_resource type="Script" uid="uid://b7ho51txm8sj6" path="res://resources/passive_scripts/stat_debuffs/debuff_p_def.gd" id="1_ck1qi"]
+
+[resource]
+script = ExtResource("1_ahrce")
+name = "Physical Defense -"
+gdscript = ExtResource("1_ck1qi")
+metadata/_custom_type_script = "uid://bagd44bi22sp4"

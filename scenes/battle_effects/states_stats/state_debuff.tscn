@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://btj6sdjx4vjfh"]
+
+[ext_resource type="Texture2D" uid="uid://e5rvhiu1r4a1" path="res://images/battle_effects/states_stats/state_debuff.png" id="1_upoif"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="Sprite3D" type="Sprite3D" parent="."]
+texture = ExtResource("1_upoif")

@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="PassiveAbility" load_steps=3 format=3 uid="uid://cwu7dcwe0h88k"]
+
+[ext_resource type="Script" uid="uid://lhq3qv1dh0t3" path="res://resources/passive_scripts/stat_debuffs/debuff_m_def.gd" id="1_1q17r"]
+[ext_resource type="Script" uid="uid://bagd44bi22sp4" path="res://resources/PassiveAbility.gd" id="1_ub7o6"]
+
+[resource]
+script = ExtResource("1_ub7o6")
+name = "Magical Defense -"
+gdscript = ExtResource("1_1q17r")
+metadata/_custom_type_script = "uid://bagd44bi22sp4"

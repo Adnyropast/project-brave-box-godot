@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="PassiveAbility" load_steps=3 format=3 uid="uid://wgx5hjtdcfxw"]
+
+[ext_resource type="Script" uid="uid://bagd44bi22sp4" path="res://resources/PassiveAbility.gd" id="1_886qp"]
+[ext_resource type="Script" uid="uid://t7ki4vmt0s5j" path="res://resources/passive_scripts/stat_debuffs/debuff_aim.gd" id="1_p77u7"]
+
+[resource]
+script = ExtResource("1_886qp")
+name = "Aim -"
+gdscript = ExtResource("1_p77u7")
+metadata/_custom_type_script = "uid://bagd44bi22sp4"

@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ActiveAbility" load_steps=3 format=3 uid="uid://2pvpjawfm8c8"]
+
+[ext_resource type="Script" uid="uid://ddjl8lyisr2vi" path="res://resources/active_scripts/weaken_stats/weaken_evasion.gd" id="1_8t5cd"]
+[ext_resource type="Script" uid="uid://clugbtxltbj7y" path="res://resources/ActiveAbility.gd" id="2_codba"]
+
+[resource]
+script = ExtResource("2_codba")
+name = "Weaken Evasion"
+mp_cost = 15
+target_type = 1
+allies_by_default = false
+koed_targets = false
+gdscript = ExtResource("1_8t5cd")
+metadata/_custom_type_script = "uid://clugbtxltbj7y"

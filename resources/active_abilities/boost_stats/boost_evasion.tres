@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ActiveAbility" load_steps=3 format=3 uid="uid://xkf28jdmpogx"]
+
+[ext_resource type="Script" uid="uid://cm7be2yuhxahr" path="res://resources/active_scripts/boost_stats/boost_evasion.gd" id="1_0qro0"]
+[ext_resource type="Script" uid="uid://clugbtxltbj7y" path="res://resources/ActiveAbility.gd" id="1_isn53"]
+
+[resource]
+script = ExtResource("1_isn53")
+name = "Boost Evasion"
+mp_cost = 15
+target_type = 1
+allies_by_default = true
+koed_targets = false
+gdscript = ExtResource("1_0qro0")
+metadata/_custom_type_script = "uid://clugbtxltbj7y"

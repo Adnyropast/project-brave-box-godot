@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ActiveAbility" load_steps=3 format=3 uid="uid://bl4adnu38jlk7"]
+
+[ext_resource type="Script" uid="uid://cyq6sn6p72msi" path="res://resources/active_scripts/weaken_stats/weaken_physical_defense.gd" id="1_5rta4"]
+[ext_resource type="Script" uid="uid://clugbtxltbj7y" path="res://resources/ActiveAbility.gd" id="2_l1anm"]
+
+[resource]
+script = ExtResource("2_l1anm")
+name = "Weaken Physical Defense"
+mp_cost = 15
+target_type = 1
+allies_by_default = false
+koed_targets = false
+gdscript = ExtResource("1_5rta4")
+metadata/_custom_type_script = "uid://clugbtxltbj7y"

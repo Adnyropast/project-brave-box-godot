@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ActiveAbility" load_steps=3 format=3 uid="uid://bbkmgxleiroqw"]
+
+[ext_resource type="Script" uid="uid://clugbtxltbj7y" path="res://resources/ActiveAbility.gd" id="1_0d4fa"]
+[ext_resource type="Script" uid="uid://c82ik7qci4jd3" path="res://resources/active_scripts/boost_stats/boost_speed.gd" id="1_bmyw6"]
+
+[resource]
+script = ExtResource("1_0d4fa")
+name = "Boost Speed"
+mp_cost = 15
+target_type = 1
+allies_by_default = true
+koed_targets = false
+gdscript = ExtResource("1_bmyw6")
+metadata/_custom_type_script = "uid://clugbtxltbj7y"

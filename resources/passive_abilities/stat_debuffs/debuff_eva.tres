@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="PassiveAbility" load_steps=3 format=3 uid="uid://22ncp0ffo21j"]
+
+[ext_resource type="Script" uid="uid://cfu8bc1xpnf3j" path="res://resources/passive_scripts/stat_debuffs/debuff_eva.gd" id="1_6ueq2"]
+[ext_resource type="Script" uid="uid://bagd44bi22sp4" path="res://resources/PassiveAbility.gd" id="1_tkxeq"]
+
+[resource]
+script = ExtResource("1_tkxeq")
+name = "Evasion -"
+gdscript = ExtResource("1_6ueq2")
+metadata/_custom_type_script = "uid://bagd44bi22sp4"

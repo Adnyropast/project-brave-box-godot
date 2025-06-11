@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ActiveAbility" load_steps=3 format=3 uid="uid://dfsmrtmpgld6t"]
+
+[ext_resource type="Script" uid="uid://bhjde53p8vpud" path="res://resources/active_scripts/weaken_stats/weaken_critical_chance.gd" id="1_03qpq"]
+[ext_resource type="Script" uid="uid://clugbtxltbj7y" path="res://resources/ActiveAbility.gd" id="2_rm6o7"]
+
+[resource]
+script = ExtResource("2_rm6o7")
+name = "Weaken Critical Chance"
+mp_cost = 15
+target_type = 1
+allies_by_default = false
+koed_targets = false
+gdscript = ExtResource("1_03qpq")
+metadata/_custom_type_script = "uid://clugbtxltbj7y"

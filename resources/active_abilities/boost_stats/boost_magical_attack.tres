@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ActiveAbility" load_steps=3 format=3 uid="uid://c7pyge4a8upux"]
+
+[ext_resource type="Script" uid="uid://clugbtxltbj7y" path="res://resources/ActiveAbility.gd" id="1_ls1y2"]
+[ext_resource type="Script" uid="uid://ceuuwxcjekcxm" path="res://resources/active_scripts/boost_stats/boost_magical_attack.gd" id="1_wjbej"]
+
+[resource]
+script = ExtResource("1_ls1y2")
+name = "Boost Magical Attack"
+mp_cost = 15
+target_type = 1
+allies_by_default = true
+koed_targets = false
+gdscript = ExtResource("1_wjbej")
+metadata/_custom_type_script = "uid://clugbtxltbj7y"

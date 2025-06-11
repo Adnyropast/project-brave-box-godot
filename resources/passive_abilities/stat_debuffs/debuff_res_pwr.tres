@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="PassiveAbility" load_steps=3 format=3 uid="uid://cqgaertlgnmw8"]
+
+[ext_resource type="Script" uid="uid://bagd44bi22sp4" path="res://resources/PassiveAbility.gd" id="1_iq2js"]
+[ext_resource type="Script" uid="uid://cafqk3gugda5v" path="res://resources/passive_scripts/stat_debuffs/debuff_res_pwr.gd" id="1_uyy3k"]
+
+[resource]
+script = ExtResource("1_iq2js")
+name = "Restorative Power -"
+gdscript = ExtResource("1_uyy3k")
+metadata/_custom_type_script = "uid://bagd44bi22sp4"

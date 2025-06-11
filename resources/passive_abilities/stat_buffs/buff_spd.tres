@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="PassiveAbility" load_steps=3 format=3 uid="uid://cmws4xm1rwp1i"]
+
+[ext_resource type="Script" uid="uid://bagd44bi22sp4" path="res://resources/PassiveAbility.gd" id="1_mq43u"]
+[ext_resource type="Script" uid="uid://bt4mpvk2th5bh" path="res://resources/passive_scripts/stat_buffs/buff_spd.gd" id="1_rnjfu"]
+
+[resource]
+script = ExtResource("1_mq43u")
+name = "Speed +"
+gdscript = ExtResource("1_rnjfu")
+metadata/_custom_type_script = "uid://bagd44bi22sp4"

@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ActiveAbility" load_steps=3 format=3 uid="uid://dmas8efhnxu3m"]
+
+[ext_resource type="Script" uid="uid://dy52r88x0tc1o" path="res://resources/active_scripts/weaken_stats/weaken_aim.gd" id="1_0tpb0"]
+[ext_resource type="Script" uid="uid://clugbtxltbj7y" path="res://resources/ActiveAbility.gd" id="2_svgk3"]
+
+[resource]
+script = ExtResource("2_svgk3")
+name = "Weaken Aim"
+mp_cost = 15
+target_type = 1
+allies_by_default = false
+koed_targets = false
+gdscript = ExtResource("1_0tpb0")
+metadata/_custom_type_script = "uid://clugbtxltbj7y"

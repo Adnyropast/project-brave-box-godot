@@ -1,0 +1,30 @@
+[gd_scene load_steps=6 format=3 uid="uid://bvt75bj88jnq3"]
+
+[ext_resource type="Script" uid="uid://bmwwu13ohset4" path="res://scenes/battle_effects/remove_auto.gd" id="1_ulv18"]
+[ext_resource type="Texture2D" uid="uid://dbdflsq43uxwj" path="res://images/battle_effects/impacts_stats/impact_buff_1.png" id="2_ulv18"]
+[ext_resource type="Texture2D" uid="uid://d0u2dhpwenaji" path="res://images/battle_effects/impacts_stats/impact_buff_2.png" id="3_reeht"]
+[ext_resource type="Texture2D" uid="uid://cgym6n4r54d5k" path="res://images/battle_effects/impacts_stats/impact_buff_3.png" id="4_sch6k"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_r20oy"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_ulv18")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_reeht")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_sch6k")
+}],
+"loop": false,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="ImpactBuff" type="Node3D"]
+script = ExtResource("1_ulv18")
+
+[node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="."]
+sprite_frames = SubResource("SpriteFrames_r20oy")
+autoplay = "default"

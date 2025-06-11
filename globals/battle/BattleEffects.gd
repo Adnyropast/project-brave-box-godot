@@ -131,3 +131,13 @@ static func create_impact_defend(pawn: PawnComponents):
 	var effect_node = preload("res://scenes/battle_effects/impact_hit_defend.tscn").instantiate()
 	
 	pawn.node.add_child(effect_node)
+
+static func create_impact_buff(pawn: PawnComponents):
+	var effect_node = preload("res://scenes/battle_effects/impacts_stats/impact_buff.tscn").instantiate()
+	
+	pawn.node.add_child(effect_node)
+
+static func create_impact_debuff(pawn: PawnComponents):
+	var effect_node = preload("res://scenes/battle_effects/impacts_stats/impact_debuff.tscn").instantiate()
+	
+	pawn.node.add_child(effect_node)

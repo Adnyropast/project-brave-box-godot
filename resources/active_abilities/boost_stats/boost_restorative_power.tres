@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ActiveAbility" load_steps=3 format=3 uid="uid://b8a7knbejhwqn"]
+
+[ext_resource type="Script" uid="uid://635r55qumwid" path="res://resources/active_scripts/boost_stats/boost_restorative_power.gd" id="1_nagly"]
+[ext_resource type="Script" uid="uid://clugbtxltbj7y" path="res://resources/ActiveAbility.gd" id="1_y8x8t"]
+
+[resource]
+script = ExtResource("1_y8x8t")
+name = "Boost Restorative Power"
+mp_cost = 15
+target_type = 1
+allies_by_default = true
+koed_targets = false
+gdscript = ExtResource("1_nagly")
+metadata/_custom_type_script = "uid://clugbtxltbj7y"

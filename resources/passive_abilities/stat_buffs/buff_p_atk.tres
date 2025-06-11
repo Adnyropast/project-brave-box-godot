@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="PassiveAbility" load_steps=3 format=3 uid="uid://d28qxktiy5tcm"]
+
+[ext_resource type="Script" uid="uid://bagd44bi22sp4" path="res://resources/PassiveAbility.gd" id="1_bj0qc"]
+[ext_resource type="Script" uid="uid://v7qukoyleffw" path="res://resources/passive_scripts/stat_buffs/buff_p_atk.gd" id="1_roskd"]
+
+[resource]
+script = ExtResource("1_bj0qc")
+name = "Physical Attack +"
+gdscript = ExtResource("1_roskd")
+metadata/_custom_type_script = "uid://bagd44bi22sp4"

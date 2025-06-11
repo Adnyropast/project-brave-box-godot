@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="PassiveAbility" load_steps=3 format=3 uid="uid://bckmdr4fqephu"]
+
+[ext_resource type="Script" uid="uid://dn3v2x3lrg5df" path="res://resources/passive_scripts/stat_debuffs/debuff_crit.gd" id="1_6oaab"]
+[ext_resource type="Script" uid="uid://bagd44bi22sp4" path="res://resources/PassiveAbility.gd" id="1_picpd"]
+
+[resource]
+script = ExtResource("1_picpd")
+name = "Critical Chance -"
+gdscript = ExtResource("1_6oaab")
+metadata/_custom_type_script = "uid://bagd44bi22sp4"
