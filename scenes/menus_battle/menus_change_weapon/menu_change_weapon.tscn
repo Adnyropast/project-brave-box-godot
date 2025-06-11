@@ -42,6 +42,10 @@ text = "Equipped:"
 layout_mode = 2
 text = "Current Weapon"
 
+[node name="ButtonRemove" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Remove"
+
 [node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
 
@@ -49,4 +53,5 @@ layout_mode = 2
 layout_mode = 2
 text = "Cancel"
 
+[connection signal="pressed" from="MarginContainer/VBoxContainer/ButtonRemove" to="." method="_on_button_remove_pressed"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/ButtonCancel" to="." method="_on_button_cancel_pressed"]

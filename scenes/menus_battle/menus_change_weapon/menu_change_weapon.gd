@@ -7,12 +7,22 @@ func _ready() -> void:
 	update_current_weapon()
 	fill_weapon_options()
 
+func _on_button_remove_pressed() -> void:
+	set_weapon(null)
+
 func _on_button_cancel_pressed() -> void:
 	Menus.close_menu(self)
 	Menus.open_menu(menu_cancel)
 
 func update_current_weapon() -> void:
-	$MarginContainer/VBoxContainer/PanelContainer/MarginContainer/HBoxContainer/LabelCurrent.text = pawn.variables.party_member.weapon.name
+	var weapon_name
+	
+	if pawn.variables.party_member.weapon:
+		weapon_name = pawn.variables.party_member.weapon.name
+	else:
+		weapon_name = "None"
+	
+	$MarginContainer/VBoxContainer/PanelContainer/MarginContainer/HBoxContainer/LabelCurrent.text = weapon_name
 
 func fill_weapon_options() -> void:
 	var container = $MarginContainer/VBoxContainer/VBoxContainer
