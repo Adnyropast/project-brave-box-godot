@@ -180,3 +180,27 @@ func _on_button_debuffs_pressed() -> void:
 	menu_abilities.update_abilities(abilities)
 	
 	Menus.open_menu(menu_abilities)
+
+func _on_button_ailments_pressed() -> void:
+	Menus.close_menu(self)
+	
+	var menu_abilities = preload("res://scenes/menus_battle/menus_abilities/menu_abilities.tscn").instantiate()
+	
+	menu_abilities.menu_cancel = self
+	menu_abilities.pawn = pawn
+	
+	var abilities: Array[ActiveAbility] = [
+		preload("res://resources/active_abilities/inflict_ailments/inflict_poison.tres"),
+		preload("res://resources/active_abilities/inflict_ailments/inflict_blindness.tres"),
+		preload("res://resources/active_abilities/inflict_ailments/inflict_silence.tres"),
+		preload("res://resources/active_abilities/inflict_ailments/inflict_sleep.tres"),
+		preload("res://resources/active_abilities/inflict_ailments/inflict_berserk.tres"),
+		preload("res://resources/active_abilities/inflict_ailments/inflict_confusion.tres"),
+		preload("res://resources/active_abilities/inflict_ailments/inflict_charm.tres"),
+		preload("res://resources/active_abilities/inflict_ailments/inflict_doom.tres"),
+		preload("res://resources/active_abilities/inflict_ailments/inflict_instant_death.tres"),
+	]
+	
+	menu_abilities.update_abilities(abilities)
+	
+	Menus.open_menu(menu_abilities)

@@ -13,6 +13,13 @@ static func deal_damage(pawn: PawnComponents, damage: int, type: Types.Damage):
 	
 	if pawn.variables.is_ko():
 		pawn.variables.on_ko()
+	else:
+		var damage_data = DamageData.new()
+		
+		damage_data.damage = damage
+		damage_data.type = type
+		
+		pawn.variables.on_hurt(damage_data)
 	
 	if pawn.variables.hp == 0 && pawn.vanishes_on_defeat:
 		BattleEffects.create_vanish_effect(pawn)

@@ -1,0 +1,30 @@
+[gd_scene load_steps=6 format=3 uid="uid://ds7dibe4bkypn"]
+
+[ext_resource type="Script" uid="uid://bmwwu13ohset4" path="res://scenes/battle_effects/remove_auto.gd" id="1_1i1kj"]
+[ext_resource type="Texture2D" uid="uid://cypxk5mi3thh3" path="res://images/battle_effects/impacts_ailments/impact_confusion_1.png" id="2_1i1kj"]
+[ext_resource type="Texture2D" uid="uid://4oa80hmbi7ua" path="res://images/battle_effects/impacts_ailments/impact_confusion_2.png" id="3_y0j77"]
+[ext_resource type="Texture2D" uid="uid://36bugtcbniq7" path="res://images/battle_effects/impacts_ailments/impact_confusion_3.png" id="4_al2p8"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_r20oy"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_1i1kj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_y0j77")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_al2p8")
+}],
+"loop": false,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Node3D" type="Node3D"]
+script = ExtResource("1_1i1kj")
+
+[node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="."]
+sprite_frames = SubResource("SpriteFrames_r20oy")
+autoplay = "default"

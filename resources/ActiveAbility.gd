@@ -15,6 +15,7 @@ var item_cost: Item
 @export var target_type: TargetType
 @export var allies_by_default: bool
 @export var koed_targets: bool
+@export var voice: bool
 @export var gdscript: GDScript
 
 func can_target_single():

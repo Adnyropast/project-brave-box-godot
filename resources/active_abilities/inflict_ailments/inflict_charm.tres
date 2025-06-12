@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="ActiveAbility" load_steps=3 format=3 uid="uid://kqlkimbgsb4m"]
+
+[ext_resource type="Script" uid="uid://clugbtxltbj7y" path="res://resources/ActiveAbility.gd" id="1_iuevj"]
+[ext_resource type="Script" uid="uid://bxdm2tmts7o14" path="res://resources/active_scripts/inflict_ailments/inflict_charm.gd" id="1_s8wt6"]
+
+[resource]
+script = ExtResource("1_iuevj")
+name = "Charm"
+mp_cost = 20
+target_type = 2
+allies_by_default = false
+koed_targets = false
+voice = true
+gdscript = ExtResource("1_s8wt6")
+metadata/_custom_type_script = "uid://clugbtxltbj7y"

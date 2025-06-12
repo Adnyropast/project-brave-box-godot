@@ -1,0 +1,30 @@
+[gd_scene load_steps=6 format=3 uid="uid://by2syogoupcsx"]
+
+[ext_resource type="Script" uid="uid://bmwwu13ohset4" path="res://scenes/battle_effects/remove_auto.gd" id="1_n4det"]
+[ext_resource type="Texture2D" uid="uid://de3tdwrfbbax0" path="res://images/battle_effects/impacts_ailments/impact_blindness_1.png" id="2_n4det"]
+[ext_resource type="Texture2D" uid="uid://dyd8fwa4cawv6" path="res://images/battle_effects/impacts_ailments/impact_blindness_2.png" id="3_isivg"]
+[ext_resource type="Texture2D" uid="uid://cyijst3qga7mh" path="res://images/battle_effects/impacts_ailments/impact_blindness_3.png" id="4_crmbj"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_r20oy"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_n4det")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_isivg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_crmbj")
+}],
+"loop": false,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Node3D" type="Node3D"]
+script = ExtResource("1_n4det")
+
+[node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="."]
+sprite_frames = SubResource("SpriteFrames_r20oy")
+autoplay = "default"

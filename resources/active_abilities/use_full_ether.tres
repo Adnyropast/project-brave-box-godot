@@ -10,5 +10,6 @@ mp_cost = 0
 target_type = 0
 allies_by_default = true
 koed_targets = false
+voice = false
 gdscript = ExtResource("1_ibp6a")
 metadata/_custom_type_script = "uid://clugbtxltbj7y"

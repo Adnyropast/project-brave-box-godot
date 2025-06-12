@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://dcu78341026gp"]
+
+[ext_resource type="Texture2D" uid="uid://cn3xxdo3pil3w" path="res://images/battle_effects/states_ailments/state_berserk.png" id="1_hh8nq"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="Sprite3D" type="Sprite3D" parent="."]
+texture = ExtResource("1_hh8nq")

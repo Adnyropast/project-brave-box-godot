@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="ActiveAbility" load_steps=3 format=3 uid="uid://bxcy15awdhg7g"]
+
+[ext_resource type="Script" uid="uid://clugbtxltbj7y" path="res://resources/ActiveAbility.gd" id="1_0x2qq"]
+[ext_resource type="Script" uid="uid://dsakjnjkbr358" path="res://resources/active_scripts/inflict_ailments/inflict_instant_death.gd" id="1_i6trw"]
+
+[resource]
+script = ExtResource("1_0x2qq")
+name = "Instant Death"
+mp_cost = 120
+target_type = 2
+allies_by_default = false
+koed_targets = false
+voice = true
+gdscript = ExtResource("1_i6trw")
+metadata/_custom_type_script = "uid://clugbtxltbj7y"

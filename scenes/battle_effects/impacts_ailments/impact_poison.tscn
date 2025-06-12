@@ -1,0 +1,30 @@
+[gd_scene load_steps=6 format=3 uid="uid://w17rrg2ebfp8"]
+
+[ext_resource type="Script" uid="uid://bmwwu13ohset4" path="res://scenes/battle_effects/remove_auto.gd" id="1_dqjd5"]
+[ext_resource type="Texture2D" uid="uid://beyuo4w78pn25" path="res://images/battle_effects/impacts_ailments/impact_poison_1.png" id="2_iegw6"]
+[ext_resource type="Texture2D" uid="uid://34cuparkj5cs" path="res://images/battle_effects/impacts_ailments/impact_poison_2.png" id="3_5dj8s"]
+[ext_resource type="Texture2D" uid="uid://dxqwbymrbax2m" path="res://images/battle_effects/impacts_ailments/impact_poison_3.png" id="4_j3qel"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_r20oy"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_iegw6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_5dj8s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_j3qel")
+}],
+"loop": false,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Node3D" type="Node3D"]
+script = ExtResource("1_dqjd5")
+
+[node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="."]
+sprite_frames = SubResource("SpriteFrames_r20oy")
+autoplay = "default"

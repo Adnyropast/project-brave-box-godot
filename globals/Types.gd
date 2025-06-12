@@ -17,4 +17,6 @@ enum Damage {
 	WIND,
 	LIGHT,
 	DARK,
+	POISON,
+	DEATH,
 }

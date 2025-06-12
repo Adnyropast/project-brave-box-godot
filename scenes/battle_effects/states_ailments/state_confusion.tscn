@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://bh8urp0irw1bo"]
+
+[ext_resource type="Texture2D" uid="uid://cx0h6ar288203" path="res://images/battle_effects/states_ailments/state_confusion.png" id="1_bk4tp"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="Sprite3D" type="Sprite3D" parent="."]
+texture = ExtResource("1_bk4tp")

@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://cskc8vb5tvb7k"]
+
+[ext_resource type="Texture2D" uid="uid://cnofwu17caxqi" path="res://images/battle_effects/states_ailments/state_doom.png" id="1_2dbgs"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="Sprite3D" type="Sprite3D" parent="."]
+texture = ExtResource("1_2dbgs")

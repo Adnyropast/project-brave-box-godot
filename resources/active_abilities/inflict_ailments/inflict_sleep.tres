@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="ActiveAbility" load_steps=3 format=3 uid="uid://mq6ea0p4jhsg"]
+
+[ext_resource type="Script" uid="uid://clugbtxltbj7y" path="res://resources/ActiveAbility.gd" id="1_0y68n"]
+[ext_resource type="Script" uid="uid://caux2em832ppu" path="res://resources/active_scripts/inflict_ailments/inflict_sleep.gd" id="1_1wu8v"]
+
+[resource]
+script = ExtResource("1_0y68n")
+name = "Sleep"
+mp_cost = 20
+target_type = 2
+allies_by_default = false
+koed_targets = false
+voice = true
+gdscript = ExtResource("1_1wu8v")
+metadata/_custom_type_script = "uid://clugbtxltbj7y"

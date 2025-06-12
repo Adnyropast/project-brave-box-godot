@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="ActiveAbility" load_steps=3 format=3 uid="uid://be3855c8sgjad"]
+
+[ext_resource type="Script" uid="uid://b1p2vodaep5hq" path="res://resources/active_scripts/effects/doom_attack.gd" id="1_kr05p"]
+[ext_resource type="Script" uid="uid://clugbtxltbj7y" path="res://resources/ActiveAbility.gd" id="2_jmta5"]
+
+[resource]
+script = ExtResource("2_jmta5")
+name = "Doom"
+mp_cost = 0
+target_type = 0
+allies_by_default = false
+koed_targets = false
+voice = false
+gdscript = ExtResource("1_kr05p")
+metadata/_custom_type_script = "uid://clugbtxltbj7y"

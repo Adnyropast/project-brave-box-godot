@@ -9,6 +9,12 @@ var effect: Node
 func on_attach() -> void:
 	pass
 
+func on_turn_end() -> void:
+	pass
+
+func on_hurt(_damage_data: DamageData) -> void:
+	pass
+
 func on_detach() -> void:
 	pass
 
@@ -53,3 +59,13 @@ func attach_effect(resource: Resource) -> void:
 func detach_effect() -> void:
 	if effect:
 		user.node.remove_child(effect)
+
+func disable_ability(_active_script: ActiveScript) -> String:
+	return ""
+
+func block_turn() -> ActiveScript:
+	return null
+
+func detach() -> void:
+	on_detach()
+	user.variables.states.remove_state(self)

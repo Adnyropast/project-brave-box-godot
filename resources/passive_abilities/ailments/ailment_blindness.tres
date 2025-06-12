@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="PassiveAbility" load_steps=3 format=3 uid="uid://cfwfnhn0fhxak"]
+
+[ext_resource type="Script" uid="uid://bagd44bi22sp4" path="res://resources/PassiveAbility.gd" id="1_jwa0a"]
+[ext_resource type="Script" uid="uid://bsk8ojqupxnmb" path="res://resources/passive_scripts/ailments/ailment_blindness.gd" id="1_k8dgo"]
+
+[resource]
+script = ExtResource("1_jwa0a")
+name = "Blindness"
+gdscript = ExtResource("1_k8dgo")
+metadata/_custom_type_script = "uid://bagd44bi22sp4"

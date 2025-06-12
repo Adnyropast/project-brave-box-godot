@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://b00rdkrxh6sry"]
+
+[ext_resource type="Texture2D" uid="uid://v72x8fgnf1tn" path="res://images/battle_effects/states_ailments/state_blindness.png" id="1_mmbsb"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="Sprite3D" type="Sprite3D" parent="."]
+texture = ExtResource("1_mmbsb")

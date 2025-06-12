@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="PassiveAbility" load_steps=3 format=3 uid="uid://cqaw4okl00fd4"]
+
+[ext_resource type="Script" uid="uid://bagd44bi22sp4" path="res://resources/PassiveAbility.gd" id="1_ggu6b"]
+[ext_resource type="Script" uid="uid://c50loxmd8nmyf" path="res://resources/passive_scripts/ailments/ailment_doom.gd" id="1_j3ewi"]
+
+[resource]
+script = ExtResource("1_ggu6b")
+name = "Doom"
+gdscript = ExtResource("1_j3ewi")
+metadata/_custom_type_script = "uid://bagd44bi22sp4"

@@ -8,11 +8,22 @@ func add_state(state: PassiveScript) -> void:
 	states.append(state)
 	state.on_attach()
 
+func remove_state(state: PassiveScript) -> void:
+	states.erase(state)
+
 func clear_states() -> void:
 	for state in states:
 		state.on_detach()
 	
 	states.clear()
+
+func on_turn_end() -> void:
+	for state in states:
+		state.on_turn_end()
+
+func on_hurt(damage_data: DamageData) -> void:
+	for state in states:
+		state.on_hurt(damage_data)
 
 func get_max_hp_multiplier() -> float:
 	var multiplier = 1
@@ -101,3 +112,21 @@ func get_res_pwr_multiplier() -> float:
 		multiplier = multiplier * state.get_res_pwr_multiplier()
 	
 	return multiplier
+
+func disable_ability(active_script: ActiveScript) -> String:
+	for state in states:
+		var message = state.disable_ability(active_script)
+		
+		if message:
+			return message
+	
+	return ""
+
+func block_turn() -> ActiveScript:
+	for state in states:
+		var active_script = state.block_turn()
+		
+		if active_script:
+			return active_script
+	
+	return null

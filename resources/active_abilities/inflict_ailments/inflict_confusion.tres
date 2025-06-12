@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="ActiveAbility" load_steps=3 format=3 uid="uid://b6y8rrm7blsui"]
+
+[ext_resource type="Script" uid="uid://bru5fuyfb8so2" path="res://resources/active_scripts/inflict_ailments/inflict_confusion.gd" id="1_6oq6l"]
+[ext_resource type="Script" uid="uid://clugbtxltbj7y" path="res://resources/ActiveAbility.gd" id="1_mov3k"]
+
+[resource]
+script = ExtResource("1_mov3k")
+name = "Confusion"
+mp_cost = 20
+target_type = 2
+allies_by_default = false
+koed_targets = false
+voice = true
+gdscript = ExtResource("1_6oq6l")
+metadata/_custom_type_script = "uid://clugbtxltbj7y"

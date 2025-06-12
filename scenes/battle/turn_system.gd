@@ -3,6 +3,7 @@ extends Node
 const AP_FLAGPOLE: float = 10000
 var pawns: Array[PawnComponents]
 var battle_components: Node
+var actives_queue: Array[ActiveScript]
 
 func get_tick_eligible_pawns() -> Array[PawnComponents]:
 	var res: Array[PawnComponents] = []
@@ -79,6 +80,9 @@ func take_actions() -> void:
 		battle_components.lose_battle()
 	elif battle_components.all_enemies_defeated():
 		battle_components.win_battle()
+	elif actives_queue.size() > 0:
+		var active_script: ActiveScript = actives_queue.pop_front()
+		active_script.template_start()
 	else:
 		pass_ticks()
 		
@@ -89,3 +93,6 @@ func take_actions() -> void:
 
 func _ready() -> void:
 	take_actions()
+
+func add_active_script(active_script: ActiveScript) -> void:
+	actives_queue.append(active_script)

@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="ActiveAbility" load_steps=3 format=3 uid="uid://c6bocjh01ehw2"]
+
+[ext_resource type="Script" uid="uid://c8n6co37qqpa4" path="res://resources/active_scripts/inflict_ailments/inflict_silence.gd" id="1_bix4x"]
+[ext_resource type="Script" uid="uid://clugbtxltbj7y" path="res://resources/ActiveAbility.gd" id="1_efn45"]
+
+[resource]
+script = ExtResource("1_efn45")
+name = "Silence"
+mp_cost = 20
+target_type = 2
+allies_by_default = false
+koed_targets = false
+voice = true
+gdscript = ExtResource("1_bix4x")
+metadata/_custom_type_script = "uid://clugbtxltbj7y"

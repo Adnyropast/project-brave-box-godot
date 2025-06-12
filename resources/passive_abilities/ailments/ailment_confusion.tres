@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="PassiveAbility" load_steps=3 format=3 uid="uid://bpb1n2nww4ics"]
+
+[ext_resource type="Script" uid="uid://bagd44bi22sp4" path="res://resources/PassiveAbility.gd" id="1_hefe2"]
+[ext_resource type="Script" uid="uid://df1fl2o1cc76c" path="res://resources/passive_scripts/ailments/ailment_confusion.gd" id="1_r8psy"]
+
+[resource]
+script = ExtResource("1_hefe2")
+name = "Confusion"
+gdscript = ExtResource("1_r8psy")
+metadata/_custom_type_script = "uid://bagd44bi22sp4"

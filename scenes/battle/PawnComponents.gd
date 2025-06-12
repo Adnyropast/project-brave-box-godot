@@ -70,14 +70,19 @@ func take_action():
 	variables.on_turn_start()
 	node.return_to_default_not_busy()
 	
-	if controlled_by_menu:
-		tree.root.add_child(menu_node)
+	var block_turn_ability = variables.block_turn()
+	
+	if block_turn_ability:
+		block_turn_ability.template_start()
 	else:
-		EnemyActions.take_action(self)
+		if controlled_by_menu:
+			tree.root.add_child(menu_node)
+		else:
+			EnemyActions.take_action(self)
 
 func end_action():
+	variables.on_turn_end()
 	remove_action_circle()
-	turn_system.take_actions()
 
 func pass_turn():
 	await tree.create_timer(1.0).timeout
@@ -87,6 +92,7 @@ func confirm_targets(active_ability: ActiveAbility, targets: Array[PawnComponent
 	var active_script: ActiveScript = active_ability.gdscript.new()
 	
 	active_script.ability = active_ability
+	active_script.turn_system = turn_system
 	active_script.user = self
 	active_script.targets = targets
 	active_script.template_start()

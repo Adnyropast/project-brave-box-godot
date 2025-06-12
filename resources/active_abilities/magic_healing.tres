@@ -9,5 +9,7 @@ name = "Healing Magic"
 mp_cost = 15
 target_type = 2
 allies_by_default = true
+koed_targets = false
+voice = true
 gdscript = ExtResource("1_7y5bx")
 metadata/_custom_type_script = "uid://clugbtxltbj7y"

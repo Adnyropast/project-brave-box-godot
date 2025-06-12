@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://xpfocku15xov"]
+
+[ext_resource type="Texture2D" uid="uid://cpffdb0jep54p" path="res://images/battle_effects/states_ailments/state_silence.png" id="1_wbusm"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="Sprite3D" type="Sprite3D" parent="."]
+texture = ExtResource("1_wbusm")

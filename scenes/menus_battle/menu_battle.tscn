@@ -49,6 +49,10 @@ text = "Test Buffs"
 layout_mode = 2
 text = "Test Debuffs"
 
+[node name="ButtonAilments" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Test Ailments"
+
 [node name="ButtonTarget" type="Button" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
 text = "Target"
@@ -80,6 +84,7 @@ text = "Flee"
 [connection signal="pressed" from="MarginContainer/VBoxContainer/ButtonRevive" to="." method="_on_button_revive_pressed"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/ButtonBuffs" to="." method="_on_button_buffs_pressed"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/ButtonDebuffs" to="." method="_on_button_debuffs_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/ButtonAilments" to="." method="_on_button_ailments_pressed"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/ButtonTarget" to="." method="_on_button_target_pressed"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/ButtonDefend" to="." method="_on_button_defend_pressed"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/ButtonChangeWeapon" to="." method="_on_button_change_weapon_pressed"]

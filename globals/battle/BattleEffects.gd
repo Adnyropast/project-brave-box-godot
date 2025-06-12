@@ -116,6 +116,10 @@ static func create_impact_typed(pawn: PawnComponents, type: Types.Damage):
 		create_impact_light(pawn)
 	elif type == Types.Damage.DARK:
 		create_impact_dark(pawn)
+	elif type == Types.Damage.POISON:
+		create_impact_poison(pawn)
+	elif type == Types.Damage.DEATH:
+		create_impact_instant_death(pawn)
 
 static func create_vanish_effect(pawn: PawnComponents):
 	var effect_node = preload("res://scenes/battle_effects/vanish.tscn").instantiate()
@@ -139,5 +143,50 @@ static func create_impact_buff(pawn: PawnComponents):
 
 static func create_impact_debuff(pawn: PawnComponents):
 	var effect_node = preload("res://scenes/battle_effects/impacts_stats/impact_debuff.tscn").instantiate()
+	
+	pawn.node.add_child(effect_node)
+
+static func create_impact_poison(pawn: PawnComponents):
+	var effect_node = preload("res://scenes/battle_effects/impacts_ailments/impact_poison.tscn").instantiate()
+	
+	pawn.node.add_child(effect_node)
+
+static func create_impact_blindness(pawn: PawnComponents):
+	var effect_node = preload("res://scenes/battle_effects/impacts_ailments/impact_blindness.tscn").instantiate()
+	
+	pawn.node.add_child(effect_node)
+
+static func create_impact_silence(pawn: PawnComponents):
+	var effect_node = preload("res://scenes/battle_effects/impacts_ailments/impact_silence.tscn").instantiate()
+	
+	pawn.node.add_child(effect_node)
+
+static func create_impact_sleep(pawn: PawnComponents):
+	var effect_node = preload("res://scenes/battle_effects/impacts_ailments/impact_sleep.tscn").instantiate()
+	
+	pawn.node.add_child(effect_node)
+
+static func create_impact_berserk(pawn: PawnComponents):
+	var effect_node = preload("res://scenes/battle_effects/impacts_ailments/impact_berserk.tscn").instantiate()
+	
+	pawn.node.add_child(effect_node)
+
+static func create_impact_confusion(pawn: PawnComponents):
+	var effect_node = preload("res://scenes/battle_effects/impacts_ailments/impact_confusion.tscn").instantiate()
+	
+	pawn.node.add_child(effect_node)
+
+static func create_impact_charm(pawn: PawnComponents):
+	var effect_node = preload("res://scenes/battle_effects/impacts_ailments/impact_charm.tscn").instantiate()
+	
+	pawn.node.add_child(effect_node)
+
+static func create_impact_doom(pawn: PawnComponents):
+	var effect_node = preload("res://scenes/battle_effects/impacts_ailments/impact_doom.tscn").instantiate()
+	
+	pawn.node.add_child(effect_node)
+
+static func create_impact_instant_death(pawn: PawnComponents):
+	var effect_node = preload("res://scenes/battle_effects/impacts_ailments/impact_instant_death.tscn").instantiate()
 	
 	pawn.node.add_child(effect_node)

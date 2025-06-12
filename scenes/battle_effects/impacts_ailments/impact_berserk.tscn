@@ -1,0 +1,30 @@
+[gd_scene load_steps=6 format=3 uid="uid://cgnalgqr40ngu"]
+
+[ext_resource type="Script" uid="uid://bmwwu13ohset4" path="res://scenes/battle_effects/remove_auto.gd" id="1_3ofnu"]
+[ext_resource type="Texture2D" uid="uid://bvv4bwp4o841k" path="res://images/battle_effects/impacts_ailments/impact_berserk_1.png" id="2_3ofnu"]
+[ext_resource type="Texture2D" uid="uid://d0mlwgtt0mcr1" path="res://images/battle_effects/impacts_ailments/impact_berserk_2.png" id="3_d6bfp"]
+[ext_resource type="Texture2D" uid="uid://ca2lwrdhcnn6p" path="res://images/battle_effects/impacts_ailments/impact_berserk_3.png" id="4_dk8n2"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_r20oy"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_3ofnu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_d6bfp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_dk8n2")
+}],
+"loop": false,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Node3D" type="Node3D"]
+script = ExtResource("1_3ofnu")
+
+[node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="."]
+sprite_frames = SubResource("SpriteFrames_r20oy")
+autoplay = "default"

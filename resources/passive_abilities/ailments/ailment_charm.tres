@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="PassiveAbility" load_steps=3 format=3 uid="uid://2pe5pkxbxyrp"]
+
+[ext_resource type="Script" uid="uid://rbuwn6pnirb0" path="res://resources/passive_scripts/ailments/ailment_charm.gd" id="1_ecqnd"]
+[ext_resource type="Script" uid="uid://bagd44bi22sp4" path="res://resources/PassiveAbility.gd" id="1_vcdmd"]
+
+[resource]
+script = ExtResource("1_vcdmd")
+name = "Charm"
+gdscript = ExtResource("1_ecqnd")
+metadata/_custom_type_script = "uid://bagd44bi22sp4"

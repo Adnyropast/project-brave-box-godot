@@ -3,6 +3,7 @@ extends GDScript
 class_name ActiveScript
 
 var ability: ActiveAbility
+var turn_system: Node
 var user: PawnComponents
 var targets: Array[PawnComponents]
 var hud: Control
@@ -15,14 +16,21 @@ func template_start():
 	redirect_targets()
 	show_hud()
 	
-	if user.variables.mp >= ability.mp_cost:
-		if ability.item_cost:
-			BattleCosts.expend_item(user, ability.item_cost)
+	if user:
+		var disable_message = user.variables.disable_ability(self)
 		
-		BattleCosts.expend_mp(user, ability.mp_cost)
-		start()
+		if disable_message:
+			show_inability(disable_message)
+		elif user.variables.mp >= ability.mp_cost:
+			if ability.item_cost:
+				BattleCosts.expend_item(user, ability.item_cost)
+			
+			BattleCosts.expend_mp(user, ability.mp_cost)
+			start()
+		else:
+			show_inability("Not enough MP!")
 	else:
-		show_inability()
+		start()
 	
 	template_end()
 
@@ -47,27 +55,33 @@ func redirect_targets():
 			targets = filter_pawns_not_ko(targets)
 
 func template_end():
-	var tween: Tween = user.node.create_tween()
+	var tween: Tween = Engine.get_main_loop().create_tween()
 	
 	tween.tween_callback(end_clear).set_delay(1)
 
 func end_clear():
 	hide_hud()
-	user.end_action()
+	
+	if user:
+		user.end_action()
+	
+	turn_system.take_actions()
 
 func show_hud():
 	hud = preload("res://scenes/menus_battle/hud_active_ability.tscn").instantiate()
 	
 	hud.set_label(ability.name)
 	
-	user.node.get_tree().root.add_child(hud)
+	Engine.get_main_loop().root.add_child(hud)
 
 func hide_hud():
 	if hud.get_parent():
 		hud.get_parent().remove_child(hud)
 
-func show_inability():
+func show_inability(message: String):
 	hud_inability = preload("res://scenes/menus_battle/hud_inability.tscn").instantiate()
+	
+	hud_inability.set_message(message)
 	
 	user.node.get_tree().root.add_child(hud_inability)
 	

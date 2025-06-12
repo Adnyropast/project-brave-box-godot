@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="PassiveAbility" load_steps=3 format=3 uid="uid://coe0m2lllq30a"]
+
+[ext_resource type="Script" uid="uid://bgjt7o0uyt34q" path="res://resources/passive_scripts/ailments/ailment_instant_death.gd" id="1_3mv5t"]
+[ext_resource type="Script" uid="uid://bagd44bi22sp4" path="res://resources/PassiveAbility.gd" id="1_f4jgs"]
+
+[resource]
+script = ExtResource("1_f4jgs")
+name = "Instant Death"
+gdscript = ExtResource("1_3mv5t")
+metadata/_custom_type_script = "uid://bagd44bi22sp4"

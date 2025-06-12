@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://dr82lr6banysp"]
+
+[ext_resource type="Texture2D" uid="uid://dpeo256wr3gbn" path="res://images/battle_effects/states_ailments/state_poison.png" id="1_yi07q"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="Sprite3D" type="Sprite3D" parent="."]
+texture = ExtResource("1_yi07q")

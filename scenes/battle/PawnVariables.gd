@@ -173,6 +173,12 @@ func is_ko() -> bool:
 func on_turn_start():
 	state_defend = false
 
+func on_turn_end():
+	states.on_turn_end()
+
+func on_hurt(damage_data: DamageData) -> void:
+	states.on_hurt(damage_data)
+
 func on_ko():
 	state_defend = false
 	states.clear_states()
@@ -194,3 +200,9 @@ func get_weapon_type() -> Types.Damage:
 		return party_member.get_weapon_type()
 	
 	return Types.Damage.PHYSICAL
+
+func disable_ability(active_script: ActiveScript) -> String:
+	return states.disable_ability(active_script)
+
+func block_turn() -> ActiveScript:
+	return states.block_turn()

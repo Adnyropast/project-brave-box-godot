@@ -1,0 +1,30 @@
+[gd_scene load_steps=6 format=3 uid="uid://wrxw8citew7b"]
+
+[ext_resource type="Script" uid="uid://bmwwu13ohset4" path="res://scenes/battle_effects/remove_auto.gd" id="1_h06uk"]
+[ext_resource type="Texture2D" uid="uid://4u6bxu3tdg0" path="res://images/battle_effects/impacts_ailments/impact_instant_death_1.png" id="2_h06uk"]
+[ext_resource type="Texture2D" uid="uid://8ilwt1758b6v" path="res://images/battle_effects/impacts_ailments/impact_instant_death_2.png" id="3_f2n4s"]
+[ext_resource type="Texture2D" uid="uid://dsgfn64pmwpby" path="res://images/battle_effects/impacts_ailments/impact_instant_death_3.png" id="4_pobry"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_r20oy"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_h06uk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_f2n4s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_pobry")
+}],
+"loop": false,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Node3D" type="Node3D"]
+script = ExtResource("1_h06uk")
+
+[node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="."]
+sprite_frames = SubResource("SpriteFrames_r20oy")
+autoplay = "default"
