@@ -12,6 +12,7 @@ var weapon: Weapon
 var headgear: Headgear
 var body_armor: BodyArmor
 var accessory: Accessory
+var abilities: Array[ActiveAbility]
 
 func _init(_party_member: PartyMember) -> void:
 	party_member = _party_member
@@ -21,6 +22,7 @@ func _init(_party_member: PartyMember) -> void:
 	headgear = party_member.initial_headgear
 	body_armor = party_member.initial_body_armor
 	accessory = party_member.initial_accessory
+	abilities.append_array(party_member.initial_ability_set.abilities)
 	update_exp_required_next()
 	current_hp = get_max_hp()
 	current_mp = get_max_mp()
@@ -90,3 +92,15 @@ func get_weapon_type() -> Types.Damage:
 		return weapon.damage_type
 	
 	return Types.Damage.PHYSICAL
+
+func get_active_abilities() -> Array[ActiveAbility]:
+	var active_abilities: Array[ActiveAbility] = []
+	
+	for ability in abilities:
+		if ability:
+			active_abilities.append(ability)
+	
+	return active_abilities
+
+func equip_ability(slot: int, ability: ActiveAbility) -> void:
+	abilities[slot] = ability

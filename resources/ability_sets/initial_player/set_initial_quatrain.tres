@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="AbilitySet" load_steps=8 format=3 uid="uid://cikemp3xwlmex"]
+
+[ext_resource type="Script" uid="uid://clugbtxltbj7y" path="res://resources/ActiveAbility.gd" id="1_6fjky"]
+[ext_resource type="Resource" uid="uid://ct2y7ybh8ub4m" path="res://resources/active_abilities/magic_fire.tres" id="2_rcwvo"]
+[ext_resource type="Script" uid="uid://bbn0mdaymwojd" path="res://resources/AbilitySet.gd" id="2_rvyv3"]
+[ext_resource type="Resource" uid="uid://dfwt3gqpr03qy" path="res://resources/active_abilities/magic_water.tres" id="3_fgk8t"]
+[ext_resource type="Resource" uid="uid://d1bkbkb6uuyia" path="res://resources/active_abilities/magic_lightning.tres" id="4_1p38g"]
+[ext_resource type="Resource" uid="uid://c7pyge4a8upux" path="res://resources/active_abilities/boost_stats/boost_magical_attack.tres" id="5_20cno"]
+[ext_resource type="Resource" uid="uid://co44ltk7e6e3a" path="res://resources/active_abilities/weaken_stats/weaken_magical_defense.tres" id="6_urvof"]
+
+[resource]
+script = ExtResource("2_rvyv3")
+name = ""
+abilities = Array[ExtResource("1_6fjky")]([ExtResource("2_rcwvo"), ExtResource("3_fgk8t"), ExtResource("4_1p38g"), ExtResource("5_20cno"), ExtResource("6_urvof"), null])
+metadata/_custom_type_script = "uid://bbn0mdaymwojd"

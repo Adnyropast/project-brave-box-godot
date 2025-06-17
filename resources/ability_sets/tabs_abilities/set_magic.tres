@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="AbilitySet" load_steps=10 format=3 uid="uid://dlkt34ivl0soc"]
+
+[ext_resource type="Script" uid="uid://clugbtxltbj7y" path="res://resources/ActiveAbility.gd" id="1_xnutx"]
+[ext_resource type="Script" uid="uid://bbn0mdaymwojd" path="res://resources/AbilitySet.gd" id="2_cxh5b"]
+[ext_resource type="Resource" uid="uid://ct2y7ybh8ub4m" path="res://resources/active_abilities/magic_fire.tres" id="2_o33lw"]
+[ext_resource type="Resource" uid="uid://dfwt3gqpr03qy" path="res://resources/active_abilities/magic_water.tres" id="3_bouc5"]
+[ext_resource type="Resource" uid="uid://d1bkbkb6uuyia" path="res://resources/active_abilities/magic_lightning.tres" id="4_wouuk"]
+[ext_resource type="Resource" uid="uid://bjhlvmjakwhs1" path="res://resources/active_abilities/magic_earth.tres" id="5_hw8ji"]
+[ext_resource type="Resource" uid="uid://2laoyevejsl4" path="res://resources/active_abilities/magic_wind.tres" id="6_imqem"]
+[ext_resource type="Resource" uid="uid://c45wxpsd2yqh4" path="res://resources/active_abilities/magic_light.tres" id="7_du3os"]
+[ext_resource type="Resource" uid="uid://dfqpwy0u3elog" path="res://resources/active_abilities/magic_dark.tres" id="8_hqvq6"]
+
+[resource]
+script = ExtResource("2_cxh5b")
+name = "Magic"
+abilities = Array[ExtResource("1_xnutx")]([ExtResource("2_o33lw"), ExtResource("3_bouc5"), ExtResource("4_wouuk"), ExtResource("5_hw8ji"), ExtResource("6_imqem"), ExtResource("7_du3os"), ExtResource("8_hqvq6")])
+metadata/_custom_type_script = "uid://bbn0mdaymwojd"

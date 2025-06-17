@@ -28,6 +28,7 @@ enum StatRank {S, A, B, C}
 @export var initial_headgear: Headgear
 @export var initial_body_armor: BodyArmor
 @export var initial_accessory: Accessory
+@export var initial_ability_set: AbilitySet
 
 static func get_rank_multiplier(rank: StatRank):
 	if rank == StatRank.S:

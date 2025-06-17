@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="PartyMember" load_steps=14 format=3 uid="uid://st83i72ir7f1"]
+[gd_resource type="Resource" script_class="PartyMember" load_steps=15 format=3 uid="uid://st83i72ir7f1"]
 
 [ext_resource type="Script" uid="uid://bl0gq5s1bthhi" path="res://resources/PartyMember.gd" id="1_8xjys"]
 [ext_resource type="Texture2D" uid="uid://oxlxobfvgima" path="res://images/battle_player_pawns/hubert/pawn_hubert_atk.png" id="1_vsvyy"]
@@ -9,6 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://l0bvqtwlri06" path="res://images/battle_player_pawns/hubert/pawn_hubert_low.png" id="6_1v70e"]
 [ext_resource type="Texture2D" uid="uid://bfe5dlxe2egi1" path="res://images/battle_player_pawns/hubert/pawn_hubert_std.png" id="7_u5xpq"]
 [ext_resource type="Texture2D" uid="uid://m232pqnr0k8n" path="res://images/battle_player_pawns/hubert/pawn_hubert_victory.png" id="8_s3ynn"]
+[ext_resource type="Resource" uid="uid://byfk73pyt3wcy" path="res://resources/ability_sets/initial_player/set_initial_hubert.tres" id="9_1v70e"]
 [ext_resource type="Resource" uid="uid://ceyadnhmt1xuf" path="res://resources/items/equipment/accessories/basic_amulet.tres" id="9_lpqx1"]
 [ext_resource type="Resource" uid="uid://cvx0ehbmf5uov" path="res://resources/items/equipment/body_armor/basic_tunic.tres" id="10_1v70e"]
 [ext_resource type="Resource" uid="uid://brakjvoud0ii5" path="res://resources/items/equipment/headgear/basic_headband.tres" id="11_u5xpq"]
@@ -40,4 +41,5 @@ initial_weapon = ExtResource("12_s3ynn")
 initial_headgear = ExtResource("11_u5xpq")
 initial_body_armor = ExtResource("10_1v70e")
 initial_accessory = ExtResource("9_lpqx1")
+initial_ability_set = ExtResource("9_1v70e")
 metadata/_custom_type_script = "uid://bl0gq5s1bthhi"

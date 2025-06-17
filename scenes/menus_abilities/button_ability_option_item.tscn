@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://bloisx3ch4dxe"]
+
+[ext_resource type="Script" uid="uid://v3cqiav7f7a7" path="res://scenes/menus_abilities/button_ability_option_item.gd" id="1_wyp7b"]
+
+[node name="Button" type="Button"]
+offset_right = 8.0
+offset_bottom = 8.0
+script = ExtResource("1_wyp7b")
+
+[connection signal="pressed" from="." to="." method="_on_pressed"]

@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="AbilitySet" load_steps=12 format=3 uid="uid://211p5el0d16e"]
+
+[ext_resource type="Script" uid="uid://clugbtxltbj7y" path="res://resources/ActiveAbility.gd" id="1_irvrv"]
+[ext_resource type="Resource" uid="uid://ddmhq6sltw4sf" path="res://resources/active_abilities/boost_stats/boost_physical_attack.tres" id="2_1ybie"]
+[ext_resource type="Resource" uid="uid://bjhisjq2fg8nn" path="res://resources/active_abilities/boost_stats/boost_physical_defense.tres" id="3_kddiw"]
+[ext_resource type="Resource" uid="uid://c7pyge4a8upux" path="res://resources/active_abilities/boost_stats/boost_magical_attack.tres" id="4_vuwyy"]
+[ext_resource type="Resource" uid="uid://ciu3qap8uwkyw" path="res://resources/active_abilities/boost_stats/boost_magical_defense.tres" id="5_vo8iu"]
+[ext_resource type="Resource" uid="uid://bbkmgxleiroqw" path="res://resources/active_abilities/boost_stats/boost_speed.tres" id="6_q2hmb"]
+[ext_resource type="Resource" uid="uid://fy6e2fy41ycb" path="res://resources/active_abilities/boost_stats/boost_aim.tres" id="7_ichwf"]
+[ext_resource type="Resource" uid="uid://xkf28jdmpogx" path="res://resources/active_abilities/boost_stats/boost_evasion.tres" id="8_mlp40"]
+[ext_resource type="Resource" uid="uid://dqcygefox516a" path="res://resources/active_abilities/boost_stats/boost_critical_chance.tres" id="9_fjxxc"]
+[ext_resource type="Resource" uid="uid://b8a7knbejhwqn" path="res://resources/active_abilities/boost_stats/boost_restorative_power.tres" id="10_dayxr"]
+[ext_resource type="Script" uid="uid://bbn0mdaymwojd" path="res://resources/AbilitySet.gd" id="11_yncn4"]
+
+[resource]
+script = ExtResource("11_yncn4")
+name = "Buffs"
+abilities = Array[ExtResource("1_irvrv")]([ExtResource("2_1ybie"), ExtResource("3_kddiw"), ExtResource("4_vuwyy"), ExtResource("5_vo8iu"), ExtResource("6_q2hmb"), ExtResource("7_ichwf"), ExtResource("8_mlp40"), ExtResource("9_fjxxc"), ExtResource("10_dayxr")])
+metadata/_custom_type_script = "uid://bbn0mdaymwojd"

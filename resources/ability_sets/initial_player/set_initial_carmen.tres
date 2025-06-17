@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="AbilitySet" load_steps=6 format=3 uid="uid://bmx5h62jyqk2r"]
+
+[ext_resource type="Script" uid="uid://clugbtxltbj7y" path="res://resources/ActiveAbility.gd" id="1_107xl"]
+[ext_resource type="Resource" uid="uid://d1bkbkb6uuyia" path="res://resources/active_abilities/magic_lightning.tres" id="2_b43t3"]
+[ext_resource type="Script" uid="uid://bbn0mdaymwojd" path="res://resources/AbilitySet.gd" id="2_kv7bu"]
+[ext_resource type="Resource" uid="uid://bbkmgxleiroqw" path="res://resources/active_abilities/boost_stats/boost_speed.tres" id="3_4agev"]
+[ext_resource type="Resource" uid="uid://xkf28jdmpogx" path="res://resources/active_abilities/boost_stats/boost_evasion.tres" id="4_ml6sr"]
+
+[resource]
+script = ExtResource("2_kv7bu")
+name = ""
+abilities = Array[ExtResource("1_107xl")]([ExtResource("2_b43t3"), ExtResource("3_4agev"), ExtResource("4_ml6sr"), null, null, null])
+metadata/_custom_type_script = "uid://bbn0mdaymwojd"

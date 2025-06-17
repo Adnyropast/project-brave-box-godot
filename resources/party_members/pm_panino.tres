@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="PartyMember" load_steps=14 format=3 uid="uid://b85x5sfky64wu"]
+[gd_resource type="Resource" script_class="PartyMember" load_steps=15 format=3 uid="uid://b85x5sfky64wu"]
 
 [ext_resource type="Texture2D" uid="uid://dy42fjgh0u0xf" path="res://images/battle_player_pawns/panino/pawn_panino_atk.png" id="1_3tuio"]
 [ext_resource type="Script" uid="uid://bl0gq5s1bthhi" path="res://resources/PartyMember.gd" id="1_u2e0m"]
@@ -9,6 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://dqj4ltwet07p6" path="res://images/battle_player_pawns/panino/pawn_panino_low.png" id="6_8itph"]
 [ext_resource type="Texture2D" uid="uid://jxvx2uqs4nb5" path="res://images/battle_player_pawns/panino/pawn_panino_std.png" id="7_xdiph"]
 [ext_resource type="Texture2D" uid="uid://bbaw80lqja4p" path="res://images/battle_player_pawns/panino/pawn_panino_victory.png" id="8_qj5g8"]
+[ext_resource type="Resource" uid="uid://cw5q02ranenam" path="res://resources/ability_sets/initial_player/set_initial_panino.tres" id="9_8itph"]
 [ext_resource type="Resource" uid="uid://ceyadnhmt1xuf" path="res://resources/items/equipment/accessories/basic_amulet.tres" id="9_xad1i"]
 [ext_resource type="Resource" uid="uid://dyetgu7uj8n1" path="res://resources/items/equipment/body_armor/basic_robe.tres" id="10_8itph"]
 [ext_resource type="Resource" uid="uid://c7yaitiucd3qw" path="res://resources/items/equipment/headgear/basic_crown.tres" id="11_xdiph"]
@@ -40,4 +41,5 @@ initial_weapon = ExtResource("12_qj5g8")
 initial_headgear = ExtResource("11_xdiph")
 initial_body_armor = ExtResource("10_8itph")
 initial_accessory = ExtResource("9_xad1i")
+initial_ability_set = ExtResource("9_8itph")
 metadata/_custom_type_script = "uid://bl0gq5s1bthhi"

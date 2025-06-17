@@ -3,23 +3,28 @@ extends Node
 const TEAM_COUNT: int = 4
 const MAX_MONEY: int = 9999999
 
-var team: Array[PartyMemberVariables] = [
-	PartyMemberVariables.new(preload("res://resources/party_members/pm_astrid.tres")),
-	PartyMemberVariables.new(preload("res://resources/party_members/pm_panino.tres")),
-	PartyMemberVariables.new(preload("res://resources/party_members/pm_quatrain.tres")),
-	PartyMemberVariables.new(preload("res://resources/party_members/pm_hubert.tres")),
-]
-var bench: Array[PartyMemberVariables] = [
-	PartyMemberVariables.new(preload("res://resources/party_members/pm_gaudi.tres")),
-	PartyMemberVariables.new(preload("res://resources/party_members/pm_carmen.tres")),
-	PartyMemberVariables.new(preload("res://resources/party_members/pm_moskla.tres")),
-	PartyMemberVariables.new(preload("res://resources/party_members/pm_brandine.tres")),
-	PartyMemberVariables.new(preload("res://resources/party_members/pm_paylla.tres")),
-	PartyMemberVariables.new(preload("res://resources/party_members/pm_florence.tres")),
-	PartyMemberVariables.new(preload("res://resources/party_members/pm_eyner.tres")),
-	PartyMemberVariables.new(preload("res://resources/party_members/pm_nebula.tres")),
-]
+var team: Array[PartyMemberVariables]
+var bench: Array[PartyMemberVariables]
 var money: int
+
+func _ready() -> void:
+	team = [
+		PartyMemberVariables.new(load("res://resources/party_members/pm_astrid.tres")),
+		PartyMemberVariables.new(load("res://resources/party_members/pm_panino.tres")),
+		PartyMemberVariables.new(load("res://resources/party_members/pm_quatrain.tres")),
+		PartyMemberVariables.new(load("res://resources/party_members/pm_hubert.tres")),
+	]
+	
+	bench = [
+		PartyMemberVariables.new(load("res://resources/party_members/pm_gaudi.tres")),
+		PartyMemberVariables.new(load("res://resources/party_members/pm_carmen.tres")),
+		PartyMemberVariables.new(load("res://resources/party_members/pm_moskla.tres")),
+		PartyMemberVariables.new(load("res://resources/party_members/pm_brandine.tres")),
+		PartyMemberVariables.new(load("res://resources/party_members/pm_paylla.tres")),
+		PartyMemberVariables.new(load("res://resources/party_members/pm_florence.tres")),
+		PartyMemberVariables.new(load("res://resources/party_members/pm_eyner.tres")),
+		PartyMemberVariables.new(load("res://resources/party_members/pm_nebula.tres")),
+	]
 
 func switch_team_members(n1: int, n2: int):
 	if(n1 < team.size() && n2 < team.size()):

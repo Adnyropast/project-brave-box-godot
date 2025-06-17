@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="AbilitySet" load_steps=12 format=3 uid="uid://cpsgfm6bc2dfc"]
+
+[ext_resource type="Script" uid="uid://clugbtxltbj7y" path="res://resources/ActiveAbility.gd" id="1_u6o1o"]
+[ext_resource type="Resource" uid="uid://dvnxytmryaskg" path="res://resources/active_abilities/weaken_stats/weaken_physical_attack.tres" id="2_u6o1o"]
+[ext_resource type="Resource" uid="uid://bl4adnu38jlk7" path="res://resources/active_abilities/weaken_stats/weaken_physical_defense.tres" id="3_otok6"]
+[ext_resource type="Resource" uid="uid://bue1p7c0g0osu" path="res://resources/active_abilities/weaken_stats/weaken_magical_attack.tres" id="4_2coyn"]
+[ext_resource type="Resource" uid="uid://co44ltk7e6e3a" path="res://resources/active_abilities/weaken_stats/weaken_magical_defense.tres" id="5_npuke"]
+[ext_resource type="Resource" uid="uid://cuusncqliqc4y" path="res://resources/active_abilities/weaken_stats/weaken_speed.tres" id="6_uh5mg"]
+[ext_resource type="Resource" uid="uid://dmas8efhnxu3m" path="res://resources/active_abilities/weaken_stats/weaken_aim.tres" id="7_yrvnx"]
+[ext_resource type="Resource" uid="uid://2pvpjawfm8c8" path="res://resources/active_abilities/weaken_stats/weaken_evasion.tres" id="8_ur84u"]
+[ext_resource type="Resource" uid="uid://dfsmrtmpgld6t" path="res://resources/active_abilities/weaken_stats/weaken_critical_chance.tres" id="9_wie6f"]
+[ext_resource type="Resource" uid="uid://o2cdqwh54rnh" path="res://resources/active_abilities/weaken_stats/weaken_restorative_power.tres" id="10_yhg0b"]
+[ext_resource type="Script" uid="uid://bbn0mdaymwojd" path="res://resources/AbilitySet.gd" id="11_eahs7"]
+
+[resource]
+script = ExtResource("11_eahs7")
+name = "Debuffs"
+abilities = Array[ExtResource("1_u6o1o")]([ExtResource("2_u6o1o"), ExtResource("3_otok6"), ExtResource("4_2coyn"), ExtResource("5_npuke"), ExtResource("6_uh5mg"), ExtResource("7_yrvnx"), ExtResource("8_ur84u"), ExtResource("9_wie6f"), ExtResource("10_yhg0b")])
+metadata/_custom_type_script = "uid://bbn0mdaymwojd"

@@ -206,3 +206,11 @@ func disable_ability(active_script: ActiveScript) -> String:
 
 func block_turn() -> ActiveScript:
 	return states.block_turn()
+
+func get_active_abilities() -> Array[ActiveAbility]:
+	var abilities: Array[ActiveAbility] = []
+	
+	if party_member:
+		return party_member.get_active_abilities()
+	
+	return abilities

@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="AbilitySet" load_steps=7 format=3 uid="uid://byfk73pyt3wcy"]
+
+[ext_resource type="Script" uid="uid://clugbtxltbj7y" path="res://resources/ActiveAbility.gd" id="1_08pbm"]
+[ext_resource type="Resource" uid="uid://2laoyevejsl4" path="res://resources/active_abilities/magic_wind.tres" id="2_7x8dl"]
+[ext_resource type="Script" uid="uid://bbn0mdaymwojd" path="res://resources/AbilitySet.gd" id="2_pc7se"]
+[ext_resource type="Resource" uid="uid://fy6e2fy41ycb" path="res://resources/active_abilities/boost_stats/boost_aim.tres" id="3_t85j5"]
+[ext_resource type="Resource" uid="uid://xkf28jdmpogx" path="res://resources/active_abilities/boost_stats/boost_evasion.tres" id="4_mrtew"]
+[ext_resource type="Resource" uid="uid://dqcygefox516a" path="res://resources/active_abilities/boost_stats/boost_critical_chance.tres" id="5_pj02l"]
+
+[resource]
+script = ExtResource("2_pc7se")
+name = ""
+abilities = Array[ExtResource("1_08pbm")]([ExtResource("2_7x8dl"), ExtResource("3_t85j5"), ExtResource("4_mrtew"), ExtResource("5_pj02l"), null, null])
+metadata/_custom_type_script = "uid://bbn0mdaymwojd"

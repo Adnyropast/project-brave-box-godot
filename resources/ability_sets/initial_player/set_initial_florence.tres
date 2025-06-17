@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="AbilitySet" load_steps=7 format=3 uid="uid://c4gv5dsi1ews5"]
+
+[ext_resource type="Script" uid="uid://clugbtxltbj7y" path="res://resources/ActiveAbility.gd" id="1_thwtg"]
+[ext_resource type="Resource" uid="uid://2laoyevejsl4" path="res://resources/active_abilities/magic_wind.tres" id="2_aqyf7"]
+[ext_resource type="Script" uid="uid://bbn0mdaymwojd" path="res://resources/AbilitySet.gd" id="2_ob7uo"]
+[ext_resource type="Resource" uid="uid://5cyx831mjd3u" path="res://resources/active_abilities/inflict_ailments/inflict_blindness.tres" id="3_2t181"]
+[ext_resource type="Resource" uid="uid://c6bocjh01ehw2" path="res://resources/active_abilities/inflict_ailments/inflict_silence.tres" id="4_o78d4"]
+[ext_resource type="Resource" uid="uid://mq6ea0p4jhsg" path="res://resources/active_abilities/inflict_ailments/inflict_sleep.tres" id="5_coj2f"]
+
+[resource]
+script = ExtResource("2_ob7uo")
+name = ""
+abilities = Array[ExtResource("1_thwtg")]([ExtResource("2_aqyf7"), ExtResource("3_2t181"), ExtResource("4_o78d4"), ExtResource("5_coj2f"), null, null])
+metadata/_custom_type_script = "uid://bbn0mdaymwojd"

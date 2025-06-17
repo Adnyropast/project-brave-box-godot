@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="AbilitySet" load_steps=12 format=3 uid="uid://f6cgpt0agofq"]
+
+[ext_resource type="Script" uid="uid://clugbtxltbj7y" path="res://resources/ActiveAbility.gd" id="1_u163r"]
+[ext_resource type="Resource" uid="uid://ctynixvjrh3px" path="res://resources/active_abilities/inflict_ailments/inflict_poison.tres" id="2_u163r"]
+[ext_resource type="Resource" uid="uid://5cyx831mjd3u" path="res://resources/active_abilities/inflict_ailments/inflict_blindness.tres" id="3_8yyio"]
+[ext_resource type="Resource" uid="uid://c6bocjh01ehw2" path="res://resources/active_abilities/inflict_ailments/inflict_silence.tres" id="4_jyqiq"]
+[ext_resource type="Resource" uid="uid://mq6ea0p4jhsg" path="res://resources/active_abilities/inflict_ailments/inflict_sleep.tres" id="5_1xq0y"]
+[ext_resource type="Resource" uid="uid://ciqyh64gocgiu" path="res://resources/active_abilities/inflict_ailments/inflict_berserk.tres" id="6_grhnu"]
+[ext_resource type="Resource" uid="uid://b6y8rrm7blsui" path="res://resources/active_abilities/inflict_ailments/inflict_confusion.tres" id="7_g4yuy"]
+[ext_resource type="Resource" uid="uid://kqlkimbgsb4m" path="res://resources/active_abilities/inflict_ailments/inflict_charm.tres" id="8_jlve8"]
+[ext_resource type="Resource" uid="uid://dmpdpw822b4sv" path="res://resources/active_abilities/inflict_ailments/inflict_doom.tres" id="9_q4yht"]
+[ext_resource type="Resource" uid="uid://bxcy15awdhg7g" path="res://resources/active_abilities/inflict_ailments/inflict_instant_death.tres" id="10_81057"]
+[ext_resource type="Script" uid="uid://bbn0mdaymwojd" path="res://resources/AbilitySet.gd" id="11_8gujc"]
+
+[resource]
+script = ExtResource("11_8gujc")
+name = "Status Ailments"
+abilities = Array[ExtResource("1_u163r")]([ExtResource("2_u163r"), ExtResource("3_8yyio"), ExtResource("4_jyqiq"), ExtResource("5_1xq0y"), ExtResource("6_grhnu"), ExtResource("7_g4yuy"), ExtResource("8_jlve8"), ExtResource("9_q4yht"), ExtResource("10_81057")])
+metadata/_custom_type_script = "uid://bbn0mdaymwojd"

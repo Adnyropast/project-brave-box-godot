@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="PartyMember" load_steps=14 format=3 uid="uid://c2twaqglaa4p8"]
+[gd_resource type="Resource" script_class="PartyMember" load_steps=15 format=3 uid="uid://c2twaqglaa4p8"]
 
 [ext_resource type="Script" uid="uid://bl0gq5s1bthhi" path="res://resources/PartyMember.gd" id="1_7ev0c"]
 [ext_resource type="Texture2D" uid="uid://cw2p8mpd3evnk" path="res://images/battle_player_pawns/astrid/pawn_astrid_atk.png" id="1_jtu5t"]
@@ -10,6 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://14wo6u4rri17" path="res://images/battle_player_pawns/astrid/pawn_astrid_std.png" id="7_kb6nn"]
 [ext_resource type="Texture2D" uid="uid://h35tmicdw5ej" path="res://images/battle_player_pawns/astrid/pawn_astrid_victory.png" id="8_35hvb"]
 [ext_resource type="Resource" uid="uid://ceyadnhmt1xuf" path="res://resources/items/equipment/accessories/basic_amulet.tres" id="9_5cgxi"]
+[ext_resource type="Resource" uid="uid://dta6xk0m33wx3" path="res://resources/ability_sets/initial_player/set_initial_astrid.tres" id="9_pkcyl"]
 [ext_resource type="Resource" uid="uid://c2cmfuvrbqgqc" path="res://resources/items/equipment/body_armor/basic_plate.tres" id="10_pkcyl"]
 [ext_resource type="Resource" uid="uid://7cb7ea53iutl" path="res://resources/items/equipment/headgear/basic_helmet.tres" id="11_kb6nn"]
 [ext_resource type="Resource" uid="uid://c5stci2mojlb1" path="res://resources/items/equipment/weapons/basic_shield.tres" id="12_35hvb"]
@@ -40,4 +41,5 @@ initial_weapon = ExtResource("12_35hvb")
 initial_headgear = ExtResource("11_kb6nn")
 initial_body_armor = ExtResource("10_pkcyl")
 initial_accessory = ExtResource("9_5cgxi")
+initial_ability_set = ExtResource("9_pkcyl")
 metadata/_custom_type_script = "uid://bl0gq5s1bthhi"

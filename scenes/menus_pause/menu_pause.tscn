@@ -43,6 +43,10 @@ text = "Items"
 layout_mode = 2
 text = "Equipment"
 
+[node name="ButtonAbilities" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Abilities"
+
 [node name="ButtonStats" type="Button" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
 text = "Stats"
@@ -114,5 +118,6 @@ layout_mode = 2
 [connection signal="pressed" from="MarginContainer/VBoxContainer/ButtonFormation" to="." method="_on_button_formation_pressed"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/ButtonItems" to="." method="_on_button_items_pressed"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/ButtonEquipment" to="." method="_on_button_equipment_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/ButtonAbilities" to="." method="_on_button_abilities_pressed"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/ButtonStats" to="." method="_on_button_stats_pressed"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/ButtonClose" to="." method="_on_button_close_pressed"]

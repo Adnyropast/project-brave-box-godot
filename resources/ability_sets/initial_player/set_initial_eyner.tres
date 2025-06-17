@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="AbilitySet" load_steps=8 format=3 uid="uid://cn5huvenx6nxu"]
+
+[ext_resource type="Script" uid="uid://clugbtxltbj7y" path="res://resources/ActiveAbility.gd" id="1_jlhws"]
+[ext_resource type="Resource" uid="uid://dfqpwy0u3elog" path="res://resources/active_abilities/magic_dark.tres" id="2_b6fex"]
+[ext_resource type="Script" uid="uid://bbn0mdaymwojd" path="res://resources/AbilitySet.gd" id="2_gwafk"]
+[ext_resource type="Resource" uid="uid://ciqyh64gocgiu" path="res://resources/active_abilities/inflict_ailments/inflict_berserk.tres" id="3_ytdql"]
+[ext_resource type="Resource" uid="uid://dmpdpw822b4sv" path="res://resources/active_abilities/inflict_ailments/inflict_doom.tres" id="4_6g0lw"]
+[ext_resource type="Resource" uid="uid://dmas8efhnxu3m" path="res://resources/active_abilities/weaken_stats/weaken_aim.tres" id="5_fc7ap"]
+[ext_resource type="Resource" uid="uid://o2cdqwh54rnh" path="res://resources/active_abilities/weaken_stats/weaken_restorative_power.tres" id="6_6gvwn"]
+
+[resource]
+script = ExtResource("2_gwafk")
+name = ""
+abilities = Array[ExtResource("1_jlhws")]([ExtResource("2_b6fex"), ExtResource("3_ytdql"), ExtResource("4_6g0lw"), ExtResource("5_fc7ap"), ExtResource("6_6gvwn"), null])
+metadata/_custom_type_script = "uid://bbn0mdaymwojd"

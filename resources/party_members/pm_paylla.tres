@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="PartyMember" load_steps=11 format=3 uid="uid://ckfhd6dumh7or"]
+[gd_resource type="Resource" script_class="PartyMember" load_steps=12 format=3 uid="uid://ckfhd6dumh7or"]
 
 [ext_resource type="Script" uid="uid://bl0gq5s1bthhi" path="res://resources/PartyMember.gd" id="1_6ssvt"]
 [ext_resource type="Texture2D" uid="uid://r2vn5gjga5u4" path="res://images/battle_player_pawns/paylla/pawn_paylla_atk.png" id="1_7ou2v"]
@@ -9,6 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://ckh7gbdpa7sql" path="res://images/battle_player_pawns/paylla/pawn_paylla_low.png" id="6_5yvmt"]
 [ext_resource type="Texture2D" uid="uid://7l7wbhj2td7h" path="res://images/battle_player_pawns/paylla/pawn_paylla_std.png" id="7_feui6"]
 [ext_resource type="Texture2D" uid="uid://4sbm3aatit02" path="res://images/battle_player_pawns/paylla/pawn_paylla_victory.png" id="8_h68qs"]
+[ext_resource type="Resource" uid="uid://rwa8thgbgi1c" path="res://resources/ability_sets/initial_player/set_initial_paylla.tres" id="9_0c6pc"]
 [ext_resource type="Resource" uid="uid://v08gqa8w4lri" path="res://resources/items/equipment/weapons/basic_spear.tres" id="9_pu62j"]
 
 [resource]
@@ -34,4 +35,5 @@ eva = 2
 crit = 2
 res_pwr = 2
 initial_weapon = ExtResource("9_pu62j")
+initial_ability_set = ExtResource("9_0c6pc")
 metadata/_custom_type_script = "uid://bl0gq5s1bthhi"

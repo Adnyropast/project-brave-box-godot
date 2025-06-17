@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="AbilitySet" load_steps=7 format=3 uid="uid://rwa8thgbgi1c"]
+
+[ext_resource type="Script" uid="uid://clugbtxltbj7y" path="res://resources/ActiveAbility.gd" id="1_upmh5"]
+[ext_resource type="Script" uid="uid://bbn0mdaymwojd" path="res://resources/AbilitySet.gd" id="2_dijq2"]
+[ext_resource type="Resource" uid="uid://dfqpwy0u3elog" path="res://resources/active_abilities/magic_dark.tres" id="2_md6xy"]
+[ext_resource type="Resource" uid="uid://dvnxytmryaskg" path="res://resources/active_abilities/weaken_stats/weaken_physical_attack.tres" id="3_ixacw"]
+[ext_resource type="Resource" uid="uid://bue1p7c0g0osu" path="res://resources/active_abilities/weaken_stats/weaken_magical_attack.tres" id="4_qh2e7"]
+[ext_resource type="Resource" uid="uid://kqlkimbgsb4m" path="res://resources/active_abilities/inflict_ailments/inflict_charm.tres" id="5_3uhgo"]
+
+[resource]
+script = ExtResource("2_dijq2")
+name = ""
+abilities = Array[ExtResource("1_upmh5")]([ExtResource("2_md6xy"), ExtResource("3_ixacw"), ExtResource("4_qh2e7"), ExtResource("5_3uhgo"), null, null])
+metadata/_custom_type_script = "uid://bbn0mdaymwojd"

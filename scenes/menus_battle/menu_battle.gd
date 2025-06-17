@@ -68,35 +68,11 @@ func _on_button_abilities_pressed() -> void:
 	menu_abilities.menu_cancel = self
 	menu_abilities.pawn = pawn
 	
-	var abilities: Array[ActiveAbility] = [
-		preload("res://resources/active_abilities/magic_fire.tres"),
-		preload("res://resources/active_abilities/magic_water.tres"),
-		preload("res://resources/active_abilities/magic_lightning.tres"),
-		preload("res://resources/active_abilities/magic_earth.tres"),
-		preload("res://resources/active_abilities/magic_wind.tres"),
-		preload("res://resources/active_abilities/magic_light.tres"),
-		preload("res://resources/active_abilities/magic_dark.tres"),
-	]
+	var abilities: Array[ActiveAbility] = pawn.variables.get_active_abilities()
 	
 	menu_abilities.update_abilities(abilities)
 	
 	tree.root.add_child(menu_abilities)
-
-func _on_button_tests_pressed() -> void:
-	Menus.close_menu(self)
-	
-	var menu_abilities = preload("res://scenes/menus_battle/menus_abilities/menu_abilities.tscn").instantiate()
-	
-	menu_abilities.menu_cancel = self
-	menu_abilities.pawn = pawn
-	
-	var abilities: Array[ActiveAbility] = [
-		preload("res://resources/active_abilities/expend_mp_999.tres"),
-	]
-	
-	menu_abilities.update_abilities(abilities)
-	
-	Menus.open_menu(menu_abilities)
 
 func _on_button_defend_pressed() -> void:
 	Menus.close_menu(self)
@@ -133,74 +109,12 @@ func _on_button_change_weapon_pressed() -> void:
 	
 	Menus.open_menu(menu)
 
-func _on_button_buffs_pressed() -> void:
+func _on_button_debug_pressed() -> void:
 	Menus.close_menu(self)
 	
-	var menu_abilities = preload("res://scenes/menus_battle/menus_abilities/menu_abilities.tscn").instantiate()
+	var menu_debug = preload("res://scenes/menus_battle/menus_debug/menu_debug.tscn").instantiate()
 	
-	menu_abilities.menu_cancel = self
-	menu_abilities.pawn = pawn
+	menu_debug.menu_cancel = self
+	menu_debug.pawn = pawn
 	
-	var abilities: Array[ActiveAbility] = [
-		preload("res://resources/active_abilities/boost_stats/boost_physical_attack.tres"),
-		preload("res://resources/active_abilities/boost_stats/boost_physical_defense.tres"),
-		preload("res://resources/active_abilities/boost_stats/boost_magical_attack.tres"),
-		preload("res://resources/active_abilities/boost_stats/boost_magical_defense.tres"),
-		preload("res://resources/active_abilities/boost_stats/boost_speed.tres"),
-		preload("res://resources/active_abilities/boost_stats/boost_aim.tres"),
-		preload("res://resources/active_abilities/boost_stats/boost_evasion.tres"),
-		preload("res://resources/active_abilities/boost_stats/boost_critical_chance.tres"),
-		preload("res://resources/active_abilities/boost_stats/boost_restorative_power.tres"),
-	]
-	
-	menu_abilities.update_abilities(abilities)
-	
-	Menus.open_menu(menu_abilities)
-
-func _on_button_debuffs_pressed() -> void:
-	Menus.close_menu(self)
-	
-	var menu_abilities = preload("res://scenes/menus_battle/menus_abilities/menu_abilities.tscn").instantiate()
-	
-	menu_abilities.menu_cancel = self
-	menu_abilities.pawn = pawn
-	
-	var abilities: Array[ActiveAbility] = [
-		preload("res://resources/active_abilities/weaken_stats/weaken_physical_attack.tres"),
-		preload("res://resources/active_abilities/weaken_stats/weaken_physical_defense.tres"),
-		preload("res://resources/active_abilities/weaken_stats/weaken_magical_attack.tres"),
-		preload("res://resources/active_abilities/weaken_stats/weaken_magical_defense.tres"),
-		preload("res://resources/active_abilities/weaken_stats/weaken_speed.tres"),
-		preload("res://resources/active_abilities/weaken_stats/weaken_aim.tres"),
-		preload("res://resources/active_abilities/weaken_stats/weaken_evasion.tres"),
-		preload("res://resources/active_abilities/weaken_stats/weaken_critical_chance.tres"),
-		preload("res://resources/active_abilities/weaken_stats/weaken_restorative_power.tres"),
-	]
-	
-	menu_abilities.update_abilities(abilities)
-	
-	Menus.open_menu(menu_abilities)
-
-func _on_button_ailments_pressed() -> void:
-	Menus.close_menu(self)
-	
-	var menu_abilities = preload("res://scenes/menus_battle/menus_abilities/menu_abilities.tscn").instantiate()
-	
-	menu_abilities.menu_cancel = self
-	menu_abilities.pawn = pawn
-	
-	var abilities: Array[ActiveAbility] = [
-		preload("res://resources/active_abilities/inflict_ailments/inflict_poison.tres"),
-		preload("res://resources/active_abilities/inflict_ailments/inflict_blindness.tres"),
-		preload("res://resources/active_abilities/inflict_ailments/inflict_silence.tres"),
-		preload("res://resources/active_abilities/inflict_ailments/inflict_sleep.tres"),
-		preload("res://resources/active_abilities/inflict_ailments/inflict_berserk.tres"),
-		preload("res://resources/active_abilities/inflict_ailments/inflict_confusion.tres"),
-		preload("res://resources/active_abilities/inflict_ailments/inflict_charm.tres"),
-		preload("res://resources/active_abilities/inflict_ailments/inflict_doom.tres"),
-		preload("res://resources/active_abilities/inflict_ailments/inflict_instant_death.tres"),
-	]
-	
-	menu_abilities.update_abilities(abilities)
-	
-	Menus.open_menu(menu_abilities)
+	Menus.open_menu(menu_debug)
