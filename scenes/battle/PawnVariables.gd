@@ -185,7 +185,7 @@ func on_ko():
 
 func multiply_damage(damage: int) -> int:
 	if state_defend:
-		return damage / 2
+		return floori(damage / 2.0)
 	
 	return damage
 

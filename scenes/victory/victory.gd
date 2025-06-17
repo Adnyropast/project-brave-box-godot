@@ -13,7 +13,7 @@ func _ready() -> void:
 	var tween = create_tween()
 	tween.tween_callback(update_all).set_delay(1)
 
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	if(Input.is_action_just_pressed("confirm")):
 		close_screen()
 

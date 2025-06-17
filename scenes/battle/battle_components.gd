@@ -38,7 +38,7 @@ func _ready() -> void:
 		
 		i = i + 1
 	
-	var battle_board = preload("res://scenes/battle/battle_board.tscn").instantiate()
+	battle_board = preload("res://scenes/battle/battle_board.tscn").instantiate()
 	battle_board.init_pawns(pawns_player, pawns_enemy)
 	tree.root.add_child(battle_board)
 	
@@ -51,7 +51,7 @@ func _ready() -> void:
 	control_info.pawns = pawns_enemy + pawns_player
 	tree.root.add_child(control_info)
 	
-	var turn_system = preload("res://scenes/battle/turn_system.tscn").instantiate()
+	turn_system = preload("res://scenes/battle/turn_system.tscn").instantiate()
 	turn_system.init_pawns(pawns_player, pawns_enemy)
 	turn_system.battle_components = self
 	tree.root.add_child(turn_system)

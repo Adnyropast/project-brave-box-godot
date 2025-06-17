@@ -25,10 +25,10 @@ func init_pawns(pawns_player: Array[PawnComponents], pawns_enemy: Array[PawnComp
 		pawn.turn_system = self
 
 func get_min_ticks_up_flagpole() -> float:
-	var pawns = get_tick_eligible_pawns()
+	var tick_pawns = get_tick_eligible_pawns()
 	var min_ticks = AP_FLAGPOLE + 1
 	
-	for pawn in pawns:
+	for pawn in tick_pawns:
 		var remaining_ap = AP_FLAGPOLE - pawn.variables.ap
 		var ticks = remaining_ap / pawn.variables.get_speed()
 		
@@ -38,30 +38,30 @@ func get_min_ticks_up_flagpole() -> float:
 	return min_ticks
 
 func pass_ticks() -> void:
-	var pawns = get_tick_eligible_pawns()
+	var tick_pawns = get_tick_eligible_pawns()
 	var min_ticks = get_min_ticks_up_flagpole()
 	
-	for pawn in pawns:
+	for pawn in tick_pawns:
 		var add_ap = min_ticks * pawn.variables.get_speed()
 		
 		pawn.variables.ap = pawn.variables.ap + add_ap
 
 func get_max_ap() -> float:
-	var pawns = get_tick_eligible_pawns()
+	var tick_pawns = get_tick_eligible_pawns()
 	var max_ap = 0
 	
-	for pawn in pawns:
+	for pawn in tick_pawns:
 		if pawn.variables.ap > max_ap:
 			max_ap = pawn.variables.ap
 	
 	return max_ap
 
 func get_top_pawns() -> Array[PawnComponents]:
-	var pawns = get_tick_eligible_pawns()
+	var tick_pawns = get_tick_eligible_pawns()
 	var max_ap = get_max_ap()
 	var top_pawns: Array[PawnComponents] = []
 	
-	for pawn in pawns:
+	for pawn in tick_pawns:
 		if pawn.variables.ap == max_ap:
 			top_pawns.append(pawn)
 	

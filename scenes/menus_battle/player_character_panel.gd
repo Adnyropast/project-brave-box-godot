@@ -5,8 +5,8 @@ var current_mp: int
 var max_hp: int
 var max_mp: int
 
-func set_character_name(name: String):
-	$MarginContainer/VBoxContainer/HBoxContainer/LabelName.text = name
+func set_character_name(character_name: String):
+	$MarginContainer/VBoxContainer/HBoxContainer/LabelName.text = character_name
 
 func update_progress_bar_hp():
 	$MarginContainer/VBoxContainer/HBoxContainer2/VBoxContainerHP/ProgressBar.max_value = max_hp
