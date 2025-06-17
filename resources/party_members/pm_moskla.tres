@@ -1,28 +1,14 @@
-[gd_resource type="Resource" script_class="PartyMember" load_steps=12 format=3 uid="uid://c0megvh7fgt00"]
+[gd_resource type="Resource" script_class="PartyMember" load_steps=5 format=3 uid="uid://c0megvh7fgt00"]
 
 [ext_resource type="Script" uid="uid://bl0gq5s1bthhi" path="res://resources/PartyMember.gd" id="1_nvcc0"]
-[ext_resource type="Texture2D" uid="uid://chqwe8ek5oi3a" path="res://images/battle_player_pawns/moskla/pawn_moskla_atk.png" id="1_xo4fh"]
-[ext_resource type="Texture2D" uid="uid://bhvxq5gmfm5p6" path="res://images/battle_player_pawns/moskla/pawn_moskla_cast.png" id="2_o11bx"]
-[ext_resource type="Texture2D" uid="uid://b4rqte7pfcc2r" path="res://images/battle_player_pawns/moskla/pawn_moskla_def.png" id="3_7wh63"]
-[ext_resource type="Texture2D" uid="uid://m5vnn17tkmsf" path="res://images/battle_player_pawns/moskla/pawn_moskla_hurt.png" id="4_gskkf"]
-[ext_resource type="Texture2D" uid="uid://d3wsw8i430gxt" path="res://images/battle_player_pawns/moskla/pawn_moskla_ko.png" id="5_8vwar"]
-[ext_resource type="Texture2D" uid="uid://bx5ggfhjeo2wo" path="res://images/battle_player_pawns/moskla/pawn_moskla_low.png" id="6_6al83"]
-[ext_resource type="Texture2D" uid="uid://bbafs1djpjpli" path="res://images/battle_player_pawns/moskla/pawn_moskla_std.png" id="7_fu4xf"]
-[ext_resource type="Texture2D" uid="uid://enh1sqrqx4sd" path="res://images/battle_player_pawns/moskla/pawn_moskla_victory.png" id="8_gq4g2"]
 [ext_resource type="Resource" uid="uid://cuccukp3ygb4g" path="res://resources/ability_sets/initial_player/set_initial_moskla.tres" id="9_7wh63"]
 [ext_resource type="Resource" uid="uid://dfqil3o3cmuqt" path="res://resources/items/equipment/weapons/basic_harp.tres" id="9_o11bx"]
+[ext_resource type="Resource" uid="uid://brmww06lffdk2" path="res://resources/sprite_sets/party_members/spriteset_moskla.tres" id="12_gskkf"]
 
 [resource]
 script = ExtResource("1_nvcc0")
 name = "Moskla"
-image_std = ExtResource("7_fu4xf")
-image_atk = ExtResource("1_xo4fh")
-image_def = ExtResource("3_7wh63")
-image_cast = ExtResource("2_o11bx")
-image_hurt = ExtResource("4_gskkf")
-image_low = ExtResource("6_6al83")
-image_ko = ExtResource("5_8vwar")
-image_victory = ExtResource("8_gq4g2")
+sprite_set = ExtResource("12_gskkf")
 max_hp = 2
 max_mp = 1
 p_atk = 2

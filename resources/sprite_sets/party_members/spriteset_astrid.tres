@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="SpriteSet" load_steps=10 format=3 uid="uid://dhgkvb8gp4s5"]
+
+[ext_resource type="Texture2D" uid="uid://cw2p8mpd3evnk" path="res://images/battle_player_pawns/astrid/pawn_astrid_atk.png" id="1_v8m4f"]
+[ext_resource type="Texture2D" uid="uid://dtk8tgsm71dq2" path="res://images/battle_player_pawns/astrid/pawn_astrid_cast.png" id="2_hgcy6"]
+[ext_resource type="Texture2D" uid="uid://caswtps38tq33" path="res://images/battle_player_pawns/astrid/pawn_astrid_def.png" id="3_vvpk2"]
+[ext_resource type="Texture2D" uid="uid://dg5omkk1g0erd" path="res://images/battle_player_pawns/astrid/pawn_astrid_hurt.png" id="4_y6l82"]
+[ext_resource type="Texture2D" uid="uid://d1ibbifvypigs" path="res://images/battle_player_pawns/astrid/pawn_astrid_ko.png" id="5_tb77c"]
+[ext_resource type="Texture2D" uid="uid://bmet3jw1c63pp" path="res://images/battle_player_pawns/astrid/pawn_astrid_low.png" id="6_sw0na"]
+[ext_resource type="Texture2D" uid="uid://14wo6u4rri17" path="res://images/battle_player_pawns/astrid/pawn_astrid_std.png" id="7_n1kxa"]
+[ext_resource type="Texture2D" uid="uid://h35tmicdw5ej" path="res://images/battle_player_pawns/astrid/pawn_astrid_victory.png" id="8_m7blq"]
+[ext_resource type="Script" uid="uid://bh4dgrr2at34x" path="res://resources/SpriteSet.gd" id="9_mvobl"]
+
+[resource]
+script = ExtResource("9_mvobl")
+image_std = ExtResource("7_n1kxa")
+image_atk = ExtResource("1_v8m4f")
+image_def = ExtResource("3_vvpk2")
+image_cast = ExtResource("2_hgcy6")
+image_hurt = ExtResource("4_y6l82")
+image_low = ExtResource("6_sw0na")
+image_ko = ExtResource("5_tb77c")
+image_victory = ExtResource("8_m7blq")
+metadata/_custom_type_script = "uid://bh4dgrr2at34x"

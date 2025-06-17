@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="SpriteSet" load_steps=7 format=3 uid="uid://djme21kvm63ap"]
+
+[ext_resource type="Script" uid="uid://bh4dgrr2at34x" path="res://resources/SpriteSet.gd" id="1_hyubf"]
+[ext_resource type="Texture2D" uid="uid://bmljcuruuowua" path="res://images/battle_enemy_pawns/goblin_chopper/pawn_goblin_chopper_atk.png" id="1_vhb26"]
+[ext_resource type="Texture2D" uid="uid://cnks5nheqakad" path="res://images/battle_enemy_pawns/goblin_chopper/pawn_goblin_chopper_cast.png" id="2_ga2n4"]
+[ext_resource type="Texture2D" uid="uid://l6hmpoithm1x" path="res://images/battle_enemy_pawns/goblin_chopper/pawn_goblin_chopper_def.png" id="3_s6xw8"]
+[ext_resource type="Texture2D" uid="uid://ckmme1gjmnxe6" path="res://images/battle_enemy_pawns/goblin_chopper/pawn_goblin_chopper_hurt.png" id="4_0on3t"]
+[ext_resource type="Texture2D" uid="uid://b6qap04ysmdci" path="res://images/battle_enemy_pawns/goblin_chopper/pawn_goblin_chopper_std.png" id="5_wy6rl"]
+
+[resource]
+script = ExtResource("1_hyubf")
+image_std = ExtResource("5_wy6rl")
+image_atk = ExtResource("1_vhb26")
+image_def = ExtResource("3_s6xw8")
+image_cast = ExtResource("2_ga2n4")
+image_hurt = ExtResource("4_0on3t")
+metadata/_custom_type_script = "uid://bh4dgrr2at34x"

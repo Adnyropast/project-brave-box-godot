@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="SpriteSet" load_steps=7 format=3 uid="uid://bwewkr45dxnv8"]
+
+[ext_resource type="Texture2D" uid="uid://3h1d4w4f8wwq" path="res://images/battle_enemy_pawns/orc_healer/pawn_orc_healer_atk.png" id="1_a7g0w"]
+[ext_resource type="Script" uid="uid://bh4dgrr2at34x" path="res://resources/SpriteSet.gd" id="1_xudmr"]
+[ext_resource type="Texture2D" uid="uid://yu80ejnkx4g4" path="res://images/battle_enemy_pawns/orc_healer/pawn_orc_healer_cast.png" id="2_ryj4f"]
+[ext_resource type="Texture2D" uid="uid://b233om8pchgvx" path="res://images/battle_enemy_pawns/orc_healer/pawn_orc_healer_def.png" id="3_41gtv"]
+[ext_resource type="Texture2D" uid="uid://cdatpevumlyxi" path="res://images/battle_enemy_pawns/orc_healer/pawn_orc_healer_hurt.png" id="4_5l05y"]
+[ext_resource type="Texture2D" uid="uid://c4v6of8ft44le" path="res://images/battle_enemy_pawns/orc_healer/pawn_orc_healer_std.png" id="5_3puf3"]
+
+[resource]
+script = ExtResource("1_xudmr")
+image_std = ExtResource("5_3puf3")
+image_atk = ExtResource("1_a7g0w")
+image_def = ExtResource("3_41gtv")
+image_cast = ExtResource("2_ryj4f")
+image_hurt = ExtResource("4_5l05y")
+metadata/_custom_type_script = "uid://bh4dgrr2at34x"

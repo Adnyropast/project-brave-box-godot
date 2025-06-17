@@ -1,20 +1,12 @@
-[gd_resource type="Resource" script_class="Enemy" load_steps=7 format=3 uid="uid://dum8vvtr5uh8o"]
+[gd_resource type="Resource" script_class="Enemy" load_steps=3 format=3 uid="uid://dum8vvtr5uh8o"]
 
 [ext_resource type="Script" uid="uid://bj656ro4kx132" path="res://resources/Enemy.gd" id="1_763m6"]
-[ext_resource type="Texture2D" uid="uid://chs6pr3ur1hn6" path="res://images/battle_enemy_pawns/lizardman_lancer/pawn_lizardman_lancer_atk.png" id="1_qfijd"]
-[ext_resource type="Texture2D" uid="uid://hqg2wt825mud" path="res://images/battle_enemy_pawns/lizardman_lancer/pawn_lizardman_lancer_cast.png" id="2_d6600"]
-[ext_resource type="Texture2D" uid="uid://chol38pyco75f" path="res://images/battle_enemy_pawns/lizardman_lancer/pawn_lizardman_lancer_def.png" id="3_klaxt"]
-[ext_resource type="Texture2D" uid="uid://6vv55emdcb57" path="res://images/battle_enemy_pawns/lizardman_lancer/pawn_lizardman_lancer_hurt.png" id="4_rg40n"]
-[ext_resource type="Texture2D" uid="uid://cjkbsvjj3rtcg" path="res://images/battle_enemy_pawns/lizardman_lancer/pawn_lizardman_lancer_std.png" id="5_afoe3"]
+[ext_resource type="Resource" uid="uid://bgofoabr6gnou" path="res://resources/sprite_sets/tribes/spriteset_lizardman_lancer.tres" id="7_d6600"]
 
 [resource]
 script = ExtResource("1_763m6")
 name = "Lizardman Lancer"
-image_std = ExtResource("5_afoe3")
-image_atk = ExtResource("1_qfijd")
-image_def = ExtResource("3_klaxt")
-image_cast = ExtResource("2_d6600")
-image_hurt = ExtResource("4_rg40n")
+sprite_set = ExtResource("7_d6600")
 resist_severing = 0
 resist_cutting = 0
 resist_piercing = 0

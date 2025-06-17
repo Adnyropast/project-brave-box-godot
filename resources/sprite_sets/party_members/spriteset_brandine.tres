@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="SpriteSet" load_steps=10 format=3 uid="uid://dlrhwtkydd3ts"]
+
+[ext_resource type="Texture2D" uid="uid://dv8vg0f5vg7cy" path="res://images/battle_player_pawns/brandine/pawn_brandine_atk.png" id="1_dyo2s"]
+[ext_resource type="Script" uid="uid://bh4dgrr2at34x" path="res://resources/SpriteSet.gd" id="1_lh4is"]
+[ext_resource type="Texture2D" uid="uid://c7bnp4phk3suv" path="res://images/battle_player_pawns/brandine/pawn_brandine_cast.png" id="2_b54h8"]
+[ext_resource type="Texture2D" uid="uid://ovyue6y26f2x" path="res://images/battle_player_pawns/brandine/pawn_brandine_def.png" id="3_plyqn"]
+[ext_resource type="Texture2D" uid="uid://buwkpffceqr3c" path="res://images/battle_player_pawns/brandine/pawn_brandine_hurt.png" id="4_1tcgi"]
+[ext_resource type="Texture2D" uid="uid://dni1pxeatkmk1" path="res://images/battle_player_pawns/brandine/pawn_brandine_ko.png" id="5_o0f2i"]
+[ext_resource type="Texture2D" uid="uid://bptb0t1x57dkr" path="res://images/battle_player_pawns/brandine/pawn_brandine_low.png" id="6_tl5h8"]
+[ext_resource type="Texture2D" uid="uid://c1educfhe3q3q" path="res://images/battle_player_pawns/brandine/pawn_brandine_std.png" id="7_sjub5"]
+[ext_resource type="Texture2D" uid="uid://dv46frfrm47k3" path="res://images/battle_player_pawns/brandine/pawn_brandine_victory.png" id="8_fvqm4"]
+
+[resource]
+script = ExtResource("1_lh4is")
+image_std = ExtResource("7_sjub5")
+image_atk = ExtResource("1_dyo2s")
+image_def = ExtResource("3_plyqn")
+image_cast = ExtResource("2_b54h8")
+image_hurt = ExtResource("4_1tcgi")
+image_low = ExtResource("6_tl5h8")
+image_ko = ExtResource("5_o0f2i")
+image_victory = ExtResource("8_fvqm4")
+metadata/_custom_type_script = "uid://bh4dgrr2at34x"

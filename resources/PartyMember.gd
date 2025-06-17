@@ -5,14 +5,7 @@ class_name PartyMember
 enum StatRank {S, A, B, C}
 
 @export var name: String
-@export var image_std: Texture
-@export var image_atk: Texture
-@export var image_def: Texture
-@export var image_cast: Texture
-@export var image_hurt: Texture
-@export var image_low: Texture
-@export var image_ko: Texture
-@export var image_victory: Texture
+@export var sprite_set: SpriteSet
 @export var max_hp: StatRank
 @export var max_mp: StatRank
 @export var p_atk: StatRank

@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="SpriteSet" load_steps=10 format=3 uid="uid://cw6vvco68a3f"]
+
+[ext_resource type="Script" uid="uid://bh4dgrr2at34x" path="res://resources/SpriteSet.gd" id="1_j8k1i"]
+[ext_resource type="Texture2D" uid="uid://oxlxobfvgima" path="res://images/battle_player_pawns/hubert/pawn_hubert_atk.png" id="1_pq3fd"]
+[ext_resource type="Texture2D" uid="uid://dvwvvr3i3sw85" path="res://images/battle_player_pawns/hubert/pawn_hubert_cast.png" id="2_5j7me"]
+[ext_resource type="Texture2D" uid="uid://c1tj5yly1vvbv" path="res://images/battle_player_pawns/hubert/pawn_hubert_def.png" id="3_nkhog"]
+[ext_resource type="Texture2D" uid="uid://cboor5orwhcxd" path="res://images/battle_player_pawns/hubert/pawn_hubert_hurt.png" id="4_aana0"]
+[ext_resource type="Texture2D" uid="uid://d3ly0pew1yhce" path="res://images/battle_player_pawns/hubert/pawn_hubert_ko.png" id="5_36m17"]
+[ext_resource type="Texture2D" uid="uid://l0bvqtwlri06" path="res://images/battle_player_pawns/hubert/pawn_hubert_low.png" id="6_mmrx0"]
+[ext_resource type="Texture2D" uid="uid://bfe5dlxe2egi1" path="res://images/battle_player_pawns/hubert/pawn_hubert_std.png" id="7_wi4ct"]
+[ext_resource type="Texture2D" uid="uid://m232pqnr0k8n" path="res://images/battle_player_pawns/hubert/pawn_hubert_victory.png" id="8_nuw8h"]
+
+[resource]
+script = ExtResource("1_j8k1i")
+image_std = ExtResource("7_wi4ct")
+image_atk = ExtResource("1_pq3fd")
+image_def = ExtResource("3_nkhog")
+image_cast = ExtResource("2_5j7me")
+image_hurt = ExtResource("4_aana0")
+image_low = ExtResource("6_mmrx0")
+image_ko = ExtResource("5_36m17")
+image_victory = ExtResource("8_nuw8h")
+metadata/_custom_type_script = "uid://bh4dgrr2at34x"

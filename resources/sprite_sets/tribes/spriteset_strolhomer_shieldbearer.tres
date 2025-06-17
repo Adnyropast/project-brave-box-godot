@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="SpriteSet" load_steps=7 format=3 uid="uid://c3dk2ld6p4urq"]
+
+[ext_resource type="Script" uid="uid://bh4dgrr2at34x" path="res://resources/SpriteSet.gd" id="1_db0at"]
+[ext_resource type="Texture2D" uid="uid://db8wr5e04d7sk" path="res://images/battle_enemy_pawns/strolhomer_shieldbearer/pawn_strolhomer_shieldbearer_atk.png" id="1_jnq4n"]
+[ext_resource type="Texture2D" uid="uid://dxgwjkvo6rj4v" path="res://images/battle_enemy_pawns/strolhomer_shieldbearer/pawn_strolhomer_shieldbearer_cast.png" id="2_4jj8d"]
+[ext_resource type="Texture2D" uid="uid://dy01d7l0g7qiy" path="res://images/battle_enemy_pawns/strolhomer_shieldbearer/pawn_strolhomer_shieldbearer_def.png" id="3_1o7bl"]
+[ext_resource type="Texture2D" uid="uid://mjetruauyqps" path="res://images/battle_enemy_pawns/strolhomer_shieldbearer/pawn_strolhomer_shieldbearer_hurt.png" id="4_sghj2"]
+[ext_resource type="Texture2D" uid="uid://guvtjwilu765" path="res://images/battle_enemy_pawns/strolhomer_shieldbearer/pawn_strolhomer_shieldbearer_std.png" id="5_u3ujk"]
+
+[resource]
+script = ExtResource("1_db0at")
+image_std = ExtResource("5_u3ujk")
+image_atk = ExtResource("1_jnq4n")
+image_def = ExtResource("3_1o7bl")
+image_cast = ExtResource("2_4jj8d")
+image_hurt = ExtResource("4_sghj2")
+metadata/_custom_type_script = "uid://bh4dgrr2at34x"

@@ -1,20 +1,12 @@
-[gd_resource type="Resource" script_class="Enemy" load_steps=7 format=3 uid="uid://b1secfmg4ejc2"]
+[gd_resource type="Resource" script_class="Enemy" load_steps=3 format=3 uid="uid://b1secfmg4ejc2"]
 
-[ext_resource type="Texture2D" uid="uid://dfuucctxcocdt" path="res://images/battle_enemy_pawns/goblin_swordsman/pawn_goblin_swordsman_atk.png" id="1_cop4k"]
 [ext_resource type="Script" uid="uid://bj656ro4kx132" path="res://resources/Enemy.gd" id="1_ma17a"]
-[ext_resource type="Texture2D" uid="uid://b1o15iaqckrf2" path="res://images/battle_enemy_pawns/goblin_swordsman/pawn_goblin_swordsman_cast.png" id="2_n37rs"]
-[ext_resource type="Texture2D" uid="uid://ctllx8ujfdexw" path="res://images/battle_enemy_pawns/goblin_swordsman/pawn_goblin_swordsman_def.png" id="3_3fpe4"]
-[ext_resource type="Texture2D" uid="uid://ctourqmg6xw7l" path="res://images/battle_enemy_pawns/goblin_swordsman/pawn_goblin_swordsman_hurt.png" id="4_kajpm"]
-[ext_resource type="Texture2D" uid="uid://dyyfh4phejoqq" path="res://images/battle_enemy_pawns/goblin_swordsman/pawn_goblin_swordsman_std.png" id="5_0yrml"]
+[ext_resource type="Resource" uid="uid://bkxfxhjd1npvw" path="res://resources/sprite_sets/tribes/spriteset_goblin_swordsman.tres" id="7_n37rs"]
 
 [resource]
 script = ExtResource("1_ma17a")
 name = "Goblin Swordsman"
-image_std = ExtResource("5_0yrml")
-image_atk = ExtResource("1_cop4k")
-image_def = ExtResource("3_3fpe4")
-image_cast = ExtResource("2_n37rs")
-image_hurt = ExtResource("4_kajpm")
+sprite_set = ExtResource("7_n37rs")
 resist_severing = 0
 resist_cutting = 0
 resist_piercing = 0

@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="SpriteSet" load_steps=10 format=3 uid="uid://cigg8fxds7ng7"]
+
+[ext_resource type="Texture2D" uid="uid://bu16lgudiaab0" path="res://images/battle_player_pawns/nebula/pawn_nebula_atk.png" id="1_isbjy"]
+[ext_resource type="Script" uid="uid://bh4dgrr2at34x" path="res://resources/SpriteSet.gd" id="1_rf6jp"]
+[ext_resource type="Texture2D" uid="uid://bynhtr788thqj" path="res://images/battle_player_pawns/nebula/pawn_nebula_cast.png" id="2_0tb4l"]
+[ext_resource type="Texture2D" uid="uid://b2myt81nkw13h" path="res://images/battle_player_pawns/nebula/pawn_nebula_def.png" id="3_jxwof"]
+[ext_resource type="Texture2D" uid="uid://bwpd5p4d0kt60" path="res://images/battle_player_pawns/nebula/pawn_nebula_hurt.png" id="4_ldnwk"]
+[ext_resource type="Texture2D" uid="uid://domqcieb5n8tc" path="res://images/battle_player_pawns/nebula/pawn_nebula_ko.png" id="5_i24b1"]
+[ext_resource type="Texture2D" uid="uid://dgdlvoqs4hp6s" path="res://images/battle_player_pawns/nebula/pawn_nebula_low.png" id="6_bdas1"]
+[ext_resource type="Texture2D" uid="uid://ddlc2iv63ljhq" path="res://images/battle_player_pawns/nebula/pawn_nebula_std.png" id="7_y15ad"]
+[ext_resource type="Texture2D" uid="uid://ddiqiyxxvcorr" path="res://images/battle_player_pawns/nebula/pawn_nebula_victory.png" id="8_owwyi"]
+
+[resource]
+script = ExtResource("1_rf6jp")
+image_std = ExtResource("7_y15ad")
+image_atk = ExtResource("1_isbjy")
+image_def = ExtResource("3_jxwof")
+image_cast = ExtResource("2_0tb4l")
+image_hurt = ExtResource("4_ldnwk")
+image_low = ExtResource("6_bdas1")
+image_ko = ExtResource("5_i24b1")
+image_victory = ExtResource("8_owwyi")
+metadata/_custom_type_script = "uid://bh4dgrr2at34x"

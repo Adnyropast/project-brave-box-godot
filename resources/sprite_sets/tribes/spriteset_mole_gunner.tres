@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="SpriteSet" load_steps=7 format=3 uid="uid://dc13jelnkhy8f"]
+
+[ext_resource type="Script" uid="uid://bh4dgrr2at34x" path="res://resources/SpriteSet.gd" id="1_2gimy"]
+[ext_resource type="Texture2D" uid="uid://cjqa2p2dxtm4w" path="res://images/battle_enemy_pawns/mole_gunner/pawn_mole_gunner_atk.png" id="1_gfnnp"]
+[ext_resource type="Texture2D" uid="uid://bgqi1bmhn5kkd" path="res://images/battle_enemy_pawns/mole_gunner/pawn_mole_gunner_cast.png" id="2_avdc1"]
+[ext_resource type="Texture2D" uid="uid://b8eqet4cx0tvk" path="res://images/battle_enemy_pawns/mole_gunner/pawn_mole_gunner_def.png" id="3_vb1lm"]
+[ext_resource type="Texture2D" uid="uid://b2sf5dnb4gtih" path="res://images/battle_enemy_pawns/mole_gunner/pawn_mole_gunner_hurt.png" id="4_jux71"]
+[ext_resource type="Texture2D" uid="uid://3ygo5csufkcp" path="res://images/battle_enemy_pawns/mole_gunner/pawn_mole_gunner_std.png" id="5_yvdlk"]
+
+[resource]
+script = ExtResource("1_2gimy")
+image_std = ExtResource("5_yvdlk")
+image_atk = ExtResource("1_gfnnp")
+image_def = ExtResource("3_vb1lm")
+image_cast = ExtResource("2_avdc1")
+image_hurt = ExtResource("4_jux71")
+metadata/_custom_type_script = "uid://bh4dgrr2at34x"

@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="SpriteSet" load_steps=10 format=3 uid="uid://dyuj2limxdkug"]
+
+[ext_resource type="Texture2D" uid="uid://dfk4gciomboge" path="res://images/battle_player_pawns/eyner/pawn_eyner_atk.png" id="1_5uh8y"]
+[ext_resource type="Script" uid="uid://bh4dgrr2at34x" path="res://resources/SpriteSet.gd" id="1_nyxmr"]
+[ext_resource type="Texture2D" uid="uid://ba6h7skxot606" path="res://images/battle_player_pawns/eyner/pawn_eyner_cast.png" id="2_4yqv7"]
+[ext_resource type="Texture2D" uid="uid://dvichqertrsjo" path="res://images/battle_player_pawns/eyner/pawn_eyner_def.png" id="3_30irq"]
+[ext_resource type="Texture2D" uid="uid://cg0db32vj2b4p" path="res://images/battle_player_pawns/eyner/pawn_eyner_hurt.png" id="4_v2elu"]
+[ext_resource type="Texture2D" uid="uid://dx38u42lt2lhe" path="res://images/battle_player_pawns/eyner/pawn_eyner_ko.png" id="5_344rm"]
+[ext_resource type="Texture2D" uid="uid://cuke86yvjrfnm" path="res://images/battle_player_pawns/eyner/pawn_eyner_low.png" id="6_m210x"]
+[ext_resource type="Texture2D" uid="uid://cr6omm2ug0mkb" path="res://images/battle_player_pawns/eyner/pawn_eyner_std.png" id="7_53510"]
+[ext_resource type="Texture2D" uid="uid://cc4utc488w8as" path="res://images/battle_player_pawns/eyner/pawn_eyner_victory.png" id="8_iqhn1"]
+
+[resource]
+script = ExtResource("1_nyxmr")
+image_std = ExtResource("7_53510")
+image_atk = ExtResource("1_5uh8y")
+image_def = ExtResource("3_30irq")
+image_cast = ExtResource("2_4yqv7")
+image_hurt = ExtResource("4_v2elu")
+image_low = ExtResource("6_m210x")
+image_ko = ExtResource("5_344rm")
+image_victory = ExtResource("8_iqhn1")
+metadata/_custom_type_script = "uid://bh4dgrr2at34x"

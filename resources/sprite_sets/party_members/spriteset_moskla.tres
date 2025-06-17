@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="SpriteSet" load_steps=10 format=3 uid="uid://brmww06lffdk2"]
+
+[ext_resource type="Texture2D" uid="uid://chqwe8ek5oi3a" path="res://images/battle_player_pawns/moskla/pawn_moskla_atk.png" id="1_4xgt8"]
+[ext_resource type="Script" uid="uid://bh4dgrr2at34x" path="res://resources/SpriteSet.gd" id="1_wrcba"]
+[ext_resource type="Texture2D" uid="uid://bhvxq5gmfm5p6" path="res://images/battle_player_pawns/moskla/pawn_moskla_cast.png" id="2_fipap"]
+[ext_resource type="Texture2D" uid="uid://b4rqte7pfcc2r" path="res://images/battle_player_pawns/moskla/pawn_moskla_def.png" id="3_8r6wx"]
+[ext_resource type="Texture2D" uid="uid://m5vnn17tkmsf" path="res://images/battle_player_pawns/moskla/pawn_moskla_hurt.png" id="4_oioes"]
+[ext_resource type="Texture2D" uid="uid://d3wsw8i430gxt" path="res://images/battle_player_pawns/moskla/pawn_moskla_ko.png" id="5_l1b60"]
+[ext_resource type="Texture2D" uid="uid://bx5ggfhjeo2wo" path="res://images/battle_player_pawns/moskla/pawn_moskla_low.png" id="6_nkef8"]
+[ext_resource type="Texture2D" uid="uid://bbafs1djpjpli" path="res://images/battle_player_pawns/moskla/pawn_moskla_std.png" id="7_bplex"]
+[ext_resource type="Texture2D" uid="uid://enh1sqrqx4sd" path="res://images/battle_player_pawns/moskla/pawn_moskla_victory.png" id="8_mjkaw"]
+
+[resource]
+script = ExtResource("1_wrcba")
+image_std = ExtResource("7_bplex")
+image_atk = ExtResource("1_4xgt8")
+image_def = ExtResource("3_8r6wx")
+image_cast = ExtResource("2_fipap")
+image_hurt = ExtResource("4_oioes")
+image_low = ExtResource("6_nkef8")
+image_ko = ExtResource("5_l1b60")
+image_victory = ExtResource("8_mjkaw")
+metadata/_custom_type_script = "uid://bh4dgrr2at34x"

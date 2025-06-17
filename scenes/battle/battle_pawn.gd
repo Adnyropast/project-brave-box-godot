@@ -10,21 +10,21 @@ var tween: Tween
 var pawn: PawnComponents
 
 func init_from_party_member(_pawn: PawnComponents, party_member: PartyMember):
-	texture_std = party_member.image_std
-	texture_atk = party_member.image_atk
-	texture_def = party_member.image_def
-	texture_cast = party_member.image_cast
-	texture_hurt = party_member.image_hurt
-	texture_ko = party_member.image_ko
+	texture_std = party_member.sprite_set.image_std
+	texture_atk = party_member.sprite_set.image_atk
+	texture_def = party_member.sprite_set.image_def
+	texture_cast = party_member.sprite_set.image_cast
+	texture_hurt = party_member.sprite_set.image_hurt
+	texture_ko = party_member.sprite_set.image_ko
 	pawn = _pawn
 	return_to_default()
 
 func init_from_enemy(_pawn: PawnComponents, enemy: Enemy):
-	texture_std = enemy.image_std
-	texture_atk = enemy.image_atk
-	texture_def = enemy.image_def
-	texture_cast = enemy.image_cast
-	texture_hurt = enemy.image_hurt
+	texture_std = enemy.sprite_set.image_std
+	texture_atk = enemy.sprite_set.image_atk
+	texture_def = enemy.sprite_set.image_def
+	texture_cast = enemy.sprite_set.image_cast
+	texture_hurt = enemy.sprite_set.image_hurt
 	pawn = _pawn
 	return_to_default()
 

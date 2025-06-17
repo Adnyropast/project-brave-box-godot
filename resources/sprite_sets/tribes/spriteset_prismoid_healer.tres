@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="SpriteSet" load_steps=7 format=3 uid="uid://bayrb2d2iftep"]
+
+[ext_resource type="Texture2D" uid="uid://dnfpjnjmphk7s" path="res://images/battle_enemy_pawns/prismoid_healer/pawn_prismoid_healer_atk.png" id="1_ftlun"]
+[ext_resource type="Script" uid="uid://bh4dgrr2at34x" path="res://resources/SpriteSet.gd" id="1_hh34v"]
+[ext_resource type="Texture2D" uid="uid://bwcki5qmgxjoe" path="res://images/battle_enemy_pawns/prismoid_healer/pawn_prismoid_healer_cast.png" id="2_jjy2d"]
+[ext_resource type="Texture2D" uid="uid://bn2qweh4g4rjy" path="res://images/battle_enemy_pawns/prismoid_healer/pawn_prismoid_healer_def.png" id="3_oly3p"]
+[ext_resource type="Texture2D" uid="uid://bmc6oqrq8ilxb" path="res://images/battle_enemy_pawns/prismoid_healer/pawn_prismoid_healer_hurt.png" id="4_s43mf"]
+[ext_resource type="Texture2D" uid="uid://bv6py224h0ehe" path="res://images/battle_enemy_pawns/prismoid_healer/pawn_prismoid_healer_std.png" id="5_pjk2s"]
+
+[resource]
+script = ExtResource("1_hh34v")
+image_std = ExtResource("5_pjk2s")
+image_atk = ExtResource("1_ftlun")
+image_def = ExtResource("3_oly3p")
+image_cast = ExtResource("2_jjy2d")
+image_hurt = ExtResource("4_s43mf")
+metadata/_custom_type_script = "uid://bh4dgrr2at34x"

@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="SpriteSet" load_steps=10 format=3 uid="uid://dt756h2t3xkyw"]
+
+[ext_resource type="Texture2D" uid="uid://r2vn5gjga5u4" path="res://images/battle_player_pawns/paylla/pawn_paylla_atk.png" id="1_i6m2e"]
+[ext_resource type="Script" uid="uid://bh4dgrr2at34x" path="res://resources/SpriteSet.gd" id="1_jwodf"]
+[ext_resource type="Texture2D" uid="uid://cn76fk8s4wf4h" path="res://images/battle_player_pawns/paylla/pawn_paylla_cast.png" id="2_3ux5v"]
+[ext_resource type="Texture2D" uid="uid://bposfelvjo463" path="res://images/battle_player_pawns/paylla/pawn_paylla_def.png" id="3_mkdqo"]
+[ext_resource type="Texture2D" uid="uid://b81828i4q0npy" path="res://images/battle_player_pawns/paylla/pawn_paylla_hurt.png" id="4_bnkep"]
+[ext_resource type="Texture2D" uid="uid://bfsnx8qgfhnmp" path="res://images/battle_player_pawns/paylla/pawn_paylla_ko.png" id="5_17aqd"]
+[ext_resource type="Texture2D" uid="uid://ckh7gbdpa7sql" path="res://images/battle_player_pawns/paylla/pawn_paylla_low.png" id="6_fyr1d"]
+[ext_resource type="Texture2D" uid="uid://7l7wbhj2td7h" path="res://images/battle_player_pawns/paylla/pawn_paylla_std.png" id="7_twvv2"]
+[ext_resource type="Texture2D" uid="uid://4sbm3aatit02" path="res://images/battle_player_pawns/paylla/pawn_paylla_victory.png" id="8_iswev"]
+
+[resource]
+script = ExtResource("1_jwodf")
+image_std = ExtResource("7_twvv2")
+image_atk = ExtResource("1_i6m2e")
+image_def = ExtResource("3_mkdqo")
+image_cast = ExtResource("2_3ux5v")
+image_hurt = ExtResource("4_bnkep")
+image_low = ExtResource("6_fyr1d")
+image_ko = ExtResource("5_17aqd")
+image_victory = ExtResource("8_iswev")
+metadata/_custom_type_script = "uid://bh4dgrr2at34x"

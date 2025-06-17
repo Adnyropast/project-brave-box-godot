@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="SpriteSet" load_steps=7 format=3 uid="uid://cik0hn3k64l8d"]
+
+[ext_resource type="Texture2D" uid="uid://b8powon3p0wmr" path="res://images/battle_enemy_pawns/bugman_archer/pawn_bugman_archer_atk.png" id="1_15veh"]
+[ext_resource type="Script" uid="uid://bh4dgrr2at34x" path="res://resources/SpriteSet.gd" id="1_whxdb"]
+[ext_resource type="Texture2D" uid="uid://dwf331ymq3iep" path="res://images/battle_enemy_pawns/bugman_archer/pawn_bugman_archer_cast.png" id="2_ep2km"]
+[ext_resource type="Texture2D" uid="uid://bkx2ajs5ednf0" path="res://images/battle_enemy_pawns/bugman_archer/pawn_bugman_archer_def.png" id="3_edhvx"]
+[ext_resource type="Texture2D" uid="uid://dg5k6sna8rfa7" path="res://images/battle_enemy_pawns/bugman_archer/pawn_bugman_archer_hurt.png" id="4_1oxyd"]
+[ext_resource type="Texture2D" uid="uid://c54d8nwr7gi46" path="res://images/battle_enemy_pawns/bugman_archer/pawn_bugman_archer_std.png" id="5_ksnd8"]
+
+[resource]
+script = ExtResource("1_whxdb")
+image_std = ExtResource("5_ksnd8")
+image_atk = ExtResource("1_15veh")
+image_def = ExtResource("3_edhvx")
+image_cast = ExtResource("2_ep2km")
+image_hurt = ExtResource("4_1oxyd")
+metadata/_custom_type_script = "uid://bh4dgrr2at34x"

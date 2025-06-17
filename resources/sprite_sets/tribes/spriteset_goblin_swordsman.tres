@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="SpriteSet" load_steps=7 format=3 uid="uid://bkxfxhjd1npvw"]
+
+[ext_resource type="Texture2D" uid="uid://dfuucctxcocdt" path="res://images/battle_enemy_pawns/goblin_swordsman/pawn_goblin_swordsman_atk.png" id="1_fub4e"]
+[ext_resource type="Script" uid="uid://bh4dgrr2at34x" path="res://resources/SpriteSet.gd" id="1_vbmg4"]
+[ext_resource type="Texture2D" uid="uid://b1o15iaqckrf2" path="res://images/battle_enemy_pawns/goblin_swordsman/pawn_goblin_swordsman_cast.png" id="2_kgbjo"]
+[ext_resource type="Texture2D" uid="uid://ctllx8ujfdexw" path="res://images/battle_enemy_pawns/goblin_swordsman/pawn_goblin_swordsman_def.png" id="3_kst0v"]
+[ext_resource type="Texture2D" uid="uid://ctourqmg6xw7l" path="res://images/battle_enemy_pawns/goblin_swordsman/pawn_goblin_swordsman_hurt.png" id="4_eoe1p"]
+[ext_resource type="Texture2D" uid="uid://dyyfh4phejoqq" path="res://images/battle_enemy_pawns/goblin_swordsman/pawn_goblin_swordsman_std.png" id="5_csk7p"]
+
+[resource]
+script = ExtResource("1_vbmg4")
+image_std = ExtResource("5_csk7p")
+image_atk = ExtResource("1_fub4e")
+image_def = ExtResource("3_kst0v")
+image_cast = ExtResource("2_kgbjo")
+image_hurt = ExtResource("4_eoe1p")
+metadata/_custom_type_script = "uid://bh4dgrr2at34x"

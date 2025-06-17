@@ -1,28 +1,14 @@
-[gd_resource type="Resource" script_class="PartyMember" load_steps=12 format=3 uid="uid://cgdao45krvmks"]
+[gd_resource type="Resource" script_class="PartyMember" load_steps=5 format=3 uid="uid://cgdao45krvmks"]
 
-[ext_resource type="Texture2D" uid="uid://b5kerworbdksc" path="res://images/battle_player_pawns/gaudi/pawn_gaudi_atk.png" id="1_0u4oa"]
 [ext_resource type="Script" uid="uid://bl0gq5s1bthhi" path="res://resources/PartyMember.gd" id="1_52px4"]
-[ext_resource type="Texture2D" uid="uid://bwm8p3q6qh0tm" path="res://images/battle_player_pawns/gaudi/pawn_gaudi_cast.png" id="2_ityg2"]
-[ext_resource type="Texture2D" uid="uid://cs8dj5widewsq" path="res://images/battle_player_pawns/gaudi/pawn_gaudi_def.png" id="3_408xv"]
-[ext_resource type="Texture2D" uid="uid://xhfq5jdlnd52" path="res://images/battle_player_pawns/gaudi/pawn_gaudi_hurt.png" id="4_jo0j1"]
-[ext_resource type="Texture2D" uid="uid://c10n2irpcb2jh" path="res://images/battle_player_pawns/gaudi/pawn_gaudi_ko.png" id="5_iquxb"]
-[ext_resource type="Texture2D" uid="uid://ca3vu84ewk1ub" path="res://images/battle_player_pawns/gaudi/pawn_gaudi_low.png" id="6_ulmrf"]
-[ext_resource type="Texture2D" uid="uid://b40lxmvvyon7i" path="res://images/battle_player_pawns/gaudi/pawn_gaudi_std.png" id="7_css5j"]
-[ext_resource type="Texture2D" uid="uid://c0lxd7tyko1pm" path="res://images/battle_player_pawns/gaudi/pawn_gaudi_victory.png" id="8_s7cm7"]
 [ext_resource type="Resource" uid="uid://jkeqtm041ptu" path="res://resources/ability_sets/initial_player/set_initial_gaudi.tres" id="9_408xv"]
 [ext_resource type="Resource" uid="uid://bpmeb7mlyiths" path="res://resources/items/equipment/weapons/basic_gun.tres" id="9_ityg2"]
+[ext_resource type="Resource" uid="uid://er0vxgp8sx0o" path="res://resources/sprite_sets/party_members/spriteset_gaudi.tres" id="12_jo0j1"]
 
 [resource]
 script = ExtResource("1_52px4")
 name = "Gaudi"
-image_std = ExtResource("7_css5j")
-image_atk = ExtResource("1_0u4oa")
-image_def = ExtResource("3_408xv")
-image_cast = ExtResource("2_ityg2")
-image_hurt = ExtResource("4_jo0j1")
-image_low = ExtResource("6_ulmrf")
-image_ko = ExtResource("5_iquxb")
-image_victory = ExtResource("8_s7cm7")
+sprite_set = ExtResource("12_jo0j1")
 max_hp = 1
 max_mp = 1
 p_atk = 3

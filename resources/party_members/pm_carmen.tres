@@ -1,28 +1,14 @@
-[gd_resource type="Resource" script_class="PartyMember" load_steps=12 format=3 uid="uid://drydt67bugmvx"]
+[gd_resource type="Resource" script_class="PartyMember" load_steps=5 format=3 uid="uid://drydt67bugmvx"]
 
 [ext_resource type="Script" uid="uid://bl0gq5s1bthhi" path="res://resources/PartyMember.gd" id="1_6mslr"]
-[ext_resource type="Texture2D" uid="uid://bteoclhv2g6p6" path="res://images/battle_player_pawns/carmen/pawn_carmen_atk.png" id="1_rpe4j"]
-[ext_resource type="Texture2D" uid="uid://da0nq01ctdm4u" path="res://images/battle_player_pawns/carmen/pawn_carmen_cast.png" id="2_s3ce8"]
-[ext_resource type="Texture2D" uid="uid://blsksc6k7lns2" path="res://images/battle_player_pawns/carmen/pawn_carmen_def.png" id="3_sgddp"]
-[ext_resource type="Texture2D" uid="uid://cfig3q7q8f7rf" path="res://images/battle_player_pawns/carmen/pawn_carmen_hurt.png" id="4_1or73"]
-[ext_resource type="Texture2D" uid="uid://bjr8qwh70ogqs" path="res://images/battle_player_pawns/carmen/pawn_carmen_ko.png" id="5_6mr5u"]
-[ext_resource type="Texture2D" uid="uid://qv3jaqygjbr4" path="res://images/battle_player_pawns/carmen/pawn_carmen_low.png" id="6_6okl0"]
-[ext_resource type="Texture2D" uid="uid://b6prnkxm2y4nd" path="res://images/battle_player_pawns/carmen/pawn_carmen_std.png" id="7_vgjmk"]
-[ext_resource type="Texture2D" uid="uid://ufqbvst3yubq" path="res://images/battle_player_pawns/carmen/pawn_carmen_victory.png" id="8_ikjq0"]
 [ext_resource type="Resource" uid="uid://yiro6solv5qw" path="res://resources/items/equipment/weapons/basic_dagger.tres" id="9_s3ce8"]
 [ext_resource type="Resource" uid="uid://bmx5h62jyqk2r" path="res://resources/ability_sets/initial_player/set_initial_carmen.tres" id="9_sgddp"]
+[ext_resource type="Resource" uid="uid://u3hd4djb10dd" path="res://resources/sprite_sets/party_members/spriteset_carmen.tres" id="12_1or73"]
 
 [resource]
 script = ExtResource("1_6mslr")
 name = "Carmen"
-image_std = ExtResource("7_vgjmk")
-image_atk = ExtResource("1_rpe4j")
-image_def = ExtResource("3_sgddp")
-image_cast = ExtResource("2_s3ce8")
-image_hurt = ExtResource("4_1or73")
-image_low = ExtResource("6_6okl0")
-image_ko = ExtResource("5_6mr5u")
-image_victory = ExtResource("8_ikjq0")
+sprite_set = ExtResource("12_1or73")
 max_hp = 3
 max_mp = 3
 p_atk = 1

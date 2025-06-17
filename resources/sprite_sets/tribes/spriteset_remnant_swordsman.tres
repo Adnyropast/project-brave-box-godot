@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="SpriteSet" load_steps=7 format=3 uid="uid://dn1254tnc1hhq"]
+
+[ext_resource type="Script" uid="uid://bh4dgrr2at34x" path="res://resources/SpriteSet.gd" id="1_g4wml"]
+[ext_resource type="Texture2D" uid="uid://bl7sp0wlumrhe" path="res://images/battle_enemy_pawns/remnant_swordsman/pawn_remnant_swordsman_atk.png" id="1_kl2sm"]
+[ext_resource type="Texture2D" uid="uid://b1b8yrsdwrxg7" path="res://images/battle_enemy_pawns/remnant_swordsman/pawn_remnant_swordsman_cast.png" id="2_gsi5t"]
+[ext_resource type="Texture2D" uid="uid://cdetlbgalrkpf" path="res://images/battle_enemy_pawns/remnant_swordsman/pawn_remnant_swordsman_def.png" id="3_xxlyi"]
+[ext_resource type="Texture2D" uid="uid://cys8nqau04jxl" path="res://images/battle_enemy_pawns/remnant_swordsman/pawn_remnant_swordsman_hurt.png" id="4_dq237"]
+[ext_resource type="Texture2D" uid="uid://dvqp0gaqf8rj6" path="res://images/battle_enemy_pawns/remnant_swordsman/pawn_remnant_swordsman_std.png" id="5_dp1ro"]
+
+[resource]
+script = ExtResource("1_g4wml")
+image_std = ExtResource("5_dp1ro")
+image_atk = ExtResource("1_kl2sm")
+image_def = ExtResource("3_xxlyi")
+image_cast = ExtResource("2_gsi5t")
+image_hurt = ExtResource("4_dq237")
+metadata/_custom_type_script = "uid://bh4dgrr2at34x"

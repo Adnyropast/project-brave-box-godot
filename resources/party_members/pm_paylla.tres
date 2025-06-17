@@ -1,28 +1,14 @@
-[gd_resource type="Resource" script_class="PartyMember" load_steps=12 format=3 uid="uid://ckfhd6dumh7or"]
+[gd_resource type="Resource" script_class="PartyMember" load_steps=5 format=3 uid="uid://ckfhd6dumh7or"]
 
 [ext_resource type="Script" uid="uid://bl0gq5s1bthhi" path="res://resources/PartyMember.gd" id="1_6ssvt"]
-[ext_resource type="Texture2D" uid="uid://r2vn5gjga5u4" path="res://images/battle_player_pawns/paylla/pawn_paylla_atk.png" id="1_7ou2v"]
-[ext_resource type="Texture2D" uid="uid://cn76fk8s4wf4h" path="res://images/battle_player_pawns/paylla/pawn_paylla_cast.png" id="2_pu62j"]
-[ext_resource type="Texture2D" uid="uid://bposfelvjo463" path="res://images/battle_player_pawns/paylla/pawn_paylla_def.png" id="3_0c6pc"]
-[ext_resource type="Texture2D" uid="uid://b81828i4q0npy" path="res://images/battle_player_pawns/paylla/pawn_paylla_hurt.png" id="4_e4kan"]
-[ext_resource type="Texture2D" uid="uid://bfsnx8qgfhnmp" path="res://images/battle_player_pawns/paylla/pawn_paylla_ko.png" id="5_y6kso"]
-[ext_resource type="Texture2D" uid="uid://ckh7gbdpa7sql" path="res://images/battle_player_pawns/paylla/pawn_paylla_low.png" id="6_5yvmt"]
-[ext_resource type="Texture2D" uid="uid://7l7wbhj2td7h" path="res://images/battle_player_pawns/paylla/pawn_paylla_std.png" id="7_feui6"]
-[ext_resource type="Texture2D" uid="uid://4sbm3aatit02" path="res://images/battle_player_pawns/paylla/pawn_paylla_victory.png" id="8_h68qs"]
 [ext_resource type="Resource" uid="uid://rwa8thgbgi1c" path="res://resources/ability_sets/initial_player/set_initial_paylla.tres" id="9_0c6pc"]
 [ext_resource type="Resource" uid="uid://v08gqa8w4lri" path="res://resources/items/equipment/weapons/basic_spear.tres" id="9_pu62j"]
+[ext_resource type="Resource" uid="uid://dt756h2t3xkyw" path="res://resources/sprite_sets/party_members/spriteset_paylla.tres" id="12_e4kan"]
 
 [resource]
 script = ExtResource("1_6ssvt")
 name = "Paylla"
-image_std = ExtResource("7_feui6")
-image_atk = ExtResource("1_7ou2v")
-image_def = ExtResource("3_0c6pc")
-image_cast = ExtResource("2_pu62j")
-image_hurt = ExtResource("4_e4kan")
-image_low = ExtResource("6_5yvmt")
-image_ko = ExtResource("5_y6kso")
-image_victory = ExtResource("8_h68qs")
+sprite_set = ExtResource("12_e4kan")
 max_hp = 1
 max_mp = 0
 p_atk = 1
