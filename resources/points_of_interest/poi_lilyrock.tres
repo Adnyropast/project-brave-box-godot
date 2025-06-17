@@ -11,5 +11,6 @@ script = ExtResource("1_lhdla")
 name = "Lilyrock"
 inn = false
 shops = Array[ExtResource("5_odh3l")]([])
+data_battles = false
 missions = Array[ExtResource("1_0w6w7")]([ExtResource("2_odh3l"), ExtResource("3_8pvy6")])
 metadata/_custom_type_script = "uid://b6dtah64w6g2w"

@@ -1,0 +1,110 @@
+[gd_scene load_steps=2 format=3 uid="uid://bh4gceq6m48vr"]
+
+[ext_resource type="Script" uid="uid://6xn8qdveiqqs" path="res://scenes/menus_data_battles/menu_data_battles.gd" id="1_5exe8"]
+
+[node name="MenuDataBattles" type="Control"]
+process_mode = 2
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_5exe8")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 16
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+
+[node name="PanelContainer" type="PanelContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/VBoxContainer/PanelContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 16
+theme_override_constants/margin_top = 4
+theme_override_constants/margin_right = 16
+theme_override_constants/margin_bottom = 4
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/VBoxContainer/PanelContainer/MarginContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer/PanelContainer/MarginContainer/HBoxContainer"]
+layout_mode = 2
+text = "Enemy Level:"
+
+[node name="ButtonLv-" type="Button" parent="MarginContainer/VBoxContainer/PanelContainer/MarginContainer/HBoxContainer"]
+layout_mode = 2
+text = "-"
+
+[node name="LabelEnemyLevel" type="Label" parent="MarginContainer/VBoxContainer/PanelContainer/MarginContainer/HBoxContainer"]
+layout_mode = 2
+text = "99"
+
+[node name="ButtonLv+" type="Button" parent="MarginContainer/VBoxContainer/PanelContainer/MarginContainer/HBoxContainer"]
+layout_mode = 2
+text = "+"
+
+[node name="VBoxContainerSlots" type="VBoxContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="ButtonClose" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Close"
+
+[node name="MarginContainer2" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -20.0
+offset_right = 20.0
+offset_bottom = 40.0
+grow_horizontal = 2
+
+[node name="ScrollContainer" type="ScrollContainer" parent="MarginContainer2"]
+clip_contents = false
+layout_mode = 2
+horizontal_scroll_mode = 0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer2/ScrollContainer"]
+layout_mode = 2
+
+[node name="VBoxContainerOptions" type="VBoxContainer" parent="MarginContainer2/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="ButtonRemove" type="Button" parent="MarginContainer2/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+text = "Remove"
+
+[node name="MarginContainer3" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -40.0
+offset_top = -40.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_constants/margin_left = 16
+theme_override_constants/margin_top = 16
+theme_override_constants/margin_right = 16
+theme_override_constants/margin_bottom = 16
+
+[node name="ButtonConfirm" type="Button" parent="MarginContainer3"]
+layout_mode = 2
+text = "Confirm"
+
+[connection signal="pressed" from="MarginContainer/VBoxContainer/PanelContainer/MarginContainer/HBoxContainer/ButtonLv-" to="." method="_on_button_lv_minus_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/PanelContainer/MarginContainer/HBoxContainer/ButtonLv+" to="." method="_on_button_lv_plus_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/ButtonClose" to="." method="_on_button_close_pressed"]
+[connection signal="pressed" from="MarginContainer2/ScrollContainer/VBoxContainer/ButtonRemove" to="." method="_on_button_remove_pressed"]
+[connection signal="pressed" from="MarginContainer3/ButtonConfirm" to="." method="_on_button_confirm_pressed"]

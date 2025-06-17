@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://bn8a5vat0sksx"]
+
+[ext_resource type="Script" uid="uid://bcikvl3tnhy74" path="res://scenes/menus/button_data_battles.gd" id="1_524qh"]
+
+[node name="ButtonDataBattles" type="Button"]
+offset_right = 8.0
+offset_bottom = 8.0
+text = "Data Battles"
+script = ExtResource("1_524qh")
+
+[connection signal="pressed" from="." to="." method="_on_pressed"]

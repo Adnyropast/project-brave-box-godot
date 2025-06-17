@@ -12,5 +12,6 @@ script = ExtResource("1_61w5b")
 name = "Wayward Woods"
 inn = false
 shops = Array[ExtResource("5_vh7x7")]([])
+data_battles = true
 missions = Array[ExtResource("1_6owyr")]([ExtResource("2_37t6e"), ExtResource("2_vh7x7"), ExtResource("3_37t6e")])
 metadata/_custom_type_script = "uid://b6dtah64w6g2w"

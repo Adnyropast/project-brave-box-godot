@@ -11,5 +11,6 @@ script = ExtResource("1_sbuvf")
 name = "Marcial Tower"
 inn = false
 shops = Array[ExtResource("5_dneq3")]([])
+data_battles = false
 missions = Array[ExtResource("1_p6x3t")]([ExtResource("2_dneq3"), ExtResource("3_dm247")])
 metadata/_custom_type_script = "uid://b6dtah64w6g2w"

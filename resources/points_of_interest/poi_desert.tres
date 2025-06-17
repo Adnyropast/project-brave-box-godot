@@ -10,5 +10,6 @@ script = ExtResource("1_3saua")
 name = "Compositia Desert"
 inn = false
 shops = Array[ExtResource("4_albtg")]([])
+data_battles = false
 missions = Array[ExtResource("1_vqaid")]([ExtResource("2_albtg")])
 metadata/_custom_type_script = "uid://b6dtah64w6g2w"

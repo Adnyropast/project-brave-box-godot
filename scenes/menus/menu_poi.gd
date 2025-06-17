@@ -22,6 +22,13 @@ func add_buttons():
 			
 			$MarginContainer/VBoxContainer/VBoxContainer.add_child(button)
 		
+		if point_of_interest.data_battles:
+			var button = preload("res://scenes/menus/button_data_battles.tscn").instantiate()
+			
+			button.menu_poi = self
+			
+			$MarginContainer/VBoxContainer/VBoxContainer.add_child(button)
+		
 		for mission in point_of_interest.missions:
 			var button = preload("res://scenes/menus/button_mission.tscn").instantiate()
 			

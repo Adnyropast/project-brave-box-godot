@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://dmf78up5p58oc"]
+
+[ext_resource type="Script" uid="uid://b3663mogijyuu" path="res://scenes/menus_data_battles/button_data_battles_slot.gd" id="1_jlfir"]
+
+[node name="Button" type="Button"]
+offset_right = 8.0
+offset_bottom = 8.0
+script = ExtResource("1_jlfir")
+
+[connection signal="pressed" from="." to="." method="_on_pressed"]
