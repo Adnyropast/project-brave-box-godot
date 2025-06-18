@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="SpriteSet" load_steps=7 format=3 uid="uid://bl735cqw4e4ss"]
+
+[ext_resource type="Texture2D" uid="uid://bcgxauqbr847y" path="res://images/battle_enemy_pawns/birdian_archer/pawn_birdian_archer_atk.png" id="1_fjmdp"]
+[ext_resource type="Texture2D" uid="uid://bptl6kg83erd4" path="res://images/battle_enemy_pawns/birdian_archer/pawn_birdian_archer_cast.png" id="2_33gpr"]
+[ext_resource type="Texture2D" uid="uid://besuhq6mowns" path="res://images/battle_enemy_pawns/birdian_archer/pawn_birdian_archer_def.png" id="3_iq5k3"]
+[ext_resource type="Texture2D" uid="uid://cdyxxdmptg8ks" path="res://images/battle_enemy_pawns/birdian_archer/pawn_birdian_archer_hurt.png" id="4_bq5n8"]
+[ext_resource type="Texture2D" uid="uid://cp0wuhycf863i" path="res://images/battle_enemy_pawns/birdian_archer/pawn_birdian_archer_std.png" id="5_dviwf"]
+[ext_resource type="Script" uid="uid://bh4dgrr2at34x" path="res://resources/SpriteSet.gd" id="6_ykr3d"]
+
+[resource]
+script = ExtResource("6_ykr3d")
+image_std = ExtResource("5_dviwf")
+image_atk = ExtResource("1_fjmdp")
+image_def = ExtResource("3_iq5k3")
+image_cast = ExtResource("2_33gpr")
+image_hurt = ExtResource("4_bq5n8")
+metadata/_custom_type_script = "uid://bh4dgrr2at34x"

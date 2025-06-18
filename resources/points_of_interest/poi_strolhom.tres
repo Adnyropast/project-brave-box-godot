@@ -1,8 +1,9 @@
-[gd_resource type="Resource" script_class="PointOfInterest" load_steps=11 format=3 uid="uid://ch5vntcueudiq"]
+[gd_resource type="Resource" script_class="PointOfInterest" load_steps=12 format=3 uid="uid://ch5vntcueudiq"]
 
 [ext_resource type="Script" uid="uid://l3di8hrrnoea" path="res://resources/Mission.gd" id="1_j6iev"]
 [ext_resource type="Script" uid="uid://b6dtah64w6g2w" path="res://resources/PointOfInterest.gd" id="1_ruesk"]
 [ext_resource type="Resource" uid="uid://cpyrp3216ktqx" path="res://resources/missions/battle_strolhom.tres" id="2_7e2dn"]
+[ext_resource type="Resource" uid="uid://cuma6ck12h578" path="res://resources/missions/battle_tribes/battle_strolhomers.tres" id="3_010dj"]
 [ext_resource type="Script" uid="uid://b0f04n68xdlcp" path="res://resources/Shop.gd" id="4_3gwed"]
 [ext_resource type="Resource" uid="uid://b86daafn33epm" path="res://resources/shops/shop_strolhom_potion.tres" id="5_1rn7v"]
 [ext_resource type="Resource" uid="uid://7yx46spt1ls0" path="res://resources/shops/shop_strolhom_artillery.tres" id="6_1rn7v"]
@@ -17,5 +18,5 @@ name = "Strolhom"
 inn = true
 shops = Array[ExtResource("4_3gwed")]([ExtResource("5_1rn7v"), ExtResource("6_1rn7v"), ExtResource("7_4lg11"), ExtResource("8_010dj"), ExtResource("9_ohuvl"), ExtResource("10_ded6q")])
 data_battles = false
-missions = Array[ExtResource("1_j6iev")]([ExtResource("2_7e2dn")])
+missions = Array[ExtResource("1_j6iev")]([ExtResource("2_7e2dn"), ExtResource("3_010dj")])
 metadata/_custom_type_script = "uid://b6dtah64w6g2w"

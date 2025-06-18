@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="Battle" load_steps=7 format=3 uid="uid://b6v7dkx0cycvc"]
+
+[ext_resource type="PackedScene" uid="uid://mal7o7vcryaj" path="res://scenes/arenas/arena_wayward_woods.tscn" id="1_rt0d5"]
+[ext_resource type="Script" uid="uid://bj656ro4kx132" path="res://resources/Enemy.gd" id="2_vu2lm"]
+[ext_resource type="Resource" uid="uid://blmpabk43cprd" path="res://resources/enemies/tribes/sylph_singer.tres" id="3_fu5kn"]
+[ext_resource type="Resource" uid="uid://c4ipgwxer5nhu" path="res://resources/enemies/tribes/sylph_hex.tres" id="3_hbjof"]
+[ext_resource type="Script" uid="uid://dae1o78payp5a" path="res://resources/Battle.gd" id="4_baqth"]
+[ext_resource type="Resource" uid="uid://bqbr58r20xcpp" path="res://resources/enemies/tribes/sylph_swordsman.tres" id="5_oey6b"]
+
+[resource]
+script = ExtResource("4_baqth")
+arena = ExtResource("1_rt0d5")
+enemy_party = Array[ExtResource("2_vu2lm")]([ExtResource("3_fu5kn"), ExtResource("3_hbjof"), ExtResource("5_oey6b")])
+danger_level = 38
+metadata/_custom_type_script = "uid://dae1o78payp5a"

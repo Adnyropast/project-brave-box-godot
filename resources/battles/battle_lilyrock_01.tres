@@ -3,7 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://omb4byqfv75x" path="res://scenes/arenas/arena_lilyrock.tscn" id="1_fv8xc"]
 [ext_resource type="Script" uid="uid://dae1o78payp5a" path="res://resources/Battle.gd" id="1_gtk6x"]
 [ext_resource type="Script" uid="uid://bj656ro4kx132" path="res://resources/Enemy.gd" id="2_rosqw"]
-[ext_resource type="Resource" uid="uid://bwgjn68ersqvf" path="res://resources/enemies/lilyrockan_scientist.tres" id="3_q3p22"]
+[ext_resource type="Resource" uid="uid://bwgjn68ersqvf" path="res://resources/enemies/tribes/lilyrockan_scientist.tres" id="3_q3p22"]
 
 [resource]
 script = ExtResource("1_gtk6x")

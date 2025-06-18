@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="SpriteSet" load_steps=7 format=3 uid="uid://cf3ftrvt76o03"]
+
+[ext_resource type="Script" uid="uid://bh4dgrr2at34x" path="res://resources/SpriteSet.gd" id="1_fruqy"]
+[ext_resource type="Texture2D" uid="uid://xsdf6xa51mui" path="res://images/battle_monster_pawns/tortoise/pawn_tortoise_atk.png" id="1_g6jwm"]
+[ext_resource type="Texture2D" uid="uid://deew2q3svwg38" path="res://images/battle_monster_pawns/tortoise/pawn_tortoise_cast.png" id="2_3lq31"]
+[ext_resource type="Texture2D" uid="uid://b6dsc3waxr02r" path="res://images/battle_monster_pawns/tortoise/pawn_tortoise_def.png" id="3_bceso"]
+[ext_resource type="Texture2D" uid="uid://c4vdanky5cuc" path="res://images/battle_monster_pawns/tortoise/pawn_tortoise_hurt.png" id="4_gotkn"]
+[ext_resource type="Texture2D" uid="uid://dgsxq2e0iuuat" path="res://images/battle_monster_pawns/tortoise/pawn_tortoise_std.png" id="5_2cmc2"]
+
+[resource]
+script = ExtResource("1_fruqy")
+image_std = ExtResource("5_2cmc2")
+image_atk = ExtResource("1_g6jwm")
+image_def = ExtResource("3_bceso")
+image_cast = ExtResource("2_3lq31")
+image_hurt = ExtResource("4_gotkn")
+metadata/_custom_type_script = "uid://bh4dgrr2at34x"

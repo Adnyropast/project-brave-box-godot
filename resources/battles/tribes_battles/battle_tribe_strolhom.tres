@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="Battle" load_steps=7 format=3 uid="uid://dbaxe6nj6grps"]
+
+[ext_resource type="PackedScene" uid="uid://cwkn3nfkk2b2t" path="res://scenes/arenas/arena_strolhom.tscn" id="1_gnv5t"]
+[ext_resource type="Script" uid="uid://bj656ro4kx132" path="res://resources/Enemy.gd" id="2_g7623"]
+[ext_resource type="Resource" uid="uid://yad78lucylyx" path="res://resources/enemies/tribes/strolhomer_shieldbearer.tres" id="3_8y4lb"]
+[ext_resource type="Resource" uid="uid://dy8osbt2diqow" path="res://resources/enemies/tribes/strolhomer_healer.tres" id="4_sho12"]
+[ext_resource type="Script" uid="uid://dae1o78payp5a" path="res://resources/Battle.gd" id="4_vnoep"]
+[ext_resource type="Resource" uid="uid://vb0rs50pliwa" path="res://resources/enemies/tribes/strolhomer_mage.tres" id="5_gvdd5"]
+
+[resource]
+script = ExtResource("4_vnoep")
+arena = ExtResource("1_gnv5t")
+enemy_party = Array[ExtResource("2_g7623")]([ExtResource("3_8y4lb"), ExtResource("4_sho12"), ExtResource("5_gvdd5")])
+danger_level = 5
+metadata/_custom_type_script = "uid://dae1o78payp5a"

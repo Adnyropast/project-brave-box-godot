@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="Battle" load_steps=7 format=3 uid="uid://d1iggn0l18hpy"]
+
+[ext_resource type="PackedScene" uid="uid://cmmnd8i3wi7rx" path="res://scenes/arenas/arena_croesus_mansion.tscn" id="1_j4t0c"]
+[ext_resource type="Script" uid="uid://bj656ro4kx132" path="res://resources/Enemy.gd" id="2_x1nku"]
+[ext_resource type="Resource" uid="uid://1o2rf8n1810k" path="res://resources/enemies/tribes/felid_healer.tres" id="3_8bhwv"]
+[ext_resource type="Resource" uid="uid://dafjcw0afo3lq" path="res://resources/enemies/tribes/felid_mage.tres" id="3_f7xo6"]
+[ext_resource type="Script" uid="uid://dae1o78payp5a" path="res://resources/Battle.gd" id="4_y2hoo"]
+[ext_resource type="Resource" uid="uid://bejc0vms2bciv" path="res://resources/enemies/tribes/felid_hex.tres" id="5_2e21r"]
+
+[resource]
+script = ExtResource("4_y2hoo")
+arena = ExtResource("1_j4t0c")
+enemy_party = Array[ExtResource("2_x1nku")]([ExtResource("3_8bhwv"), ExtResource("3_f7xo6"), ExtResource("5_2e21r")])
+danger_level = 18
+metadata/_custom_type_script = "uid://dae1o78payp5a"

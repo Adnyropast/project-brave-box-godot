@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Mission" load_steps=3 format=3 uid="uid://ciartlcu4g4dt"]
+
+[ext_resource type="Script" uid="uid://l3di8hrrnoea" path="res://resources/Mission.gd" id="1_lj8wq"]
+[ext_resource type="Resource" uid="uid://2v4abj4neues" path="res://resources/battles/tribes_battles/battle_tribe_underlands.tres" id="1_y31te"]
+
+[resource]
+script = ExtResource("1_lj8wq")
+title = "Battle Against Moles"
+battle = ExtResource("1_y31te")
+metadata/_custom_type_script = "uid://l3di8hrrnoea"

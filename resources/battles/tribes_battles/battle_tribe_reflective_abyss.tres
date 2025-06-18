@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="Battle" load_steps=7 format=3 uid="uid://b6ksds0ouif8u"]
+
+[ext_resource type="PackedScene" uid="uid://jn1522tcou4f" path="res://scenes/arenas/arena_reflective_abyss.tscn" id="1_7csva"]
+[ext_resource type="Script" uid="uid://bj656ro4kx132" path="res://resources/Enemy.gd" id="2_wkyrg"]
+[ext_resource type="Resource" uid="uid://d4hwi3ycmfmio" path="res://resources/enemies/tribes/prismoid_healer.tres" id="3_dasd6"]
+[ext_resource type="Resource" uid="uid://cm0vwuujmo65" path="res://resources/enemies/tribes/prismoid_hex.tres" id="4_dv6ya"]
+[ext_resource type="Script" uid="uid://dae1o78payp5a" path="res://resources/Battle.gd" id="4_mserd"]
+[ext_resource type="Resource" uid="uid://co8c7632khs4h" path="res://resources/enemies/tribes/prismoid_chopper.tres" id="5_lmc56"]
+
+[resource]
+script = ExtResource("4_mserd")
+arena = ExtResource("1_7csva")
+enemy_party = Array[ExtResource("2_wkyrg")]([ExtResource("3_dasd6"), ExtResource("4_dv6ya"), ExtResource("5_lmc56")])
+danger_level = 99
+metadata/_custom_type_script = "uid://dae1o78payp5a"

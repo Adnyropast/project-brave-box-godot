@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="SpriteSet" load_steps=7 format=3 uid="uid://kojojf7aaw5p"]
+
+[ext_resource type="Texture2D" uid="uid://etc8x4wiwjh5" path="res://images/battle_enemy_pawns/strolhomer_healer/pawn_strolhomer_healer_atk.png" id="1_uq7nl"]
+[ext_resource type="Texture2D" uid="uid://bth4217picpoj" path="res://images/battle_enemy_pawns/strolhomer_healer/pawn_strolhomer_healer_cast.png" id="2_r781e"]
+[ext_resource type="Texture2D" uid="uid://ckflksv38lwg0" path="res://images/battle_enemy_pawns/strolhomer_healer/pawn_strolhomer_healer_def.png" id="3_7vava"]
+[ext_resource type="Texture2D" uid="uid://ds70hjss7jmlp" path="res://images/battle_enemy_pawns/strolhomer_healer/pawn_strolhomer_healer_hurt.png" id="4_tvy48"]
+[ext_resource type="Texture2D" uid="uid://chqrn1xcgf3jn" path="res://images/battle_enemy_pawns/strolhomer_healer/pawn_strolhomer_healer_std.png" id="5_xrg87"]
+[ext_resource type="Script" uid="uid://bh4dgrr2at34x" path="res://resources/SpriteSet.gd" id="6_4ofkq"]
+
+[resource]
+script = ExtResource("6_4ofkq")
+image_std = ExtResource("5_xrg87")
+image_atk = ExtResource("1_uq7nl")
+image_def = ExtResource("3_7vava")
+image_cast = ExtResource("2_r781e")
+image_hurt = ExtResource("4_tvy48")
+metadata/_custom_type_script = "uid://bh4dgrr2at34x"

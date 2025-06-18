@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="SpriteSet" load_steps=7 format=3 uid="uid://dmncriu3hi8gc"]
+
+[ext_resource type="Texture2D" uid="uid://bjfjtu82ta6f4" path="res://images/battle_enemy_pawns/sylph_swordsman/pawn_sylph_swordsman_atk.png" id="1_n7ux3"]
+[ext_resource type="Texture2D" uid="uid://ofp22aofuv74" path="res://images/battle_enemy_pawns/sylph_swordsman/pawn_sylph_swordsman_cast.png" id="2_koeby"]
+[ext_resource type="Texture2D" uid="uid://bw4xwiydwlv1e" path="res://images/battle_enemy_pawns/sylph_swordsman/pawn_sylph_swordsman_def.png" id="3_wtnw4"]
+[ext_resource type="Texture2D" uid="uid://cbbvro5kg5gnj" path="res://images/battle_enemy_pawns/sylph_swordsman/pawn_sylph_swordsman_hurt.png" id="4_5fqly"]
+[ext_resource type="Texture2D" uid="uid://caxqev27vjf18" path="res://images/battle_enemy_pawns/sylph_swordsman/pawn_sylph_swordsman_std.png" id="5_o01cu"]
+[ext_resource type="Script" uid="uid://bh4dgrr2at34x" path="res://resources/SpriteSet.gd" id="6_p6egf"]
+
+[resource]
+script = ExtResource("6_p6egf")
+image_std = ExtResource("5_o01cu")
+image_atk = ExtResource("1_n7ux3")
+image_def = ExtResource("3_wtnw4")
+image_cast = ExtResource("2_koeby")
+image_hurt = ExtResource("4_5fqly")
+metadata/_custom_type_script = "uid://bh4dgrr2at34x"

@@ -1,8 +1,9 @@
-[gd_resource type="Resource" script_class="PointOfInterest" load_steps=5 format=3 uid="uid://bghii8p3l1x1r"]
+[gd_resource type="Resource" script_class="PointOfInterest" load_steps=6 format=3 uid="uid://bghii8p3l1x1r"]
 
 [ext_resource type="Script" uid="uid://l3di8hrrnoea" path="res://resources/Mission.gd" id="1_c3hr8"]
 [ext_resource type="Script" uid="uid://b6dtah64w6g2w" path="res://resources/PointOfInterest.gd" id="1_xvf3y"]
 [ext_resource type="Resource" uid="uid://cn125gn5dopfj" path="res://resources/missions/battle_croesus_mansion.tres" id="2_epj2r"]
+[ext_resource type="Resource" uid="uid://cfki1esx80su2" path="res://resources/missions/battle_tribes/battle_felids.tres" id="3_w62td"]
 [ext_resource type="Script" uid="uid://b0f04n68xdlcp" path="res://resources/Shop.gd" id="4_epj2r"]
 
 [resource]
@@ -11,5 +12,5 @@ name = "Croesus Mansion"
 inn = false
 shops = Array[ExtResource("4_epj2r")]([])
 data_battles = false
-missions = Array[ExtResource("1_c3hr8")]([ExtResource("2_epj2r")])
+missions = Array[ExtResource("1_c3hr8")]([ExtResource("2_epj2r"), ExtResource("3_w62td")])
 metadata/_custom_type_script = "uid://b6dtah64w6g2w"

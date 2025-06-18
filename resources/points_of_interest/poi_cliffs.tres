@@ -1,8 +1,9 @@
-[gd_resource type="Resource" script_class="PointOfInterest" load_steps=5 format=3 uid="uid://bintupvc6gsut"]
+[gd_resource type="Resource" script_class="PointOfInterest" load_steps=6 format=3 uid="uid://bintupvc6gsut"]
 
 [ext_resource type="Script" uid="uid://b6dtah64w6g2w" path="res://resources/PointOfInterest.gd" id="1_np7p7"]
 [ext_resource type="Script" uid="uid://l3di8hrrnoea" path="res://resources/Mission.gd" id="1_pbxav"]
 [ext_resource type="Resource" uid="uid://clremvao1nsen" path="res://resources/missions/battle_cliffs.tres" id="2_jqkcr"]
+[ext_resource type="Resource" uid="uid://dxnd1ooai3xfj" path="res://resources/missions/battle_tribes/battle_wraiths.tres" id="3_0c4j3"]
 [ext_resource type="Script" uid="uid://b0f04n68xdlcp" path="res://resources/Shop.gd" id="4_jqkcr"]
 
 [resource]
@@ -11,5 +12,5 @@ name = "Compositia Cliffs"
 inn = false
 shops = Array[ExtResource("4_jqkcr")]([])
 data_battles = false
-missions = Array[ExtResource("1_pbxav")]([ExtResource("2_jqkcr")])
+missions = Array[ExtResource("1_pbxav")]([ExtResource("2_jqkcr"), ExtResource("3_0c4j3")])
 metadata/_custom_type_script = "uid://b6dtah64w6g2w"

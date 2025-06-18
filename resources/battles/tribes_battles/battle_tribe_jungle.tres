@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="Battle" load_steps=7 format=3 uid="uid://bfylk025ve8tk"]
+
+[ext_resource type="PackedScene" uid="uid://x5pj48o66jv7" path="res://scenes/arenas/arena_jungle.tscn" id="1_k6aqc"]
+[ext_resource type="Script" uid="uid://bj656ro4kx132" path="res://resources/Enemy.gd" id="2_gt1d7"]
+[ext_resource type="Resource" uid="uid://y2qivdndylfd" path="res://resources/enemies/tribes/bugman_archer.tres" id="3_s3uvj"]
+[ext_resource type="Resource" uid="uid://d2f1wcvsrn6ph" path="res://resources/enemies/tribes/bugman_hex.tres" id="4_3uplb"]
+[ext_resource type="Script" uid="uid://dae1o78payp5a" path="res://resources/Battle.gd" id="4_ov3gf"]
+[ext_resource type="Resource" uid="uid://bqxuarsxuynpp" path="res://resources/enemies/tribes/bugman_lancer.tres" id="5_ecryv"]
+
+[resource]
+script = ExtResource("4_ov3gf")
+arena = ExtResource("1_k6aqc")
+enemy_party = Array[ExtResource("2_gt1d7")]([ExtResource("3_s3uvj"), ExtResource("4_3uplb"), ExtResource("5_ecryv")])
+danger_level = 17
+metadata/_custom_type_script = "uid://dae1o78payp5a"

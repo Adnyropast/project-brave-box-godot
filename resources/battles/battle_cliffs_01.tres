@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://dae1o78payp5a" path="res://resources/Battle.gd" id="1_4dtlt"]
 [ext_resource type="PackedScene" uid="uid://bdnco2etepgbd" path="res://scenes/arenas/arena_cliffs.tscn" id="1_4jq1k"]
 [ext_resource type="Script" uid="uid://bj656ro4kx132" path="res://resources/Enemy.gd" id="2_05lxq"]
-[ext_resource type="Resource" uid="uid://b4v8yseeyf4st" path="res://resources/enemies/wraith_singer.tres" id="3_jsnbg"]
+[ext_resource type="Resource" uid="uid://b4v8yseeyf4st" path="res://resources/enemies/tribes/wraith_singer.tres" id="3_jsnbg"]
 
 [resource]
 script = ExtResource("1_4dtlt")

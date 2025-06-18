@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Mission" load_steps=3 format=3 uid="uid://c4gfs5cipl3r5"]
+
+[ext_resource type="Resource" uid="uid://c8q8gqdbn606r" path="res://resources/battles/tribes_battles/battle_tribe_desert.tres" id="1_d7041"]
+[ext_resource type="Script" uid="uid://l3di8hrrnoea" path="res://resources/Mission.gd" id="1_jii5n"]
+
+[resource]
+script = ExtResource("1_jii5n")
+title = "Battle Against Orcs"
+battle = ExtResource("1_d7041")
+metadata/_custom_type_script = "uid://l3di8hrrnoea"

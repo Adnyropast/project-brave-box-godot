@@ -1,10 +1,12 @@
-[gd_resource type="Resource" script_class="PointOfInterest" load_steps=6 format=3 uid="uid://cc4bi6lcuystw"]
+[gd_resource type="Resource" script_class="PointOfInterest" load_steps=8 format=3 uid="uid://cc4bi6lcuystw"]
 
 [ext_resource type="Script" uid="uid://l3di8hrrnoea" path="res://resources/Mission.gd" id="1_p6x3t"]
 [ext_resource type="Script" uid="uid://b6dtah64w6g2w" path="res://resources/PointOfInterest.gd" id="1_sbuvf"]
 [ext_resource type="Resource" uid="uid://dpd7vh7nawdnl" path="res://resources/missions/battle_marcial_tower.tres" id="2_dneq3"]
 [ext_resource type="Resource" uid="uid://dr2xj3jojtw25" path="res://resources/missions/battle_reflective_abyss.tres" id="3_dm247"]
+[ext_resource type="Resource" uid="uid://b6yyjaqrftrac" path="res://resources/missions/battle_tribes/battle_birdians.tres" id="4_8p0d4"]
 [ext_resource type="Script" uid="uid://b0f04n68xdlcp" path="res://resources/Shop.gd" id="5_dneq3"]
+[ext_resource type="Resource" uid="uid://db26ngjbkgpw7" path="res://resources/missions/battle_tribes/battle_prismoids.tres" id="5_r24vm"]
 
 [resource]
 script = ExtResource("1_sbuvf")
@@ -12,5 +14,5 @@ name = "Marcial Tower"
 inn = false
 shops = Array[ExtResource("5_dneq3")]([])
 data_battles = false
-missions = Array[ExtResource("1_p6x3t")]([ExtResource("2_dneq3"), ExtResource("3_dm247")])
+missions = Array[ExtResource("1_p6x3t")]([ExtResource("2_dneq3"), ExtResource("3_dm247"), ExtResource("4_8p0d4"), ExtResource("5_r24vm")])
 metadata/_custom_type_script = "uid://b6dtah64w6g2w"

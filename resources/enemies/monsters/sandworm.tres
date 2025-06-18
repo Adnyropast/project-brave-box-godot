@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="Enemy" load_steps=3 format=3 uid="uid://d1d4v6rwgj4ws"]
+
+[ext_resource type="Script" uid="uid://bj656ro4kx132" path="res://resources/Enemy.gd" id="1_auspk"]
+[ext_resource type="Resource" uid="uid://dvdnx6317rcuy" path="res://resources/sprite_sets/monsters/spriteset_sandworm.tres" id="2_43twd"]
+
+[resource]
+script = ExtResource("1_auspk")
+name = "Sandworm"
+sprite_set = ExtResource("2_43twd")
+resist_severing = 0
+resist_cutting = 0
+resist_piercing = 1
+resist_blasting = 1
+resist_bludgeoning = -1
+resist_fire = -1
+resist_water = 0
+resist_lightning = 0
+resist_earth = 1
+resist_wind = -1
+resist_light = 1
+resist_dark = -1
+metadata/_custom_type_script = "uid://bj656ro4kx132"

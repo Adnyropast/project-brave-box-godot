@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="SpriteSet" load_steps=7 format=3 uid="uid://b4r1eseyqgt2r"]
+
+[ext_resource type="Texture2D" uid="uid://0qa0il3x4024" path="res://images/battle_monster_pawns/lantern/pawn_lantern_atk.png" id="1_68n7f"]
+[ext_resource type="Script" uid="uid://bh4dgrr2at34x" path="res://resources/SpriteSet.gd" id="1_un0gu"]
+[ext_resource type="Texture2D" uid="uid://mj4dfxr4vjx2" path="res://images/battle_monster_pawns/lantern/pawn_lantern_cast.png" id="2_pn2py"]
+[ext_resource type="Texture2D" uid="uid://b6w8h78l7u24d" path="res://images/battle_monster_pawns/lantern/pawn_lantern_def.png" id="3_ir11t"]
+[ext_resource type="Texture2D" uid="uid://buo85cyn5hubv" path="res://images/battle_monster_pawns/lantern/pawn_lantern_hurt.png" id="4_xvsj5"]
+[ext_resource type="Texture2D" uid="uid://cg8d8u3y48nng" path="res://images/battle_monster_pawns/lantern/pawn_lantern_std.png" id="5_25e4w"]
+
+[resource]
+script = ExtResource("1_un0gu")
+image_std = ExtResource("5_25e4w")
+image_atk = ExtResource("1_68n7f")
+image_def = ExtResource("3_ir11t")
+image_cast = ExtResource("2_pn2py")
+image_hurt = ExtResource("4_xvsj5")
+metadata/_custom_type_script = "uid://bh4dgrr2at34x"

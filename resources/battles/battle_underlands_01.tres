@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://dae1o78payp5a" path="res://resources/Battle.gd" id="1_vcmgo"]
 [ext_resource type="PackedScene" uid="uid://bsdlkng8qhs83" path="res://scenes/arenas/arena_underlands.tscn" id="1_vtc08"]
 [ext_resource type="Script" uid="uid://bj656ro4kx132" path="res://resources/Enemy.gd" id="2_ofcq6"]
-[ext_resource type="Resource" uid="uid://ctpgf41k1llro" path="res://resources/enemies/mole_gunner.tres" id="3_rbupq"]
+[ext_resource type="Resource" uid="uid://ctpgf41k1llro" path="res://resources/enemies/tribes/mole_gunner.tres" id="3_rbupq"]
 
 [resource]
 script = ExtResource("1_vcmgo")

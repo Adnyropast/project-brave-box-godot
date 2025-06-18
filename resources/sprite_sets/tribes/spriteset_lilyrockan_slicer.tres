@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="SpriteSet" load_steps=7 format=3 uid="uid://bl5dcmxnkr8xx"]
+
+[ext_resource type="Texture2D" uid="uid://ds72h325rvj1a" path="res://images/battle_enemy_pawns/lilyrockan_slicer/pawn_lilyrockan_slicer_atk.png" id="1_ix35i"]
+[ext_resource type="Texture2D" uid="uid://yshagmx7umjg" path="res://images/battle_enemy_pawns/lilyrockan_slicer/pawn_lilyrockan_slicer_cast.png" id="2_lrghp"]
+[ext_resource type="Texture2D" uid="uid://cjrq0yoh5nksa" path="res://images/battle_enemy_pawns/lilyrockan_slicer/pawn_lilyrockan_slicer_def.png" id="3_4qfta"]
+[ext_resource type="Texture2D" uid="uid://bvvaifdsixfyw" path="res://images/battle_enemy_pawns/lilyrockan_slicer/pawn_lilyrockan_slicer_hurt.png" id="4_f52st"]
+[ext_resource type="Texture2D" uid="uid://c6j25ccqyqlam" path="res://images/battle_enemy_pawns/lilyrockan_slicer/pawn_lilyrockan_slicer_std.png" id="5_l84lk"]
+[ext_resource type="Script" uid="uid://bh4dgrr2at34x" path="res://resources/SpriteSet.gd" id="6_odq36"]
+
+[resource]
+script = ExtResource("6_odq36")
+image_std = ExtResource("5_l84lk")
+image_atk = ExtResource("1_ix35i")
+image_def = ExtResource("3_4qfta")
+image_cast = ExtResource("2_lrghp")
+image_hurt = ExtResource("4_f52st")
+metadata/_custom_type_script = "uid://bh4dgrr2at34x"

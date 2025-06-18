@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="Battle" load_steps=7 format=3 uid="uid://2v4abj4neues"]
+
+[ext_resource type="PackedScene" uid="uid://bsdlkng8qhs83" path="res://scenes/arenas/arena_underlands.tscn" id="1_qht1r"]
+[ext_resource type="Script" uid="uid://bj656ro4kx132" path="res://resources/Enemy.gd" id="2_uyq4a"]
+[ext_resource type="Resource" uid="uid://cl31rfsmxhgie" path="res://resources/enemies/tribes/mole_shieldbearer.tres" id="3_idhku"]
+[ext_resource type="Resource" uid="uid://ctpgf41k1llro" path="res://resources/enemies/tribes/mole_gunner.tres" id="3_rc217"]
+[ext_resource type="Script" uid="uid://dae1o78payp5a" path="res://resources/Battle.gd" id="4_adclo"]
+[ext_resource type="Resource" uid="uid://drta8ibf43ji8" path="res://resources/enemies/tribes/mole_scientist.tres" id="5_ybrss"]
+
+[resource]
+script = ExtResource("4_adclo")
+arena = ExtResource("1_qht1r")
+enemy_party = Array[ExtResource("2_uyq4a")]([ExtResource("3_idhku"), ExtResource("3_rc217"), ExtResource("5_ybrss")])
+danger_level = 20
+metadata/_custom_type_script = "uid://dae1o78payp5a"

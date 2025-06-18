@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="SpriteSet" load_steps=7 format=3 uid="uid://b2ee4i780nwdx"]
+
+[ext_resource type="Script" uid="uid://bh4dgrr2at34x" path="res://resources/SpriteSet.gd" id="1_7402m"]
+[ext_resource type="Texture2D" uid="uid://belqajk6wg0ve" path="res://images/battle_monster_pawns/meltide/pawn_meltide_atk.png" id="1_ka5kq"]
+[ext_resource type="Texture2D" uid="uid://cfj58io6mwc0g" path="res://images/battle_monster_pawns/meltide/pawn_meltide_cast.png" id="2_bijg8"]
+[ext_resource type="Texture2D" uid="uid://c83hcg3ks041r" path="res://images/battle_monster_pawns/meltide/pawn_meltide_def.png" id="3_vqntp"]
+[ext_resource type="Texture2D" uid="uid://eyu7dd82cato" path="res://images/battle_monster_pawns/meltide/pawn_meltide_hurt.png" id="4_yuhob"]
+[ext_resource type="Texture2D" uid="uid://cnthy8jxfdrnf" path="res://images/battle_monster_pawns/meltide/pawn_meltide_std.png" id="5_0i35o"]
+
+[resource]
+script = ExtResource("1_7402m")
+image_std = ExtResource("5_0i35o")
+image_atk = ExtResource("1_ka5kq")
+image_def = ExtResource("3_vqntp")
+image_cast = ExtResource("2_bijg8")
+image_hurt = ExtResource("4_yuhob")
+metadata/_custom_type_script = "uid://bh4dgrr2at34x"

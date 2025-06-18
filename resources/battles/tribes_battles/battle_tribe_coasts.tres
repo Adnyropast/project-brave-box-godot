@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="Battle" load_steps=7 format=3 uid="uid://bh2wxq46333yj"]
+
+[ext_resource type="PackedScene" uid="uid://c213ykr4m575f" path="res://scenes/arenas/arena_coasts.tscn" id="1_m5h0e"]
+[ext_resource type="Script" uid="uid://bj656ro4kx132" path="res://resources/Enemy.gd" id="2_r18s1"]
+[ext_resource type="Resource" uid="uid://dum8vvtr5uh8o" path="res://resources/enemies/tribes/lizardman_lancer.tres" id="3_28dal"]
+[ext_resource type="Resource" uid="uid://br7ugmhqgch2w" path="res://resources/enemies/tribes/lizardman_shieldbearer.tres" id="3_jn8f6"]
+[ext_resource type="Resource" uid="uid://c8gptfyrkm2hg" path="res://resources/enemies/tribes/lizardman_mage.tres" id="4_ct683"]
+[ext_resource type="Script" uid="uid://dae1o78payp5a" path="res://resources/Battle.gd" id="4_npnuq"]
+
+[resource]
+script = ExtResource("4_npnuq")
+arena = ExtResource("1_m5h0e")
+enemy_party = Array[ExtResource("2_r18s1")]([ExtResource("3_jn8f6"), ExtResource("4_ct683"), ExtResource("3_28dal")])
+danger_level = 7
+metadata/_custom_type_script = "uid://dae1o78payp5a"

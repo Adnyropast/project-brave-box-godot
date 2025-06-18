@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="Battle" load_steps=7 format=3 uid="uid://caqclblltdeyi"]
+
+[ext_resource type="PackedScene" uid="uid://bdnco2etepgbd" path="res://scenes/arenas/arena_cliffs.tscn" id="1_mvlvc"]
+[ext_resource type="Script" uid="uid://bj656ro4kx132" path="res://resources/Enemy.gd" id="2_pgqbd"]
+[ext_resource type="Resource" uid="uid://wo3ejyxu2l0p" path="res://resources/enemies/tribes/wraith_slicer.tres" id="3_rgqf8"]
+[ext_resource type="Resource" uid="uid://b4v8yseeyf4st" path="res://resources/enemies/tribes/wraith_singer.tres" id="3_u3qnx"]
+[ext_resource type="Script" uid="uid://dae1o78payp5a" path="res://resources/Battle.gd" id="4_n0pr1"]
+[ext_resource type="Resource" uid="uid://xyo4mknnxwmb" path="res://resources/enemies/tribes/wraith_chopper.tres" id="5_lbb1m"]
+
+[resource]
+script = ExtResource("4_n0pr1")
+arena = ExtResource("1_mvlvc")
+enemy_party = Array[ExtResource("2_pgqbd")]([ExtResource("3_rgqf8"), ExtResource("3_u3qnx"), ExtResource("5_lbb1m")])
+danger_level = 28
+metadata/_custom_type_script = "uid://dae1o78payp5a"

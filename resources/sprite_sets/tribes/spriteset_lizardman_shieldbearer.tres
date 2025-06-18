@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="SpriteSet" load_steps=7 format=3 uid="uid://cs6vogao3e7v0"]
+
+[ext_resource type="Texture2D" uid="uid://8wbm3wqdog7" path="res://images/battle_enemy_pawns/lizardman_shieldbearer/pawn_lizardman_shieldbearer_atk.png" id="1_bndso"]
+[ext_resource type="Texture2D" uid="uid://cduimmyd74dpd" path="res://images/battle_enemy_pawns/lizardman_shieldbearer/pawn_lizardman_shieldbearer_cast.png" id="2_0k0oo"]
+[ext_resource type="Texture2D" uid="uid://cm6pssjio4ntc" path="res://images/battle_enemy_pawns/lizardman_shieldbearer/pawn_lizardman_shieldbearer_def.png" id="3_cv1ai"]
+[ext_resource type="Texture2D" uid="uid://b5jaj647iea37" path="res://images/battle_enemy_pawns/lizardman_shieldbearer/pawn_lizardman_shieldbearer_hurt.png" id="4_fl1ko"]
+[ext_resource type="Texture2D" uid="uid://yl211ftjcgbs" path="res://images/battle_enemy_pawns/lizardman_shieldbearer/pawn_lizardman_shieldbearer_std.png" id="5_g0ygn"]
+[ext_resource type="Script" uid="uid://bh4dgrr2at34x" path="res://resources/SpriteSet.gd" id="6_5y6u8"]
+
+[resource]
+script = ExtResource("6_5y6u8")
+image_std = ExtResource("5_g0ygn")
+image_atk = ExtResource("1_bndso")
+image_def = ExtResource("3_cv1ai")
+image_cast = ExtResource("2_0k0oo")
+image_hurt = ExtResource("4_fl1ko")
+metadata/_custom_type_script = "uid://bh4dgrr2at34x"

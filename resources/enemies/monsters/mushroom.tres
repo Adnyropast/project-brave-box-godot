@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="Enemy" load_steps=3 format=3 uid="uid://dkdheij8mxvhe"]
+
+[ext_resource type="Script" uid="uid://bj656ro4kx132" path="res://resources/Enemy.gd" id="1_5va1c"]
+[ext_resource type="Resource" uid="uid://var8ptseh1jh" path="res://resources/sprite_sets/monsters/spriteset_mushroom.tres" id="2_6fj7s"]
+
+[resource]
+script = ExtResource("1_5va1c")
+name = "Mushroom"
+sprite_set = ExtResource("2_6fj7s")
+resist_severing = -1
+resist_cutting = 0
+resist_piercing = 0
+resist_blasting = 0
+resist_bludgeoning = 1
+resist_fire = -1
+resist_water = 3
+resist_lightning = 0
+resist_earth = 2
+resist_wind = 0
+resist_light = 1
+resist_dark = -1
+metadata/_custom_type_script = "uid://bj656ro4kx132"

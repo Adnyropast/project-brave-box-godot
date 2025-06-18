@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="SpriteSet" load_steps=7 format=3 uid="uid://dy6pnk66iuwo2"]
+
+[ext_resource type="Texture2D" uid="uid://bggo3hmm8ln3v" path="res://images/battle_monster_pawns/herbs/pawn_herbs_atk.png" id="1_0f78d"]
+[ext_resource type="Script" uid="uid://bh4dgrr2at34x" path="res://resources/SpriteSet.gd" id="1_vs4hg"]
+[ext_resource type="Texture2D" uid="uid://dnub8ho58rued" path="res://images/battle_monster_pawns/herbs/pawn_herbs_cast.png" id="2_xmm4c"]
+[ext_resource type="Texture2D" uid="uid://ewq5nj8bq1fh" path="res://images/battle_monster_pawns/herbs/pawn_herbs_def.png" id="3_vg4r0"]
+[ext_resource type="Texture2D" uid="uid://brumt0fur164k" path="res://images/battle_monster_pawns/herbs/pawn_herbs_hurt.png" id="4_k60th"]
+[ext_resource type="Texture2D" uid="uid://dx0y60x51xb2x" path="res://images/battle_monster_pawns/herbs/pawn_herbs_std.png" id="5_4moei"]
+
+[resource]
+script = ExtResource("1_vs4hg")
+image_std = ExtResource("5_4moei")
+image_atk = ExtResource("1_0f78d")
+image_def = ExtResource("3_vg4r0")
+image_cast = ExtResource("2_xmm4c")
+image_hurt = ExtResource("4_k60th")
+metadata/_custom_type_script = "uid://bh4dgrr2at34x"

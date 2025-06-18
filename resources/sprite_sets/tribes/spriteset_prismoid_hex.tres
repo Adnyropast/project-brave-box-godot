@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="SpriteSet" load_steps=7 format=3 uid="uid://tfo73k2txldl"]
+
+[ext_resource type="Texture2D" uid="uid://bqgi36hsmfn03" path="res://images/battle_enemy_pawns/prismoid_hex/pawn_prismoid_hex_atk.png" id="1_ct547"]
+[ext_resource type="Texture2D" uid="uid://nd4bvn6rufmu" path="res://images/battle_enemy_pawns/prismoid_hex/pawn_prismoid_hex_cast.png" id="2_t4ibl"]
+[ext_resource type="Texture2D" uid="uid://bqyugmun842oq" path="res://images/battle_enemy_pawns/prismoid_hex/pawn_prismoid_hex_def.png" id="3_y1x21"]
+[ext_resource type="Texture2D" uid="uid://coqsa6t4o58c5" path="res://images/battle_enemy_pawns/prismoid_hex/pawn_prismoid_hex_hurt.png" id="4_aqps5"]
+[ext_resource type="Texture2D" uid="uid://fsyitngq73h0" path="res://images/battle_enemy_pawns/prismoid_hex/pawn_prismoid_hex_std.png" id="5_j813m"]
+[ext_resource type="Script" uid="uid://bh4dgrr2at34x" path="res://resources/SpriteSet.gd" id="6_rxckf"]
+
+[resource]
+script = ExtResource("6_rxckf")
+image_std = ExtResource("5_j813m")
+image_atk = ExtResource("1_ct547")
+image_def = ExtResource("3_y1x21")
+image_cast = ExtResource("2_t4ibl")
+image_hurt = ExtResource("4_aqps5")
+metadata/_custom_type_script = "uid://bh4dgrr2at34x"

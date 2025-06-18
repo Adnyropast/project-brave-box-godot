@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://dae1o78payp5a" path="res://resources/Battle.gd" id="1_17ws8"]
 [ext_resource type="PackedScene" uid="uid://nfdl28gbr21k" path="res://scenes/arenas/arena_desert.tscn" id="1_ko2fu"]
 [ext_resource type="Script" uid="uid://bj656ro4kx132" path="res://resources/Enemy.gd" id="2_75fiq"]
-[ext_resource type="Resource" uid="uid://di3h0ewcyawoa" path="res://resources/enemies/orc_healer.tres" id="3_s1cqs"]
+[ext_resource type="Resource" uid="uid://di3h0ewcyawoa" path="res://resources/enemies/tribes/orc_healer.tres" id="3_s1cqs"]
 
 [resource]
 script = ExtResource("1_17ws8")

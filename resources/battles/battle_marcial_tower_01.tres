@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://dae1o78payp5a" path="res://resources/Battle.gd" id="1_2i8ov"]
 [ext_resource type="PackedScene" uid="uid://bsd8gw5tlu1k5" path="res://scenes/arenas/arena_marcial_tower.tscn" id="1_nd32e"]
 [ext_resource type="Script" uid="uid://bj656ro4kx132" path="res://resources/Enemy.gd" id="2_py27y"]
-[ext_resource type="Resource" uid="uid://ci2wgry2wava2" path="res://resources/enemies/birdian_slicer.tres" id="3_gwnwk"]
+[ext_resource type="Resource" uid="uid://ci2wgry2wava2" path="res://resources/enemies/tribes/birdian_slicer.tres" id="3_gwnwk"]
 
 [resource]
 script = ExtResource("1_2i8ov")

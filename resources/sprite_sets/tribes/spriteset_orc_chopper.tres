@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="SpriteSet" load_steps=7 format=3 uid="uid://bfmp8qmxcuw1n"]
+
+[ext_resource type="Texture2D" uid="uid://bleekp8rpeqsg" path="res://images/battle_enemy_pawns/orc_chopper/pawn_orc_chopper_atk.png" id="1_rmruv"]
+[ext_resource type="Texture2D" uid="uid://h0toiikl0nwl" path="res://images/battle_enemy_pawns/orc_chopper/pawn_orc_chopper_cast.png" id="2_y7sdg"]
+[ext_resource type="Texture2D" uid="uid://bc1trogbum3p5" path="res://images/battle_enemy_pawns/orc_chopper/pawn_orc_chopper_def.png" id="3_5rwo4"]
+[ext_resource type="Texture2D" uid="uid://d4a86v0x6kb5x" path="res://images/battle_enemy_pawns/orc_chopper/pawn_orc_chopper_hurt.png" id="4_5qc1f"]
+[ext_resource type="Texture2D" uid="uid://bqfnirrw3ucs4" path="res://images/battle_enemy_pawns/orc_chopper/pawn_orc_chopper_std.png" id="5_e5vlc"]
+[ext_resource type="Script" uid="uid://bh4dgrr2at34x" path="res://resources/SpriteSet.gd" id="6_qfn2f"]
+
+[resource]
+script = ExtResource("6_qfn2f")
+image_std = ExtResource("5_e5vlc")
+image_atk = ExtResource("1_rmruv")
+image_def = ExtResource("3_5rwo4")
+image_cast = ExtResource("2_y7sdg")
+image_hurt = ExtResource("4_5qc1f")
+metadata/_custom_type_script = "uid://bh4dgrr2at34x"

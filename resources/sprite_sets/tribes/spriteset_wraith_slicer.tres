@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="SpriteSet" load_steps=7 format=3 uid="uid://ca0wgvkc3hryj"]
+
+[ext_resource type="Texture2D" uid="uid://dkw0qcwjdmk1i" path="res://images/battle_enemy_pawns/wraith_slicer/pawn_wraith_slicer_atk.png" id="1_fax8l"]
+[ext_resource type="Texture2D" uid="uid://h0t52v0r1vqt" path="res://images/battle_enemy_pawns/wraith_slicer/pawn_wraith_slicer_cast.png" id="2_digu3"]
+[ext_resource type="Texture2D" uid="uid://bk4uj26esiw7c" path="res://images/battle_enemy_pawns/wraith_slicer/pawn_wraith_slicer_def.png" id="3_8rxfs"]
+[ext_resource type="Texture2D" uid="uid://jjawh3n1jru" path="res://images/battle_enemy_pawns/wraith_slicer/pawn_wraith_slicer_hurt.png" id="4_7lv4t"]
+[ext_resource type="Texture2D" uid="uid://dqcnn3b6dgqv" path="res://images/battle_enemy_pawns/wraith_slicer/pawn_wraith_slicer_std.png" id="5_78iyk"]
+[ext_resource type="Script" uid="uid://bh4dgrr2at34x" path="res://resources/SpriteSet.gd" id="6_xx8lj"]
+
+[resource]
+script = ExtResource("6_xx8lj")
+image_std = ExtResource("5_78iyk")
+image_atk = ExtResource("1_fax8l")
+image_def = ExtResource("3_8rxfs")
+image_cast = ExtResource("2_digu3")
+image_hurt = ExtResource("4_7lv4t")
+metadata/_custom_type_script = "uid://bh4dgrr2at34x"

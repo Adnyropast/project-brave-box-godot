@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://dae1o78payp5a" path="res://resources/Battle.gd" id="1_rl2pj"]
 [ext_resource type="PackedScene" uid="uid://jn1522tcou4f" path="res://scenes/arenas/arena_reflective_abyss.tscn" id="1_vp4yw"]
 [ext_resource type="Script" uid="uid://bj656ro4kx132" path="res://resources/Enemy.gd" id="2_ama7w"]
-[ext_resource type="Resource" uid="uid://d4hwi3ycmfmio" path="res://resources/enemies/prismoid_healer.tres" id="3_a7aix"]
+[ext_resource type="Resource" uid="uid://d4hwi3ycmfmio" path="res://resources/enemies/tribes/prismoid_healer.tres" id="3_a7aix"]
 
 [resource]
 script = ExtResource("1_rl2pj")

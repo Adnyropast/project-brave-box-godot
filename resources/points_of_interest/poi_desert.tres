@@ -1,8 +1,9 @@
-[gd_resource type="Resource" script_class="PointOfInterest" load_steps=5 format=3 uid="uid://ik6hgtfuryyo"]
+[gd_resource type="Resource" script_class="PointOfInterest" load_steps=6 format=3 uid="uid://ik6hgtfuryyo"]
 
 [ext_resource type="Script" uid="uid://b6dtah64w6g2w" path="res://resources/PointOfInterest.gd" id="1_3saua"]
 [ext_resource type="Script" uid="uid://l3di8hrrnoea" path="res://resources/Mission.gd" id="1_vqaid"]
 [ext_resource type="Resource" uid="uid://4rd3re0ypd07" path="res://resources/missions/battle_desert.tres" id="2_albtg"]
+[ext_resource type="Resource" uid="uid://c4gfs5cipl3r5" path="res://resources/missions/battle_tribes/battle_orcs.tres" id="3_4ycpx"]
 [ext_resource type="Script" uid="uid://b0f04n68xdlcp" path="res://resources/Shop.gd" id="4_albtg"]
 
 [resource]
@@ -11,5 +12,5 @@ name = "Compositia Desert"
 inn = false
 shops = Array[ExtResource("4_albtg")]([])
 data_battles = false
-missions = Array[ExtResource("1_vqaid")]([ExtResource("2_albtg")])
+missions = Array[ExtResource("1_vqaid")]([ExtResource("2_albtg"), ExtResource("3_4ycpx")])
 metadata/_custom_type_script = "uid://b6dtah64w6g2w"

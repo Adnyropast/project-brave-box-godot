@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="SpriteSet" load_steps=7 format=3 uid="uid://dvdnx6317rcuy"]
+
+[ext_resource type="Texture2D" uid="uid://disc6pm1svowo" path="res://images/battle_monster_pawns/sandworm/pawn_sandworm_atk.png" id="1_dmajd"]
+[ext_resource type="Script" uid="uid://bh4dgrr2at34x" path="res://resources/SpriteSet.gd" id="1_odocm"]
+[ext_resource type="Texture2D" uid="uid://b3gipmyx81prj" path="res://images/battle_monster_pawns/sandworm/pawn_sandworm_cast.png" id="2_ocejw"]
+[ext_resource type="Texture2D" uid="uid://bt4q6cto262dd" path="res://images/battle_monster_pawns/sandworm/pawn_sandworm_def.png" id="3_7x4ml"]
+[ext_resource type="Texture2D" uid="uid://bnt5jrjox4eqe" path="res://images/battle_monster_pawns/sandworm/pawn_sandworm_hurt.png" id="4_q6mgb"]
+[ext_resource type="Texture2D" uid="uid://bwklgbn2nutfv" path="res://images/battle_monster_pawns/sandworm/pawn_sandworm_std.png" id="5_sxmus"]
+
+[resource]
+script = ExtResource("1_odocm")
+image_std = ExtResource("5_sxmus")
+image_atk = ExtResource("1_dmajd")
+image_def = ExtResource("3_7x4ml")
+image_cast = ExtResource("2_ocejw")
+image_hurt = ExtResource("4_q6mgb")
+metadata/_custom_type_script = "uid://bh4dgrr2at34x"

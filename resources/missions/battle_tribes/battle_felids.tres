@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Mission" load_steps=3 format=3 uid="uid://cfki1esx80su2"]
+
+[ext_resource type="Resource" uid="uid://d1iggn0l18hpy" path="res://resources/battles/tribes_battles/battle_tribe_croesus_mansion.tres" id="1_o78f7"]
+[ext_resource type="Script" uid="uid://l3di8hrrnoea" path="res://resources/Mission.gd" id="1_osf8k"]
+
+[resource]
+script = ExtResource("1_osf8k")
+title = "Battle Against Felids"
+battle = ExtResource("1_o78f7")
+metadata/_custom_type_script = "uid://l3di8hrrnoea"

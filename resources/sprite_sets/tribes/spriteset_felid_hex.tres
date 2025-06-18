@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="SpriteSet" load_steps=7 format=3 uid="uid://dpbjtkm161jwp"]
+
+[ext_resource type="Texture2D" uid="uid://bsd5ewuoixfx1" path="res://images/battle_enemy_pawns/felid_hex/pawn_felid_hex_atk.png" id="1_grdry"]
+[ext_resource type="Texture2D" uid="uid://sjtf5edj3l7l" path="res://images/battle_enemy_pawns/felid_hex/pawn_felid_hex_cast.png" id="2_2mug5"]
+[ext_resource type="Texture2D" uid="uid://b81jpbfvdat0m" path="res://images/battle_enemy_pawns/felid_hex/pawn_felid_hex_def.png" id="3_81jaw"]
+[ext_resource type="Texture2D" uid="uid://buf08bvwnarh2" path="res://images/battle_enemy_pawns/felid_hex/pawn_felid_hex_hurt.png" id="4_k3kn7"]
+[ext_resource type="Texture2D" uid="uid://bg2sct0hanysn" path="res://images/battle_enemy_pawns/felid_hex/pawn_felid_hex_std.png" id="5_8tsx3"]
+[ext_resource type="Script" uid="uid://bh4dgrr2at34x" path="res://resources/SpriteSet.gd" id="6_vncj1"]
+
+[resource]
+script = ExtResource("6_vncj1")
+image_std = ExtResource("5_8tsx3")
+image_atk = ExtResource("1_grdry")
+image_def = ExtResource("3_81jaw")
+image_cast = ExtResource("2_2mug5")
+image_hurt = ExtResource("4_k3kn7")
+metadata/_custom_type_script = "uid://bh4dgrr2at34x"

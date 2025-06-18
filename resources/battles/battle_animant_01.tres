@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://dae1o78payp5a" path="res://resources/Battle.gd" id="1_j4irq"]
 [ext_resource type="PackedScene" uid="uid://ce3okpyih5hcb" path="res://scenes/arenas/arena_animant.tscn" id="1_kybxf"]
 [ext_resource type="Script" uid="uid://bj656ro4kx132" path="res://resources/Enemy.gd" id="2_6krlu"]
-[ext_resource type="Resource" uid="uid://npddecxvr88k" path="res://resources/enemies/remnant_swordsman.tres" id="3_uvkxw"]
+[ext_resource type="Resource" uid="uid://npddecxvr88k" path="res://resources/enemies/tribes/remnant_swordsman.tres" id="3_uvkxw"]
 
 [resource]
 script = ExtResource("1_j4irq")

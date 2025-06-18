@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="SpriteSet" load_steps=7 format=3 uid="uid://cg6e4yfaedi0g"]
+
+[ext_resource type="Script" uid="uid://bh4dgrr2at34x" path="res://resources/SpriteSet.gd" id="1_eaewo"]
+[ext_resource type="Texture2D" uid="uid://caa8orl161qc3" path="res://images/battle_monster_pawns/watsis/pawn_watsis_atk.png" id="1_p4gk1"]
+[ext_resource type="Texture2D" uid="uid://btc8gp7vr6gl" path="res://images/battle_monster_pawns/watsis/pawn_watsis_cast.png" id="2_30q1u"]
+[ext_resource type="Texture2D" uid="uid://bblhrgg8xikxj" path="res://images/battle_monster_pawns/watsis/pawn_watsis_def.png" id="3_d4rel"]
+[ext_resource type="Texture2D" uid="uid://c1y27i4g18ta5" path="res://images/battle_monster_pawns/watsis/pawn_watsis_hurt.png" id="4_xt7hf"]
+[ext_resource type="Texture2D" uid="uid://ber3cdpdd1swv" path="res://images/battle_monster_pawns/watsis/pawn_watsis_std.png" id="5_gm7au"]
+
+[resource]
+script = ExtResource("1_eaewo")
+image_std = ExtResource("5_gm7au")
+image_atk = ExtResource("1_p4gk1")
+image_def = ExtResource("3_d4rel")
+image_cast = ExtResource("2_30q1u")
+image_hurt = ExtResource("4_xt7hf")
+metadata/_custom_type_script = "uid://bh4dgrr2at34x"

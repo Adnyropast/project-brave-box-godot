@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://dae1o78payp5a" path="res://resources/Battle.gd" id="1_epdrt"]
 [ext_resource type="PackedScene" uid="uid://x5pj48o66jv7" path="res://scenes/arenas/arena_jungle.tscn" id="1_yhrtm"]
 [ext_resource type="Script" uid="uid://bj656ro4kx132" path="res://resources/Enemy.gd" id="2_tr54c"]
-[ext_resource type="Resource" uid="uid://y2qivdndylfd" path="res://resources/enemies/bugman_archer.tres" id="3_u3g15"]
+[ext_resource type="Resource" uid="uid://y2qivdndylfd" path="res://resources/enemies/tribes/bugman_archer.tres" id="3_u3g15"]
 
 [resource]
 script = ExtResource("1_epdrt")

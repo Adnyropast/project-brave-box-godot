@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="SpriteSet" load_steps=7 format=3 uid="uid://var8ptseh1jh"]
+
+[ext_resource type="Script" uid="uid://bh4dgrr2at34x" path="res://resources/SpriteSet.gd" id="1_cfs4h"]
+[ext_resource type="Texture2D" uid="uid://vo23brqui8tk" path="res://images/battle_monster_pawns/mushroom/pawn_mushroom_atk.png" id="1_iqihq"]
+[ext_resource type="Texture2D" uid="uid://cs57j4yr70myv" path="res://images/battle_monster_pawns/mushroom/pawn_mushroom_cast.png" id="2_rnn4m"]
+[ext_resource type="Texture2D" uid="uid://ceni22g3dky68" path="res://images/battle_monster_pawns/mushroom/pawn_mushroom_def.png" id="3_tjxt4"]
+[ext_resource type="Texture2D" uid="uid://djn1grcnayxgh" path="res://images/battle_monster_pawns/mushroom/pawn_mushroom_hurt.png" id="4_j6aio"]
+[ext_resource type="Texture2D" uid="uid://c0rrfi8eflefv" path="res://images/battle_monster_pawns/mushroom/pawn_mushroom_std.png" id="5_2yv4l"]
+
+[resource]
+script = ExtResource("1_cfs4h")
+image_std = ExtResource("5_2yv4l")
+image_atk = ExtResource("1_iqihq")
+image_def = ExtResource("3_tjxt4")
+image_cast = ExtResource("2_rnn4m")
+image_hurt = ExtResource("4_j6aio")
+metadata/_custom_type_script = "uid://bh4dgrr2at34x"

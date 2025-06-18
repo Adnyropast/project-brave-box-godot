@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://dae1o78payp5a" path="res://resources/Battle.gd" id="1_e6irl"]
 [ext_resource type="PackedScene" uid="uid://mal7o7vcryaj" path="res://scenes/arenas/arena_wayward_woods.tscn" id="1_k0b6i"]
 [ext_resource type="Script" uid="uid://bj656ro4kx132" path="res://resources/Enemy.gd" id="2_n4tp3"]
-[ext_resource type="Resource" uid="uid://c4ipgwxer5nhu" path="res://resources/enemies/sylph_hex.tres" id="3_mo0bc"]
+[ext_resource type="Resource" uid="uid://c4ipgwxer5nhu" path="res://resources/enemies/tribes/sylph_hex.tres" id="3_mo0bc"]
 
 [resource]
 script = ExtResource("1_e6irl")

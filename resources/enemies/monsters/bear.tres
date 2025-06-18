@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="Enemy" load_steps=3 format=3 uid="uid://cr5gymjnmq03u"]
+
+[ext_resource type="Script" uid="uid://bj656ro4kx132" path="res://resources/Enemy.gd" id="1_s7dkq"]
+[ext_resource type="Resource" uid="uid://co0dnpqgvypmv" path="res://resources/sprite_sets/monsters/spriteset_bear.tres" id="2_0mu4e"]
+
+[resource]
+script = ExtResource("1_s7dkq")
+name = "Bear"
+sprite_set = ExtResource("2_0mu4e")
+resist_severing = 0
+resist_cutting = -1
+resist_piercing = 0
+resist_blasting = 0
+resist_bludgeoning = 0
+resist_fire = 0
+resist_water = -1
+resist_lightning = 0
+resist_earth = 0
+resist_wind = 0
+resist_light = -1
+resist_dark = 1
+metadata/_custom_type_script = "uid://bj656ro4kx132"

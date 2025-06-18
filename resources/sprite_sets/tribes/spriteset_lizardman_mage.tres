@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="SpriteSet" load_steps=7 format=3 uid="uid://clgn55mc73doj"]
+
+[ext_resource type="Texture2D" uid="uid://bhrsbyxr24fah" path="res://images/battle_enemy_pawns/lizardman_mage/pawn_lizardman_mage_atk.png" id="1_6s1x1"]
+[ext_resource type="Texture2D" uid="uid://bjnbcxwpt03fb" path="res://images/battle_enemy_pawns/lizardman_mage/pawn_lizardman_mage_cast.png" id="2_21nvk"]
+[ext_resource type="Texture2D" uid="uid://vbxalt8qnuwk" path="res://images/battle_enemy_pawns/lizardman_mage/pawn_lizardman_mage_def.png" id="3_a3sp4"]
+[ext_resource type="Texture2D" uid="uid://uh6oarimouia" path="res://images/battle_enemy_pawns/lizardman_mage/pawn_lizardman_mage_hurt.png" id="4_b346m"]
+[ext_resource type="Texture2D" uid="uid://ckwrsxeo6ri0m" path="res://images/battle_enemy_pawns/lizardman_mage/pawn_lizardman_mage_std.png" id="5_i07o3"]
+[ext_resource type="Script" uid="uid://bh4dgrr2at34x" path="res://resources/SpriteSet.gd" id="6_w3sdi"]
+
+[resource]
+script = ExtResource("6_w3sdi")
+image_std = ExtResource("5_i07o3")
+image_atk = ExtResource("1_6s1x1")
+image_def = ExtResource("3_a3sp4")
+image_cast = ExtResource("2_21nvk")
+image_hurt = ExtResource("4_b346m")
+metadata/_custom_type_script = "uid://bh4dgrr2at34x"

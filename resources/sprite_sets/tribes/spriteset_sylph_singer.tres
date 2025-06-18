@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="SpriteSet" load_steps=7 format=3 uid="uid://c1tmaikho86xg"]
+
+[ext_resource type="Texture2D" uid="uid://cobsiy1hyjam5" path="res://images/battle_enemy_pawns/sylph_singer/pawn_sylph_singer_atk.png" id="1_os2tu"]
+[ext_resource type="Texture2D" uid="uid://c53oi63ofchxh" path="res://images/battle_enemy_pawns/sylph_singer/pawn_sylph_singer_cast.png" id="2_mhoru"]
+[ext_resource type="Texture2D" uid="uid://b0nmja4g0esqw" path="res://images/battle_enemy_pawns/sylph_singer/pawn_sylph_singer_def.png" id="3_qy8br"]
+[ext_resource type="Texture2D" uid="uid://hyvder6x4qln" path="res://images/battle_enemy_pawns/sylph_singer/pawn_sylph_singer_hurt.png" id="4_pe316"]
+[ext_resource type="Texture2D" uid="uid://cxuduxvs2m8t4" path="res://images/battle_enemy_pawns/sylph_singer/pawn_sylph_singer_std.png" id="5_o02nf"]
+[ext_resource type="Script" uid="uid://bh4dgrr2at34x" path="res://resources/SpriteSet.gd" id="6_f1eh6"]
+
+[resource]
+script = ExtResource("6_f1eh6")
+image_std = ExtResource("5_o02nf")
+image_atk = ExtResource("1_os2tu")
+image_def = ExtResource("3_qy8br")
+image_cast = ExtResource("2_mhoru")
+image_hurt = ExtResource("4_pe316")
+metadata/_custom_type_script = "uid://bh4dgrr2at34x"

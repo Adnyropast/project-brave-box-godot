@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="Enemy" load_steps=3 format=3 uid="uid://drta8ibf43ji8"]
+
+[ext_resource type="Script" uid="uid://bj656ro4kx132" path="res://resources/Enemy.gd" id="1_ut53e"]
+[ext_resource type="Resource" uid="uid://dmwsuwxsepcmy" path="res://resources/sprite_sets/tribes/spriteset_mole_scientist.tres" id="2_ut53e"]
+
+[resource]
+script = ExtResource("1_ut53e")
+name = "Mole Scientist"
+sprite_set = ExtResource("2_ut53e")
+resist_severing = 0
+resist_cutting = -1
+resist_piercing = 0
+resist_blasting = 0
+resist_bludgeoning = 0
+resist_fire = 0
+resist_water = -1
+resist_lightning = 0
+resist_earth = 0
+resist_wind = 0
+resist_light = -1
+resist_dark = 1
+metadata/_custom_type_script = "uid://bj656ro4kx132"

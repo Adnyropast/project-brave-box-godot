@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="Battle" load_steps=7 format=3 uid="uid://dot8o1kp3xxvk"]
+
+[ext_resource type="PackedScene" uid="uid://bsd8gw5tlu1k5" path="res://scenes/arenas/arena_marcial_tower.tscn" id="1_e4dnf"]
+[ext_resource type="Script" uid="uid://bj656ro4kx132" path="res://resources/Enemy.gd" id="2_ane0r"]
+[ext_resource type="Resource" uid="uid://ci2wgry2wava2" path="res://resources/enemies/tribes/birdian_slicer.tres" id="3_ediic"]
+[ext_resource type="Resource" uid="uid://14a7tm3xbscp" path="res://resources/enemies/tribes/birdian_archer.tres" id="3_v4pcb"]
+[ext_resource type="Script" uid="uid://dae1o78payp5a" path="res://resources/Battle.gd" id="4_ldcwb"]
+[ext_resource type="Resource" uid="uid://crlewixg0ogvu" path="res://resources/enemies/tribes/birdian_singer.tres" id="5_h23ah"]
+
+[resource]
+script = ExtResource("4_ldcwb")
+arena = ExtResource("1_e4dnf")
+enemy_party = Array[ExtResource("2_ane0r")]([ExtResource("3_v4pcb"), ExtResource("3_ediic"), ExtResource("5_h23ah")])
+danger_level = 60
+metadata/_custom_type_script = "uid://dae1o78payp5a"

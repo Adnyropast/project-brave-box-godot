@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="SpriteSet" load_steps=7 format=3 uid="uid://dmwsuwxsepcmy"]
+
+[ext_resource type="Texture2D" uid="uid://bv6470wno15qn" path="res://images/battle_enemy_pawns/mole_scientist/pawn_mole_scientist_atk.png" id="1_yjnvq"]
+[ext_resource type="Texture2D" uid="uid://ckobpm1kxjdcr" path="res://images/battle_enemy_pawns/mole_scientist/pawn_mole_scientist_cast.png" id="2_tnnae"]
+[ext_resource type="Texture2D" uid="uid://bykk62e33hx0x" path="res://images/battle_enemy_pawns/mole_scientist/pawn_mole_scientist_def.png" id="3_u65nw"]
+[ext_resource type="Texture2D" uid="uid://k7v1ervliyrl" path="res://images/battle_enemy_pawns/mole_scientist/pawn_mole_scientist_hurt.png" id="4_ypygo"]
+[ext_resource type="Texture2D" uid="uid://cs0er718cpch1" path="res://images/battle_enemy_pawns/mole_scientist/pawn_mole_scientist_std.png" id="5_6pata"]
+[ext_resource type="Script" uid="uid://bh4dgrr2at34x" path="res://resources/SpriteSet.gd" id="6_teol8"]
+
+[resource]
+script = ExtResource("6_teol8")
+image_std = ExtResource("5_6pata")
+image_atk = ExtResource("1_yjnvq")
+image_def = ExtResource("3_u65nw")
+image_cast = ExtResource("2_tnnae")
+image_hurt = ExtResource("4_ypygo")
+metadata/_custom_type_script = "uid://bh4dgrr2at34x"

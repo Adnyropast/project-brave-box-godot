@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Mission" load_steps=3 format=3 uid="uid://cj35h240yx2d4"]
+
+[ext_resource type="Script" uid="uid://l3di8hrrnoea" path="res://resources/Mission.gd" id="1_c3314"]
+[ext_resource type="Resource" uid="uid://kjgo32p3dgg6" path="res://resources/battles/tribes_battles/battle_tribe_animant.tres" id="1_oc5en"]
+
+[resource]
+script = ExtResource("1_c3314")
+title = "Battle Against Remnants"
+battle = ExtResource("1_oc5en")
+metadata/_custom_type_script = "uid://l3di8hrrnoea"

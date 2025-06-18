@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Mission" load_steps=3 format=3 uid="uid://b6yyjaqrftrac"]
+
+[ext_resource type="Resource" uid="uid://dot8o1kp3xxvk" path="res://resources/battles/tribes_battles/battle_tribe_marcial_tower.tres" id="1_evysa"]
+[ext_resource type="Script" uid="uid://l3di8hrrnoea" path="res://resources/Mission.gd" id="1_fd6tw"]
+
+[resource]
+script = ExtResource("1_fd6tw")
+title = "Battle Against Birdians"
+battle = ExtResource("1_evysa")
+metadata/_custom_type_script = "uid://l3di8hrrnoea"

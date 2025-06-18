@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="SpriteSet" load_steps=7 format=3 uid="uid://bhlf1vhwou4ix"]
+
+[ext_resource type="Texture2D" uid="uid://cn0napxnrylt2" path="res://images/battle_monster_pawns/zombie/pawn_zombie_atk.png" id="1_4dvay"]
+[ext_resource type="Script" uid="uid://bh4dgrr2at34x" path="res://resources/SpriteSet.gd" id="1_oe7kn"]
+[ext_resource type="Texture2D" uid="uid://dre2lof1ge2rh" path="res://images/battle_monster_pawns/zombie/pawn_zombie_cast.png" id="2_u1048"]
+[ext_resource type="Texture2D" uid="uid://brhye1lrtrnco" path="res://images/battle_monster_pawns/zombie/pawn_zombie_def.png" id="3_kpiet"]
+[ext_resource type="Texture2D" uid="uid://cr1jc7n33hjq" path="res://images/battle_monster_pawns/zombie/pawn_zombie_hurt.png" id="4_onydg"]
+[ext_resource type="Texture2D" uid="uid://cb551skcp032x" path="res://images/battle_monster_pawns/zombie/pawn_zombie_std.png" id="5_u6oop"]
+
+[resource]
+script = ExtResource("1_oe7kn")
+image_std = ExtResource("5_u6oop")
+image_atk = ExtResource("1_4dvay")
+image_def = ExtResource("3_kpiet")
+image_cast = ExtResource("2_u1048")
+image_hurt = ExtResource("4_onydg")
+metadata/_custom_type_script = "uid://bh4dgrr2at34x"

@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="SpriteSet" load_steps=7 format=3 uid="uid://cltkm2yk5eymk"]
+
+[ext_resource type="Texture2D" uid="uid://bjweg862tvsv5" path="res://images/battle_enemy_pawns/remnant_gunner/pawn_remnant_gunner_atk.png" id="1_3dc4q"]
+[ext_resource type="Texture2D" uid="uid://bpeyy663jebsh" path="res://images/battle_enemy_pawns/remnant_gunner/pawn_remnant_gunner_cast.png" id="2_8b23r"]
+[ext_resource type="Texture2D" uid="uid://dweq368jyi3v" path="res://images/battle_enemy_pawns/remnant_gunner/pawn_remnant_gunner_def.png" id="3_gq0im"]
+[ext_resource type="Texture2D" uid="uid://cqka0uismboby" path="res://images/battle_enemy_pawns/remnant_gunner/pawn_remnant_gunner_hurt.png" id="4_r7kwc"]
+[ext_resource type="Texture2D" uid="uid://c0ypp44dyu367" path="res://images/battle_enemy_pawns/remnant_gunner/pawn_remnant_gunner_std.png" id="5_ppxek"]
+[ext_resource type="Script" uid="uid://bh4dgrr2at34x" path="res://resources/SpriteSet.gd" id="6_5n25j"]
+
+[resource]
+script = ExtResource("6_5n25j")
+image_std = ExtResource("5_ppxek")
+image_atk = ExtResource("1_3dc4q")
+image_def = ExtResource("3_gq0im")
+image_cast = ExtResource("2_8b23r")
+image_hurt = ExtResource("4_r7kwc")
+metadata/_custom_type_script = "uid://bh4dgrr2at34x"

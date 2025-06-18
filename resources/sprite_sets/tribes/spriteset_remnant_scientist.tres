@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="SpriteSet" load_steps=7 format=3 uid="uid://b05gk2mjs444l"]
+
+[ext_resource type="Texture2D" uid="uid://g24gax4wihej" path="res://images/battle_enemy_pawns/remnant_scientist/pawn_remnant_scientist_atk.png" id="1_4dydy"]
+[ext_resource type="Texture2D" uid="uid://cy08jmvtob2np" path="res://images/battle_enemy_pawns/remnant_scientist/pawn_remnant_scientist_cast.png" id="2_dotmk"]
+[ext_resource type="Texture2D" uid="uid://kawaxei7a1eu" path="res://images/battle_enemy_pawns/remnant_scientist/pawn_remnant_scientist_def.png" id="3_qr2x1"]
+[ext_resource type="Texture2D" uid="uid://cjafnucs7btya" path="res://images/battle_enemy_pawns/remnant_scientist/pawn_remnant_scientist_hurt.png" id="4_oa3pp"]
+[ext_resource type="Texture2D" uid="uid://dycjrg1j1ohdn" path="res://images/battle_enemy_pawns/remnant_scientist/pawn_remnant_scientist_std.png" id="5_e84yx"]
+[ext_resource type="Script" uid="uid://bh4dgrr2at34x" path="res://resources/SpriteSet.gd" id="6_inw1l"]
+
+[resource]
+script = ExtResource("6_inw1l")
+image_std = ExtResource("5_e84yx")
+image_atk = ExtResource("1_4dydy")
+image_def = ExtResource("3_qr2x1")
+image_cast = ExtResource("2_dotmk")
+image_hurt = ExtResource("4_oa3pp")
+metadata/_custom_type_script = "uid://bh4dgrr2at34x"

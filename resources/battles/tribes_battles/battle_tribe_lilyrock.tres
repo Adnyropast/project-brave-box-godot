@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="Battle" load_steps=7 format=3 uid="uid://78665kmmschx"]
+
+[ext_resource type="PackedScene" uid="uid://omb4byqfv75x" path="res://scenes/arenas/arena_lilyrock.tscn" id="1_r7qnb"]
+[ext_resource type="Script" uid="uid://bj656ro4kx132" path="res://resources/Enemy.gd" id="2_un6l7"]
+[ext_resource type="Resource" uid="uid://bwgjn68ersqvf" path="res://resources/enemies/tribes/lilyrockan_scientist.tres" id="3_6dm1j"]
+[ext_resource type="Resource" uid="uid://cby7tv2stvb2r" path="res://resources/enemies/tribes/lilyrockan_gunner.tres" id="3_8x8fx"]
+[ext_resource type="Resource" uid="uid://b7ubggs3dcoa3" path="res://resources/enemies/tribes/lilyrockan_slicer.tres" id="4_0t0bl"]
+[ext_resource type="Script" uid="uid://dae1o78payp5a" path="res://resources/Battle.gd" id="4_mgmgl"]
+
+[resource]
+script = ExtResource("4_mgmgl")
+arena = ExtResource("1_r7qnb")
+enemy_party = Array[ExtResource("2_un6l7")]([ExtResource("3_8x8fx"), ExtResource("4_0t0bl"), ExtResource("3_6dm1j")])
+danger_level = 40
+metadata/_custom_type_script = "uid://dae1o78payp5a"

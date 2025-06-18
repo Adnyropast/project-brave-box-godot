@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="SpriteSet" load_steps=7 format=3 uid="uid://bu7h8d3j65i0i"]
+
+[ext_resource type="Texture2D" uid="uid://bxb6cgilxffhx" path="res://images/battle_enemy_pawns/bugman_lancer/pawn_bugman_lancer_atk.png" id="1_tosom"]
+[ext_resource type="Texture2D" uid="uid://c5j4lcifdi5t5" path="res://images/battle_enemy_pawns/bugman_lancer/pawn_bugman_lancer_cast.png" id="2_1loki"]
+[ext_resource type="Texture2D" uid="uid://bb3bbaoh0enp3" path="res://images/battle_enemy_pawns/bugman_lancer/pawn_bugman_lancer_def.png" id="3_uwvsd"]
+[ext_resource type="Texture2D" uid="uid://dkn6luskc3roe" path="res://images/battle_enemy_pawns/bugman_lancer/pawn_bugman_lancer_hurt.png" id="4_vmgm3"]
+[ext_resource type="Texture2D" uid="uid://bel2wnir4735q" path="res://images/battle_enemy_pawns/bugman_lancer/pawn_bugman_lancer_std.png" id="5_cukem"]
+[ext_resource type="Script" uid="uid://bh4dgrr2at34x" path="res://resources/SpriteSet.gd" id="6_sdpjq"]
+
+[resource]
+script = ExtResource("6_sdpjq")
+image_std = ExtResource("5_cukem")
+image_atk = ExtResource("1_tosom")
+image_def = ExtResource("3_uwvsd")
+image_cast = ExtResource("2_1loki")
+image_hurt = ExtResource("4_vmgm3")
+metadata/_custom_type_script = "uid://bh4dgrr2at34x"

@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="Enemy" load_steps=3 format=3 uid="uid://c3c8d75mc5iye"]
+
+[ext_resource type="Script" uid="uid://bj656ro4kx132" path="res://resources/Enemy.gd" id="1_syibx"]
+[ext_resource type="Resource" uid="uid://cf3ftrvt76o03" path="res://resources/sprite_sets/monsters/spriteset_tortoise.tres" id="2_8n3vl"]
+
+[resource]
+script = ExtResource("1_syibx")
+name = "Tortoise"
+sprite_set = ExtResource("2_8n3vl")
+resist_severing = 0
+resist_cutting = 0
+resist_piercing = 0
+resist_blasting = 0
+resist_bludgeoning = -1
+resist_fire = 1
+resist_water = 1
+resist_lightning = -1
+resist_earth = -1
+resist_wind = 0
+resist_light = -1
+resist_dark = 1
+metadata/_custom_type_script = "uid://bj656ro4kx132"

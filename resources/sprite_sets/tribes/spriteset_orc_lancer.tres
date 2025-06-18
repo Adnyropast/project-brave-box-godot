@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="SpriteSet" load_steps=7 format=3 uid="uid://b4ti7amfyt7gu"]
+
+[ext_resource type="Texture2D" uid="uid://dm2cwew68ugkh" path="res://images/battle_enemy_pawns/orc_lancer/pawn_orc_lancer_atk.png" id="1_pq4vb"]
+[ext_resource type="Texture2D" uid="uid://dwr6f33uo6b66" path="res://images/battle_enemy_pawns/orc_lancer/pawn_orc_lancer_cast.png" id="2_8nbnp"]
+[ext_resource type="Texture2D" uid="uid://cf5ys2gwc5h7q" path="res://images/battle_enemy_pawns/orc_lancer/pawn_orc_lancer_def.png" id="3_fy2c2"]
+[ext_resource type="Texture2D" uid="uid://b0tugc6qmgji8" path="res://images/battle_enemy_pawns/orc_lancer/pawn_orc_lancer_hurt.png" id="4_3a2oh"]
+[ext_resource type="Texture2D" uid="uid://dh8fax4xomdmg" path="res://images/battle_enemy_pawns/orc_lancer/pawn_orc_lancer_std.png" id="5_di1f2"]
+[ext_resource type="Script" uid="uid://bh4dgrr2at34x" path="res://resources/SpriteSet.gd" id="6_ksky8"]
+
+[resource]
+script = ExtResource("6_ksky8")
+image_std = ExtResource("5_di1f2")
+image_atk = ExtResource("1_pq4vb")
+image_def = ExtResource("3_fy2c2")
+image_cast = ExtResource("2_8nbnp")
+image_hurt = ExtResource("4_3a2oh")
+metadata/_custom_type_script = "uid://bh4dgrr2at34x"

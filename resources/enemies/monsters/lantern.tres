@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="Enemy" load_steps=3 format=3 uid="uid://b7i5in73p651m"]
+
+[ext_resource type="Script" uid="uid://bj656ro4kx132" path="res://resources/Enemy.gd" id="1_7mbp7"]
+[ext_resource type="Resource" uid="uid://b4r1eseyqgt2r" path="res://resources/sprite_sets/monsters/spriteset_lantern.tres" id="2_xhkhi"]
+
+[resource]
+script = ExtResource("1_7mbp7")
+name = "Lantern"
+sprite_set = ExtResource("2_xhkhi")
+resist_severing = 1
+resist_cutting = 1
+resist_piercing = -1
+resist_blasting = -1
+resist_bludgeoning = 0
+resist_fire = 0
+resist_water = -1
+resist_lightning = 2
+resist_earth = 0
+resist_wind = 1
+resist_light = 1
+resist_dark = -1
+metadata/_custom_type_script = "uid://bj656ro4kx132"
