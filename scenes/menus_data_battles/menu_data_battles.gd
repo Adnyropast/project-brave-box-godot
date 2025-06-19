@@ -36,6 +36,7 @@ func _on_button_remove_pressed() -> void:
 func _on_button_confirm_pressed() -> void:
 	var mission: Mission = Mission.new()
 	
+	mission.completable = false
 	mission.battle = Battle.new()
 	mission.battle.arena = preload("res://scenes/arenas/arena_animant.tscn")
 	mission.battle.enemy_party = get_enemies()

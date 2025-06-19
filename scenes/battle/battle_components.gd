@@ -99,6 +99,8 @@ func win_battle():
 	victory_screen.pot_money = pot_money
 	tree.root.add_child(victory_screen)
 	
+	PlayerMissions.clear_mission(mission)
+	
 	PlayerParty.add_money(pot_money)
 	
 	for party_member in PlayerParty.team:

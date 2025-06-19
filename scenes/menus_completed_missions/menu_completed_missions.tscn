@@ -1,0 +1,32 @@
+[gd_scene load_steps=2 format=3 uid="uid://dmwbvelneev3y"]
+
+[ext_resource type="Script" uid="uid://qq4neq53tldp" path="res://scenes/menus_completed_missions/menu_completed_missions.gd" id="1_ahify"]
+
+[node name="MenuCompletedMissions" type="Control"]
+process_mode = 2
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ahify")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 16
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+
+[node name="VBoxContainerButtons" type="VBoxContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="ButtonClose" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Close"
+
+[connection signal="pressed" from="MarginContainer/VBoxContainer/ButtonClose" to="." method="_on_button_close_pressed"]

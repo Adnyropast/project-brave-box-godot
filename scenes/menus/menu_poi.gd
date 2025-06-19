@@ -29,13 +29,30 @@ func add_buttons():
 			
 			$MarginContainer/VBoxContainer/VBoxContainer.add_child(button)
 		
+		var uncompleted_missions: Array[Mission] = []
+		var completed_missions: Array[Mission] = []
+		
 		for mission in point_of_interest.missions:
+			if PlayerMissions.is_mission_cleared(mission):
+				completed_missions.append(mission)
+			else:
+				uncompleted_missions.append(mission)
+		
+		for mission in uncompleted_missions:
 			var button = preload("res://scenes/menus/button_mission.tscn").instantiate()
 			
 			button.text = mission.title
 			button.mission = mission
 			
 			$"MarginContainer/VBoxContainer/VBoxContainer".add_child(button)
+		
+		if completed_missions.size() > 0:
+			var button = preload("res://scenes/menus/button_completed_missions.tscn").instantiate()
+			
+			button.missions = completed_missions
+			button.menu_poi = self
+			
+			$MarginContainer/VBoxContainer/VBoxContainer.add_child(button)
 
 func _ready() -> void:
 	add_buttons()
