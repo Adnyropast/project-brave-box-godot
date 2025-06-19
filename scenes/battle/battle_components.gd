@@ -76,9 +76,9 @@ func clean_tree_root():
 	for child in tree.root.get_children():
 		tree.root.remove_child(child)
 
-func on_enemy_defeated(_pawn: PawnComponents) -> void:
-	pot_exp = pot_exp + 1000
-	pot_money = pot_money + 1000
+func on_enemy_defeated(pawn: PawnComponents) -> void:
+	pot_exp = pot_exp + EnemyRewards.get_exp(pawn.variables.get_level()) * 100
+	pot_money = pot_money + EnemyRewards.get_money(pawn.variables.get_level()) * 100
 
 func all_enemies_defeated() -> bool:
 	for pawn in pawns_enemy:
