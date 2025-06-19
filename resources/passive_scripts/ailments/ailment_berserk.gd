@@ -13,10 +13,7 @@ func get_p_def_multiplier() -> float:
 	return 0.5
 
 func block_turn() -> ActiveScript:
-	var active_abilities = [
-		preload("res://resources/active_abilities/attack.tres"),
-		preload("res://resources/active_abilities/magic_fire.tres"),
-	]
+	var active_abilities = user.variables.get_active_abilities_attacking()
 	
 	var active_ability = active_abilities[randi_range(0, active_abilities.size() - 1)]
 	var active_script: ActiveScript = active_ability.gdscript.new()

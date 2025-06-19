@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="AbilitySet" load_steps=5 format=3 uid="uid://5i7hsua5ool0"]
+
+[ext_resource type="Script" uid="uid://clugbtxltbj7y" path="res://resources/ActiveAbility.gd" id="1_a3ekv"]
+[ext_resource type="Resource" uid="uid://ddmhq6sltw4sf" path="res://resources/active_abilities/boost_stats/boost_physical_attack.tres" id="2_ima1e"]
+[ext_resource type="Script" uid="uid://bbn0mdaymwojd" path="res://resources/AbilitySet.gd" id="2_mylpd"]
+[ext_resource type="Resource" uid="uid://c7pyge4a8upux" path="res://resources/active_abilities/boost_stats/boost_magical_attack.tres" id="3_5eeko"]
+
+[resource]
+script = ExtResource("2_mylpd")
+name = ""
+abilities = Array[ExtResource("1_a3ekv")]([ExtResource("2_ima1e"), ExtResource("3_5eeko")])
+metadata/_custom_type_script = "uid://bbn0mdaymwojd"

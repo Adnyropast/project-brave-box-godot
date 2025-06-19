@@ -1,5 +1,6 @@
-[gd_resource type="Resource" script_class="Enemy" load_steps=3 format=3 uid="uid://di3h0ewcyawoa"]
+[gd_resource type="Resource" script_class="Enemy" load_steps=4 format=3 uid="uid://di3h0ewcyawoa"]
 
+[ext_resource type="Resource" uid="uid://c208015rr7n85" path="res://resources/ability_sets/sets_enemy_tribes/set_orc_healer.tres" id="1_2o8oa"]
 [ext_resource type="Script" uid="uid://bj656ro4kx132" path="res://resources/Enemy.gd" id="1_vm2rk"]
 [ext_resource type="Resource" uid="uid://bwewkr45dxnv8" path="res://resources/sprite_sets/tribes/spriteset_orc_healer.tres" id="7_34jnw"]
 
@@ -7,6 +8,7 @@
 script = ExtResource("1_vm2rk")
 name = "Orc Healer"
 sprite_set = ExtResource("7_34jnw")
+ability_set = ExtResource("1_2o8oa")
 resist_severing = 0
 resist_cutting = 0
 resist_piercing = 0

@@ -1,12 +1,14 @@
-[gd_resource type="Resource" script_class="Enemy" load_steps=3 format=3 uid="uid://br7ugmhqgch2w"]
+[gd_resource type="Resource" script_class="Enemy" load_steps=4 format=3 uid="uid://br7ugmhqgch2w"]
 
 [ext_resource type="Script" uid="uid://bj656ro4kx132" path="res://resources/Enemy.gd" id="1_5w7ib"]
+[ext_resource type="Resource" uid="uid://cvxbmy3fbgjxw" path="res://resources/ability_sets/sets_enemy_tribes/set_lizardman_shieldbearer.tres" id="1_lowa6"]
 [ext_resource type="Resource" uid="uid://cs6vogao3e7v0" path="res://resources/sprite_sets/tribes/spriteset_lizardman_shieldbearer.tres" id="2_5w7ib"]
 
 [resource]
 script = ExtResource("1_5w7ib")
 name = "Lizardman Shieldbearer"
 sprite_set = ExtResource("2_5w7ib")
+ability_set = ExtResource("1_lowa6")
 resist_severing = 0
 resist_cutting = 0
 resist_piercing = 0

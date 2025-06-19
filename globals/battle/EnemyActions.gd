@@ -3,18 +3,13 @@ extends Node
 class_name EnemyActions
 
 static func take_action(pawn: PawnComponents):
-	var active_ability = pick_ability()
+	var active_ability = pick_ability(pawn)
 	var targets = pick_targets(pawn, active_ability)
 	
 	pawn.confirm_targets(active_ability, targets)
 
-static func pick_ability():
-	var active_abilities = [
-		preload("res://resources/active_abilities/attack.tres"),
-		preload("res://resources/active_abilities/magic_fire.tres"),
-		preload("res://resources/active_abilities/magic_healing.tres"),
-		preload("res://resources/active_abilities/defend.tres"),
-	]
+static func pick_ability(pawn: PawnComponents):
+	var active_abilities = pawn.variables.get_active_abilities_all()
 	
 	var active_ability = active_abilities[randi_range(0, active_abilities.size() - 1)]
 	

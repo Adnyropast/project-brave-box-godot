@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="AbilitySet" load_steps=4 format=3 uid="uid://cv46e23gpdg66"]
+
+[ext_resource type="Script" uid="uid://clugbtxltbj7y" path="res://resources/ActiveAbility.gd" id="1_12lbc"]
+[ext_resource type="Resource" uid="uid://2laoyevejsl4" path="res://resources/active_abilities/magic_wind.tres" id="2_2tgni"]
+[ext_resource type="Script" uid="uid://bbn0mdaymwojd" path="res://resources/AbilitySet.gd" id="2_mjkwt"]
+
+[resource]
+script = ExtResource("2_mjkwt")
+name = ""
+abilities = Array[ExtResource("1_12lbc")]([ExtResource("2_2tgni")])
+metadata/_custom_type_script = "uid://bbn0mdaymwojd"

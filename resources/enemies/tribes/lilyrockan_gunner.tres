@@ -1,12 +1,14 @@
-[gd_resource type="Resource" script_class="Enemy" load_steps=3 format=3 uid="uid://cby7tv2stvb2r"]
+[gd_resource type="Resource" script_class="Enemy" load_steps=4 format=3 uid="uid://cby7tv2stvb2r"]
 
 [ext_resource type="Script" uid="uid://bj656ro4kx132" path="res://resources/Enemy.gd" id="1_3grir"]
+[ext_resource type="Resource" uid="uid://dey1ssmwuiee1" path="res://resources/ability_sets/sets_enemy_tribes/set_lilyrockan_gunner.tres" id="1_fusxb"]
 [ext_resource type="Resource" uid="uid://kdkuls2wco8q" path="res://resources/sprite_sets/tribes/spriteset_lilyrockan_gunner.tres" id="2_3grir"]
 
 [resource]
 script = ExtResource("1_3grir")
 name = "Lilyrockan Gunner"
 sprite_set = ExtResource("2_3grir")
+ability_set = ExtResource("1_fusxb")
 resist_severing = 0
 resist_cutting = 0
 resist_piercing = 0

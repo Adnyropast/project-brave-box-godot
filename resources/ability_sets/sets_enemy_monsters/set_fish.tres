@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="AbilitySet" load_steps=5 format=3 uid="uid://c1nw5huwvc78c"]
+
+[ext_resource type="Script" uid="uid://clugbtxltbj7y" path="res://resources/ActiveAbility.gd" id="1_vhwef"]
+[ext_resource type="Resource" uid="uid://dfwt3gqpr03qy" path="res://resources/active_abilities/magic_water.tres" id="2_0aya7"]
+[ext_resource type="Script" uid="uid://bbn0mdaymwojd" path="res://resources/AbilitySet.gd" id="2_pfvn4"]
+[ext_resource type="Resource" uid="uid://co44ltk7e6e3a" path="res://resources/active_abilities/weaken_stats/weaken_magical_defense.tres" id="3_w167p"]
+
+[resource]
+script = ExtResource("2_pfvn4")
+name = ""
+abilities = Array[ExtResource("1_vhwef")]([ExtResource("2_0aya7"), ExtResource("3_w167p")])
+metadata/_custom_type_script = "uid://bbn0mdaymwojd"

@@ -1,12 +1,14 @@
-[gd_resource type="Resource" script_class="Enemy" load_steps=3 format=3 uid="uid://dkdheij8mxvhe"]
+[gd_resource type="Resource" script_class="Enemy" load_steps=4 format=3 uid="uid://dkdheij8mxvhe"]
 
 [ext_resource type="Script" uid="uid://bj656ro4kx132" path="res://resources/Enemy.gd" id="1_5va1c"]
+[ext_resource type="Resource" uid="uid://dby2p5lo0bf0m" path="res://resources/ability_sets/sets_enemy_monsters/set_mushroom.tres" id="1_ulnba"]
 [ext_resource type="Resource" uid="uid://var8ptseh1jh" path="res://resources/sprite_sets/monsters/spriteset_mushroom.tres" id="2_6fj7s"]
 
 [resource]
 script = ExtResource("1_5va1c")
 name = "Mushroom"
 sprite_set = ExtResource("2_6fj7s")
+ability_set = ExtResource("1_ulnba")
 resist_severing = -1
 resist_cutting = 0
 resist_piercing = 0

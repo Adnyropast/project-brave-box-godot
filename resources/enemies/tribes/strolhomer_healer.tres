@@ -1,5 +1,6 @@
-[gd_resource type="Resource" script_class="Enemy" load_steps=3 format=3 uid="uid://dy8osbt2diqow"]
+[gd_resource type="Resource" script_class="Enemy" load_steps=4 format=3 uid="uid://dy8osbt2diqow"]
 
+[ext_resource type="Resource" uid="uid://bed8ve4obfqci" path="res://resources/ability_sets/sets_enemy_tribes/set_strolhomer_healer.tres" id="1_6ysj6"]
 [ext_resource type="Script" uid="uid://bj656ro4kx132" path="res://resources/Enemy.gd" id="1_nk1ho"]
 [ext_resource type="Resource" uid="uid://kojojf7aaw5p" path="res://resources/sprite_sets/tribes/spriteset_strolhomer_healer.tres" id="2_nk1ho"]
 
@@ -7,6 +8,7 @@
 script = ExtResource("1_nk1ho")
 name = "Strolhomer Healer"
 sprite_set = ExtResource("2_nk1ho")
+ability_set = ExtResource("1_6ysj6")
 resist_severing = 0
 resist_cutting = 0
 resist_piercing = 0

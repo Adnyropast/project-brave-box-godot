@@ -1,12 +1,14 @@
-[gd_resource type="Resource" script_class="Enemy" load_steps=3 format=3 uid="uid://d1d4v6rwgj4ws"]
+[gd_resource type="Resource" script_class="Enemy" load_steps=4 format=3 uid="uid://d1d4v6rwgj4ws"]
 
 [ext_resource type="Script" uid="uid://bj656ro4kx132" path="res://resources/Enemy.gd" id="1_auspk"]
+[ext_resource type="Resource" uid="uid://1c2qvjybqgpy" path="res://resources/ability_sets/sets_enemy_monsters/set_sandworm.tres" id="1_cqixr"]
 [ext_resource type="Resource" uid="uid://dvdnx6317rcuy" path="res://resources/sprite_sets/monsters/spriteset_sandworm.tres" id="2_43twd"]
 
 [resource]
 script = ExtResource("1_auspk")
 name = "Sandworm"
 sprite_set = ExtResource("2_43twd")
+ability_set = ExtResource("1_cqixr")
 resist_severing = 0
 resist_cutting = 0
 resist_piercing = 1

@@ -1,5 +1,6 @@
-[gd_resource type="Resource" script_class="Enemy" load_steps=3 format=3 uid="uid://cm0vwuujmo65"]
+[gd_resource type="Resource" script_class="Enemy" load_steps=4 format=3 uid="uid://cm0vwuujmo65"]
 
+[ext_resource type="Resource" uid="uid://c4vbbwc37bdiq" path="res://resources/ability_sets/sets_enemy_tribes/set_prismoid_hex.tres" id="1_3b846"]
 [ext_resource type="Script" uid="uid://bj656ro4kx132" path="res://resources/Enemy.gd" id="1_8ohsp"]
 [ext_resource type="Resource" uid="uid://tfo73k2txldl" path="res://resources/sprite_sets/tribes/spriteset_prismoid_hex.tres" id="2_8ohsp"]
 
@@ -7,6 +8,7 @@
 script = ExtResource("1_8ohsp")
 name = "Prismoid Hex"
 sprite_set = ExtResource("2_8ohsp")
+ability_set = ExtResource("1_3b846")
 resist_severing = 1
 resist_cutting = 1
 resist_piercing = -1

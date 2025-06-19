@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="AbilitySet" load_steps=5 format=3 uid="uid://dj5prqbf28vvu"]
+
+[ext_resource type="Script" uid="uid://clugbtxltbj7y" path="res://resources/ActiveAbility.gd" id="1_latsi"]
+[ext_resource type="Script" uid="uid://bbn0mdaymwojd" path="res://resources/AbilitySet.gd" id="2_gduvh"]
+[ext_resource type="Resource" uid="uid://2pvpjawfm8c8" path="res://resources/active_abilities/weaken_stats/weaken_evasion.tres" id="2_jpp5q"]
+[ext_resource type="Resource" uid="uid://o2cdqwh54rnh" path="res://resources/active_abilities/weaken_stats/weaken_restorative_power.tres" id="3_adbiq"]
+
+[resource]
+script = ExtResource("2_gduvh")
+name = ""
+abilities = Array[ExtResource("1_latsi")]([ExtResource("2_jpp5q"), ExtResource("3_adbiq")])
+metadata/_custom_type_script = "uid://bbn0mdaymwojd"

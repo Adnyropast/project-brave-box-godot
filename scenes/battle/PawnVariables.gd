@@ -212,5 +212,24 @@ func get_active_abilities() -> Array[ActiveAbility]:
 	
 	if party_member:
 		return party_member.get_active_abilities()
+	elif enemy:
+		return enemy.ability_set.get_active_abilities()
+	
+	return abilities
+
+func get_active_abilities_all() -> Array[ActiveAbility]:
+	var abilities: Array[ActiveAbility] = [
+		preload("res://resources/active_abilities/attack.tres"),
+		preload("res://resources/active_abilities/defend.tres"),
+	]
+	
+	abilities.append_array(get_active_abilities())
+	
+	return abilities
+
+func get_active_abilities_attacking() -> Array[ActiveAbility]:
+	var abilities: Array[ActiveAbility] = [
+		preload("res://resources/active_abilities/attack.tres"),
+	]
 	
 	return abilities

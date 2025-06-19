@@ -1,5 +1,6 @@
-[gd_resource type="Resource" script_class="Enemy" load_steps=3 format=3 uid="uid://c3c8d75mc5iye"]
+[gd_resource type="Resource" script_class="Enemy" load_steps=4 format=3 uid="uid://c3c8d75mc5iye"]
 
+[ext_resource type="Resource" uid="uid://crf03iav5dm6g" path="res://resources/ability_sets/sets_enemy_monsters/set_tortoise.tres" id="1_aw8xl"]
 [ext_resource type="Script" uid="uid://bj656ro4kx132" path="res://resources/Enemy.gd" id="1_syibx"]
 [ext_resource type="Resource" uid="uid://cf3ftrvt76o03" path="res://resources/sprite_sets/monsters/spriteset_tortoise.tres" id="2_8n3vl"]
 
@@ -7,6 +8,7 @@
 script = ExtResource("1_syibx")
 name = "Tortoise"
 sprite_set = ExtResource("2_8n3vl")
+ability_set = ExtResource("1_aw8xl")
 resist_severing = 0
 resist_cutting = 0
 resist_piercing = 0

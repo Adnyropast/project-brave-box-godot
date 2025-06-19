@@ -1,12 +1,14 @@
-[gd_resource type="Resource" script_class="Enemy" load_steps=3 format=3 uid="uid://xtwe82bl5din"]
+[gd_resource type="Resource" script_class="Enemy" load_steps=4 format=3 uid="uid://xtwe82bl5din"]
 
 [ext_resource type="Script" uid="uid://bj656ro4kx132" path="res://resources/Enemy.gd" id="1_b322g"]
+[ext_resource type="Resource" uid="uid://bnyboytkj85b" path="res://resources/ability_sets/sets_enemy_monsters/set_softpuff.tres" id="1_kni2w"]
 [ext_resource type="Resource" uid="uid://csi5n8rk4lhb2" path="res://resources/sprite_sets/monsters/spriteset_softpuff.tres" id="2_05bbp"]
 
 [resource]
 script = ExtResource("1_b322g")
 name = "Softpuff"
 sprite_set = ExtResource("2_05bbp")
+ability_set = ExtResource("1_kni2w")
 resist_severing = 0
 resist_cutting = 0
 resist_piercing = 0

@@ -1,5 +1,6 @@
-[gd_resource type="Resource" script_class="Enemy" load_steps=3 format=3 uid="uid://wkv01yav2u2r"]
+[gd_resource type="Resource" script_class="Enemy" load_steps=4 format=3 uid="uid://wkv01yav2u2r"]
 
+[ext_resource type="Resource" uid="uid://8wf7lrq4bjly" path="res://resources/ability_sets/sets_enemy_monsters/set_spider.tres" id="1_iqm7v"]
 [ext_resource type="Script" uid="uid://bj656ro4kx132" path="res://resources/Enemy.gd" id="1_qso21"]
 [ext_resource type="Resource" uid="uid://c1gs0ahhtxsjr" path="res://resources/sprite_sets/monsters/spriteset_spider.tres" id="2_6edut"]
 
@@ -7,6 +8,7 @@
 script = ExtResource("1_qso21")
 name = "Spider"
 sprite_set = ExtResource("2_6edut")
+ability_set = ExtResource("1_iqm7v")
 resist_severing = 0
 resist_cutting = 0
 resist_piercing = 1

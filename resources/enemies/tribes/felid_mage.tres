@@ -1,12 +1,14 @@
-[gd_resource type="Resource" script_class="Enemy" load_steps=3 format=3 uid="uid://dafjcw0afo3lq"]
+[gd_resource type="Resource" script_class="Enemy" load_steps=4 format=3 uid="uid://dafjcw0afo3lq"]
 
 [ext_resource type="Script" uid="uid://bj656ro4kx132" path="res://resources/Enemy.gd" id="1_2g7se"]
+[ext_resource type="Resource" uid="uid://dakjlgs3h017y" path="res://resources/ability_sets/sets_enemy_tribes/set_felid_mage.tres" id="1_kq4cq"]
 [ext_resource type="Resource" uid="uid://cwec0vo8xiq0x" path="res://resources/sprite_sets/tribes/spriteset_felid_mage.tres" id="7_6usif"]
 
 [resource]
 script = ExtResource("1_2g7se")
 name = "Felid Mage"
 sprite_set = ExtResource("7_6usif")
+ability_set = ExtResource("1_kq4cq")
 resist_severing = 0
 resist_cutting = -1
 resist_piercing = 0

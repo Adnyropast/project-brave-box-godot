@@ -1,5 +1,6 @@
-[gd_resource type="Resource" script_class="Enemy" load_steps=3 format=3 uid="uid://blmpabk43cprd"]
+[gd_resource type="Resource" script_class="Enemy" load_steps=4 format=3 uid="uid://blmpabk43cprd"]
 
+[ext_resource type="Resource" uid="uid://5i7hsua5ool0" path="res://resources/ability_sets/sets_enemy_tribes/set_sylph_singer.tres" id="1_mv1jq"]
 [ext_resource type="Script" uid="uid://bj656ro4kx132" path="res://resources/Enemy.gd" id="1_reh1d"]
 [ext_resource type="Resource" uid="uid://c1tmaikho86xg" path="res://resources/sprite_sets/tribes/spriteset_sylph_singer.tres" id="2_reh1d"]
 
@@ -7,6 +8,7 @@
 script = ExtResource("1_reh1d")
 name = "Sylph Singer"
 sprite_set = ExtResource("2_reh1d")
+ability_set = ExtResource("1_mv1jq")
 resist_severing = -1
 resist_cutting = 0
 resist_piercing = 0

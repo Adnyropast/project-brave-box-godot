@@ -1,12 +1,14 @@
-[gd_resource type="Resource" script_class="Enemy" load_steps=3 format=3 uid="uid://co8c7632khs4h"]
+[gd_resource type="Resource" script_class="Enemy" load_steps=4 format=3 uid="uid://co8c7632khs4h"]
 
 [ext_resource type="Script" uid="uid://bj656ro4kx132" path="res://resources/Enemy.gd" id="1_6wf2u"]
+[ext_resource type="Resource" uid="uid://c0ph3qdmg6etc" path="res://resources/ability_sets/sets_enemy_tribes/set_prismoid_chopper.tres" id="1_fwmrm"]
 [ext_resource type="Resource" uid="uid://dr2lbm6pefcec" path="res://resources/sprite_sets/tribes/spriteset_prismoid_chopper.tres" id="2_6wf2u"]
 
 [resource]
 script = ExtResource("1_6wf2u")
 name = "Prismoid Chopper"
 sprite_set = ExtResource("2_6wf2u")
+ability_set = ExtResource("1_fwmrm")
 resist_severing = 1
 resist_cutting = 1
 resist_piercing = -1

@@ -1,12 +1,14 @@
-[gd_resource type="Resource" script_class="Enemy" load_steps=3 format=3 uid="uid://dk4wp8ttf7hf7"]
+[gd_resource type="Resource" script_class="Enemy" load_steps=4 format=3 uid="uid://dk4wp8ttf7hf7"]
 
 [ext_resource type="Script" uid="uid://bj656ro4kx132" path="res://resources/Enemy.gd" id="1_p88td"]
+[ext_resource type="Resource" uid="uid://bvbgqgl1sl20j" path="res://resources/ability_sets/sets_enemy_tribes/set_goblin_archer.tres" id="1_pkw4j"]
 [ext_resource type="Resource" uid="uid://m53ss3yyhah2" path="res://resources/sprite_sets/tribes/spriteset_goblin_archer.tres" id="7_8k5n1"]
 
 [resource]
 script = ExtResource("1_p88td")
 name = "Goblin Archer"
 sprite_set = ExtResource("7_8k5n1")
+ability_set = ExtResource("1_pkw4j")
 resist_severing = 0
 resist_cutting = 0
 resist_piercing = 0

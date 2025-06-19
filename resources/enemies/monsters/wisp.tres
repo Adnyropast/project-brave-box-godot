@@ -1,5 +1,6 @@
-[gd_resource type="Resource" script_class="Enemy" load_steps=3 format=3 uid="uid://bd2tsa7y0njbh"]
+[gd_resource type="Resource" script_class="Enemy" load_steps=4 format=3 uid="uid://bd2tsa7y0njbh"]
 
+[ext_resource type="Resource" uid="uid://dcs08arv1vypy" path="res://resources/ability_sets/sets_enemy_monsters/set_wisp.tres" id="1_77ict"]
 [ext_resource type="Script" uid="uid://bj656ro4kx132" path="res://resources/Enemy.gd" id="1_lgl80"]
 [ext_resource type="Resource" uid="uid://b4ci2acvfr0mo" path="res://resources/sprite_sets/monsters/spriteset_wisp.tres" id="2_t4scd"]
 
@@ -7,6 +8,7 @@
 script = ExtResource("1_lgl80")
 name = "Wisp"
 sprite_set = ExtResource("2_t4scd")
+ability_set = ExtResource("1_77ict")
 resist_severing = 1
 resist_cutting = 1
 resist_piercing = 1

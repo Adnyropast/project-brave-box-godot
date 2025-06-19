@@ -1,12 +1,14 @@
-[gd_resource type="Resource" script_class="Enemy" load_steps=3 format=3 uid="uid://b7i5in73p651m"]
+[gd_resource type="Resource" script_class="Enemy" load_steps=4 format=3 uid="uid://b7i5in73p651m"]
 
 [ext_resource type="Script" uid="uid://bj656ro4kx132" path="res://resources/Enemy.gd" id="1_7mbp7"]
+[ext_resource type="Resource" uid="uid://cirujakhk0jqb" path="res://resources/ability_sets/sets_enemy_monsters/set_lantern.tres" id="1_l1axi"]
 [ext_resource type="Resource" uid="uid://b4r1eseyqgt2r" path="res://resources/sprite_sets/monsters/spriteset_lantern.tres" id="2_xhkhi"]
 
 [resource]
 script = ExtResource("1_7mbp7")
 name = "Lantern"
 sprite_set = ExtResource("2_xhkhi")
+ability_set = ExtResource("1_l1axi")
 resist_severing = 1
 resist_cutting = 1
 resist_piercing = -1

@@ -1,12 +1,14 @@
-[gd_resource type="Resource" script_class="Enemy" load_steps=3 format=3 uid="uid://xyo4mknnxwmb"]
+[gd_resource type="Resource" script_class="Enemy" load_steps=4 format=3 uid="uid://xyo4mknnxwmb"]
 
 [ext_resource type="Script" uid="uid://bj656ro4kx132" path="res://resources/Enemy.gd" id="1_h0je3"]
+[ext_resource type="Resource" uid="uid://bv0n4x3krqdpu" path="res://resources/ability_sets/sets_enemy_tribes/set_wraith_chopper.tres" id="1_o616h"]
 [ext_resource type="Resource" uid="uid://di5fj25wwymiq" path="res://resources/sprite_sets/tribes/spriteset_wraith_chopper.tres" id="2_h0je3"]
 
 [resource]
 script = ExtResource("1_h0je3")
 name = "Wraith Chopper"
 sprite_set = ExtResource("2_h0je3")
+ability_set = ExtResource("1_o616h")
 resist_severing = 1
 resist_cutting = 1
 resist_piercing = 1

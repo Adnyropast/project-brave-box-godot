@@ -1,12 +1,14 @@
-[gd_resource type="Resource" script_class="Enemy" load_steps=3 format=3 uid="uid://bjmjgmn38xydc"]
+[gd_resource type="Resource" script_class="Enemy" load_steps=4 format=3 uid="uid://bjmjgmn38xydc"]
 
 [ext_resource type="Script" uid="uid://bj656ro4kx132" path="res://resources/Enemy.gd" id="1_5dr1c"]
+[ext_resource type="Resource" uid="uid://ci1qv027npv6k" path="res://resources/ability_sets/sets_enemy_monsters/set_devil.tres" id="1_7epfy"]
 [ext_resource type="Resource" uid="uid://dueror4sfogqd" path="res://resources/sprite_sets/monsters/spriteset_devil.tres" id="2_yuypn"]
 
 [resource]
 script = ExtResource("1_5dr1c")
 name = "Devil"
 sprite_set = ExtResource("2_yuypn")
+ability_set = ExtResource("1_7epfy")
 resist_severing = 0
 resist_cutting = 0
 resist_piercing = 0

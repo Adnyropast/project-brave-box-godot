@@ -1,12 +1,14 @@
-[gd_resource type="Resource" script_class="Enemy" load_steps=3 format=3 uid="uid://bejc0vms2bciv"]
+[gd_resource type="Resource" script_class="Enemy" load_steps=4 format=3 uid="uid://bejc0vms2bciv"]
 
 [ext_resource type="Script" uid="uid://bj656ro4kx132" path="res://resources/Enemy.gd" id="1_2sq5p"]
+[ext_resource type="Resource" uid="uid://b63emf26ljpdv" path="res://resources/ability_sets/sets_enemy_tribes/set_felid_hex.tres" id="1_qfidl"]
 [ext_resource type="Resource" uid="uid://dpbjtkm161jwp" path="res://resources/sprite_sets/tribes/spriteset_felid_hex.tres" id="2_2sq5p"]
 
 [resource]
 script = ExtResource("1_2sq5p")
 name = "Felid Hex"
 sprite_set = ExtResource("2_2sq5p")
+ability_set = ExtResource("1_qfidl")
 resist_severing = 0
 resist_cutting = -1
 resist_piercing = 0

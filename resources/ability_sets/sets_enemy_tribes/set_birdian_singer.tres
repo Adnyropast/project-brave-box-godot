@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="AbilitySet" load_steps=4 format=3 uid="uid://cxvsa8lm7w01u"]
+
+[ext_resource type="Script" uid="uid://clugbtxltbj7y" path="res://resources/ActiveAbility.gd" id="1_gan8g"]
+[ext_resource type="Resource" uid="uid://ddmhq6sltw4sf" path="res://resources/active_abilities/boost_stats/boost_physical_attack.tres" id="2_vvpxf"]
+[ext_resource type="Script" uid="uid://bbn0mdaymwojd" path="res://resources/AbilitySet.gd" id="2_w0icn"]
+
+[resource]
+script = ExtResource("2_w0icn")
+name = ""
+abilities = Array[ExtResource("1_gan8g")]([ExtResource("2_vvpxf")])
+metadata/_custom_type_script = "uid://bbn0mdaymwojd"

@@ -1,5 +1,6 @@
-[gd_resource type="Resource" script_class="Enemy" load_steps=3 format=3 uid="uid://dximvgfp8ofie"]
+[gd_resource type="Resource" script_class="Enemy" load_steps=4 format=3 uid="uid://dximvgfp8ofie"]
 
+[ext_resource type="Resource" uid="uid://ckg4pu7p4to5w" path="res://resources/ability_sets/sets_enemy_monsters/set_skeleton.tres" id="1_2p45m"]
 [ext_resource type="Script" uid="uid://bj656ro4kx132" path="res://resources/Enemy.gd" id="1_qep82"]
 [ext_resource type="Resource" uid="uid://cx23kmp7t3npk" path="res://resources/sprite_sets/monsters/spriteset_skeleton.tres" id="2_svjtp"]
 
@@ -7,6 +8,7 @@
 script = ExtResource("1_qep82")
 name = "Skeleton"
 sprite_set = ExtResource("2_svjtp")
+ability_set = ExtResource("1_2p45m")
 resist_severing = 1
 resist_cutting = 1
 resist_piercing = -1

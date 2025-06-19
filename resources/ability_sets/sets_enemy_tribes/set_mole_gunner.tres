@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="AbilitySet" load_steps=4 format=3 uid="uid://dg2j4ljttd8hh"]
+
+[ext_resource type="Script" uid="uid://clugbtxltbj7y" path="res://resources/ActiveAbility.gd" id="1_d00uo"]
+[ext_resource type="Resource" uid="uid://b7hknma841ofl" path="res://resources/active_abilities/use_throwing_weapons/use_throwing_bullet.tres" id="2_em8ki"]
+[ext_resource type="Script" uid="uid://bbn0mdaymwojd" path="res://resources/AbilitySet.gd" id="2_lk73m"]
+
+[resource]
+script = ExtResource("2_lk73m")
+name = ""
+abilities = Array[ExtResource("1_d00uo")]([ExtResource("2_em8ki")])
+metadata/_custom_type_script = "uid://bbn0mdaymwojd"

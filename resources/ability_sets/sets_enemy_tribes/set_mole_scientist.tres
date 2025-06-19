@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="AbilitySet" load_steps=4 format=3 uid="uid://dwv1ek2r4qnem"]
+
+[ext_resource type="Script" uid="uid://clugbtxltbj7y" path="res://resources/ActiveAbility.gd" id="1_8dyur"]
+[ext_resource type="Script" uid="uid://bbn0mdaymwojd" path="res://resources/AbilitySet.gd" id="2_7yqni"]
+[ext_resource type="Resource" uid="uid://bgbnc83k2r1tj" path="res://resources/active_abilities/use_potion.tres" id="2_vphg4"]
+
+[resource]
+script = ExtResource("2_7yqni")
+name = ""
+abilities = Array[ExtResource("1_8dyur")]([ExtResource("2_vphg4")])
+metadata/_custom_type_script = "uid://bbn0mdaymwojd"

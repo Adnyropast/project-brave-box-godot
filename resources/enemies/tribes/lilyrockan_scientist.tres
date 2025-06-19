@@ -1,12 +1,14 @@
-[gd_resource type="Resource" script_class="Enemy" load_steps=3 format=3 uid="uid://bwgjn68ersqvf"]
+[gd_resource type="Resource" script_class="Enemy" load_steps=4 format=3 uid="uid://bwgjn68ersqvf"]
 
 [ext_resource type="Script" uid="uid://bj656ro4kx132" path="res://resources/Enemy.gd" id="1_gxnlf"]
+[ext_resource type="Resource" uid="uid://cvr3pkm44xe2x" path="res://resources/ability_sets/sets_enemy_tribes/set_lilyrockan_scientist.tres" id="1_xcm5u"]
 [ext_resource type="Resource" uid="uid://sjysbs2im6yx" path="res://resources/sprite_sets/tribes/spriteset_lilyrockan_scientist.tres" id="7_ed030"]
 
 [resource]
 script = ExtResource("1_gxnlf")
 name = "Lilyrockan Scientist"
 sprite_set = ExtResource("7_ed030")
+ability_set = ExtResource("1_xcm5u")
 resist_severing = 0
 resist_cutting = 0
 resist_piercing = 0

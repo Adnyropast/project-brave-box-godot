@@ -1,12 +1,14 @@
-[gd_resource type="Resource" script_class="Enemy" load_steps=3 format=3 uid="uid://b4v8yseeyf4st"]
+[gd_resource type="Resource" script_class="Enemy" load_steps=4 format=3 uid="uid://b4v8yseeyf4st"]
 
 [ext_resource type="Script" uid="uid://bj656ro4kx132" path="res://resources/Enemy.gd" id="1_mnaln"]
+[ext_resource type="Resource" uid="uid://b8i6c87h6yy4o" path="res://resources/ability_sets/sets_enemy_tribes/set_wraith_singer.tres" id="1_siapu"]
 [ext_resource type="Resource" uid="uid://bgm7ysw04sw2t" path="res://resources/sprite_sets/tribes/spriteset_wraith_singer.tres" id="7_h3jcb"]
 
 [resource]
 script = ExtResource("1_mnaln")
 name = "Wraith Singer"
 sprite_set = ExtResource("7_h3jcb")
+ability_set = ExtResource("1_siapu")
 resist_severing = 1
 resist_cutting = 1
 resist_piercing = 1

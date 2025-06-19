@@ -1,12 +1,14 @@
-[gd_resource type="Resource" script_class="Enemy" load_steps=3 format=3 uid="uid://lv7sfpljlsm8"]
+[gd_resource type="Resource" script_class="Enemy" load_steps=4 format=3 uid="uid://lv7sfpljlsm8"]
 
 [ext_resource type="Script" uid="uid://bj656ro4kx132" path="res://resources/Enemy.gd" id="1_0kdoy"]
+[ext_resource type="Resource" uid="uid://bafofeixaajnk" path="res://resources/ability_sets/sets_enemy_monsters/set_meltide.tres" id="1_liapm"]
 [ext_resource type="Resource" uid="uid://b2ee4i780nwdx" path="res://resources/sprite_sets/monsters/spriteset_meltide.tres" id="2_bb0t0"]
 
 [resource]
 script = ExtResource("1_0kdoy")
 name = "Meltide"
 sprite_set = ExtResource("2_bb0t0")
+ability_set = ExtResource("1_liapm")
 resist_severing = 1
 resist_cutting = 1
 resist_piercing = 1

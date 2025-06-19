@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="AbilitySet" load_steps=5 format=3 uid="uid://8wf7lrq4bjly"]
+
+[ext_resource type="Script" uid="uid://clugbtxltbj7y" path="res://resources/ActiveAbility.gd" id="1_wka6v"]
+[ext_resource type="Resource" uid="uid://c6bocjh01ehw2" path="res://resources/active_abilities/inflict_ailments/inflict_silence.tres" id="2_7x2fo"]
+[ext_resource type="Script" uid="uid://bbn0mdaymwojd" path="res://resources/AbilitySet.gd" id="2_wc64b"]
+[ext_resource type="Resource" uid="uid://dfqpwy0u3elog" path="res://resources/active_abilities/magic_dark.tres" id="3_pstbv"]
+
+[resource]
+script = ExtResource("2_wc64b")
+name = ""
+abilities = Array[ExtResource("1_wka6v")]([ExtResource("2_7x2fo"), ExtResource("3_pstbv")])
+metadata/_custom_type_script = "uid://bbn0mdaymwojd"

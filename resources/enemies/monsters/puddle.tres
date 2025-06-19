@@ -1,12 +1,14 @@
-[gd_resource type="Resource" script_class="Enemy" load_steps=3 format=3 uid="uid://cicwjjqxsv5f7"]
+[gd_resource type="Resource" script_class="Enemy" load_steps=4 format=3 uid="uid://cicwjjqxsv5f7"]
 
 [ext_resource type="Script" uid="uid://bj656ro4kx132" path="res://resources/Enemy.gd" id="1_8gjwm"]
+[ext_resource type="Resource" uid="uid://to1nuxfgrmx8" path="res://resources/ability_sets/sets_enemy_monsters/set_puddle.tres" id="1_55d8k"]
 [ext_resource type="Resource" uid="uid://cub023ag61j3h" path="res://resources/sprite_sets/monsters/spriteset_puddle.tres" id="2_5udyv"]
 
 [resource]
 script = ExtResource("1_8gjwm")
 name = "Puddle"
 sprite_set = ExtResource("2_5udyv")
+ability_set = ExtResource("1_55d8k")
 resist_severing = 1
 resist_cutting = 1
 resist_piercing = 1

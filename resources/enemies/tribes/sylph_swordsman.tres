@@ -1,5 +1,6 @@
-[gd_resource type="Resource" script_class="Enemy" load_steps=3 format=3 uid="uid://bqbr58r20xcpp"]
+[gd_resource type="Resource" script_class="Enemy" load_steps=4 format=3 uid="uid://bqbr58r20xcpp"]
 
+[ext_resource type="Resource" uid="uid://c3sxrtefd0jec" path="res://resources/ability_sets/sets_enemy_tribes/set_sylph_swordsman.tres" id="1_7rqd3"]
 [ext_resource type="Script" uid="uid://bj656ro4kx132" path="res://resources/Enemy.gd" id="1_wc6ck"]
 [ext_resource type="Resource" uid="uid://dmncriu3hi8gc" path="res://resources/sprite_sets/tribes/spriteset_sylph_swordsman.tres" id="2_wc6ck"]
 
@@ -7,6 +8,7 @@
 script = ExtResource("1_wc6ck")
 name = "Sylph Swordsman"
 sprite_set = ExtResource("2_wc6ck")
+ability_set = ExtResource("1_7rqd3")
 resist_severing = -1
 resist_cutting = 0
 resist_piercing = 0

@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="AbilitySet" load_steps=4 format=3 uid="uid://dg05nilqhlcq7"]
+
+[ext_resource type="Script" uid="uid://clugbtxltbj7y" path="res://resources/ActiveAbility.gd" id="1_1jdyb"]
+[ext_resource type="Resource" uid="uid://dmpdpw822b4sv" path="res://resources/active_abilities/inflict_ailments/inflict_doom.tres" id="2_g3fm7"]
+[ext_resource type="Script" uid="uid://bbn0mdaymwojd" path="res://resources/AbilitySet.gd" id="2_nc47h"]
+
+[resource]
+script = ExtResource("2_nc47h")
+name = ""
+abilities = Array[ExtResource("1_1jdyb")]([ExtResource("2_g3fm7")])
+metadata/_custom_type_script = "uid://bbn0mdaymwojd"

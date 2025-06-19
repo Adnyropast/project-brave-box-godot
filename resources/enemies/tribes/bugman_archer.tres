@@ -1,12 +1,14 @@
-[gd_resource type="Resource" script_class="Enemy" load_steps=3 format=3 uid="uid://y2qivdndylfd"]
+[gd_resource type="Resource" script_class="Enemy" load_steps=4 format=3 uid="uid://y2qivdndylfd"]
 
 [ext_resource type="Script" uid="uid://bj656ro4kx132" path="res://resources/Enemy.gd" id="1_3uqls"]
+[ext_resource type="Resource" uid="uid://dikd0e0ut5xnh" path="res://resources/ability_sets/sets_enemy_tribes/set_bugman_archer.tres" id="1_6x688"]
 [ext_resource type="Resource" uid="uid://cik0hn3k64l8d" path="res://resources/sprite_sets/tribes/spriteset_bugman_archer.tres" id="7_0bula"]
 
 [resource]
 script = ExtResource("1_3uqls")
 name = "Bugman Archer"
 sprite_set = ExtResource("7_0bula")
+ability_set = ExtResource("1_6x688")
 resist_severing = 0
 resist_cutting = 0
 resist_piercing = 1

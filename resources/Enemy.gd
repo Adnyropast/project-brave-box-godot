@@ -4,6 +4,7 @@ class_name Enemy
 
 @export var name: String
 @export var sprite_set: SpriteSet
+@export var ability_set: AbilitySet
 @export var resist_severing: int
 @export var resist_cutting: int
 @export var resist_piercing: int

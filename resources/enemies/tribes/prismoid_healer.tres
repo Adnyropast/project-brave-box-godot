@@ -1,5 +1,6 @@
-[gd_resource type="Resource" script_class="Enemy" load_steps=3 format=3 uid="uid://d4hwi3ycmfmio"]
+[gd_resource type="Resource" script_class="Enemy" load_steps=4 format=3 uid="uid://d4hwi3ycmfmio"]
 
+[ext_resource type="Resource" uid="uid://dn38fa67d5cme" path="res://resources/ability_sets/sets_enemy_tribes/set_prismoid_healer.tres" id="1_4xqiq"]
 [ext_resource type="Script" uid="uid://bj656ro4kx132" path="res://resources/Enemy.gd" id="1_i8mld"]
 [ext_resource type="Resource" uid="uid://bayrb2d2iftep" path="res://resources/sprite_sets/tribes/spriteset_prismoid_healer.tres" id="7_laaom"]
 
@@ -7,6 +8,7 @@
 script = ExtResource("1_i8mld")
 name = "Prismoid Healer"
 sprite_set = ExtResource("7_laaom")
+ability_set = ExtResource("1_4xqiq")
 resist_severing = 1
 resist_cutting = 1
 resist_piercing = -1

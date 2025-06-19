@@ -1,12 +1,14 @@
-[gd_resource type="Resource" script_class="Enemy" load_steps=3 format=3 uid="uid://c6sm217yy4f6p"]
+[gd_resource type="Resource" script_class="Enemy" load_steps=4 format=3 uid="uid://c6sm217yy4f6p"]
 
 [ext_resource type="Script" uid="uid://bj656ro4kx132" path="res://resources/Enemy.gd" id="1_cab4q"]
+[ext_resource type="Resource" uid="uid://d28mo0jbn8x7j" path="res://resources/ability_sets/sets_enemy_tribes/set_remnant_gunner.tres" id="1_unud5"]
 [ext_resource type="Resource" uid="uid://cltkm2yk5eymk" path="res://resources/sprite_sets/tribes/spriteset_remnant_gunner.tres" id="2_cab4q"]
 
 [resource]
 script = ExtResource("1_cab4q")
 name = "Remnant Gunner"
 sprite_set = ExtResource("2_cab4q")
+ability_set = ExtResource("1_unud5")
 resist_severing = 1
 resist_cutting = 1
 resist_piercing = -1

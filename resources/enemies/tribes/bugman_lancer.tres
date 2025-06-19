@@ -1,5 +1,6 @@
-[gd_resource type="Resource" script_class="Enemy" load_steps=3 format=3 uid="uid://bqxuarsxuynpp"]
+[gd_resource type="Resource" script_class="Enemy" load_steps=4 format=3 uid="uid://bqxuarsxuynpp"]
 
+[ext_resource type="Resource" uid="uid://cd6ee5vqwu4tm" path="res://resources/ability_sets/sets_enemy_tribes/set_bugman_lancer.tres" id="1_1v8ad"]
 [ext_resource type="Script" uid="uid://bj656ro4kx132" path="res://resources/Enemy.gd" id="1_46ksw"]
 [ext_resource type="Resource" uid="uid://bu7h8d3j65i0i" path="res://resources/sprite_sets/tribes/spriteset_bugman_lancer.tres" id="2_46ksw"]
 
@@ -7,6 +8,7 @@
 script = ExtResource("1_46ksw")
 name = "Bugman Lancer"
 sprite_set = ExtResource("2_46ksw")
+ability_set = ExtResource("1_1v8ad")
 resist_severing = 0
 resist_cutting = 0
 resist_piercing = 1

@@ -1,12 +1,14 @@
-[gd_resource type="Resource" script_class="Enemy" load_steps=3 format=3 uid="uid://c4ipgwxer5nhu"]
+[gd_resource type="Resource" script_class="Enemy" load_steps=4 format=3 uid="uid://c4ipgwxer5nhu"]
 
 [ext_resource type="Script" uid="uid://bj656ro4kx132" path="res://resources/Enemy.gd" id="1_e0xab"]
+[ext_resource type="Resource" uid="uid://bc2n7phguxg7m" path="res://resources/ability_sets/sets_enemy_tribes/set_sylph_hex.tres" id="1_mcvmm"]
 [ext_resource type="Resource" uid="uid://cicj18qfqmhy1" path="res://resources/sprite_sets/tribes/spriteset_sylph_hex.tres" id="7_433s5"]
 
 [resource]
 script = ExtResource("1_e0xab")
 name = "Sylph Hex"
 sprite_set = ExtResource("7_433s5")
+ability_set = ExtResource("1_mcvmm")
 resist_severing = -1
 resist_cutting = 0
 resist_piercing = 0

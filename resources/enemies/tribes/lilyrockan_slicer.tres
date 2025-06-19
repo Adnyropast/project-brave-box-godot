@@ -1,12 +1,14 @@
-[gd_resource type="Resource" script_class="Enemy" load_steps=3 format=3 uid="uid://b7ubggs3dcoa3"]
+[gd_resource type="Resource" script_class="Enemy" load_steps=4 format=3 uid="uid://b7ubggs3dcoa3"]
 
 [ext_resource type="Script" uid="uid://bj656ro4kx132" path="res://resources/Enemy.gd" id="1_22c28"]
+[ext_resource type="Resource" uid="uid://bun31o048t1mw" path="res://resources/ability_sets/sets_enemy_tribes/set_lilyrockan_slicer.tres" id="1_vi2xs"]
 [ext_resource type="Resource" uid="uid://bl5dcmxnkr8xx" path="res://resources/sprite_sets/tribes/spriteset_lilyrockan_slicer.tres" id="2_22c28"]
 
 [resource]
 script = ExtResource("1_22c28")
 name = "Lilyrockan Slicer"
 sprite_set = ExtResource("2_22c28")
+ability_set = ExtResource("1_vi2xs")
 resist_severing = 0
 resist_cutting = 0
 resist_piercing = 0

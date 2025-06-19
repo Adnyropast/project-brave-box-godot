@@ -1,5 +1,6 @@
-[gd_resource type="Resource" script_class="Enemy" load_steps=3 format=3 uid="uid://vb0rs50pliwa"]
+[gd_resource type="Resource" script_class="Enemy" load_steps=4 format=3 uid="uid://vb0rs50pliwa"]
 
+[ext_resource type="Resource" uid="uid://uuwpjk6aja0b" path="res://resources/ability_sets/sets_enemy_tribes/set_strolhomer_mage.tres" id="1_fhl4j"]
 [ext_resource type="Script" uid="uid://bj656ro4kx132" path="res://resources/Enemy.gd" id="1_lfmri"]
 [ext_resource type="Resource" uid="uid://vfnbekmppd7n" path="res://resources/sprite_sets/tribes/spriteset_strolhomer_mage.tres" id="2_lfmri"]
 
@@ -7,6 +8,7 @@
 script = ExtResource("1_lfmri")
 name = "Strolhomer Mage"
 sprite_set = ExtResource("2_lfmri")
+ability_set = ExtResource("1_fhl4j")
 resist_severing = 0
 resist_cutting = 0
 resist_piercing = 0

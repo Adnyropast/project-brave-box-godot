@@ -1,5 +1,6 @@
-[gd_resource type="Resource" script_class="Enemy" load_steps=3 format=3 uid="uid://b1secfmg4ejc2"]
+[gd_resource type="Resource" script_class="Enemy" load_steps=4 format=3 uid="uid://b1secfmg4ejc2"]
 
+[ext_resource type="Resource" uid="uid://bdwy5kb36jfgx" path="res://resources/ability_sets/sets_enemy_tribes/set_goblin_swordsman.tres" id="1_j00c1"]
 [ext_resource type="Script" uid="uid://bj656ro4kx132" path="res://resources/Enemy.gd" id="1_ma17a"]
 [ext_resource type="Resource" uid="uid://bkxfxhjd1npvw" path="res://resources/sprite_sets/tribes/spriteset_goblin_swordsman.tres" id="7_n37rs"]
 
@@ -7,6 +8,7 @@
 script = ExtResource("1_ma17a")
 name = "Goblin Swordsman"
 sprite_set = ExtResource("7_n37rs")
+ability_set = ExtResource("1_j00c1")
 resist_severing = 0
 resist_cutting = 0
 resist_piercing = 0

@@ -1,5 +1,6 @@
-[gd_resource type="Resource" script_class="Enemy" load_steps=3 format=3 uid="uid://drta8ibf43ji8"]
+[gd_resource type="Resource" script_class="Enemy" load_steps=4 format=3 uid="uid://drta8ibf43ji8"]
 
+[ext_resource type="Resource" uid="uid://dwv1ek2r4qnem" path="res://resources/ability_sets/sets_enemy_tribes/set_mole_scientist.tres" id="1_dlrke"]
 [ext_resource type="Script" uid="uid://bj656ro4kx132" path="res://resources/Enemy.gd" id="1_ut53e"]
 [ext_resource type="Resource" uid="uid://dmwsuwxsepcmy" path="res://resources/sprite_sets/tribes/spriteset_mole_scientist.tres" id="2_ut53e"]
 
@@ -7,6 +8,7 @@
 script = ExtResource("1_ut53e")
 name = "Mole Scientist"
 sprite_set = ExtResource("2_ut53e")
+ability_set = ExtResource("1_dlrke")
 resist_severing = 0
 resist_cutting = -1
 resist_piercing = 0

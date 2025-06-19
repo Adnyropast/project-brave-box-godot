@@ -1,12 +1,14 @@
-[gd_resource type="Resource" script_class="Enemy" load_steps=3 format=3 uid="uid://hb2y8gyfeyw2"]
+[gd_resource type="Resource" script_class="Enemy" load_steps=4 format=3 uid="uid://hb2y8gyfeyw2"]
 
 [ext_resource type="Script" uid="uid://bj656ro4kx132" path="res://resources/Enemy.gd" id="1_ag2h2"]
+[ext_resource type="Resource" uid="uid://dkcrwpd3537ph" path="res://resources/ability_sets/sets_enemy_tribes/set_remnant_scientist.tres" id="1_n0d6t"]
 [ext_resource type="Resource" uid="uid://b05gk2mjs444l" path="res://resources/sprite_sets/tribes/spriteset_remnant_scientist.tres" id="2_ag2h2"]
 
 [resource]
 script = ExtResource("1_ag2h2")
 name = "Remnant Scientist"
 sprite_set = ExtResource("2_ag2h2")
+ability_set = ExtResource("1_n0d6t")
 resist_severing = 1
 resist_cutting = 1
 resist_piercing = -1

@@ -1,5 +1,6 @@
-[gd_resource type="Resource" script_class="Enemy" load_steps=3 format=3 uid="uid://crlewixg0ogvu"]
+[gd_resource type="Resource" script_class="Enemy" load_steps=4 format=3 uid="uid://crlewixg0ogvu"]
 
+[ext_resource type="Resource" uid="uid://cxvsa8lm7w01u" path="res://resources/ability_sets/sets_enemy_tribes/set_birdian_singer.tres" id="1_8sdwu"]
 [ext_resource type="Script" uid="uid://bj656ro4kx132" path="res://resources/Enemy.gd" id="1_48fsn"]
 [ext_resource type="Resource" uid="uid://b0xw2fohiccc0" path="res://resources/sprite_sets/tribes/spriteset_birdian_singer.tres" id="2_48fsn"]
 
@@ -7,6 +8,7 @@
 script = ExtResource("1_48fsn")
 name = "Birdian Singer"
 sprite_set = ExtResource("2_48fsn")
+ability_set = ExtResource("1_8sdwu")
 resist_severing = 0
 resist_cutting = 0
 resist_piercing = 0

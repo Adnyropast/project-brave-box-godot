@@ -1,12 +1,14 @@
-[gd_resource type="Resource" script_class="Enemy" load_steps=3 format=3 uid="uid://c2gtsbpn1dy5d"]
+[gd_resource type="Resource" script_class="Enemy" load_steps=4 format=3 uid="uid://c2gtsbpn1dy5d"]
 
 [ext_resource type="Script" uid="uid://bj656ro4kx132" path="res://resources/Enemy.gd" id="1_5xes1"]
+[ext_resource type="Resource" uid="uid://bcyk82lb5aurq" path="res://resources/ability_sets/sets_enemy_monsters/set_slime.tres" id="1_fku2y"]
 [ext_resource type="Resource" uid="uid://cjaquxejefg4s" path="res://resources/sprite_sets/monsters/spriteset_slime.tres" id="2_y518p"]
 
 [resource]
 script = ExtResource("1_5xes1")
 name = "Slime"
 sprite_set = ExtResource("2_y518p")
+ability_set = ExtResource("1_fku2y")
 resist_severing = 0
 resist_cutting = 0
 resist_piercing = 1

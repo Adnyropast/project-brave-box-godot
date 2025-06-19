@@ -1,12 +1,14 @@
-[gd_resource type="Resource" script_class="Enemy" load_steps=3 format=3 uid="uid://yad78lucylyx"]
+[gd_resource type="Resource" script_class="Enemy" load_steps=4 format=3 uid="uid://yad78lucylyx"]
 
 [ext_resource type="Script" uid="uid://bj656ro4kx132" path="res://resources/Enemy.gd" id="1_jq8jb"]
+[ext_resource type="Resource" uid="uid://cklnuwotj0ax0" path="res://resources/ability_sets/sets_enemy_tribes/set_strolhomer_shieldbearer.tres" id="1_qseb7"]
 [ext_resource type="Resource" uid="uid://c3dk2ld6p4urq" path="res://resources/sprite_sets/tribes/spriteset_strolhomer_shieldbearer.tres" id="7_8qjgd"]
 
 [resource]
 script = ExtResource("1_jq8jb")
 name = "Strolhomer Shieldbearer"
 sprite_set = ExtResource("7_8qjgd")
+ability_set = ExtResource("1_qseb7")
 resist_severing = 0
 resist_cutting = 0
 resist_piercing = 0

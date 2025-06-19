@@ -11,12 +11,7 @@ func on_detach() -> void:
 	detach_effect()
 
 func block_turn() -> ActiveScript:
-	var active_abilities = [
-		preload("res://resources/active_abilities/attack.tres"),
-		preload("res://resources/active_abilities/magic_fire.tres"),
-		preload("res://resources/active_abilities/magic_healing.tres"),
-		preload("res://resources/active_abilities/defend.tres"),
-	]
+	var active_abilities = user.variables.get_active_abilities_all()
 	
 	var active_ability = active_abilities[randi_range(0, active_abilities.size() - 1)]
 	var active_script: ActiveScript = active_ability.gdscript.new()

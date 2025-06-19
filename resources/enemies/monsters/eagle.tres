@@ -1,5 +1,6 @@
-[gd_resource type="Resource" script_class="Enemy" load_steps=3 format=3 uid="uid://d33dl6rh8e0qv"]
+[gd_resource type="Resource" script_class="Enemy" load_steps=4 format=3 uid="uid://d33dl6rh8e0qv"]
 
+[ext_resource type="Resource" uid="uid://cv46e23gpdg66" path="res://resources/ability_sets/sets_enemy_monsters/set_eagle.tres" id="1_aoyuw"]
 [ext_resource type="Script" uid="uid://bj656ro4kx132" path="res://resources/Enemy.gd" id="1_owu37"]
 [ext_resource type="Resource" uid="uid://cohqrbqunrshv" path="res://resources/sprite_sets/monsters/spriteset_eagle.tres" id="2_70swu"]
 
@@ -7,6 +8,7 @@
 script = ExtResource("1_owu37")
 name = "Eagle"
 sprite_set = ExtResource("2_70swu")
+ability_set = ExtResource("1_aoyuw")
 resist_severing = 0
 resist_cutting = 0
 resist_piercing = 0

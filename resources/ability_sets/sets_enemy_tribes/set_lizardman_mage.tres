@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="AbilitySet" load_steps=5 format=3 uid="uid://c76bqb460tvqs"]
+
+[ext_resource type="Script" uid="uid://clugbtxltbj7y" path="res://resources/ActiveAbility.gd" id="1_a6buw"]
+[ext_resource type="Script" uid="uid://bbn0mdaymwojd" path="res://resources/AbilitySet.gd" id="2_md66f"]
+[ext_resource type="Resource" uid="uid://ct2y7ybh8ub4m" path="res://resources/active_abilities/magic_fire.tres" id="2_xu3hk"]
+[ext_resource type="Resource" uid="uid://dfwt3gqpr03qy" path="res://resources/active_abilities/magic_water.tres" id="3_8nhrl"]
+
+[resource]
+script = ExtResource("2_md66f")
+name = ""
+abilities = Array[ExtResource("1_a6buw")]([ExtResource("2_xu3hk"), ExtResource("3_8nhrl")])
+metadata/_custom_type_script = "uid://bbn0mdaymwojd"

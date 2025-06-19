@@ -1,5 +1,6 @@
-[gd_resource type="Resource" script_class="Enemy" load_steps=3 format=3 uid="uid://npddecxvr88k"]
+[gd_resource type="Resource" script_class="Enemy" load_steps=4 format=3 uid="uid://npddecxvr88k"]
 
+[ext_resource type="Resource" uid="uid://dpesjldx7xqoa" path="res://resources/ability_sets/sets_enemy_tribes/set_remnant_swordsman.tres" id="1_8ld7n"]
 [ext_resource type="Script" uid="uid://bj656ro4kx132" path="res://resources/Enemy.gd" id="1_x41vl"]
 [ext_resource type="Resource" uid="uid://dn1254tnc1hhq" path="res://resources/sprite_sets/tribes/spriteset_remnant_swordsman.tres" id="7_5aekp"]
 
@@ -7,6 +8,7 @@
 script = ExtResource("1_x41vl")
 name = "Remnant Swordsman"
 sprite_set = ExtResource("7_5aekp")
+ability_set = ExtResource("1_8ld7n")
 resist_severing = 1
 resist_cutting = 1
 resist_piercing = -1

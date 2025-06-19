@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="AbilitySet" load_steps=4 format=3 uid="uid://d2gdp1cg577f4"]
+
+[ext_resource type="Script" uid="uid://clugbtxltbj7y" path="res://resources/ActiveAbility.gd" id="1_qswyy"]
+[ext_resource type="Resource" uid="uid://b6y8rrm7blsui" path="res://resources/active_abilities/inflict_ailments/inflict_confusion.tres" id="2_m443h"]
+[ext_resource type="Script" uid="uid://bbn0mdaymwojd" path="res://resources/AbilitySet.gd" id="3_joolm"]
+
+[resource]
+script = ExtResource("3_joolm")
+name = ""
+abilities = Array[ExtResource("1_qswyy")]([ExtResource("2_m443h")])
+metadata/_custom_type_script = "uid://bbn0mdaymwojd"
