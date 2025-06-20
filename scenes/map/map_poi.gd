@@ -6,9 +6,11 @@ var hud_node: Node
 
 func _ready() -> void:
 	init_sprite_texture()
+	update_mark_new()
 
 func _on_body_entered(_body: Node2D) -> void:
-	show_hud()
+	if point_of_interest.has_menus():
+		show_hud()
 
 func _on_body_exited(_body: Node2D) -> void:
 	hide_hud()
@@ -25,3 +27,9 @@ func show_hud():
 func hide_hud():
 	if hud_node:
 		hud_node.queue_free()
+
+func update_mark_new():
+	if PlayerMissions.poi_has_new_missions(point_of_interest):
+		$MarkNew.show()
+	else:
+		$MarkNew.hide()

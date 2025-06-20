@@ -18,5 +18,6 @@ func fill_buttons() -> void:
 		
 		button.text = mission.title
 		button.mission = mission
+		button.hide_mark_new()
 		
 		container.add_child(button)

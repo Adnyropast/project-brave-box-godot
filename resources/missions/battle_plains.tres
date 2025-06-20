@@ -1,10 +1,14 @@
-[gd_resource type="Resource" script_class="Mission" load_steps=3 format=3 uid="uid://bbk2idrjk26mf"]
+[gd_resource type="Resource" script_class="Mission" load_steps=6 format=3 uid="uid://bbk2idrjk26mf"]
 
 [ext_resource type="Script" uid="uid://l3di8hrrnoea" path="res://resources/Mission.gd" id="1_85up4"]
 [ext_resource type="Resource" uid="uid://ct2dbnciopyrs" path="res://resources/battles/battle_plains_01.tres" id="1_whnwk"]
+[ext_resource type="Resource" uid="uid://cpyrp3216ktqx" path="res://resources/missions/battle_strolhom.tres" id="3_3fiwn"]
+[ext_resource type="Resource" uid="uid://0x6hi6endw30" path="res://resources/missions/battle_tribes/battle_goblins.tres" id="4_683wy"]
+[ext_resource type="Resource" uid="uid://p8kgtab7kutt" path="res://resources/missions/battle_wayward_woods_lv1.tres" id="5_lu7kc"]
 
 [resource]
 script = ExtResource("1_85up4")
 title = "Battle in the plains"
 battle = ExtResource("1_whnwk")
+unlocks = Array[ExtResource("1_85up4")]([ExtResource("3_3fiwn"), ExtResource("4_683wy"), ExtResource("5_lu7kc")])
 metadata/_custom_type_script = "uid://l3di8hrrnoea"

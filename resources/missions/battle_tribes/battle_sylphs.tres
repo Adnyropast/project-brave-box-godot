@@ -1,10 +1,12 @@
-[gd_resource type="Resource" script_class="Mission" load_steps=3 format=3 uid="uid://bpih6p7tockng"]
+[gd_resource type="Resource" script_class="Mission" load_steps=4 format=3 uid="uid://bpih6p7tockng"]
 
 [ext_resource type="Script" uid="uid://l3di8hrrnoea" path="res://resources/Mission.gd" id="1_3p8kj"]
 [ext_resource type="Resource" uid="uid://b6v7dkx0cycvc" path="res://resources/battles/tribes_battles/battle_tribe_wayward_woods.tres" id="1_ilbl4"]
+[ext_resource type="Resource" uid="uid://u8yq86qy0fuf" path="res://resources/missions/battle_tribes/battle_lilyrockans.tres" id="3_06wu2"]
 
 [resource]
 script = ExtResource("1_3p8kj")
 title = "Battle Against Sylphs"
 battle = ExtResource("1_ilbl4")
+unlocks = Array[ExtResource("1_3p8kj")]([ExtResource("3_06wu2")])
 metadata/_custom_type_script = "uid://l3di8hrrnoea"

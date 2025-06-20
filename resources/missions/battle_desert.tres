@@ -1,10 +1,12 @@
-[gd_resource type="Resource" script_class="Mission" load_steps=3 format=3 uid="uid://4rd3re0ypd07"]
+[gd_resource type="Resource" script_class="Mission" load_steps=4 format=3 uid="uid://4rd3re0ypd07"]
 
 [ext_resource type="Resource" uid="uid://btpr334eovwe6" path="res://resources/battles/battle_desert_01.tres" id="1_e3k3r"]
 [ext_resource type="Script" uid="uid://l3di8hrrnoea" path="res://resources/Mission.gd" id="1_mnkf1"]
+[ext_resource type="Resource" uid="uid://ek2m3xtxvyyt" path="res://resources/missions/battle_jungle.tres" id="3_a06yu"]
 
 [resource]
 script = ExtResource("1_mnkf1")
 title = "Battle in the desert"
 battle = ExtResource("1_e3k3r")
+unlocks = Array[ExtResource("1_mnkf1")]([ExtResource("3_a06yu")])
 metadata/_custom_type_script = "uid://l3di8hrrnoea"

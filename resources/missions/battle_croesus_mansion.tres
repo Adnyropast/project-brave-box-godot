@@ -1,10 +1,12 @@
-[gd_resource type="Resource" script_class="Mission" load_steps=3 format=3 uid="uid://cn125gn5dopfj"]
+[gd_resource type="Resource" script_class="Mission" load_steps=4 format=3 uid="uid://cn125gn5dopfj"]
 
 [ext_resource type="Script" uid="uid://l3di8hrrnoea" path="res://resources/Mission.gd" id="1_6tq3y"]
 [ext_resource type="Resource" uid="uid://5b5bgljbosle" path="res://resources/battles/battle_croesus_mansion_01.tres" id="1_x3b3h"]
+[ext_resource type="Resource" uid="uid://b1mfntowbtq5g" path="res://resources/missions/battle_underlands.tres" id="3_u5a07"]
 
 [resource]
 script = ExtResource("1_6tq3y")
 title = "Battle in the Croesus Mansion"
 battle = ExtResource("1_x3b3h")
+unlocks = Array[ExtResource("1_6tq3y")]([ExtResource("3_u5a07")])
 metadata/_custom_type_script = "uid://l3di8hrrnoea"
