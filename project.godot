@@ -19,6 +19,7 @@ config/icon="res://icon.svg"
 PlayerParty="*res://globals/PlayerParty.gd"
 PlayerInventory="*res://globals/PlayerInventory.gd"
 PlayerMissions="*res://globals/PlayerMissions.gd"
+PlayerSettings="*res://globals/PlayerSettings.gd"
 
 [input]
 

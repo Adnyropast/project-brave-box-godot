@@ -42,9 +42,19 @@ func add_buttons():
 			$"MarginContainer/VBoxContainer/VBoxContainer".add_child(button)
 		
 		if completed_missions.size() > 0:
-			var button = preload("res://scenes/menus/button_completed_missions.tscn").instantiate()
+			var button = preload("res://scenes/menus/button_list_missions.tscn").instantiate()
 			
+			button.text = "Completed Missions"
 			button.missions = completed_missions
+			button.menu_poi = self
+			
+			$MarginContainer/VBoxContainer/VBoxContainer.add_child(button)
+		
+		if PlayerSettings.debug_mode:
+			var button = preload("res://scenes/menus/button_list_missions.tscn").instantiate()
+			
+			button.text = "(Debug) All Missions"
+			button.missions = point_of_interest.missions
 			button.menu_poi = self
 			
 			$MarginContainer/VBoxContainer/VBoxContainer.add_child(button)

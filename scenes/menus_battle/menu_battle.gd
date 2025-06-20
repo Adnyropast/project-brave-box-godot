@@ -3,6 +3,9 @@ extends Control
 var tree: SceneTree
 var pawn: PawnComponents
 
+func _ready() -> void:
+	update_button_debug()
+
 func close_menu():
 	get_parent().remove_child(self)
 
@@ -118,3 +121,9 @@ func _on_button_debug_pressed() -> void:
 	menu_debug.pawn = pawn
 	
 	Menus.open_menu(menu_debug)
+
+func update_button_debug() -> void:
+	if PlayerSettings.debug_mode:
+		$MarginContainer/VBoxContainer/ButtonDebug.show()
+	else:
+		$MarginContainer/VBoxContainer/ButtonDebug.hide()

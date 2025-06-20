@@ -48,6 +48,13 @@ func open_menu_stats():
 	menu.menu_pause = self
 	Menus.open_menu(menu)
 
+func open_menu_settings() -> void:
+	Menus.close_menu(self)
+	
+	var menu = preload("res://scenes/menus_settings/menu_settings.tscn").instantiate()
+	menu.menu_pause = self
+	Menus.open_menu(menu)
+
 func _on_tree_entered() -> void:
 	tree = get_tree()
 	tree.paused = true
@@ -72,6 +79,9 @@ func _on_button_abilities_pressed() -> void:
 
 func _on_button_stats_pressed() -> void:
 	open_menu_stats()
+
+func _on_button_settings_pressed() -> void:
+	open_menu_settings()
 
 func update_money() -> void:
 	$MarginContainer2/PanelContainer/MarginContainer/HBoxContainer/LabelMoney.text = str(PlayerParty.money)

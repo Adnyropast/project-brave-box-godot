@@ -9,7 +9,10 @@ class_name PointOfInterest
 @export var missions: Array[Mission]
 
 func has_menus() -> bool:
-	if inn:
+	if PlayerSettings.debug_mode:
+		return true
+	
+	elif inn:
 		return true
 	
 	elif shops.size() > 0:

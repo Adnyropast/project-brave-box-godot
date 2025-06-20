@@ -10,6 +10,8 @@ func clear_mission(mission: Mission) -> void:
 	if mission.completable and not missions_cleared.has(mission):
 		update_next_missions(mission)
 		missions_cleared.append(mission)
+	
+	missions_next.erase(mission)
 
 func poi_has_new_missions(point_of_interest: PointOfInterest) -> bool:
 	for mission in point_of_interest.missions:
@@ -20,7 +22,6 @@ func poi_has_new_missions(point_of_interest: PointOfInterest) -> bool:
 
 func update_next_missions(mission: Mission) -> void:
 	missions_next.append_array(mission.unlocks)
-	missions_next.erase(mission)
 
 func filter_next_missions(missions: Array[Mission]) -> Array[Mission]:
 	var res: Array[Mission] = []

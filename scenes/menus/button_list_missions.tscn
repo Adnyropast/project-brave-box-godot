@@ -1,11 +1,11 @@
 [gd_scene load_steps=2 format=3 uid="uid://cx5gprqsod8js"]
 
-[ext_resource type="Script" uid="uid://c6csy88r0elhv" path="res://scenes/menus/button_completed_missions.gd" id="1_x1uf4"]
+[ext_resource type="Script" uid="uid://c6csy88r0elhv" path="res://scenes/menus/button_list_missions.gd" id="1_4wd54"]
 
 [node name="Button" type="Button"]
 offset_right = 8.0
 offset_bottom = 8.0
-text = "Completed Missions"
-script = ExtResource("1_x1uf4")
+text = "Missions List"
+script = ExtResource("1_4wd54")
 
 [connection signal="pressed" from="." to="." method="_on_pressed"]
