@@ -18,6 +18,7 @@ func _ready() -> void:
 	for party_member in PlayerParty.team:
 		var pawn = PawnComponents.init_from_party_member(party_member)
 		
+		pawn.battle = self
 		pawn.tree = get_tree()
 		pawn.allies = pawns_player
 		pawn.enemies = pawns_enemy
@@ -30,6 +31,7 @@ func _ready() -> void:
 	for enemy in mission.battle.enemy_party:
 		var pawn = PawnComponents.init_from_enemy(enemy, aliases[i], mission.battle.danger_level)
 		
+		pawn.battle = self
 		pawn.tree = get_tree()
 		pawn.allies = pawns_enemy
 		pawn.enemies = pawns_player
@@ -49,7 +51,7 @@ func _ready() -> void:
 	var control_info = preload("res://scenes/menus_battle/menus_info/control_info.tscn").instantiate()
 	control_info.battle = self
 	control_info.pawns = pawns_enemy + pawns_player
-	tree.root.add_child(control_info)
+	hud_player.add_child(control_info)
 	
 	turn_system = preload("res://scenes/battle/turn_system.tscn").instantiate()
 	turn_system.init_pawns(pawns_player, pawns_enemy)
@@ -128,12 +130,6 @@ func on_battle_end():
 
 func hide_ui():
 	hud_player.hide()
-	
-	for pawn in pawns_player:
-		pawn.menu_node.hide()
 
 func show_ui():
 	hud_player.show()
-	
-	for pawn in pawns_player:
-		pawn.menu_node.show()

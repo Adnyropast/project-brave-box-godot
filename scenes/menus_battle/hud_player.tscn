@@ -1,6 +1,67 @@
-[gd_scene load_steps=2 format=3 uid="uid://c5peonmqav74t"]
+[gd_scene load_steps=5 format=3 uid="uid://c5peonmqav74t"]
 
 [ext_resource type="Script" uid="uid://ciitmroxti6ve" path="res://scenes/menus_battle/hud_player.gd" id="1_kmw4m"]
+
+[sub_resource type="Animation" id="Animation_r38vx"]
+resource_name = "start"
+length = 0.2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(923, 0), Vector2(915, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_kmw4m"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(915, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_mdev0"]
+_data = {
+&"RESET": SubResource("Animation_kmw4m"),
+&"start": SubResource("Animation_r38vx")
+}
 
 [node name="HUDPlayer" type="Control"]
 layout_mode = 3
@@ -12,6 +73,7 @@ grow_vertical = 2
 script = ExtResource("1_kmw4m")
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
+modulate = Color(1, 1, 1, 0)
 layout_mode = 1
 anchors_preset = 1
 anchor_left = 1.0
@@ -22,3 +84,9 @@ grow_horizontal = 0
 
 [node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
 layout_mode = 2
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="MarginContainer"]
+libraries = {
+&"": SubResource("AnimationLibrary_mdev0")
+}
+autoplay = "start"

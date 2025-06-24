@@ -7,7 +7,6 @@ var variables: PawnVariables
 var node: CharacterBody3D
 var player_panel: PanelContainer
 var controlled_by_menu: bool
-var menu_node: Control
 var tree: SceneTree
 var turn_system: Node
 var action_circle: Node3D
@@ -15,6 +14,7 @@ var allies: Array[PawnComponents]
 var enemies: Array[PawnComponents]
 var vanishes_on_defeat: bool
 var uses_player_inventory: bool
+var battle: Node
 
 static func init_from_party_member(party_member: PartyMemberVariables) -> PawnComponents:
 	var pawn_components = PawnComponents.new()
@@ -27,9 +27,6 @@ static func init_from_party_member(party_member: PartyMemberVariables) -> PawnCo
 	
 	pawn_components.node = preload("res://scenes/battle/battle_pawn.tscn").instantiate()
 	pawn_components.node.init_from_party_member(pawn_components, party_member.party_member)
-	
-	pawn_components.menu_node = preload("res://scenes/menus_battle/menu_battle.tscn").instantiate()
-	pawn_components.menu_node.pawn = pawn_components
 	
 	pawn_components.player_panel = preload("res://scenes/menus_battle/player_character_panel.tscn").instantiate()
 	pawn_components.player_panel.set_character_name(party_member.party_member.name)
@@ -76,7 +73,7 @@ func take_action():
 		block_turn_ability.template_start()
 	else:
 		if controlled_by_menu:
-			tree.root.add_child(menu_node)
+			open_menu()
 		else:
 			EnemyActions.take_action(self)
 
@@ -96,3 +93,8 @@ func confirm_targets(active_ability: ActiveAbility, targets: Array[PawnComponent
 	active_script.user = self
 	active_script.targets = targets
 	active_script.template_start()
+
+func open_menu() -> void:
+	var menu_node: Control = preload("res://scenes/menus_battle/menu_battle.tscn").instantiate()
+	menu_node.pawn = self
+	battle.hud_player.add_child(menu_node)
