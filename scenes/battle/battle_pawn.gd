@@ -32,14 +32,14 @@ func return_to_default():
 	tween = null
 	
 	if pawn.variables.is_ko() && texture_ko:
-		$Sprite3D.texture = texture_ko
+		$ShakeNode/Sprite3D.texture = texture_ko
 	elif pawn.variables.state_defend:
-		$Sprite3D.texture = texture_def
+		$ShakeNode/Sprite3D.texture = texture_def
 	else:
-		$Sprite3D.texture = texture_std
+		$ShakeNode/Sprite3D.texture = texture_std
 
 func start_attack():
-	$Sprite3D.texture = texture_atk
+	$ShakeNode/Sprite3D.texture = texture_atk
 	
 	if tween:
 		tween.stop()
@@ -51,7 +51,7 @@ func stop_attack():
 	return_to_default()
 
 func start_hurt():
-	$Sprite3D.texture = texture_hurt
+	$ShakeNode/Sprite3D.texture = texture_hurt
 	
 	if tween:
 		tween.stop()
@@ -63,7 +63,7 @@ func stop_hurt():
 	return_to_default()
 
 func start_cast():
-	$Sprite3D.texture = texture_cast
+	$ShakeNode/Sprite3D.texture = texture_cast
 	
 	if tween:
 		tween.stop()
@@ -74,3 +74,9 @@ func start_cast():
 func return_to_default_not_busy():
 	if not tween:
 		return_to_default()
+
+func hide_sprite() -> void:
+	$ShakeNode/Sprite3D.hide()
+
+func get_shake_node() -> Node3D:
+	return $ShakeNode

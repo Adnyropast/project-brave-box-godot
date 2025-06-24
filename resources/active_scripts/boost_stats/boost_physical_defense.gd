@@ -1,8 +1,4 @@
-extends ActiveScript
+extends BoostStatActiveScript
 
-func start():
-	user.node.start_cast()
-	BattleEffects.create_magic_cast(user)
-	
-	for target in targets:
-		EffectAfflict.afflict_buff(target, preload("res://resources/passive_abilities/stat_buffs/buff_p_def.tres"))
+func get_buff_affliction() -> Resource:
+	return preload("res://resources/passive_abilities/stat_buffs/buff_p_def.tres")

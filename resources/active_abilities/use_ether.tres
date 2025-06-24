@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="ActiveAbility" load_steps=3 format=3 uid="uid://xt2di5ocn3de"]
 
-[ext_resource type="Script" uid="uid://btv8rppiv3si0" path="res://resources/active_scripts/use_ether.gd" id="1_fae76"]
+[ext_resource type="Script" uid="uid://btv8rppiv3si0" path="res://resources/active_scripts/use_potions/use_ether.gd" id="1_fae76"]
 [ext_resource type="Script" uid="uid://clugbtxltbj7y" path="res://resources/ActiveAbility.gd" id="1_oafl7"]
 
 [resource]

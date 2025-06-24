@@ -1,7 +1,7 @@
 [gd_resource type="Resource" script_class="ActiveAbility" load_steps=3 format=3 uid="uid://2laoyevejsl4"]
 
 [ext_resource type="Script" uid="uid://clugbtxltbj7y" path="res://resources/ActiveAbility.gd" id="1_fxeso"]
-[ext_resource type="Script" uid="uid://dlnx8ip05u5ri" path="res://resources/active_scripts/magic_wind.gd" id="1_t87ve"]
+[ext_resource type="Script" uid="uid://dlnx8ip05u5ri" path="res://resources/active_scripts/magic_elements/magic_wind.gd" id="1_t87ve"]
 
 [resource]
 script = ExtResource("1_fxeso")

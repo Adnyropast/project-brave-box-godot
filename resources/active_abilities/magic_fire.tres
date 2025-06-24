@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="ActiveAbility" load_steps=3 format=3 uid="uid://ct2y7ybh8ub4m"]
 
-[ext_resource type="Script" uid="uid://7jj6sxc8x1uo" path="res://resources/active_scripts/magic_fire.gd" id="1_pdqi0"]
+[ext_resource type="Script" uid="uid://7jj6sxc8x1uo" path="res://resources/active_scripts/magic_elements/magic_fire.gd" id="1_pdqi0"]
 [ext_resource type="Script" uid="uid://clugbtxltbj7y" path="res://resources/ActiveAbility.gd" id="2_cq7dl"]
 
 [resource]

@@ -1,8 +1,4 @@
-extends ActiveScript
+extends UseMagicBombActiveScript
 
-func start():
-	user.node.start_cast()
-	
-	for target in targets:
-		var damage = 1000
-		EffectDamage.deal_damage(target, damage, Types.Damage.WATER)
+func get_element_type() -> Types.Damage:
+	return Types.Damage.WATER

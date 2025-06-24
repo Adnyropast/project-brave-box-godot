@@ -8,7 +8,9 @@
 [node name="BattlePawn" type="CharacterBody3D"]
 script = ExtResource("1_21e7u")
 
-[node name="Sprite3D" type="Sprite3D" parent="."]
+[node name="ShakeNode" type="Node3D" parent="."]
+
+[node name="Sprite3D" type="Sprite3D" parent="ShakeNode"]
 sorting_offset = 50.0
 sorting_use_aabb_center = false
 texture = ExtResource("1_volcy")

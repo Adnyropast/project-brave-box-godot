@@ -1,7 +1,7 @@
 [gd_resource type="Resource" script_class="ActiveAbility" load_steps=3 format=3 uid="uid://b3713mjd7oafx"]
 
 [ext_resource type="Script" uid="uid://clugbtxltbj7y" path="res://resources/ActiveAbility.gd" id="1_fxxxg"]
-[ext_resource type="Script" uid="uid://co1fexhbuetuc" path="res://resources/active_scripts/use_full_ether.gd" id="1_ibp6a"]
+[ext_resource type="Script" uid="uid://co1fexhbuetuc" path="res://resources/active_scripts/use_potions/use_full_ether.gd" id="1_ibp6a"]
 
 [resource]
 script = ExtResource("1_fxxxg")

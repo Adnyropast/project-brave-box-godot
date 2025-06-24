@@ -1,8 +1,4 @@
-extends ActiveScript
+extends WeakenStatActiveScript
 
-func start():
-	user.node.start_cast()
-	BattleEffects.create_magic_cast(user)
-	
-	for target in targets:
-		EffectAfflict.afflict_debuff(target, preload("res://resources/passive_abilities/stat_debuffs/debuff_m_def.tres"))
+func get_debuff_affliction() -> Resource:
+	return preload("res://resources/passive_abilities/stat_debuffs/debuff_m_def.tres")

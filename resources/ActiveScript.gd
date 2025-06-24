@@ -10,7 +10,7 @@ var hud: Control
 var hud_inability: Control
 
 func start():
-	pass
+	end_script()
 
 func template_start():
 	redirect_targets()
@@ -31,8 +31,6 @@ func template_start():
 			show_inability("Not enough MP!")
 	else:
 		start()
-	
-	template_end()
 
 static func filter_pawns_not_ko(pawns: Array[PawnComponents]):
 	var res: Array[PawnComponents] = []
@@ -87,8 +85,21 @@ func show_inability(message: String):
 	
 	var tween: Tween = user.node.create_tween()
 	
-	tween.tween_callback(hide_inability).set_delay(1)
+	tween.tween_callback(hide_inability).set_delay(1.5)
 
 func hide_inability():
 	if hud_inability.get_parent():
 		hud_inability.get_parent().remove_child(hud_inability)
+	
+	end_clear()
+
+func end_script() -> void:
+	template_end()
+
+func create_tween() -> Tween:
+	if user:
+		return user.node.create_tween()
+	elif targets.size() == 1:
+		return targets[0].node.create_tween()
+	else:
+		return Engine.get_main_loop().create_tween()

@@ -1,8 +1,4 @@
-extends ActiveScript
+extends InflictAilmentActiveScript
 
-func start():
-	user.node.start_cast()
-	BattleEffects.create_magic_cast(user)
-	
-	for target in targets:
-		EffectAfflict.afflict_berserk(target)
+func get_affliction_callable() -> Callable:
+	return EffectAfflict.afflict_berserk

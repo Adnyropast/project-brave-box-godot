@@ -1,10 +1,10 @@
 extends ActiveScript
 
 func start():
+	var tween: Tween = create_tween()
+	tween.tween_interval(3.0/60)
+	
 	for target in targets:
-		remove_pawn_system(target)
-
-func remove_pawn_system(pawn: PawnComponents):
-	pawn.turn_system.pawns.erase(pawn)
-	pawn.tree.root.get_node("BattleComponents").pawns_player.erase(pawn)
-	pawn.tree.root.get_node("BattleComponents").pawns_enemy.erase(pawn)
+		tween.tween_callback(EffectFlee.flee.bind(target))
+	
+	tween.tween_callback(end_script)

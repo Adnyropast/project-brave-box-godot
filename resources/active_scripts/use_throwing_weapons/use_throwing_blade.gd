@@ -1,8 +1,4 @@
-extends ActiveScript
+extends UseThrowingWeaponActiveScript
 
-func start():
-	user.node.start_cast()
-	
-	for target in targets:
-		var damage = 1000
-		EffectPhysicalAttack.deal_damage(user, target, damage, Types.Damage.SEVERING)
+func get_weapon_type() -> Types.Damage:
+	return Types.Damage.SEVERING

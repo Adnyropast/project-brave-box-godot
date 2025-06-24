@@ -5,3 +5,5 @@ func start():
 		var target_screen = preload("res://scenes/battle/target_screen.tscn").instantiate()
 		
 		target.node.add_child(target_screen)
+	
+	end_script()
