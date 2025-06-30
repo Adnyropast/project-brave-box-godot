@@ -10,6 +10,7 @@ var tween: Tween
 var pawn: PawnComponents
 
 func init_from_party_member(_pawn: PawnComponents, party_member: PartyMember):
+	$AnimationPlayer.autoplay = "start_slide_player"
 	texture_std = party_member.sprite_set.image_std
 	texture_atk = party_member.sprite_set.image_atk
 	texture_def = party_member.sprite_set.image_def
@@ -20,6 +21,7 @@ func init_from_party_member(_pawn: PawnComponents, party_member: PartyMember):
 	return_to_default()
 
 func init_from_enemy(_pawn: PawnComponents, enemy: Enemy):
+	$AnimationPlayer.autoplay = "start_slide_enemy"
 	texture_std = enemy.sprite_set.image_std
 	texture_atk = enemy.sprite_set.image_atk
 	texture_def = enemy.sprite_set.image_def

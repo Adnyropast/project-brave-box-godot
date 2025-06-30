@@ -48,15 +48,8 @@ func _ready() -> void:
 	hud_player.init_players(pawns_player)
 	tree.root.add_child(hud_player)
 	
-	var control_info = preload("res://scenes/menus_battle/menus_info/control_info.tscn").instantiate()
-	control_info.battle = self
-	control_info.pawns = pawns_enemy + pawns_player
-	hud_player.add_child(control_info)
-	
-	turn_system = preload("res://scenes/battle/turn_system.tscn").instantiate()
-	turn_system.init_pawns(pawns_player, pawns_enemy)
-	turn_system.battle_components = self
-	tree.root.add_child(turn_system)
+	var tween: Tween = create_tween()
+	tween.tween_callback(intro_end).set_delay(1.0)
 
 func all_players_defeated() -> bool:
 	for pawn in pawns_player:
@@ -133,3 +126,14 @@ func hide_ui():
 
 func show_ui():
 	hud_player.show()
+
+func intro_end() -> void:
+	var control_info = preload("res://scenes/menus_battle/menus_info/control_info.tscn").instantiate()
+	control_info.battle = self
+	control_info.pawns = pawns_enemy + pawns_player
+	hud_player.add_child(control_info)
+	
+	turn_system = preload("res://scenes/battle/turn_system.tscn").instantiate()
+	turn_system.init_pawns(pawns_player, pawns_enemy)
+	turn_system.battle_components = self
+	get_tree().root.add_child(turn_system)
