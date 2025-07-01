@@ -18,20 +18,10 @@ func _process(_delta: float) -> void:
 		close_screen()
 
 func close_screen():
-	var tree = get_tree()
-	
-	tree.change_scene_to_file("res://scenes/map/map_compositia.tscn")
-	
-	clean_tree_root()
+	BattleSceneExit.exit_battle()
 
 func _on_button_pressed() -> void:
 	close_screen()
-
-func clean_tree_root():
-	var tree = get_tree()
-	
-	for child in tree.root.get_children():
-		tree.root.remove_child(child)
 
 func update_exp():
 	$MarginContainer3/PanelContainer/MarginContainer/VBoxContainer/HBoxContainer/LabelEXP.text = str(pot_exp)

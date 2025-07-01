@@ -65,12 +65,6 @@ func lose_battle():
 	
 	end_battle()
 
-func clean_tree_root():
-	var tree = get_tree()
-	
-	for child in tree.root.get_children():
-		tree.root.remove_child(child)
-
 func on_enemy_defeated(pawn: PawnComponents) -> void:
 	pot_exp = pot_exp + EnemyRewards.get_exp(pawn.variables.get_level()) * 100
 	pot_money = pot_money + EnemyRewards.get_money(pawn.variables.get_level()) * 100
@@ -107,10 +101,7 @@ func no_player_present() -> bool:
 func end_battle():
 	on_battle_end()
 	
-	var tree = get_tree()
-	
-	tree.change_scene_to_file("res://scenes/map/map_compositia.tscn")
-	clean_tree_root()
+	BattleSceneExit.exit_battle()
 
 func on_battle_end():
 	for pawn in pawns_player:

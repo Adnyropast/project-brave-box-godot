@@ -1,0 +1,71 @@
+[gd_scene load_steps=6 format=3 uid="uid://ba04c2s3e6lb3"]
+
+[ext_resource type="Script" uid="uid://bwe0hs26kyumd" path="res://scenes/transition_fade_black/transition_fade_in_black.gd" id="1_4l7me"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4l7me"]
+bg_color = Color(0, 0, 0, 1)
+
+[sub_resource type="Animation" id="Animation_c6w15"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Panel:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0, 0, 0, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_yxyfc"]
+resource_name = "fade_in"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Panel:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.25),
+"transitions": PackedFloat32Array(0.5, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_vt74h"]
+_data = {
+&"RESET": SubResource("Animation_c6w15"),
+&"fade_in": SubResource("Animation_yxyfc")
+}
+
+[node name="FadeInBlack" type="Control"]
+process_mode = 3
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_4l7me")
+
+[node name="Panel" type="Panel" parent="."]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_4l7me")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Panel"]
+root_node = NodePath("../..")
+libraries = {
+&"": SubResource("AnimationLibrary_vt74h")
+}
+autoplay = "fade_in"
+
+[connection signal="animation_finished" from="Panel/AnimationPlayer" to="." method="_on_animation_player_animation_finished"]
