@@ -11,8 +11,7 @@ func _on_button_remove_pressed() -> void:
 	set_weapon(null)
 
 func _on_button_cancel_pressed() -> void:
-	Menus.close_menu(self)
-	Menus.open_menu(menu_cancel)
+	Menus.switch_menus(self, menu_cancel)
 
 func update_current_weapon() -> void:
 	var weapon_name

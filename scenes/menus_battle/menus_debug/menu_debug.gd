@@ -7,8 +7,7 @@ func _ready() -> void:
 	fill_buttons()
 
 func _on_button_cancel_pressed() -> void:
-	Menus.close_menu(self)
-	Menus.open_menu(menu_cancel)
+	Menus.switch_menus(self, menu_cancel)
 
 func fill_buttons() -> void:
 	var container = $MarginContainer/VBoxContainer/VBoxContainerButtons

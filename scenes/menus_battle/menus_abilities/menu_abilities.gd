@@ -28,9 +28,5 @@ func update_abilities(abilities: Array[ActiveAbility]):
 	clear_abilities()
 	fill_abilities(abilities)
 
-func close_menu():
-	get_parent().remove_child(self)
-
 func _on_button_cancel_pressed() -> void:
-	get_tree().root.add_child(menu_cancel)
-	close_menu()
+	Menus.switch_menus(self, menu_cancel)

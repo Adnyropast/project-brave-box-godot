@@ -1,126 +1,60 @@
 extends Control
 
-var tree: SceneTree
 var pawn: PawnComponents
 
 func _ready() -> void:
 	update_button_debug()
 
-func close_menu():
-	get_parent().remove_child(self)
-
-func open_menu_target(active_ability: ActiveAbility):
-	var menu_target = preload("res://scenes/menus_battle/menus_target/menu_target.tscn").instantiate()
-	
-	menu_target.menu_battle = self
-	menu_target.pawn = pawn
-	menu_target.active_ability = active_ability
-	
-	tree.root.add_child(menu_target)
-
 func _on_button_attack_pressed() -> void:
-	tree = get_tree()
-	
-	var active_ability = preload("res://resources/active_abilities/attack.tres")
-	
-	close_menu()
-	open_menu_target(active_ability)
-
-func _on_button_target_pressed() -> void:
-	tree = get_tree()
-	
-	var active_ability = preload("res://resources/active_abilities/target.tres")
-	
-	close_menu()
-	open_menu_target(active_ability)
-
-func _on_button_pass_pressed() -> void:
-	close_menu()
-	
-	pawn.pass_turn()
-
-func _on_button_flee_pressed() -> void:
-	var active_ability = preload("res://resources/active_abilities/flee.tres")
-	
-	close_menu()
-	pawn.confirm_targets(active_ability, pawn.allies.duplicate())
-
-func _on_button_heal_pressed() -> void:
-	tree = get_tree()
-	
-	var active_ability = preload("res://resources/active_abilities/magic_healing.tres")
-	
-	close_menu()
-	open_menu_target(active_ability)
-
-func _on_button_revive_pressed() -> void:
-	tree = get_tree()
-	
-	var active_ability = preload("res://resources/active_abilities/magic_reviving.tres")
-	
-	close_menu()
-	open_menu_target(active_ability)
+	TargetMenu.open_menu_target(
+		self,
+		pawn,
+		preload("res://resources/active_abilities/attack.tres")
+	)
 
 func _on_button_abilities_pressed() -> void:
-	tree = get_tree()
-	
-	close_menu()
-	
-	var menu_abilities = preload("res://scenes/menus_battle/menus_abilities/menu_abilities.tscn").instantiate()
-	
-	menu_abilities.menu_cancel = self
-	menu_abilities.pawn = pawn
-	
-	var abilities: Array[ActiveAbility] = pawn.variables.get_active_abilities()
-	
-	menu_abilities.update_abilities(abilities)
-	
-	tree.root.add_child(menu_abilities)
-
-func _on_button_defend_pressed() -> void:
-	Menus.close_menu(self)
-	
-	var active_ability = preload("res://resources/active_abilities/defend.tres")
-	pawn.confirm_targets(active_ability, [pawn])
-
-func _on_button_items_pressed() -> void:
-	Menus.close_menu(self)
-	
-	var menu_abilities = preload("res://scenes/menus_battle/menus_abilities/menu_abilities.tscn").instantiate()
-	
-	menu_abilities.menu_cancel = self
-	menu_abilities.pawn = pawn
-	
-	var abilities: Array[ActiveAbility] = []
-	
-	for iv in PlayerInventory.items:
-		if iv.item.ability:
-			iv.item.ability.item_cost = iv.item
-			abilities.append(iv.item.ability)
-	
-	menu_abilities.update_abilities(abilities)
-	
-	Menus.open_menu(menu_abilities)
-
-func _on_button_change_weapon_pressed() -> void:
-	Menus.close_menu(self)
-	
-	var menu = preload("res://scenes/menus_battle/menus_change_weapon/menu_change_weapon.tscn").instantiate()
-	
-	menu.menu_cancel = self
-	menu.pawn = pawn
-	
-	Menus.open_menu(menu)
+	AbilitiesMenu.open_menu_abilities(
+		self,
+		pawn,
+		pawn.variables.get_active_abilities()
+	)
 
 func _on_button_debug_pressed() -> void:
-	Menus.close_menu(self)
-	
 	var menu_debug = preload("res://scenes/menus_battle/menus_debug/menu_debug.tscn").instantiate()
 	
 	menu_debug.menu_cancel = self
 	menu_debug.pawn = pawn
 	
-	Menus.open_menu(menu_debug)
+	Menus.switch_menus(self, menu_debug)
+
+func _on_button_defend_pressed() -> void:
+	Menus.close_menu(self)
+	pawn.confirm_targets(
+		preload("res://resources/active_abilities/defend.tres"),
+		[pawn],
+	)
+
+func _on_button_change_weapon_pressed() -> void:
+	var menu = preload("res://scenes/menus_battle/menus_change_weapon/menu_change_weapon.tscn").instantiate()
+	
+	menu.menu_cancel = self
+	menu.pawn = pawn
+	
+	Menus.switch_menus(self, menu)
+
+func _on_button_items_pressed() -> void:
+	AbilitiesMenu.open_menu_abilities(
+		self,
+		pawn,
+		ItemAbilities.get_player_item_abilities()
+	)
+
+func _on_button_flee_pressed() -> void:
+	Menus.close_menu(self)
+	pawn.confirm_targets(
+		preload("res://resources/active_abilities/flee.tres"),
+		pawn.allies.duplicate(),
+	)
 
 func update_button_debug() -> void:
 	if PlayerSettings.debug_mode:
