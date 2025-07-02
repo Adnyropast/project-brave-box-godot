@@ -30,6 +30,10 @@ theme_override_constants/margin_top = 16
 [node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
 layout_mode = 2
 
+[node name="ButtonDynamicBattleCamera" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Dynamic Battle Camera (On)"
+
 [node name="ButtonDebug" type="Button" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
 text = "Debug Mode (On)"
@@ -38,5 +42,6 @@ text = "Debug Mode (On)"
 layout_mode = 2
 text = "Close"
 
+[connection signal="pressed" from="MarginContainer/VBoxContainer/ButtonDynamicBattleCamera" to="." method="_on_button_dynamic_battle_camera_pressed"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/ButtonDebug" to="." method="_on_button_debug_pressed"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/ButtonClose" to="." method="_on_button_close_pressed"]

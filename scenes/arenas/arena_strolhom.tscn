@@ -44,9 +44,6 @@ transform = Transform3D(12, 0, 0, 0, 12, 0, 0, 0, 12, 0, 0, -49)
 sorting_offset = -3000.0
 texture = ExtResource("2_0ychi")
 
-[node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, 12)
-
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 0.642788, 0.766044, 0, -0.766044, 0.642788, 0, 24, 4)
 shadow_enabled = true
