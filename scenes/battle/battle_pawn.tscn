@@ -101,6 +101,7 @@ script = ExtResource("1_21e7u")
 [node name="Sprite3D" type="Sprite3D" parent="ShakeNode"]
 sorting_offset = 50.0
 sorting_use_aabb_center = false
+billboard = 1
 texture = ExtResource("1_volcy")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]

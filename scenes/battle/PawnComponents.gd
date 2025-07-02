@@ -15,6 +15,7 @@ var enemies: Array[PawnComponents]
 var vanishes_on_defeat: bool
 var uses_player_inventory: bool
 var battle: Node
+var ally_view: bool
 
 static func init_from_party_member(party_member: PartyMemberVariables) -> PawnComponents:
 	var pawn_components = PawnComponents.new()
@@ -22,6 +23,7 @@ static func init_from_party_member(party_member: PartyMemberVariables) -> PawnCo
 	pawn_components.controlled_by_menu = true
 	pawn_components.vanishes_on_defeat = false
 	pawn_components.uses_player_inventory = true
+	pawn_components.ally_view = true
 	
 	pawn_components.variables.init_from_party_member(party_member)
 	
@@ -43,6 +45,7 @@ static func init_from_enemy(enemy: Enemy, alias: String, level: int) -> PawnComp
 	pawn_components.controlled_by_menu = false
 	pawn_components.vanishes_on_defeat = true
 	pawn_components.uses_player_inventory = false
+	pawn_components.ally_view = false
 	
 	pawn_components.variables.init_from_enemy(enemy, alias, level)
 	
@@ -98,3 +101,4 @@ func open_menu() -> void:
 	var menu_node: Control = preload("res://scenes/menus_battle/menu_battle.tscn").instantiate()
 	menu_node.pawn = self
 	battle.hud_player.add_child(menu_node)
+	battle.camera_group.set_view_standard()

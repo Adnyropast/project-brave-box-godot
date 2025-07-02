@@ -17,6 +17,17 @@ func template_start():
 	show_hud()
 	
 	if user:
+		if user.ally_view:
+			if targets.any(user.enemies.has):
+				user.battle.camera_group.set_view_allies_vs_enemies()
+			else:
+				user.battle.camera_group.set_view_allies_focus()
+		else:
+			if targets.any(user.enemies.has):
+				user.battle.camera_group.set_view_enemies_vs_allies()
+			else:
+				user.battle.camera_group.set_view_enemies_focus()
+		
 		var disable_message = user.variables.disable_ability(self)
 		
 		if disable_message:

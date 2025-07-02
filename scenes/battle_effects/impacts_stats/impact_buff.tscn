@@ -26,5 +26,6 @@ animations = [{
 script = ExtResource("1_ulv18")
 
 [node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="."]
+billboard = 1
 sprite_frames = SubResource("SpriteFrames_r20oy")
 autoplay = "default"

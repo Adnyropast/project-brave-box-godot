@@ -8,6 +8,7 @@ var pawns_enemy: Array[PawnComponents]
 var hud_player: Control
 var pot_exp: int
 var pot_money: int
+var camera_group: Node3D
 
 func init(_mission: Mission) -> void:
 	mission = _mission
@@ -44,6 +45,10 @@ func _ready() -> void:
 	battle_board.init_pawns(pawns_player, pawns_enemy)
 	tree.root.add_child(battle_board)
 	
+	camera_group = preload("res://scenes/camera_groups/camera_group_arena.tscn").instantiate()
+	camera_group.set_view_standard()
+	tree.root.add_child(camera_group)
+	
 	hud_player = preload("res://scenes/menus_battle/hud_player.tscn").instantiate()
 	hud_player.init_players(pawns_player)
 	tree.root.add_child(hud_player)
@@ -78,6 +83,8 @@ func all_enemies_defeated() -> bool:
 
 func win_battle():
 	on_battle_end()
+	
+	camera_group.set_view_standard()
 	
 	var tree = get_tree()
 	
