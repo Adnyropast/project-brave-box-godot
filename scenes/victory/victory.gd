@@ -4,18 +4,21 @@ var pot_exp: int
 var pot_money: int
 var character_panels: Array[Container]
 var player_pawns: Array[PawnComponents]
+var money_transition: MoneyTransition
 
 func _ready() -> void:
+	money_transition = MoneyTransition.from(PlayerParty.money, pot_money)
+	
 	update_exp()
 	update_money()
 	fill_panels()
-	clear_player_money()
 	pose_player_pawns()
-	
-	var tween = create_tween()
-	tween.tween_callback(update_all).set_delay(1)
 
-func _process(_delta: float) -> void:
+func _process(delta: float) -> void:
+	money_transition.progress(delta * pot_money / 6)
+	
+	update_player_money()
+	
 	if(Input.is_action_just_pressed("confirm")):
 		close_screen()
 
@@ -37,28 +40,16 @@ func fill_panels():
 	
 	for party_member in PlayerParty.team:
 		var panel = preload("res://scenes/victory/victory_character_panel.tscn").instantiate()
-		panel.init_from_party_member(party_member)
+		panel.init_from_party_member(party_member, pot_exp)
 		panel.update_data()
 		
 		$MarginContainer4/PanelContainer/MarginContainer/HBoxContainer.add_child(panel)
 		
 		character_panels.append(panel)
 
-func update_all():
-	update_player_money()
-	update_panels()
-
-func update_panels():
-	for panel in character_panels:
-		panel.update_data()
-
-func clear_player_money():
-	$MarginContainer5/PanelContainer/MarginContainer/HBoxContainer/LabelChrs.text = str(PlayerParty.money)
-	$MarginContainer5/PanelContainer/MarginContainer/HBoxContainer/LabelChrs/Control/LabelChrsGain.hide()
-
 func update_player_money():
-	$MarginContainer5/PanelContainer/MarginContainer/HBoxContainer/LabelChrs.text = str(PlayerParty.money)
-	$MarginContainer5/PanelContainer/MarginContainer/HBoxContainer/LabelChrs/Control/LabelChrsGain.text = "+" + str(pot_money)
+	$MarginContainer5/PanelContainer/MarginContainer/HBoxContainer/LabelChrs.text = str(money_transition.get_current_sum())
+	$MarginContainer5/PanelContainer/MarginContainer/HBoxContainer/LabelChrs/Control/LabelChrsGain.text = "+" + str(money_transition.get_current_added())
 	$MarginContainer5/PanelContainer/MarginContainer/HBoxContainer/LabelChrs/Control/LabelChrsGain.show()
 
 func pose_player_pawns() -> void:
