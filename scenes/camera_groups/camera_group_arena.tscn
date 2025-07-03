@@ -1,6 +1,7 @@
-[gd_scene load_steps=17 format=3 uid="uid://dkws20giaawab"]
+[gd_scene load_steps=18 format=3 uid="uid://dkws20giaawab"]
 
 [ext_resource type="Script" uid="uid://c4o8ijfavxgk" path="res://scenes/camera_groups/camera_group_arena.gd" id="1_xcw6u"]
+[ext_resource type="Environment" uid="uid://dm4g7g7tr8a6r" path="res://scenes/camera_groups/camera_environment_arena.tres" id="2_q63b0"]
 
 [sub_resource type="Animation" id="Animation_xf3p3"]
 length = 0.001
@@ -283,6 +284,7 @@ script = ExtResource("1_xcw6u")
 
 [node name="Camera3DStd" type="Camera3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, 12)
+environment = ExtResource("2_q63b0")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Camera3DStd"]
 libraries = {
@@ -291,6 +293,7 @@ libraries = {
 
 [node name="Camera3DAvE" type="Camera3D" parent="."]
 transform = Transform3D(0.976296, 0, 0.216439, 0, 1, 0, -0.216439, 0, 0.976296, 3.43259, 4, 10.851)
+environment = ExtResource("2_q63b0")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Camera3DAvE"]
 libraries = {
@@ -299,6 +302,7 @@ libraries = {
 
 [node name="Camera3DEvA" type="Camera3D" parent="."]
 transform = Transform3D(0.976296, 0, -0.216439, 0, 1, 0, 0.216439, 0, 0.976296, -6.45753, 4, 11.1386)
+environment = ExtResource("2_q63b0")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Camera3DEvA"]
 libraries = {
@@ -307,6 +311,7 @@ libraries = {
 
 [node name="Camera3DAF" type="Camera3D" parent="."]
 transform = Transform3D(0.914586, 0, -0.404391, 0, 1, 0, 0.404391, 0, 0.914586, 1.89209, 4, 8.09747)
+environment = ExtResource("2_q63b0")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Camera3DAF"]
 libraries = {
@@ -315,6 +320,7 @@ libraries = {
 
 [node name="Camera3DEF" type="Camera3D" parent="."]
 transform = Transform3D(0.989526, 0, 0.144356, 0, 1, 0, -0.144356, 0, 0.989526, -6.91833, 4, 7.74493)
+environment = ExtResource("2_q63b0")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Camera3DEF"]
 libraries = {
