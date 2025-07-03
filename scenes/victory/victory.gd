@@ -3,12 +3,14 @@ extends Control
 var pot_exp: int
 var pot_money: int
 var character_panels: Array[Container]
+var player_pawns: Array[PawnComponents]
 
 func _ready() -> void:
 	update_exp()
 	update_money()
 	fill_panels()
 	clear_player_money()
+	pose_player_pawns()
 	
 	var tween = create_tween()
 	tween.tween_callback(update_all).set_delay(1)
@@ -58,3 +60,7 @@ func update_player_money():
 	$MarginContainer5/PanelContainer/MarginContainer/HBoxContainer/LabelChrs.text = str(PlayerParty.money)
 	$MarginContainer5/PanelContainer/MarginContainer/HBoxContainer/LabelChrs/Control/LabelChrsGain.text = "+" + str(pot_money)
 	$MarginContainer5/PanelContainer/MarginContainer/HBoxContainer/LabelChrs/Control/LabelChrsGain.show()
+
+func pose_player_pawns() -> void:
+	for pawn in player_pawns:
+		pawn.node.start_victory()

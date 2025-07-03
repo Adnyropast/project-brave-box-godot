@@ -93,6 +93,7 @@ func win_battle():
 	var victory_screen = preload("res://scenes/victory/victory.tscn").instantiate()
 	victory_screen.pot_exp = pot_exp
 	victory_screen.pot_money = pot_money
+	victory_screen.player_pawns = pawns_player
 	tree.root.add_child(victory_screen)
 	
 	PlayerMissions.clear_mission(mission)

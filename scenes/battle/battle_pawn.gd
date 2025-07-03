@@ -6,6 +6,7 @@ var texture_def: Texture2D
 var texture_cast: Texture2D
 var texture_hurt: Texture2D
 var texture_ko: Texture2D
+var texture_victory: Texture2D
 var tween: Tween
 var pawn: PawnComponents
 
@@ -17,6 +18,7 @@ func init_from_party_member(_pawn: PawnComponents, party_member: PartyMember):
 	texture_cast = party_member.sprite_set.image_cast
 	texture_hurt = party_member.sprite_set.image_hurt
 	texture_ko = party_member.sprite_set.image_ko
+	texture_victory = party_member.sprite_set.image_victory
 	pawn = _pawn
 	return_to_default()
 
@@ -82,3 +84,7 @@ func hide_sprite() -> void:
 
 func get_shake_node() -> Node3D:
 	return $ShakeNode
+
+func start_victory() -> void:
+	if texture_victory && not pawn.variables.is_ko():
+		$ShakeNode/Sprite3D.texture = texture_victory
