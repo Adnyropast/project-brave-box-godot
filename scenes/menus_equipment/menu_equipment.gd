@@ -6,6 +6,9 @@ var menu_pause: Control
 var selected_party_member: PartyMemberVariables
 var selected_equipment_slot: EquipmentSlot = EquipmentSlot.WEAPON
 
+func _init() -> void:
+	FocusButtons.set_focus_on_draw(self)
+
 func _ready() -> void:
 	fill_characters()
 	fill_equipment_options()
@@ -119,6 +122,7 @@ func equip_item(item_variables: ItemVariables) -> void:
 	fill_equipment_slots()
 	update_character_stats()
 	fill_equipment_options()
+	FocusButtons.focus_first_child($MarginContainer2/VBoxContainer)
 
 func update_character_stats() -> void:
 	$MarginContainer4/StatsPanel.update_stats_from_party_member(selected_party_member)

@@ -5,6 +5,9 @@ var enemy_party: Array[Enemy] = [null, null, null, null, null, null]
 var selected_slot: int
 var danger_level: int = 1
 
+func _init() -> void:
+	FocusButtons.set_focus_on_draw(self)
+
 func _ready() -> void:
 	update_slots()
 	update_options()

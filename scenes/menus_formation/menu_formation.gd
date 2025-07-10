@@ -7,6 +7,9 @@ var tree: SceneTree
 var menu_pause: Control
 var team_slot: int = -1
 
+func _init() -> void:
+	FocusButtons.set_focus_on_draw(self)
+
 func clear_buttons():
 	for child in team_member_buttons_container.get_children():
 		team_member_buttons_container.remove_child(child)
@@ -48,6 +51,7 @@ func update_buttons():
 	
 	clear_buttons()
 	fill_buttons()
+	FocusButtons.focus_first_child(self)
 
 func close_menu():
 	tree.root.add_child(menu_pause)
@@ -77,6 +81,7 @@ func _on_button_close_pressed() -> void:
 func _on_button_cancel_pressed() -> void:
 	action_menu.hide()
 	team_slot = -1
+	FocusButtons.focus_first_child(self)
 
 func _on_button_remove_pressed() -> void:
 	bench_selected_member()

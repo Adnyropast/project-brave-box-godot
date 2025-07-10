@@ -3,6 +3,9 @@ extends Control
 var menu_cancel: Control
 var pawn: PawnComponents
 
+func _init() -> void:
+	FocusButtons.set_focus_on_draw(self)
+
 func clear_abilities():
 	for child in $MarginContainer/VBoxContainer/VBoxContainer.get_children():
 		$MarginContainer/VBoxContainer/VBoxContainer.remove_child(child)

@@ -41,6 +41,7 @@ text = "Enemy Level:"
 
 [node name="ButtonLv-" type="Button" parent="MarginContainer/VBoxContainer/PanelContainer/MarginContainer/HBoxContainer"]
 layout_mode = 2
+focus_neighbor_right = NodePath("../ButtonLv+")
 text = "-"
 
 [node name="LabelEnemyLevel" type="Label" parent="MarginContainer/VBoxContainer/PanelContainer/MarginContainer/HBoxContainer"]
@@ -49,6 +50,7 @@ text = "99"
 
 [node name="ButtonLv+" type="Button" parent="MarginContainer/VBoxContainer/PanelContainer/MarginContainer/HBoxContainer"]
 layout_mode = 2
+focus_neighbor_left = NodePath("../ButtonLv-")
 text = "+"
 
 [node name="VBoxContainerSlots" type="VBoxContainer" parent="MarginContainer/VBoxContainer"]
@@ -60,17 +62,18 @@ text = "Close"
 
 [node name="MarginContainer2" type="MarginContainer" parent="."]
 layout_mode = 1
-anchors_preset = 5
+anchors_preset = 13
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -20.0
-offset_right = 20.0
-offset_bottom = 40.0
+anchor_bottom = 1.0
+offset_left = -35.5
+offset_right = 35.5
 grow_horizontal = 2
+grow_vertical = 2
 
 [node name="ScrollContainer" type="ScrollContainer" parent="MarginContainer2"]
-clip_contents = false
 layout_mode = 2
+follow_focus = true
 horizontal_scroll_mode = 0
 
 [node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer2/ScrollContainer"]

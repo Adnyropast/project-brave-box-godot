@@ -2,6 +2,9 @@ extends Control
 
 var pawn: PawnComponents
 
+func _init() -> void:
+	FocusButtons.set_focus_on_draw(self)
+
 func _ready() -> void:
 	update_button_debug()
 

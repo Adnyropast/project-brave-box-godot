@@ -3,6 +3,9 @@ extends Control
 var menu_cancel: Control
 var pawn: PawnComponents
 
+func _init() -> void:
+	FocusButtons.set_focus_on_draw(self)
+
 func _ready() -> void:
 	update_current_weapon()
 	fill_weapon_options()
@@ -43,3 +46,4 @@ func set_weapon(weapon: Weapon) -> void:
 	pawn.player_panel.set_max_mp(pawn.variables.get_max_mp())
 	update_current_weapon()
 	fill_weapon_options()
+	FocusButtons.focus_first_child(self)

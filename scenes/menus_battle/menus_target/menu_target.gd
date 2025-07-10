@@ -4,6 +4,9 @@ var menu_cancel: Control
 var pawn: PawnComponents
 var active_ability: ActiveAbility
 
+func _init() -> void:
+	FocusButtons.set_focus_on_draw(self)
+
 func fill_buttons():
 	for target in pawn.allies:
 		var button = preload("res://scenes/menus_battle/menus_target/button_target_single.tscn").instantiate()

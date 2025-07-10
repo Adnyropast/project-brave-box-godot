@@ -6,6 +6,9 @@ var character_panels: Array[Container]
 var player_pawns: Array[PawnComponents]
 var money_transition: MoneyTransition
 
+func _init() -> void:
+	FocusButtons.set_focus_on_draw(self)
+
 func _ready() -> void:
 	money_transition = MoneyTransition.from(PlayerParty.money, pot_money)
 	
@@ -18,9 +21,6 @@ func _process(delta: float) -> void:
 	money_transition.progress(delta * pot_money / 6)
 	
 	update_player_money()
-	
-	if(Input.is_action_just_pressed("confirm")):
-		close_screen()
 
 func close_screen():
 	BattleSceneExit.exit_battle()

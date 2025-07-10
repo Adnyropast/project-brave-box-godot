@@ -2,6 +2,9 @@ extends Control
 
 var menu_poi: Control
 
+func _init() -> void:
+	FocusButtons.set_focus_on_draw(self)
+
 func _ready() -> void:
 	update_money()
 	fill_buttons()

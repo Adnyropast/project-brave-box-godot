@@ -2,6 +2,9 @@ extends Control
 
 var tree: SceneTree
 
+func _init() -> void:
+	FocusButtons.set_focus_on_draw(self)
+
 func _process(_delta: float) -> void:
 	if(Input.is_action_just_pressed("cancel")):
 		close_pause()

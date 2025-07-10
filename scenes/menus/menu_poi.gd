@@ -3,6 +3,9 @@ extends Control
 var tree: SceneTree
 var point_of_interest: PointOfInterest
 
+func _init() -> void:
+	FocusButtons.set_focus_on_draw(self)
+
 func add_buttons():
 	if(point_of_interest):
 		if point_of_interest.inn:

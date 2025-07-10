@@ -3,6 +3,9 @@ extends Control
 var menu_cancel: Control
 var missions: Array[Mission]
 
+func _init() -> void:
+	FocusButtons.set_focus_on_draw(self)
+
 func _ready() -> void:
 	fill_buttons()
 

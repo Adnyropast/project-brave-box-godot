@@ -3,6 +3,9 @@ extends Control
 var battle: Node
 var pawns: Array[PawnComponents]
 
+func _init() -> void:
+	FocusButtons.set_focus_on_draw(self)
+
 func _ready() -> void:
 	fill_buttons()
 	update_info(pawns[0])

@@ -4,6 +4,9 @@ var menu_pause: Control
 var selected_party_member: PartyMemberVariables
 var selected_ability_slot: int
 
+func _init() -> void:
+	FocusButtons.set_focus_on_draw(self)
+
 func _ready() -> void:
 	fill_characters()
 	fill_abilities_tabs()
@@ -20,6 +23,7 @@ func _on_button_remove_pressed() -> void:
 
 func _on_button_cancel_pressed() -> void:
 	fill_abilities_tabs()
+	FocusButtons.focus_first_child($MarginContainer3)
 
 static func get_ability_name(ability: ActiveAbility) -> String:
 	if ability:
@@ -111,6 +115,8 @@ func fill_abilities_options(ability_set: AbilitySet) -> void:
 	
 	$MarginContainer3/ScrollContainer/VBoxContainer/ButtonRemove.hide()
 	$MarginContainer3/ScrollContainer/VBoxContainer/ButtonCancel.show()
+	
+	FocusButtons.focus_first_child($MarginContainer3)
 
 func equip_ability(ability: ActiveAbility) -> void:
 	selected_party_member.equip_ability(selected_ability_slot, ability)

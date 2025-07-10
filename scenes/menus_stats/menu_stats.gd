@@ -2,6 +2,9 @@ extends Control
 
 var menu_pause: Control
 
+func _init() -> void:
+	FocusButtons.set_focus_on_draw(self)
+
 func _ready() -> void:
 	fill_buttons()
 	update_stats(PlayerParty.team[0])
