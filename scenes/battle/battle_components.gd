@@ -88,7 +88,7 @@ func win_battle():
 	
 	var tree = get_tree()
 	
-	hud_player.hide()
+	hud_player.queue_free()
 	
 	var victory_screen = preload("res://scenes/victory/victory.tscn").instantiate()
 	victory_screen.pot_exp = pot_exp
