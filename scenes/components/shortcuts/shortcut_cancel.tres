@@ -1,0 +1,7 @@
+[gd_resource type="Shortcut" load_steps=2 format=3 uid="uid://b58bt5v88tsls"]
+
+[sub_resource type="InputEventAction" id="InputEventAction_40n0c"]
+action = &"cancel"
+
+[resource]
+events = [SubResource("InputEventAction_40n0c")]

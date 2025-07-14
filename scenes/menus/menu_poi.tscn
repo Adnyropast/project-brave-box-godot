@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://bjhcsb6oitrsy"]
+[gd_scene load_steps=3 format=3 uid="uid://bjhcsb6oitrsy"]
 
 [ext_resource type="Script" uid="uid://d1oj0dpd3xl4k" path="res://scenes/menus/menu_poi.gd" id="1_m3he0"]
+[ext_resource type="Shortcut" uid="uid://b58bt5v88tsls" path="res://scenes/components/shortcuts/shortcut_cancel.tres" id="2_a07o2"]
 
 [node name="MenuPOI" type="Control"]
 process_mode = 2
@@ -27,6 +28,7 @@ layout_mode = 2
 
 [node name="ButtonClose" type="Button" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
+shortcut = ExtResource("2_a07o2")
 text = "Close"
 
 [connection signal="tree_entered" from="." to="." method="_on_tree_entered"]

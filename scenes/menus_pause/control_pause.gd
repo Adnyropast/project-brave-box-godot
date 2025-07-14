@@ -10,11 +10,9 @@ func init_menu_node():
 func _ready() -> void:
 	init_menu_node()
 
-func _process(_delta: float) -> void:
-	if(Input.is_action_just_pressed("cancel")):
+func _shortcut_input(event: InputEvent) -> void:
+	if event.is_action_pressed("pause"):
 		open_menu()
-	
-	pass
 
 func open_menu():
 	menu_node_parent.add_child(menu_node)

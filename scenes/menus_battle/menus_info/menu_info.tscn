@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://hk43lvnisgkh"]
+[gd_scene load_steps=4 format=3 uid="uid://hk43lvnisgkh"]
 
 [ext_resource type="Script" uid="uid://df4vexoesqnkh" path="res://scenes/menus_battle/menus_info/menu_info.gd" id="1_dnfbo"]
 [ext_resource type="PackedScene" uid="uid://dp6o6kfcungs3" path="res://scenes/components/stats_panel.tscn" id="2_4i5mw"]
+[ext_resource type="Shortcut" uid="uid://b58bt5v88tsls" path="res://scenes/components/shortcuts/shortcut_cancel.tres" id="2_6wqxw"]
 
 [node name="MenuInfo" type="Control"]
 process_mode = 2
@@ -36,6 +37,7 @@ layout_mode = 2
 
 [node name="ButtonClose" type="Button" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
+shortcut = ExtResource("2_6wqxw")
 text = "Close"
 
 [node name="MarginContainer2" type="MarginContainer" parent="."]

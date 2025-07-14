@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://dmwbvelneev3y"]
+[gd_scene load_steps=3 format=3 uid="uid://dmwbvelneev3y"]
 
 [ext_resource type="Script" uid="uid://qq4neq53tldp" path="res://scenes/menus_list_missions/menu_list_missions.gd" id="1_dg1rb"]
+[ext_resource type="Shortcut" uid="uid://b58bt5v88tsls" path="res://scenes/components/shortcuts/shortcut_cancel.tres" id="2_t0mw2"]
 
 [node name="MenuMissions" type="Control"]
 process_mode = 2
@@ -27,6 +28,7 @@ layout_mode = 2
 
 [node name="ButtonClose" type="Button" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
+shortcut = ExtResource("2_t0mw2")
 text = "Close"
 
 [connection signal="pressed" from="MarginContainer/VBoxContainer/ButtonClose" to="." method="_on_button_close_pressed"]

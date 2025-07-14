@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://dbx4exrv7dgsu"]
+[gd_scene load_steps=3 format=3 uid="uid://dbx4exrv7dgsu"]
 
 [ext_resource type="Script" uid="uid://dtai6w2b6t7sa" path="res://scenes/menus_settings/menu_settings.gd" id="1_fvi7q"]
+[ext_resource type="Shortcut" uid="uid://b58bt5v88tsls" path="res://scenes/components/shortcuts/shortcut_cancel.tres" id="2_vxdsu"]
 
 [node name="MenuSettings" type="Control"]
 process_mode = 2
@@ -40,6 +41,7 @@ text = "Debug Mode (On)"
 
 [node name="ButtonClose" type="Button" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
+shortcut = ExtResource("2_vxdsu")
 text = "Close"
 
 [connection signal="pressed" from="MarginContainer/VBoxContainer/ButtonDynamicBattleCamera" to="." method="_on_button_dynamic_battle_camera_pressed"]

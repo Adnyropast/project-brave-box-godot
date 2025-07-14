@@ -1,0 +1,7 @@
+[gd_resource type="Shortcut" load_steps=2 format=3 uid="uid://x243u5tmrxpo"]
+
+[sub_resource type="InputEventAction" id="InputEventAction_fukim"]
+action = &"cancel_backspace"
+
+[resource]
+events = [SubResource("InputEventAction_fukim")]

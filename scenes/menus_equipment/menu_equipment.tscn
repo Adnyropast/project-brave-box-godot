@@ -1,6 +1,7 @@
-[gd_scene load_steps=7 format=3 uid="uid://bxfjkyg87ytls"]
+[gd_scene load_steps=8 format=3 uid="uid://bxfjkyg87ytls"]
 
 [ext_resource type="Script" uid="uid://blt1xmwa2wq4y" path="res://scenes/menus_equipment/menu_equipment.gd" id="1_1r6tj"]
+[ext_resource type="Shortcut" uid="uid://b58bt5v88tsls" path="res://scenes/components/shortcuts/shortcut_cancel.tres" id="2_dxmhu"]
 [ext_resource type="Texture2D" uid="uid://322g1b0ebfax" path="res://images/icons_equipment/icon_weapon.png" id="2_r4672"]
 [ext_resource type="Texture2D" uid="uid://5b1cywoeuh2b" path="res://images/icons_equipment/icon_headgear.png" id="3_q1xbv"]
 [ext_resource type="Texture2D" uid="uid://bm83fnbkfu743" path="res://images/icons_equipment/icon_body_armor.png" id="4_dxmhu"]
@@ -40,6 +41,7 @@ layout_mode = 2
 
 [node name="ButtonClose" type="Button" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
+shortcut = ExtResource("2_dxmhu")
 text = "Close"
 
 [node name="MarginContainer2" type="MarginContainer" parent="."]

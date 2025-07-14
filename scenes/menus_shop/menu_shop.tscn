@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://cu57iqcv03ryl"]
+[gd_scene load_steps=3 format=3 uid="uid://cu57iqcv03ryl"]
 
 [ext_resource type="Script" uid="uid://dsyboonft7ypq" path="res://scenes/menus_shop/menu_shop.gd" id="1_cftk6"]
+[ext_resource type="Shortcut" uid="uid://b58bt5v88tsls" path="res://scenes/components/shortcuts/shortcut_cancel.tres" id="2_586sv"]
 
 [node name="MenuShop" type="Control"]
 process_mode = 2
@@ -27,6 +28,7 @@ layout_mode = 2
 
 [node name="ButtonClose" type="Button" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
+shortcut = ExtResource("2_586sv")
 text = "Close"
 
 [node name="MarginContainer2" type="MarginContainer" parent="."]

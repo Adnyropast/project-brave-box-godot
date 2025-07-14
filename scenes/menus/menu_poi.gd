@@ -65,10 +65,6 @@ func add_buttons():
 func _ready() -> void:
 	add_buttons()
 
-func _process(_delta: float) -> void:
-	if(Input.is_action_just_pressed("cancel")):
-		close_menu()
-
 func close_menu():
 	tree.root.remove_child(self)
 	tree.paused = false

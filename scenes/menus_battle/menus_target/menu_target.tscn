@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://x5l510krtupr"]
+[gd_scene load_steps=3 format=3 uid="uid://x5l510krtupr"]
 
 [ext_resource type="Script" uid="uid://dms0dkqd447am" path="res://scenes/menus_battle/menus_target/menu_target.gd" id="1_0btqj"]
+[ext_resource type="Shortcut" uid="uid://x243u5tmrxpo" path="res://scenes/components/shortcuts/shortcut_backspace.tres" id="2_p06om"]
 
 [node name="MenuTarget" type="Control"]
 layout_mode = 3
@@ -50,6 +51,7 @@ layout_mode = 2
 
 [node name="ButtonCancel" type="Button" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
+shortcut = ExtResource("2_p06om")
 text = "Cancel"
 
 [connection signal="pressed" from="MarginContainer/VBoxContainer/ButtonAll" to="." method="_on_button_all_pressed"]

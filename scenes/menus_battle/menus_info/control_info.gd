@@ -3,8 +3,8 @@ extends Control
 var battle: Node
 var pawns: Array[PawnComponents]
 
-func _process(_delta: float) -> void:
-	if Input.is_action_just_pressed("cancel"):
+func _shortcut_input(event: InputEvent) -> void:
+	if event.is_action_pressed("pause"):
 		open_menu()
 
 func open_menu():
