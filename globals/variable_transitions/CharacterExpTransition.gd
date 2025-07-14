@@ -5,6 +5,7 @@ var initial_value: CharacterExp
 var final_value: CharacterExp
 var current_value: float
 var is_finished: bool
+var exp_diff: int
 
 static func from(initial_level: int, initial_exp: int, plus_exp: int) -> CharacterExpTransition:
 	var character_exp_transition: CharacterExpTransition = CharacterExpTransition.new()
@@ -12,6 +13,7 @@ static func from(initial_level: int, initial_exp: int, plus_exp: int) -> Charact
 	
 	character_exp_transition.set_initial(initial_character_exp)
 	character_exp_transition.set_final(initial_character_exp.plus_exp(plus_exp))
+	character_exp_transition.exp_diff = plus_exp
 	
 	return character_exp_transition
 
@@ -38,7 +40,5 @@ func progress(amount: float) -> void:
 	if not is_finished:
 		current_value = current_value + amount
 		
-		var current_character_exp = initial_value.plus_exp(roundi(current_value))
-		
-		if current_character_exp.level >= final_value.level && current_character_exp.current_exp > final_value.current_exp:
+		if current_value > exp_diff:
 			is_finished = true
